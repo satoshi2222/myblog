@@ -6,7 +6,7 @@
   <link href="/myblog.github.io/atom.xml" rel="self"/>
   
   <link href="https://satoshi2222.github.io/myblog.github.io.git/"/>
-  <updated>2018-09-09T21:09:37.826Z</updated>
+  <updated>2018-09-09T21:20:32.097Z</updated>
   <id>https://satoshi2222.github.io/myblog.github.io.git/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="https://satoshi2222.github.io/myblog.github.io.git/2018/09/10/picture-test/"/>
     <id>https://satoshi2222.github.io/myblog.github.io.git/2018/09/10/picture-test/</id>
     <published>2018-09-09T20:59:47.000Z</published>
-    <updated>2018-09-09T21:09:37.826Z</updated>
+    <updated>2018-09-09T21:20:32.097Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="picture-test/sky.jpg" width="300px" height="200px"></p>]]></content>
+    <content type="html"><![CDATA[<p><img src="../picture-test/sky.jpg" width="300px" height="200px"></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;picture-test/sky.jpg&quot; width=&quot;300px&quot; height=&quot;200px&quot;&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;../picture-test/sky.jpg&quot; width=&quot;300px&quot; height=&quot;200px&quot;&gt;&lt;/p&gt;
 
       
     
@@ -43,7 +43,7 @@
     <link href="https://satoshi2222.github.io/myblog.github.io.git/2018/09/08/My-New-Post/"/>
     <id>https://satoshi2222.github.io/myblog.github.io.git/2018/09/08/My-New-Post/</id>
     <published>2018-09-07T18:03:20.771Z</published>
-    <updated>2018-09-09T21:09:12.617Z</updated>
+    <updated>2018-09-09T21:20:13.817Z</updated>
     
     <content type="html"><![CDATA[<h2 id="あれこれ"><a href="#あれこれ" class="headerlink" title="あれこれ"></a>あれこれ</h2><h3 id="あれこれ-1"><a href="#あれこれ-1" class="headerlink" title="あれこれ"></a>あれこれ</h3><p><a href="(https://www.google.co.jp/">aタグ(google)</a><br><!-- ![画像](/yyyy/mm/dd/記事タイトル/ファイル名 "キャプチャです") --><br><img src="../My-New-Post/sky.jpg" alt="soraaa" width="800" height="800"></p><ul><li><p>リスト1</p><ul><li>ネスト リスト１<br>  なにか説明</li></ul></li><li><p>食べ物</p><ul><li>みかん</li><li>ばなな</li><li>りんご</li><li>いちご</li></ul></li></ul><ol><li>みかん</li><li>ばなな</li><li>りんご</li><li>いちご</li></ol><blockquote><p>引用(blockquote)</p></blockquote>]]></content>
     
