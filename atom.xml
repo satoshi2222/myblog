@@ -10,7 +10,7 @@
   <id>https://satoshi2222.github.io/myblog.github.io.git/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>satoshi</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>picture_test</title>
-    <link href="https://satoshi2222.github.io/myblog.github.io.git/2018/09/10/picture-test/"/>
-    <id>https://satoshi2222.github.io/myblog.github.io.git/2018/09/10/picture-test/</id>
+    <link href="https://satoshi2222.github.io/myblog.github.io.git/picture-test/"/>
+    <id>https://satoshi2222.github.io/myblog.github.io.git/picture-test/</id>
     <published>2018-09-09T20:59:47.000Z</published>
     <updated>2018-09-10T08:26:57.934Z</updated>
     
@@ -40,8 +40,8 @@
   
   <entry>
     <title>テスト練習</title>
-    <link href="https://satoshi2222.github.io/myblog.github.io.git/2018/09/08/My-New-Post/"/>
-    <id>https://satoshi2222.github.io/myblog.github.io.git/2018/09/08/My-New-Post/</id>
+    <link href="https://satoshi2222.github.io/myblog.github.io.git/My-New-Post/"/>
+    <id>https://satoshi2222.github.io/myblog.github.io.git/My-New-Post/</id>
     <published>2018-09-07T18:03:20.771Z</published>
     <updated>2018-09-10T08:24:11.551Z</updated>
     
@@ -61,8 +61,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://satoshi2222.github.io/myblog.github.io.git/2018/09/07/hello-world/"/>
-    <id>https://satoshi2222.github.io/myblog.github.io.git/2018/09/07/hello-world/</id>
+    <link href="https://satoshi2222.github.io/myblog.github.io.git/hello-world/"/>
+    <id>https://satoshi2222.github.io/myblog.github.io.git/hello-world/</id>
     <published>2018-09-06T20:55:48.062Z</published>
     <updated>2018-09-09T19:46:30.829Z</updated>
     
