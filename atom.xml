@@ -6,7 +6,7 @@
   <link href="/myblog.github.io/atom.xml" rel="self"/>
   
   <link href="https://satoshi2222.github.io/myblog.github.io.git/"/>
-  <updated>2018-09-10T08:26:57.934Z</updated>
+  <updated>2018-09-10T20:21:14.070Z</updated>
   <id>https://satoshi2222.github.io/myblog.github.io.git/</id>
   
   <author>
@@ -21,41 +21,46 @@
     <link href="https://satoshi2222.github.io/myblog.github.io.git/picture-test/"/>
     <id>https://satoshi2222.github.io/myblog.github.io.git/picture-test/</id>
     <published>2018-09-09T20:59:47.000Z</published>
-    <updated>2018-09-10T08:26:57.934Z</updated>
+    <updated>2018-09-10T20:21:14.070Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="picture_test/enter.jpg" alt="enter"></p><h2 id="h2"><a href="#h2" class="headerlink" title="h2"></a>h2</h2><p><img src="images/enter.jpg" alt="alt" title="title"><br>=&gt;<br><img src="enter.jpg" alt="alt" title="aa"><br><img src="/myblog.github.io/picture-test/enter.jpg" title="Image"></p>]]></content>
+    <content type="html"><![CDATA[<!-- ![enter](picture_test/enter.jpg) --><h2 id="h2"><a href="#h2" class="headerlink" title="h2"></a>h2</h2><p><img src="enter.jpg" alt="alt" title="aa"><br></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;picture_test/enter.jpg&quot; alt=&quot;enter&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;h2&quot;&gt;&lt;a href=&quot;#h2&quot; class=&quot;headerlink&quot; title=&quot;h2&quot;&gt;&lt;/a&gt;h2&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;images
+        &lt;!-- ![enter](picture_test/enter.jpg) --&gt;
+&lt;h2 id=&quot;h2&quot;&gt;&lt;a href=&quot;#h2&quot; class=&quot;headerlink&quot; title=&quot;h2&quot;&gt;&lt;/a&gt;h2&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;enter.jpg&quot; alt=&quot;al
       
     
     </summary>
     
+    
+      <category term="test" scheme="https://satoshi2222.github.io/myblog.github.io.git/tags/test/"/>
     
   </entry>
   
   <entry>
-    <title>テスト練習</title>
+    <title>テスト</title>
     <link href="https://satoshi2222.github.io/myblog.github.io.git/My-New-Post/"/>
     <id>https://satoshi2222.github.io/myblog.github.io.git/My-New-Post/</id>
     <published>2018-09-07T18:03:20.771Z</published>
-    <updated>2018-09-10T08:24:11.551Z</updated>
+    <updated>2018-09-10T20:29:15.434Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="あれこれ"><a href="#あれこれ" class="headerlink" title="あれこれ"></a>あれこれ</h2><h3 id="あれこれ-1"><a href="#あれこれ-1" class="headerlink" title="あれこれ"></a>あれこれ</h3><p><a href="https://www.google.co.jp/" target="_blank" rel="noopener">aタグ(google)</a><br><!-- ![画像](/yyyy/mm/dd/記事タイトル/ファイル名 "キャプチャです") --><br><!-- <img src="_posts/My-New-Post/sky.jpg" alt="sora"> --><br><img src="sky.jpg" alt="Image"> -&gt; <img src="/myblog.github.io/My-New-Post/sky.jpg" title="Image"></p><ul><li><p>リスト1</p><ul><li>ネスト リスト１<br>   なにか説明</li></ul></li><li><p>食べ物</p><ul><li>みかん</li><li>ばなな</li><li>りんご</li><li>いちご</li></ul></li></ul><ol><li>みかん</li><li>ばなな</li><li>りんご</li><li>いちご</li></ol><blockquote><p>引用(blockquote)</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<!-- ![Image](sky.jpg) --><h2 id="空の画像"><a href="#空の画像" class="headerlink" title="空の画像"></a>空の画像</h2><img src="/myblog.github.io/My-New-Post/sky.jpg" title="Image"><p>きれいな青空</p><h2 id="ENTER"><a href="#ENTER" class="headerlink" title="ENTER"></a>ENTER</h2><p><img src="enter.jpg" alt="enter" title="aa"></p><h3 id="リスト"><a href="#リスト" class="headerlink" title="リスト"></a>リスト</h3><ul><li><p>リスト1</p><ul><li>ネスト リスト１<br>   なにか説明</li></ul></li><li><p>食べ物</p><ul><li>みかん</li><li>ばなな</li><li>りんご</li><li>いちご</li></ul></li></ul><ol><li>みかん</li><li>ばなな</li><li>りんご</li><li>いちご</li></ol><blockquote><p>引用(blockquote)</p></blockquote>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;あれこれ&quot;&gt;&lt;a href=&quot;#あれこれ&quot; class=&quot;headerlink&quot; title=&quot;あれこれ&quot;&gt;&lt;/a&gt;あれこれ&lt;/h2&gt;&lt;h3 id=&quot;あれこれ-1&quot;&gt;&lt;a href=&quot;#あれこれ-1&quot; class=&quot;headerlink&quot; title=&quot;あれこれ&quot;
+        &lt;!-- ![Image](sky.jpg) --&gt;
+&lt;h2 id=&quot;空の画像&quot;&gt;&lt;a href=&quot;#空の画像&quot; class=&quot;headerlink&quot; title=&quot;空の画像&quot;&gt;&lt;/a&gt;空の画像&lt;/h2&gt;&lt;img src=&quot;/myblog.github.io/My-New-Pos
       
     
     </summary>
     
+    
+      <category term="その他" scheme="https://satoshi2222.github.io/myblog.github.io.git/tags/%E3%81%9D%E3%81%AE%E4%BB%96/"/>
     
   </entry>
   
