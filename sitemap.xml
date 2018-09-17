@@ -2,37 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://satoshi2222.github.io/myblog.github.io.git/about/</loc>
+    
+    <lastmod>2018-09-17T21:59:33.516Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://satoshi2222.github.io/myblog.github.io.git/about/index.html</loc>
+    
+    <lastmod>2018-09-17T21:47:56.199Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://satoshi2222.github.io/myblog.github.io.git/hexo3/</loc>
+    
+    <lastmod>2018-09-17T21:24:11.606Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://satoshi2222.github.io/myblog.github.io.git/hexo2/</loc>
     
-    <lastmod>2018-09-17T10:40:13.926Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://satoshi2222.github.io/myblog.github.io.git/hexo1/</loc>
-    
-    <lastmod>2018-09-16T22:19:23.069Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://satoshi2222.github.io/myblog.github.io.git/test/</loc>
-    
-    <lastmod>2018-09-16T20:42:20.393Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://satoshi2222.github.io/myblog.github.io.git/tags/index.html</loc>
-    
-    <lastmod>2018-09-10T09:57:08.892Z</lastmod>
+    <lastmod>2018-09-17T21:22:13.667Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://satoshi2222.github.io/myblog.github.io.git/hello-world/</loc>
     
-    <lastmod>2018-09-09T19:46:30.829Z</lastmod>
+    <lastmod>2018-09-17T21:10:29.223Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://satoshi2222.github.io/myblog.github.io.git/hexo1/</loc>
+    
+    <lastmod>2018-09-17T20:43:13.029Z</lastmod>
     
   </url>
   

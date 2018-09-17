@@ -5,21 +5,21 @@
   
 
   
-  <title>Hexoでブログを書く(1) | WebMemo</title>
+  <title>Hexoでブログを書く 1 | WebMemo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="google-site-verification" content="YvmUAfawhSyphEgaYekvEV4ZwArmSTIKYRpO3eTJefQ" />  
   <meta name="description" content="Hexoとは 静的サイトジェネレーターで簡単にシンプルなブログが作れる プラグインも豊富でGitHubPagesなどのサービスを使えば無料でサイトを作成できる Markdownの記事書いて、記事の作成もコマンドから行える node.js製なのでJavaScriptによる拡張が可能である データベース不要で、ページの表示が速い 脱CMSで、WordPrssのような環境依存がないこのように色々あるが">
 <meta name="keywords" content="hexo,blog,GitHub">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexoでブログを書く(1)">
+<meta property="og:title" content="Hexoでブログを書く 1">
 <meta property="og:url" content="https://satoshi2222.github.io/myblog.github.io.git/hexo1/index.html">
 <meta property="og:site_name" content="WebMemo">
 <meta property="og:description" content="Hexoとは 静的サイトジェネレーターで簡単にシンプルなブログが作れる プラグインも豊富でGitHubPagesなどのサービスを使えば無料でサイトを作成できる Markdownの記事書いて、記事の作成もコマンドから行える node.js製なのでJavaScriptによる拡張が可能である データベース不要で、ページの表示が速い 脱CMSで、WordPrssのような環境依存がないこのように色々あるが">
 <meta property="og:locale" content="ja">
 <meta property="og:image" content="https://satoshi2222.github.io/myblog.github.io/hexo1/hexo_pic.png">
-<meta property="og:updated_time" content="2018-09-16T22:19:23.069Z">
+<meta property="og:updated_time" content="2018-09-17T20:43:13.029Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexoでブログを書く(1)">
+<meta name="twitter:title" content="Hexoでブログを書く 1">
 <meta name="twitter:description" content="Hexoとは 静的サイトジェネレーターで簡単にシンプルなブログが作れる プラグインも豊富でGitHubPagesなどのサービスを使えば無料でサイトを作成できる Markdownの記事書いて、記事の作成もコマンドから行える node.js製なのでJavaScriptによる拡張が可能である データベース不要で、ページの表示が速い 脱CMSで、WordPrssのような環境依存がないこのように色々あるが">
 <meta name="twitter:image" content="https://satoshi2222.github.io/myblog.github.io/hexo1/hexo_pic.png">
   
@@ -44,7 +44,7 @@
       </h1>
       
         <h2 id="subtitle-wrap">
-          <a href="/myblog.github.io/" id="subtitle">調べたことをメモ</a>
+          <a href="/myblog.github.io/" id="subtitle">調べながらメモしていくブログです。</a>
         </h2>
       
     </div>
@@ -56,7 +56,7 @@
         
           <a class="main-nav-link" href="/myblog.github.io/archives">Archives</a>
         
-          <a class="main-nav-link" href="/myblog.github.io/tags">tag</a>
+          <a class="main-nav-link" href="/myblog.github.io/about">about</a>
         
       </nav>
       <nav id="sub-nav">
@@ -84,7 +84,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hexoでブログを書く(1)
+      Hexoでブログを書く 1
     </h1>
   
 
@@ -93,7 +93,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><br><br><img src="/myblog.github.io/hexo1/hexo_pic.png" title="Image"><br><br></p>
-<h2 id="Hexoとは"><a href="#Hexoとは" class="headerlink" title="Hexoとは"></a>Hexoとは</h2><ul>
+<h1 id="Hexoとは"><a href="#Hexoとは" class="headerlink" title="Hexoとは"></a>Hexoとは</h1><ul>
 <li>静的サイトジェネレーターで簡単にシンプルなブログが作れる</li>
 <li>プラグインも豊富で<a href="https://pages.github.com/" target="_blank" rel="noopener">GitHubPages</a>などのサービスを使えば無料でサイトを作成できる</li>
 <li>Markdownの記事書いて、記事の作成もコマンドから行える</li>
@@ -101,6 +101,7 @@
 <li>データベース不要で、ページの表示が速い</li>
 <li>脱CMSで、WordPrssのような環境依存がない<br>このように色々あるが、簡単に言うとMarkdownで書かれたファイルなどからHTML/CSS/JSを生成してくれるというもので、似たようなツールとして<a href="https://jekyllrb-ja.github.io/" target="_blank" rel="noopener">Jekyll</a>や<a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>などがある。</li>
 </ul>
+<a id="more"></a>
 <h2 id="Hexoをインストール"><a href="#Hexoをインストール" class="headerlink" title="Hexoをインストール"></a>Hexoをインストール</h2><p>とりあえずGitで公開するので、gitとNode.jsが必要<br>gitでリポジトリ作成済なので<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure></p>
 <p>公式どおりにインストールする</p>
 <h2 id="作業ディレクトリ作成"><a href="#作業ディレクトリ作成" class="headerlink" title="作業ディレクトリ作成"></a>作業ディレクトリ作成</h2><p>initでウェブサイト初期化、サイト用のフォルダを生成。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init ディレクトリ名</span><br></pre></td></tr></table></figure></p>
@@ -108,7 +109,7 @@
 <p>これで、Hexoに必要なパッケージなどがインストールされる</p>
 <h2 id="localで立ち上げて確認する"><a href="#localで立ち上げて確認する" class="headerlink" title="localで立ち上げて確認する"></a>localで立ち上げて確認する</h2><p>hexo serverでコマンド起動(hexo sでもよい)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></p>
 <p>プラウザのアドレスバーに<a href="http://localhost:4000/と入力" target="_blank" rel="noopener">http://localhost:4000/と入力</a><br>これでサイトが確認できる<br>終了するときはCtrl+C</p>
-<h2 id="gitにdeployする-公開できるように設定"><a href="#gitにdeployする-公開できるように設定" class="headerlink" title="gitにdeployする(公開できるように設定)"></a>gitにdeployする(公開できるように設定)</h2><p>_congig.ymlというファイルを編集する<br>拡張子ymlはyamlで構造化データの表現方法<br>各種設定ファイルなどで使う<br>公式サイトにhexo-deployer-gitをインストールしてと書いてあるので<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
+<h2 id="gitにdeployする-公開できるように設定"><a href="#gitにdeployする-公開できるように設定" class="headerlink" title="gitにdeployする(公開できるように設定)"></a>gitにdeployする(公開できるように設定)</h2><p>_congig.ymlというファイルを編集する<br>拡張子ymlはyamlで構造化データの表現方法<br>各種設定ファイルなどで使う<br>公式サイトにgitを使う場合はhexo-deployer-gitをインストールしてと書いてあるので<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
 <p>これでgitに公開する機能がインストールされる</p>
 <p>deployの項目の編集<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git   </span><br><span class="line">  repo: repo: (githubのURLをそのまま貼り付ける)</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
 <p>リポジトリ名に.github.ioをつけたほうがいいかもしれない</p>
@@ -122,7 +123,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://satoshi2222.github.io/myblog.github.io.git/hexo1/" data-id="cjm61yycz00002kw2xe88zemx" class="article-share-link">共有</a>
+      <a data-url="https://satoshi2222.github.io/myblog.github.io.git/hexo1/" data-id="cjm6tipvx00025cw2eghnlsmk" class="article-share-link">共有</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/GitHub/">GitHub</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/blog/">blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/hexo/">hexo</a></li></ul>
@@ -137,15 +138,15 @@
       <strong class="article-nav-caption">次の記事</strong>
       <div class="article-nav-title">
         
-          Hexoでブログを書く(2)
+          Hexoでブログを書く 2
         
       </div>
     </a>
   
   
-    <a href="/myblog.github.io/test/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/myblog.github.io/about/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">前の記事</strong>
-      <div class="article-nav-title">テスト</div>
+      <div class="article-nav-title">はじめに</div>
     </a>
   
 </nav>
@@ -196,15 +197,19 @@
       <ul>
         
           <li>
-            <a href="/myblog.github.io/hexo2/">Hexoでブログを書く(2)</a>
+            <a href="/myblog.github.io/hexo3/">Hexoでブログを書く 3</a>
           </li>
         
           <li>
-            <a href="/myblog.github.io/hexo1/">Hexoでブログを書く(1)</a>
+            <a href="/myblog.github.io/hexo2/">Hexoでブログを書く 2</a>
           </li>
         
           <li>
-            <a href="/myblog.github.io/test/">テスト</a>
+            <a href="/myblog.github.io/hexo1/">Hexoでブログを書く 1</a>
+          </li>
+        
+          <li>
+            <a href="/myblog.github.io/about/">はじめに</a>
           </li>
         
           <li>
@@ -235,7 +240,7 @@
   
     <a href="/myblog.github.io/archives" class="mobile-nav-link">Archives</a>
   
-    <a href="/myblog.github.io/tags" class="mobile-nav-link">tag</a>
+    <a href="/myblog.github.io/about" class="mobile-nav-link">about</a>
   
 </nav>
     
