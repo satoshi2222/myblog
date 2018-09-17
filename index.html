@@ -7,6 +7,7 @@
   
   <title>WebMemo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="google-site-verification" content="YvmUAfawhSyphEgaYekvEV4ZwArmSTIKYRpO3eTJefQ" />  
   <meta property="og:type" content="website">
 <meta property="og:title" content="WebMemo">
 <meta property="og:url" content="https://satoshi2222.github.io/myblog.github.io.git/index.html">
@@ -64,10 +65,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-picture-test" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-hexo2" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/myblog.github.io/picture-test/" class="article-date">
-  <time datetime="2018-09-09T20:59:47.000Z" itemprop="datePublished">2018-09-10</time>
+    <a href="/myblog.github.io/hexo2/" class="article-date">
+  <time datetime="2018-09-16T20:40:08.000Z" itemprop="datePublished">2018-09-17</time>
 </a>
     
   </div>
@@ -78,7 +79,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/myblog.github.io/picture-test/">Hexoでブログを書く(1)</a>
+      <a class="article-title" href="/myblog.github.io/hexo2/">Hexoでブログを書く(2)</a>
     </h1>
   
 
@@ -86,37 +87,21 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><br><br><img src="/myblog.github.io/picture-test/hexo_pic.png" title="Image"><br><br></p>
-<h2 id="Hexoとは"><a href="#Hexoとは" class="headerlink" title="Hexoとは"></a>Hexoとは</h2><ul>
-<li>静的サイトジェネレーターで簡単にシンプルなブログが作れる</li>
-<li>プラグインも豊富で<a href="https://pages.github.com/" target="_blank" rel="noopener">GitHubPages</a>などのサービスを使えば無料でサイトを作成できる</li>
-<li>Markdownの記事書いて、記事の作成もコマンドから行える</li>
-<li>node.js製なのでJavaScriptによる拡張が可能である</li>
-<li>データベース不要で、ページの表示が速い</li>
-<li>脱CMSで、WordPrssのような環境依存がない<br>このように色々あるが、簡単に言うとMarkdownで書かれたファイルなどからHTML/CSS/JSを生成してくれるというもので、似たようなツールとして<a href="https://jekyllrb-ja.github.io/" target="_blank" rel="noopener">Jekyll</a>や<a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>などがある。</li>
-</ul>
-<h2 id="Hexoをインストール"><a href="#Hexoをインストール" class="headerlink" title="Hexoをインストール"></a>Hexoをインストール</h2><p>とりあえずGitで公開するので、gitとNode.jsが必要<br>gitでリポジトリ作成済なので<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure></p>
-<p>公式どおりにインストールする</p>
-<h2 id="作業ディレクトリ作成"><a href="#作業ディレクトリ作成" class="headerlink" title="作業ディレクトリ作成"></a>作業ディレクトリ作成</h2><p>作業したい場所で<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init ディレクトリ名</span><br></pre></td></tr></table></figure></p>
-<p>cd ディレクトリ名で移動して<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure></p>
-<p>これで、Hexoに必要なパッケージなどがインストールされる</p>
-<h2 id="localで立ち上げて確認する"><a href="#localで立ち上げて確認する" class="headerlink" title="localで立ち上げて確認する"></a>localで立ち上げて確認する</h2><p>hexo serverでコマンド起動(hexo sでもよい)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></p>
-<p>プラウザのアドレスバーに<a href="http://localhost:4000/と入力" target="_blank" rel="noopener">http://localhost:4000/と入力</a><br>これでサイトが確認できる<br>終了するときはCtrl+C</p>
-<h2 id="gitにdeployする-公開できるように設定"><a href="#gitにdeployする-公開できるように設定" class="headerlink" title="gitにdeployする(公開できるように設定)"></a>gitにdeployする(公開できるように設定)</h2><p>_congig.ymlというファイルを編集する<br>拡張子ymlはyamlで構造化データの表現方法<br>各種設定ファイルなどで使う<br>公式サイトにhexo-deployer-gitをインストールしてと書いてあるので<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
-<p>これでgitに公開する機能がインストールされる</p>
-<p>deployの項目の編集<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git   </span><br><span class="line">  repo: repo: (githubのURLをそのまま貼り付ける)</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
-<p>リポジトリ名に.github.ioをつけたほうがいいかもしれない</p>
-<p>次にURLの項目の編集<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># URL</span><br><span class="line">url: https://(ユーザーネーム).github.io/(リポジトリ名)/</span><br><span class="line">root: (リポジトリ名)</span><br></pre></td></tr></table></figure></p>
-<p>サブドメインでやる場合はrootをしっかりと設定するでないと正しく表示されない<br>独自ドメインを使用する場合は<a href="https://help.github.com/articles/using-a-custom-domain-with-github-pages/" target="_blank" rel="noopener">GitHubHelp</a>などを見て設定する</p>
-<h2 id="その他設定"><a href="#その他設定" class="headerlink" title="その他設定"></a>その他設定</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: (ブログ名)</span><br><span class="line">subtitle: (サブタイトル)</span><br><span class="line">description:</span><br><span class="line">keywords:</span><br><span class="line">author: (名前)</span><br><span class="line">language: ja</span><br><span class="line">timezone: Asia/Tokyo</span><br></pre></td></tr></table></figure>
-<h2 id="静的ファイルを生成して展開する"><a href="#静的ファイルを生成して展開する" class="headerlink" title="静的ファイルを生成して展開する"></a>静的ファイルを生成して展開する</h2><p>静的ファイル生成するコマンドはhexo generate<br>生成して展開する場合は<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate --deploy </span><br><span class="line">$ hexo deploy --generate</span><br></pre></td></tr></table></figure></p>
-<p>次のいずれかのコマンドを実行する<br>両者に違いはない<br>上記のコマンドのショートカット<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy -g</span><br></pre></td></tr></table></figure></p>
-<p>これでさっき入力したアドレスにアクセスするとページが表示されるはず<br>(反映に時間がかかる場合がある)</p>
+        <p><br><br><img src="/myblog.github.io/hexo2/hexo_pic.png" title="Image"><br><br></p>
+<h2 id="記事を投稿する"><a href="#記事を投稿する" class="headerlink" title="記事を投稿する"></a>記事を投稿する</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new 記事名</span><br></pre></td></tr></table></figure>
+<p>これで/source/_posts/に.mdのファイルができる<br>.mdファイルを編集して記事をmarkdown方式で書く</p>
+<h2 id="テーマを変更する"><a href="#テーマを変更する" class="headerlink" title="テーマを変更する"></a>テーマを変更する</h2><p><a href="https://hexo.io/themes/" target="_blank" rel="noopener">HexoThemes</a>ここからテーマを選ぶ<br>100種類以上はある<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone</span><br></pre></td></tr></table></figure></p>
+<p>上記のコマンドで好きなテーマをクローンする<br>直接ダウンロードしても大丈夫<br>そしてconfig.ymlのtheme:の名前をダウンロードしたものに変更する<br>下記は初期値<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: landscape</span><br></pre></td></tr></table></figure></p>
+<p>テーマを変更すると必要なプラグインが違ったり仕様がそれぞれ違うので今回はやらない<br>(日本語情報少ない…)</p>
+<h2 id="画像を表示する"><a href="#画像を表示する" class="headerlink" title="画像を表示する"></a>画像を表示する</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![alt](画像URL)</span><br></pre></td></tr></table></figure>
+<p>他のページで参照された時に表示されない場合<br>config.ymlの# Writingの項目post_asset_folderをtrueにする(デフォルト値はfalse)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br></pre></td></tr></table></figure></p>
+<p>Asset機能を有効にしたのでpostを作成したときに同じ名前のAssetフォルダができる<br>そこに画像を格納する<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img 画像URL Image %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>これで画像が表示されるはず<br>だめならプラグインを入れて対処する</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://satoshi2222.github.io/myblog.github.io.git/picture-test/" data-id="cjly3d4h100017cw2vbm5ayct" class="article-share-link">共有</a>
+      <a data-url="https://satoshi2222.github.io/myblog.github.io.git/hexo2/" data-id="cjm61yydk00042kw2aqkpxxgj" class="article-share-link">共有</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/GitHub/">GitHub</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/blog/">blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/hexo/">hexo</a></li></ul>
@@ -128,9 +113,73 @@
 
 
   
-    <article id="post-My-New-Post" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-hexo1" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/myblog.github.io/My-New-Post/" class="article-date">
+    <a href="/myblog.github.io/hexo1/" class="article-date">
+  <time datetime="2018-09-09T20:59:47.000Z" itemprop="datePublished">2018-09-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/myblog.github.io/hexo1/">Hexoでブログを書く(1)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><br><br><img src="/myblog.github.io/hexo1/hexo_pic.png" title="Image"><br><br></p>
+<h2 id="Hexoとは"><a href="#Hexoとは" class="headerlink" title="Hexoとは"></a>Hexoとは</h2><ul>
+<li>静的サイトジェネレーターで簡単にシンプルなブログが作れる</li>
+<li>プラグインも豊富で<a href="https://pages.github.com/" target="_blank" rel="noopener">GitHubPages</a>などのサービスを使えば無料でサイトを作成できる</li>
+<li>Markdownの記事書いて、記事の作成もコマンドから行える</li>
+<li>node.js製なのでJavaScriptによる拡張が可能である</li>
+<li>データベース不要で、ページの表示が速い</li>
+<li>脱CMSで、WordPrssのような環境依存がない<br>このように色々あるが、簡単に言うとMarkdownで書かれたファイルなどからHTML/CSS/JSを生成してくれるというもので、似たようなツールとして<a href="https://jekyllrb-ja.github.io/" target="_blank" rel="noopener">Jekyll</a>や<a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>などがある。</li>
+</ul>
+<h2 id="Hexoをインストール"><a href="#Hexoをインストール" class="headerlink" title="Hexoをインストール"></a>Hexoをインストール</h2><p>とりあえずGitで公開するので、gitとNode.jsが必要<br>gitでリポジトリ作成済なので<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure></p>
+<p>公式どおりにインストールする</p>
+<h2 id="作業ディレクトリ作成"><a href="#作業ディレクトリ作成" class="headerlink" title="作業ディレクトリ作成"></a>作業ディレクトリ作成</h2><p>initでウェブサイト初期化、サイト用のフォルダを生成。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init ディレクトリ名</span><br></pre></td></tr></table></figure></p>
+<p>cd ディレクトリ名で移動して<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure></p>
+<p>これで、Hexoに必要なパッケージなどがインストールされる</p>
+<h2 id="localで立ち上げて確認する"><a href="#localで立ち上げて確認する" class="headerlink" title="localで立ち上げて確認する"></a>localで立ち上げて確認する</h2><p>hexo serverでコマンド起動(hexo sでもよい)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></p>
+<p>プラウザのアドレスバーに<a href="http://localhost:4000/と入力" target="_blank" rel="noopener">http://localhost:4000/と入力</a><br>これでサイトが確認できる<br>終了するときはCtrl+C</p>
+<h2 id="gitにdeployする-公開できるように設定"><a href="#gitにdeployする-公開できるように設定" class="headerlink" title="gitにdeployする(公開できるように設定)"></a>gitにdeployする(公開できるように設定)</h2><p>_congig.ymlというファイルを編集する<br>拡張子ymlはyamlで構造化データの表現方法<br>各種設定ファイルなどで使う<br>公式サイトにhexo-deployer-gitをインストールしてと書いてあるので<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
+<p>これでgitに公開する機能がインストールされる</p>
+<p>deployの項目の編集<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git   </span><br><span class="line">  repo: repo: (githubのURLをそのまま貼り付ける)</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
+<p>リポジトリ名に.github.ioをつけたほうがいいかもしれない</p>
+<p>次にURLの項目の編集<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># URL</span><br><span class="line">url: https://(ユーザーネーム).github.io/(リポジトリ名)/</span><br><span class="line">root: (リポジトリ名)</span><br></pre></td></tr></table></figure></p>
+<p><em>サブドメインでやる場合はrootをしっかりと設定しないと正しく表示されない</em><br>独自ドメインを使用する場合は<a href="https://help.github.com/articles/using-a-custom-domain-with-github-pages/" target="_blank" rel="noopener">GitHubHelp</a>などを見て設定する</p>
+<h2 id="その他設定"><a href="#その他設定" class="headerlink" title="その他設定"></a>その他設定</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: (ブログ名)</span><br><span class="line">subtitle: (サブタイトル)</span><br><span class="line">description:</span><br><span class="line">keywords:</span><br><span class="line">author: (名前)</span><br><span class="line">language: ja</span><br><span class="line">timezone: Asia/Tokyo</span><br></pre></td></tr></table></figure>
+<h2 id="静的ファイルを生成して展開する"><a href="#静的ファイルを生成して展開する" class="headerlink" title="静的ファイルを生成して展開する"></a>静的ファイルを生成して展開する</h2><p>静的ファイル生成するコマンドはhexo generate<br>生成して展開する場合は<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate --deploy </span><br><span class="line">$ hexo deploy --generate</span><br></pre></td></tr></table></figure></p>
+<p>次のいずれかのコマンドを実行する<br>両者に違いはない<br>上記のコマンドのショートカット<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy -g</span><br></pre></td></tr></table></figure></p>
+<p>これでさっき入力したアドレスにアクセスするとページが表示されるはず<br>(反映に時間がかかる場合がある)<br>deploy時にパスワードを聞かれるので、GitHubで設定したパスワードを入力する<br>更新する時もdeployする</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://satoshi2222.github.io/myblog.github.io.git/hexo1/" data-id="cjm61yycz00002kw2xe88zemx" class="article-share-link">共有</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/GitHub/">GitHub</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/blog/">blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/hexo/">hexo</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/myblog.github.io/test/" class="article-date">
   <time datetime="2018-09-07T18:03:20.771Z" itemprop="datePublished">2018-09-08</time>
 </a>
     
@@ -142,7 +191,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/myblog.github.io/My-New-Post/">テスト</a>
+      <a class="article-title" href="/myblog.github.io/test/">テスト</a>
     </h1>
   
 
@@ -151,7 +200,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <!-- ![Image](sky.jpg) -->
-<h2 id="空の画像"><a href="#空の画像" class="headerlink" title="空の画像"></a>空の画像</h2><img src="/myblog.github.io/My-New-Post/sky.jpg" title="Image">
+<h2 id="空の画像"><a href="#空の画像" class="headerlink" title="空の画像"></a>空の画像</h2>
 <p>きれいな青空</p>
 <h2 id="ENTER"><a href="#ENTER" class="headerlink" title="ENTER"></a>ENTER</h2><p><img src="enter.jpg" alt="enter" title="aa"></p>
 <h3 id="リスト"><a href="#リスト" class="headerlink" title="リスト"></a>リスト</h3><ul>
@@ -182,7 +231,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://satoshi2222.github.io/myblog.github.io.git/My-New-Post/" data-id="cjly3d4gl00007cw27o2ra6d2" class="article-share-link">共有</a>
+      <a data-url="https://satoshi2222.github.io/myblog.github.io.git/test/" data-id="cjm5bvebb0005tgw2dp3hbltb" class="article-share-link">共有</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/その他/">その他</a></li></ul>
@@ -229,7 +278,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://satoshi2222.github.io/myblog.github.io.git/hello-world/" data-id="cjly3d4hw00077cw27jel64e8" class="article-share-link">共有</a>
+      <a data-url="https://satoshi2222.github.io/myblog.github.io.git/hello-world/" data-id="cjm5bveb50002tgw2oqph7zsy" class="article-share-link">共有</a>
       
       
     </footer>
@@ -262,7 +311,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">タグクラウド</h3>
     <div class="widget tagcloud">
-      <a href="/myblog.github.io/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/myblog.github.io/tags/blog/" style="font-size: 10px;">blog</a> <a href="/myblog.github.io/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/myblog.github.io/tags/その他/" style="font-size: 10px;">その他</a>
+      <a href="/myblog.github.io/tags/GitHub/" style="font-size: 20px;">GitHub</a> <a href="/myblog.github.io/tags/blog/" style="font-size: 20px;">blog</a> <a href="/myblog.github.io/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/myblog.github.io/tags/その他/" style="font-size: 10px;">その他</a>
     </div>
   </div>
 
@@ -284,11 +333,15 @@
       <ul>
         
           <li>
-            <a href="/myblog.github.io/picture-test/">Hexoでブログを書く(1)</a>
+            <a href="/myblog.github.io/hexo2/">Hexoでブログを書く(2)</a>
           </li>
         
           <li>
-            <a href="/myblog.github.io/My-New-Post/">テスト</a>
+            <a href="/myblog.github.io/hexo1/">Hexoでブログを書く(1)</a>
+          </li>
+        
+          <li>
+            <a href="/myblog.github.io/test/">テスト</a>
           </li>
         
           <li>

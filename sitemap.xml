@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://satoshi2222.github.io/myblog.github.io.git/picture-test/</loc>
+    <loc>https://satoshi2222.github.io/myblog.github.io.git/hexo2/</loc>
     
-    <lastmod>2018-09-16T20:22:57.117Z</lastmod>
+    <lastmod>2018-09-17T10:40:13.926Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://satoshi2222.github.io/myblog.github.io.git/My-New-Post/</loc>
+    <loc>https://satoshi2222.github.io/myblog.github.io.git/hexo1/</loc>
     
-    <lastmod>2018-09-10T20:29:15.434Z</lastmod>
+    <lastmod>2018-09-16T22:19:23.069Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://satoshi2222.github.io/myblog.github.io.git/test/</loc>
+    
+    <lastmod>2018-09-16T20:42:20.393Z</lastmod>
     
   </url>
   
