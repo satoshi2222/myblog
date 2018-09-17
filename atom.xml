@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>WebのMemo</title>
+  <title>WebMemo</title>
   
   <subtitle>調べながらメモしていくブログです。</subtitle>
   <link href="/myblog.github.io/atom.xml" rel="self"/>
-  <link href="http://pubsubhubbub.appspot.com" rel="hub"/>
+  
   <link href="https://satoshi2222.github.io/myblog.github.io.git/"/>
   <updated>2018-09-17T21:24:11.606Z</updated>
   <id>https://satoshi2222.github.io/myblog.github.io.git/</id>
@@ -103,9 +103,9 @@
     <link href="https://satoshi2222.github.io/myblog.github.io.git/about/"/>
     <id>https://satoshi2222.github.io/myblog.github.io.git/about/</id>
     <published>2018-09-07T18:03:20.771Z</published>
-    <updated>2018-09-17T22:01:58.255Z</updated>
+    <updated>2018-09-17T22:04:40.280Z</updated>
     
-    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/about/top.jpg" title="Image"><br><br></p><h1 id="ブログを作る"><a href="#ブログを作る" class="headerlink" title="ブログを作る"></a>ブログを作る</h1><p>色々と知識を増やしたかったので、とりあえずブログを作ってみることに。<br>WordPressなどを使うことも考えたが、練習なので無料で済ましたいと思い<br>調べたところGitHub Pagesを使えば無料でブログを公開できることが分かったので、<br>静的サイトジェネレーターのHexoを使ってサイトを作成することにしてみました。</p><a id="more"></a><h2 id="WebのMemoについて"><a href="#WebのMemoについて" class="headerlink" title="WebのMemoについて"></a>WebのMemoについて</h2><p>分からないことを調べながらメモしていくサイトです。</p>]]></content>
+    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/about/top.jpg" title="Image"><br><br></p><h1 id="ブログを作る"><a href="#ブログを作る" class="headerlink" title="ブログを作る"></a>ブログを作る</h1><p>色々と知識を増やしたかったので、とりあえずブログを作ってみることに。<br>WordPressなどを使うことも考えたが、練習なので無料で済ましたいと思い<br>調べたところGitHub Pagesを使えば無料でブログを公開できることが分かったので、<br>静的サイトジェネレーターのHexoを使ってサイトを作成することにしてみました。</p><a id="more"></a><h2 id="WebMemoについて"><a href="#WebMemoについて" class="headerlink" title="WebMemoについて"></a>WebMemoについて</h2><p>分からないことを調べながらメモしていくサイトです。</p>]]></content>
     
     <summary type="html">
     
