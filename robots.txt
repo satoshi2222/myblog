@@ -1,2 +1,2 @@
 User-agent: Googlebot
-Sitemap: /sitemap.xml
+Sitemap: https://satoshi2222.github.io/myblog.github.io/sitemap.xml
