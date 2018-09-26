@@ -17,7 +17,7 @@
 <meta property="og:description" content="justify-contentについてjustify-content: centerを使って中央に寄せると最後の行に余った要素があると中央によってしまいます。かといって初期値のflex-startだと全体が左寄せになってしまう。他の方法でも良いが、flexはとても便利なのでflexboxだけで解決する方法を探していくと、解決法がネットにありました。">
 <meta property="og:locale" content="ja">
 <meta property="og:image" content="https://satoshi2222.github.io/myblog.github.io/cssflex/htmlcssjs.png">
-<meta property="og:updated_time" content="2018-09-26T03:22:56.197Z">
+<meta property="og:updated_time" content="2018-09-26T11:39:49.364Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="cssのflexで中央に寄せつつ、最後の行は左寄せにする">
 <meta name="twitter:description" content="justify-contentについてjustify-content: centerを使って中央に寄せると最後の行に余った要素があると中央によってしまいます。かといって初期値のflex-startだと全体が左寄せになってしまう。他の方法でも良いが、flexはとても便利なのでflexboxだけで解決する方法を探していくと、解決法がネットにありました。">
@@ -100,12 +100,12 @@
 <h2 id="html"><a href="#html" class="headerlink" title="html"></a>html</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;wrap&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;list&quot;&gt;</span><br><span class="line">        &lt;img src=&quot;&quot; alt=&quot;&quot; width=”300”height=&quot;400&quot;/&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 <h2 id="css"><a href="#css" class="headerlink" title="css"></a>css</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">  .wrap&#123;</span><br><span class="line">  display: flex;</span><br><span class="line">  flex-flow: row wrap;</span><br><span class="line">  justify-content: center;</span><br><span class="line"></span><br><span class="line">.list.is-empty &#123;</span><br><span class="line">  width:300px;</span><br><span class="line">  height: 0;</span><br><span class="line">  padding-top: 0;</span><br><span class="line">  padding-bottom: 0;</span><br><span class="line">  margin-top: 0;</span><br><span class="line">  margin-bottom: 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="js"><a href="#js" class="headerlink" title="js"></a>js</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var $grid = $(&apos;.wrap&apos;),   </span><br><span class="line">    emptyCells = [],</span><br><span class="line">    i;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">for (i = 0; i &lt; $grid.find(&apos;.list&apos;).length; i++) &#123;</span><br><span class="line">    emptyCells.push($(&apos;&lt;div&gt;&apos;, &#123; class: &apos;list is-empty&apos; &#125;));</span><br><span class="line">&#125;</span><br><span class="line">$grid.append(emptyCells);</span><br></pre></td></tr></table></figure>
-<h2 id="最後に"><a href="#最後に" class="headerlink" title="最後に"></a>最後に</h2><p>計算なしできれいに並べることができたが、cssだけでは不可能なのでjsを使わないのであれば,他の方法でやるほうが良い。</p>
+<h2 id="最後に"><a href="#最後に" class="headerlink" title="最後に"></a>最後に</h2><p>並べる数が変わっても、これで必要な空の部分を埋めてくれていて、余った長さの分は表示されていない。<br>計算なしできれいに並べることができたが、cssだけでは不可能なのでjsを使わないのであれば,他の方法でやるほうが良い。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://satoshi2222.github.io/myblog.github.io.git/cssflex/" data-id="cjmileubr0002pww294cvfkvc" class="article-share-link">共有</a>
+      <a data-url="https://satoshi2222.github.io/myblog.github.io.git/cssflex/" data-id="cjmjm132b0003w8w293e82qmu" class="article-share-link">共有</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/flex/">flex</a></li></ul>
@@ -179,6 +179,10 @@
       <ul>
         
           <li>
+            <a href="/myblog.github.io/hexo5/">Hexoのnewpostのテンプレートを変更する</a>
+          </li>
+        
+          <li>
             <a href="/myblog.github.io/csstext/">cssでテキストを非表示にする</a>
           </li>
         
@@ -192,10 +196,6 @@
         
           <li>
             <a href="/myblog.github.io/hexo3/">Hexoでプラグインを追加する</a>
-          </li>
-        
-          <li>
-            <a href="/myblog.github.io/hexo2/">Hexoで記事投稿</a>
           </li>
         
       </ul>
