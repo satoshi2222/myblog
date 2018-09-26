@@ -6,7 +6,7 @@
   <link href="/myblog.github.io/atom.xml" rel="self"/>
   <link href="http://pubsubhubbub.appspot.com" rel="hub"/>
   <link href="https://satoshi2222.github.io/myblog.github.io.git/"/>
-  <updated>2018-09-19T11:08:46.376Z</updated>
+  <updated>2018-09-26T03:41:39.047Z</updated>
   <id>https://satoshi2222.github.io/myblog.github.io.git/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>cssでテキストを非表示にする</title>
+    <link href="https://satoshi2222.github.io/myblog.github.io.git/csstext/"/>
+    <id>https://satoshi2222.github.io/myblog.github.io.git/csstext/</id>
+    <published>2018-09-26T03:26:59.000Z</published>
+    <updated>2018-09-26T03:41:39.047Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/csstext/htmlcssjs.png" title="Image"><br><br></p><h2 id="要素を消さずに非表示にさせたい"><a href="#要素を消さずに非表示にさせたい" class="headerlink" title="要素を消さずに非表示にさせたい"></a>要素を消さずに非表示にさせたい</h2><p>まとめて消してしまうのではなく他のの要素は残しつつ、文字を非表示させる方法を探していたところ、解決方法がありました。</p><a id="more"></a><p>参考にさせていただいたサイト<br><a href="http://ss-complex.com/css-cleartext/" target="_blank" rel="noopener">CSSで文字テキストを非表示にする（隠す）方法</a></p><h2 id="html"><a href="#html" class="headerlink" title="html"></a>html</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;text&quot;&gt;あいうえお&lt;/div&gt;</span><br></pre></td></tr></table></figure><h2 id="css"><a href="#css" class="headerlink" title="css"></a>css</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">text &#123;</span><br><span class="line">text-indent:100%;</span><br><span class="line">white-space:nowrap;</span><br><span class="line">overflow:hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>これで文字を非表示にすることができる</p><h2 id="最後に"><a href="#最後に" class="headerlink" title="最後に"></a>最後に</h2><p>５年前の情報なので、今は違うやり方がたくさんある可能性がある。<br>情報を見つけ次第、追記していきたい。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/csstext/htmlcssjs.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;要素を消さずに非表示にさせたい&quot;&gt;&lt;a href=&quot;#要素を消さずに非表示にさせたい&quot; class=&quot;headerlink&quot; title=&quot;要素を消さずに非表示にさせたい&quot;&gt;&lt;/a&gt;要素を消さずに非表示にさせたい&lt;/h2&gt;&lt;p&gt;まとめて消してしまうのではなく他のの要素は残しつつ、文字を非表示させる方法を探していたところ、解決方法がありました。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="css" scheme="https://satoshi2222.github.io/myblog.github.io.git/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>cssのflexで中央に寄せつつ、最後の行は左寄せにする</title>
+    <link href="https://satoshi2222.github.io/myblog.github.io.git/cssflex/"/>
+    <id>https://satoshi2222.github.io/myblog.github.io.git/cssflex/</id>
+    <published>2018-09-25T21:22:03.000Z</published>
+    <updated>2018-09-26T03:22:56.197Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/cssflex/htmlcssjs.png" title="Image"><br><br></p><h2 id="justify-contentについて"><a href="#justify-contentについて" class="headerlink" title="justify-contentについて"></a>justify-contentについて</h2><p>justify-content: centerを使って中央に寄せると最後の行に余った要素があると<br>中央によってしまいます。<br>かといって初期値のflex-startだと全体が左寄せになってしまう。<br>他の方法でも良いが、flexはとても便利なのでflexboxだけで解決する方法を探していくと、<br>解決法がネットにありました。</p><a id="more"></a><p>参考にさせていただいたサイト<br><a href="https://qiita.com/QUANON/items/e14949abab3711ca8646" target="_blank" rel="noopener">Flexbox で全体を中央に配置しつつ最後の行を左揃えにする</a></p><p>解決方法としてはJavaScript (jQuery) を使い空の子要素で埋め、<br>左まで詰めるという方法です。</p><h2 id="html"><a href="#html" class="headerlink" title="html"></a>html</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;wrap&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;list&quot;&gt;</span><br><span class="line">        &lt;img src=&quot;&quot; alt=&quot;&quot; width=”300”height=&quot;400&quot;/&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure><h2 id="css"><a href="#css" class="headerlink" title="css"></a>css</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">  .wrap&#123;</span><br><span class="line">  display: flex;</span><br><span class="line">  flex-flow: row wrap;</span><br><span class="line">  justify-content: center;</span><br><span class="line"></span><br><span class="line">.list.is-empty &#123;</span><br><span class="line">  width:300px;</span><br><span class="line">  height: 0;</span><br><span class="line">  padding-top: 0;</span><br><span class="line">  padding-bottom: 0;</span><br><span class="line">  margin-top: 0;</span><br><span class="line">  margin-bottom: 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="js"><a href="#js" class="headerlink" title="js"></a>js</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var $grid = $(&apos;.wrap&apos;),   </span><br><span class="line">    emptyCells = [],</span><br><span class="line">    i;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">for (i = 0; i &lt; $grid.find(&apos;.list&apos;).length; i++) &#123;</span><br><span class="line">    emptyCells.push($(&apos;&lt;div&gt;&apos;, &#123; class: &apos;list is-empty&apos; &#125;));</span><br><span class="line">&#125;</span><br><span class="line">$grid.append(emptyCells);</span><br></pre></td></tr></table></figure><h2 id="最後に"><a href="#最後に" class="headerlink" title="最後に"></a>最後に</h2><p>計算なしできれいに並べることができたが、cssだけでは不可能なのでjsを使わないのであれば,他の方法でやるほうが良い。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/cssflex/htmlcssjs.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;justify-contentについて&quot;&gt;&lt;a href=&quot;#justify-contentについて&quot; class=&quot;headerlink&quot; title=&quot;justify-contentについて&quot;&gt;&lt;/a&gt;justify-contentについて&lt;/h2&gt;&lt;p&gt;justify-content: centerを使って中央に寄せると最後の行に余った要素があると&lt;br&gt;中央によってしまいます。&lt;br&gt;かといって初期値のflex-startだと全体が左寄せになってしまう。&lt;br&gt;他の方法でも良いが、flexはとても便利なのでflexboxだけで解決する方法を探していくと、&lt;br&gt;解決法がネットにありました。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="css" scheme="https://satoshi2222.github.io/myblog.github.io.git/tags/css/"/>
+    
+      <category term="flex" scheme="https://satoshi2222.github.io/myblog.github.io.git/tags/flex/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexoで記事を書く</title>
@@ -141,24 +185,6 @@
     
     
       <category term="その他" scheme="https://satoshi2222.github.io/myblog.github.io.git/tags/%E3%81%9D%E3%81%AE%E4%BB%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://satoshi2222.github.io/myblog.github.io.git/hello-world/"/>
-    <id>https://satoshi2222.github.io/myblog.github.io.git/hello-world/</id>
-    <published>2018-09-06T20:55:48.062Z</published>
-    <updated>2018-09-17T21:10:29.223Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><a id="more"></a><h2 id="Quick-Staraaaat"><a href="#Quick-Staraaaat" class="headerlink" title="Quick Staraaaat"></a>Quick Staraaaat</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-    
-    </summary>
-    
     
   </entry>
   

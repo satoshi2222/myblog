@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://satoshi2222.github.io/myblog.github.io.git/csstext/</loc>
+    
+    <lastmod>2018-09-26T03:41:39.047Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://satoshi2222.github.io/myblog.github.io.git/cssflex/</loc>
+    
+    <lastmod>2018-09-26T03:22:56.197Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://satoshi2222.github.io/myblog.github.io.git/hexo4/</loc>
     
     <lastmod>2018-09-19T11:08:46.376Z</lastmod>
@@ -40,13 +54,6 @@
     <loc>https://satoshi2222.github.io/myblog.github.io.git/hexo3/</loc>
     
     <lastmod>2018-09-17T23:40:01.249Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://satoshi2222.github.io/myblog.github.io.git/hello-world/</loc>
-    
-    <lastmod>2018-09-17T21:10:29.223Z</lastmod>
     
   </url>
   
