@@ -6,7 +6,7 @@
   <link href="/myblog.github.io/atom.xml" rel="self"/>
   <link href="http://pubsubhubbub.appspot.com" rel="hub"/>
   <link href="https://satoshi2222.github.io/myblog.github.io.git/"/>
-  <updated>2018-11-04T23:41:18.091Z</updated>
+  <updated>2018-11-04T23:47:40.116Z</updated>
   <id>https://satoshi2222.github.io/myblog.github.io.git/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://satoshi2222.github.io/myblog.github.io.git/linux/"/>
     <id>https://satoshi2222.github.io/myblog.github.io.git/linux/</id>
     <published>2018-11-04T22:56:20.000Z</published>
-    <updated>2018-11-04T23:41:18.091Z</updated>
+    <updated>2018-11-04T23:47:40.116Z</updated>
     
-    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/linux/Linux-logo.jpg" title="Image"><br><br></p><h2 id="よく使うコマンドを書いておく"><a href="#よく使うコマンドを書いておく" class="headerlink" title="よく使うコマンドを書いておく"></a>よく使うコマンドを書いておく</h2><p>馴染みの少ないコマンド操作なので、確認用にメモ</p><a id="more"></a><table><thead><tr><th>コマンド</th><th>結果</th></tr></thead><tbody><tr><td>pwd</td><td>現在のディレクトリの表示</td></tr><tr><td>ls</td><td>ファイル・ディレクトリの一覧の表示</td></tr><tr><td>cd</td><td>現在のディレクトリの変更</td></tr><tr><td>cd..</td><td>ひとつ前のディレクトリに戻る</td></tr><tr><td>cd ~</td><td>ホームディレクトリに移動 ~(チルダ)</td></tr><tr><td>mkdir</td><td>ディレクトリの作成</td></tr><tr><td>rm</td><td>ファイルやディレクトリの削除</td></tr><tr><td>cp</td><td>ファイルやディレクトリのコピー</td></tr><tr><td>mv</td><td>ファイルやディレクトリの移動</td></tr><tr><td>find</td><td>ファイルやディレクトリの検索</td></tr></tbody></table><h2 id="オプション"><a href="#オプション" class="headerlink" title="オプション"></a>オプション</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ls -a</span><br></pre></td></tr></table></figure><p>のように付け加えることでよりコマンドの付随機能を呼び出せる<br>種類はコマンドによって色々ある</p>]]></content>
+    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/linux/Linux-logo.jpg" title="Image"><br><br></p><h2 id="よく使うコマンドを書いておく"><a href="#よく使うコマンドを書いておく" class="headerlink" title="よく使うコマンドを書いておく"></a>よく使うコマンドを書いておく</h2><p>馴染みの少ないコマンド操作なので、確認用にメモ</p><a id="more"></a><table><thead><tr><th>コマンド</th><th>結果</th></tr></thead><tbody><tr><td>pwd</td><td>現在のディレクトリの表示</td></tr><tr><td>ls</td><td>ファイル・ディレクトリの一覧の表示</td></tr><tr><td>cd</td><td>現在のディレクトリの変更</td></tr><tr><td>cd..</td><td>ひとつ前のディレクトリに戻る</td></tr><tr><td>cd ~</td><td>ホームディレクトリに移動 ~(チルダ)</td></tr><tr><td>mkdir</td><td>ディレクトリの作成</td></tr><tr><td>rm</td><td>ファイルやディレクトリの削除</td></tr><tr><td>cp</td><td>ファイルやディレクトリのコピー</td></tr><tr><td>mv</td><td>ファイルやディレクトリの移動</td></tr><tr><td>find</td><td>ファイルやディレクトリの検索</td></tr><tr><td>cat</td><td>複数のファイルの中身を結合して、標準出力に出力</td></tr><tr><td>less</td><td>ファイルの中身をページ送りしながら表示</td></tr><tr><td>grep</td><td>ファイルや標準入力の中から特定の単語を検索</td></tr></tbody></table><h2 id="オプション"><a href="#オプション" class="headerlink" title="オプション"></a>オプション</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ls -a</span><br></pre></td></tr></table></figure><p>のように付け加えることでよりコマンドの付随機能を呼び出せる<br>種類はコマンドによって色々ある</p>]]></content>
     
     <summary type="html">
     
