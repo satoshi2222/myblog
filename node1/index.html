@@ -5,19 +5,23 @@
   
 
   
-  <title>アーカイブ: 2018/11 | WebMemo</title>
+  <title>Node.jsとは | WebMemo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="google-site-verification" content="YvmUAfawhSyphEgaYekvEV4ZwArmSTIKYRpO3eTJefQ" />  
-  <meta name="description" content="調べたことをメモしていくブログです">
-<meta property="og:type" content="website">
-<meta property="og:title" content="WebMemo">
-<meta property="og:url" content="https://satoshi2222.github.io/myblog.github.io.git/archives/2018/11/index.html">
+  <meta name="description" content="Node.jsとは JavaScriptでプログラミングできる、フレームワークやライブラリではなくサーバサイドのプラットフォーム  サーバーサイドとはサーバークライアント型のサービスのサーバ側のソフトウェアのこと">
+<meta name="keywords" content="node.js">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Node.jsとは">
+<meta property="og:url" content="https://satoshi2222.github.io/myblog.github.io.git/node1/index.html">
 <meta property="og:site_name" content="WebMemo">
-<meta property="og:description" content="調べたことをメモしていくブログです">
+<meta property="og:description" content="Node.jsとは JavaScriptでプログラミングできる、フレームワークやライブラリではなくサーバサイドのプラットフォーム  サーバーサイドとはサーバークライアント型のサービスのサーバ側のソフトウェアのこと">
 <meta property="og:locale" content="ja">
+<meta property="og:image" content="https://satoshi2222.github.io/myblog.github.io/node1/nodelogo.png">
+<meta property="og:updated_time" content="2018-11-17T21:52:17.410Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="WebMemo">
-<meta name="twitter:description" content="調べたことをメモしていくブログです">
+<meta name="twitter:title" content="Node.jsとは">
+<meta name="twitter:description" content="Node.jsとは JavaScriptでプログラミングできる、フレームワークやライブラリではなくサーバサイドのプラットフォーム  サーバーサイドとはサーバークライアント型のサービスのサーバ側のソフトウェアのこと">
+<meta name="twitter:image" content="https://satoshi2222.github.io/myblog.github.io/node1/nodelogo.png">
   
   
     <link rel="icon" href="/favicon.png">
@@ -66,97 +70,69 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/myblog.github.io/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/myblog.github.io/node1/" class="archive-article-date">
-  <time datetime="2018-11-17T20:23:21.000Z" itemprop="datePublished">11月 18</time>
+        <section id="main"><article id="post-node1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/myblog.github.io/node1/" class="article-date">
+  <time datetime="2018-11-17T20:23:21.000Z" itemprop="datePublished">2018-11-18</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/myblog.github.io/node1/">Node.jsとは</a>
+    <h1 class="article-title" itemprop="name">
+      Node.jsとは
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/myblog.github.io/git2/" class="archive-article-date">
-  <time datetime="2018-11-17T14:37:16.000Z" itemprop="datePublished">11月 17</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/myblog.github.io/git2/">Git 用語集</a>
-    </h1>
-  
+        <p><br><br><img src="/myblog.github.io/node1/nodelogo.png" title="Image"><br><br></p>
+<h2 id="Node-jsとは"><a href="#Node-jsとは" class="headerlink" title="Node.jsとは"></a>Node.jsとは</h2><ul>
+<li>JavaScriptでプログラミングできる、フレームワークやライブラリではなくサーバサイドのプラットフォーム<br>  サーバーサイドとはサーバークライアント型のサービスのサーバ側のソフトウェアのこと</li>
+</ul>
+<a id="more"></a>
+<ul>
+<li><p>JavaScriptはブラウザ上で動きをつけるために開発されたプログラミング言語だが、サーバサイドでもJavaScriptを<br>  実行できるようにしてくれるのがNode.js<br>  PHPやJavaなどと同じような使い方ができるということだが、全く一緒ではない<br>  サーバも構築できるし、アプリケーションプログラムも動かせる</p>
+</li>
+<li><p>イベントループを採用している<br>  シングルスレッドでループ処理を回し、キューに溜まったイベントを処理していく方式<br>  リクエストを１つのスレッドで受け取ることができ,スレッドなどのリソース消費が少ない<br>  ブロッキングが発生すると、イベントループ全体がストップしてしまう問題を解決するのが、ノンブロッキングI/O</p>
+</li>
+<li><p>ノンブロッキングI/O（入出力）を採用している<br>  前の処理結果を待たずに他の処理を進めることができる<br>  単一のスレッドでも並列して処理できるようになっている<br>  LINE、Twitter、instagramのようなリアルタイムな反応が必要なWebの分野で活躍する</p>
+</li>
+</ul>
+<p>色々調べたが、実際に利用しないと何が起こってるのか掴みにくいので、ここでは表面的な内容だけにしておく</p>
+<h3 id="Node-jsのインストール-Windows版"><a href="#Node-jsのインストール-Windows版" class="headerlink" title="Node.jsのインストール(Windows版)"></a>Node.jsのインストール(Windows版)</h3><p><a href="https://nodejs.org/ja/" target="_blank" rel="noopener">Node.js</a>公式サイトにて,<br>ダウンロード Windows (x64)推奨版をクリック<br>後は画面にしたがってインストールしていく<br>カスタムインストール画面も追加したいものがなければ、そのままでいい<br>インストールが完了したら、確認するために新しくインストールされたNode.js command prompt起動して<br>バージョンを表示するコマンド<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure></p>
+<p>上記のコマンドを実行<br>インストールしたバージョンが表示されればインストール成功</p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/myblog.github.io/git1/" class="archive-article-date">
-  <time datetime="2018-11-17T11:00:21.000Z" itemprop="datePublished">11月 17</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/myblog.github.io/git1/">GitとGitHub アカウント作成</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/myblog.github.io/linux/" class="archive-article-date">
-  <time datetime="2018-11-04T22:56:20.000Z" itemprop="datePublished">11月 5</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://satoshi2222.github.io/myblog.github.io.git/node1/" data-id="cjolwlvzn000zycw2f3vp9vkd" class="article-share-link">共有</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/myblog.github.io/linux/">基本的なlinuxのコマンド</a>
-    </h1>
-  
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/node-js/">node.js</a></li></ul>
 
-    </header>
+    </footer>
   </div>
-</article>
+  
+    
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/myblog.github.io/git2/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前の記事</strong>
+      <div class="article-nav-title">Git 用語集</div>
+    </a>
   
+</nav>
 
+  
+</article>
 
 </section>
         
