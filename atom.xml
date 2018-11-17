@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>WebMemo</title>
   
-  <subtitle>調べながらメモ</subtitle>
+  <subtitle>調べたことをメモしていきます</subtitle>
   <link href="/myblog.github.io/atom.xml" rel="self"/>
   <link href="http://pubsubhubbub.appspot.com" rel="hub"/>
   <link href="https://satoshi2222.github.io/myblog.github.io.git/"/>
-  <updated>2018-11-04T23:47:40.116Z</updated>
+  <updated>2018-11-17T14:39:55.356Z</updated>
   <id>https://satoshi2222.github.io/myblog.github.io.git/</id>
   
   <author>
@@ -15,6 +15,53 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git 用語集</title>
+    <link href="https://satoshi2222.github.io/myblog.github.io.git/git2/"/>
+    <id>https://satoshi2222.github.io/myblog.github.io.git/git2/</id>
+    <published>2018-11-17T14:37:16.000Z</published>
+    <updated>2018-11-17T14:39:55.356Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/git2/gitlog1.png" title="Image"><br><br></p><h2 id="GitHub用語集"><a href="#GitHub用語集" class="headerlink" title="GitHub用語集"></a>GitHub用語集</h2><p>Gitでよく出てくる用語をメモしておく</p><a id="more"></a><h3 id="リポジトリ-Repository"><a href="#リポジトリ-Repository" class="headerlink" title="リポジトリ(Repository)"></a>リポジトリ(Repository)</h3><p>ソフトウェア開発において、ソースコードや開発に関わるデータをまとめて管理するためのデータの置き場のこと</p><h3 id="フォーク-Fork"><a href="#フォーク-Fork" class="headerlink" title="フォーク(Fork)"></a>フォーク(Fork)</h3><p>他人のリポジトリ(リモートリポジトリ)をコピーして、自分のリポジトリを作成すること</p><h3 id="コミット-Commit"><a href="#コミット-Commit" class="headerlink" title="コミット(Commit)"></a>コミット(Commit)</h3><p>リポジトリになにかしらの変更を入れること</p><h3 id="イシュー-Issue"><a href="#イシュー-Issue" class="headerlink" title="イシュー(Issue)"></a>イシュー(Issue)</h3><p>不具合や要求、その他の設計に関わることなどをイシューとしてまとめて、多くの人で議論するための機能</p><h3 id="ギスト-Gist"><a href="#ギスト-Gist" class="headerlink" title="ギスト(Gist)"></a>ギスト(Gist)</h3><p>メモやコードの断片を気軽に投稿して公開することができる機能</p><h3 id="ブランチ-branch"><a href="#ブランチ-branch" class="headerlink" title="ブランチ(branch)"></a>ブランチ(branch)</h3><p>ある時点のソースコードを分岐させて開発をしたもの<br>複数のメンバーが、同時に機能追加などを行ったりするため並行して行われる複数の機能追加やバージョン管理を支援する機能<br>masterブランチはデフォルトのブランチ</p><h3 id="ステージング-staging-とインデックス-index"><a href="#ステージング-staging-とインデックス-index" class="headerlink" title="ステージング(staging)とインデックス(index)"></a>ステージング(staging)とインデックス(index)</h3><p>いったん変更情報の登録すること<br>変更を保持している領域をインデックスという<br>ワークツリーにあるファイルをローカルリポジトリにコミットするためには、インデックスという場所に、コミット予定のファイルを記録する必要がある</p><h3 id="ワークツリー-working-tree"><a href="#ワークツリー-working-tree" class="headerlink" title="ワークツリー(working tree)"></a>ワークツリー(working tree)</h3><p>まだインデックスにステージングされていないファイル変更のこと<br>ローカル環境内のディレクトリのこと</p><h3 id="マージ-merge"><a href="#マージ-merge" class="headerlink" title="マージ(merge)"></a>マージ(merge)</h3><p>ブランチの間で変更情報を取り込むこと<br>リモートの更新情報をローカルに反映させる</p><h3 id="コンフリクト-Conflict"><a href="#コンフリクト-Conflict" class="headerlink" title="コンフリクト(Conflict)"></a>コンフリクト(Conflict)</h3><p>あるファイルの同じ行に対して、複数の人が別々の変更してしまいマージできないこと</p><h3 id="プルリクエスト-git-pull"><a href="#プルリクエスト-git-pull" class="headerlink" title="プルリクエスト(git pull)"></a>プルリクエスト(git pull)</h3><p>自分のフォークしたリポジトリから、変更差分をあなたのGitHubのリポジトリにpullしてください、という依頼のこと</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/git2/gitlog1.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;GitHub用語集&quot;&gt;&lt;a href=&quot;#GitHub用語集&quot; class=&quot;headerlink&quot; title=&quot;GitHub用語集&quot;&gt;&lt;/a&gt;GitHub用語集&lt;/h2&gt;&lt;p&gt;Gitでよく出てくる用語をメモしておく&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Git" scheme="https://satoshi2222.github.io/myblog.github.io.git/tags/Git/"/>
+    
+      <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io.git/tags/GitHub/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GitとGitHubとは</title>
+    <link href="https://satoshi2222.github.io/myblog.github.io.git/git1/"/>
+    <id>https://satoshi2222.github.io/myblog.github.io.git/git1/</id>
+    <published>2018-11-17T11:00:21.000Z</published>
+    <updated>2018-11-17T14:41:44.870Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/git1/gitlog1.png" title="Image"><br><br></p><h2 id="Gitとは"><a href="#Gitとは" class="headerlink" title="Gitとは"></a>Gitとは</h2><p>バージョン管理を行うソフトウェアのことで、バージョンとは、一度変更があるたびに更新される版名のこと<br>分散バージョン管理システムと呼ばれ,ローカル環境にリポジトリ(データの置き場)の複製が作成され、ローカル環境にもコードの変更履歴を保存することができる</p><h2 id="GitHubとは"><a href="#GitHubとは" class="headerlink" title="GitHubとは"></a>GitHubとは</h2><p>Gitの仕組みを利用して、ソースコードを共有することができるWebサービスで、基本的にすべて公開され,<br>だれでも自由にソースコードのコピーを作って、それを修正することができる</p><a id="more"></a><h2 id="GitHubのアカウント作成"><a href="#GitHubのアカウント作成" class="headerlink" title="GitHubのアカウント作成"></a>GitHubのアカウント作成</h2><p><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>にアクセス<br>以下の３つの項目に情報を入力してSign up for GitHubをクリック</p><ul><li>Username {ハンドルネーム}</li><li>Email {メールアドレス}</li><li>Password {パスワード}</li></ul><p>Welcome to GitHubと書かれたページが表示されたらデフォルトのままContinueをクリックする</p><p>最後にアンケート画面が出てくるので、答えない場合はskip this step をクリックして飛ばしても大丈夫</p><p>登録に成功すると、登録したメールアドレスにメールが届くので、メールのVerify email addressをクリックすると登録完了</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/git1/gitlog1.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Gitとは&quot;&gt;&lt;a href=&quot;#Gitとは&quot; class=&quot;headerlink&quot; title=&quot;Gitとは&quot;&gt;&lt;/a&gt;Gitとは&lt;/h2&gt;&lt;p&gt;バージョン管理を行うソフトウェアのことで、バージョンとは、一度変更があるたびに更新される版名のこと&lt;br&gt;分散バージョン管理システムと呼ばれ,ローカル環境にリポジトリ(データの置き場)の複製が作成され、ローカル環境にもコードの変更履歴を保存することができる&lt;/p&gt;
+&lt;h2 id=&quot;GitHubとは&quot;&gt;&lt;a href=&quot;#GitHubとは&quot; class=&quot;headerlink&quot; title=&quot;GitHubとは&quot;&gt;&lt;/a&gt;GitHubとは&lt;/h2&gt;&lt;p&gt;Gitの仕組みを利用して、ソースコードを共有することができるWebサービスで、基本的にすべて公開され,&lt;br&gt;だれでも自由にソースコードのコピーを作って、それを修正することができる&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Git" scheme="https://satoshi2222.github.io/myblog.github.io.git/tags/Git/"/>
+    
+      <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io.git/tags/GitHub/"/>
+    
+  </entry>
   
   <entry>
     <title>基本的なlinuxのコマンド</title>
@@ -148,11 +195,11 @@
     </summary>
     
     
+      <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io.git/tags/GitHub/"/>
+    
       <category term="hexo" scheme="https://satoshi2222.github.io/myblog.github.io.git/tags/hexo/"/>
     
       <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io.git/tags/blog/"/>
-    
-      <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io.git/tags/GitHub/"/>
     
   </entry>
   
@@ -173,11 +220,11 @@
     </summary>
     
     
+      <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io.git/tags/GitHub/"/>
+    
       <category term="hexo" scheme="https://satoshi2222.github.io/myblog.github.io.git/tags/hexo/"/>
     
       <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io.git/tags/blog/"/>
-    
-      <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io.git/tags/GitHub/"/>
     
   </entry>
   
@@ -205,11 +252,11 @@
     </summary>
     
     
+      <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io.git/tags/GitHub/"/>
+    
       <category term="hexo" scheme="https://satoshi2222.github.io/myblog.github.io.git/tags/hexo/"/>
     
       <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io.git/tags/blog/"/>
-    
-      <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io.git/tags/GitHub/"/>
     
   </entry>
   
