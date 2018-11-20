@@ -6,7 +6,7 @@
   <link href="/myblog.github.io/atom.xml" rel="self"/>
   <link href="http://pubsubhubbub.appspot.com" rel="hub"/>
   <link href="https://satoshi2222.github.io/myblog.github.io.git/"/>
-  <updated>2018-11-18T12:56:43.197Z</updated>
+  <updated>2018-11-20T10:25:20.947Z</updated>
   <id>https://satoshi2222.github.io/myblog.github.io.git/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>同期I/O 非同期I/O</title>
+    <link href="https://satoshi2222.github.io/myblog.github.io.git/node3/"/>
+    <id>https://satoshi2222.github.io/myblog.github.io.git/node3/</id>
+    <published>2018-11-19T20:08:31.000Z</published>
+    <updated>2018-11-20T10:25:20.947Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/node3/nodelogo.png" title="Image"><br><br></p><h2 id="同期I-Oとは"><a href="#同期I-Oとは" class="headerlink" title="同期I/Oとは"></a>同期I/Oとは</h2><p>I/OとはIはInputでOはOutputの英語の頭文字を取ったもので、入出力処理のことで、<br>情報をInput(入力)して、処理結果をOutput(出力)するという流れ<br>多くのプログラミング言語ではI/O処理の間、プログラムを停止してI/O処理を待ち、このことを<br>同期I/Oといい、この処理の間、プログラムが停止することをブロッキングという<br>簡単に言うと今行っている処理が終わっていないなら、次の処理に手を付けないということ</p><h2 id="非同期I-Oとは"><a href="#非同期I-Oとは" class="headerlink" title="非同期I/Oとは"></a>非同期I/Oとは</h2><p>入出力の開始処理をしてもその終了を待たずに、待ち時間中に別の処理を実行すること<br>Node.jsは、マルチプロセスやマルチスレッドではなく、シングルスレッドでブロッキングしないで、効率化を図っている<br>ノンブロッキングI/Oとは少し異なる点があるらしいが、今回は表面だけの理解にしておく</p><a id="more"></a><h3 id="マルチスレッド"><a href="#マルチスレッド" class="headerlink" title="マルチスレッド"></a>マルチスレッド</h3><p>一つのコンピュータプログラムを実行する際に、複数の処理の流れを並行して進めること<br>複数の処理の流れを生み出し、異なる処理を並行して進めることができる</p><h3 id="シングルスレッド"><a href="#シングルスレッド" class="headerlink" title="シングルスレッド"></a>シングルスレッド</h3><p>JavaScriptもNode.jsもシングルスレッドであり、デッドロックなどを気にしなくていいが、<br>一度に一つの処理しかできない<br>プログラムの処理の流れが一本のみである状態、並列処理などは行わず、一つの命令を実行していくこと</p><h2 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h2><p><a href="http://e-words.jp/w/%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%89.html" target="_blank" rel="noopener">マルチスレッド</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/node3/nodelogo.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;同期I-Oとは&quot;&gt;&lt;a href=&quot;#同期I-Oとは&quot; class=&quot;headerlink&quot; title=&quot;同期I/Oとは&quot;&gt;&lt;/a&gt;同期I/Oとは&lt;/h2&gt;&lt;p&gt;I/OとはIはInputでOはOutputの英語の頭文字を取ったもので、入出力処理のことで、&lt;br&gt;情報をInput(入力)して、処理結果をOutput(出力)するという流れ&lt;br&gt;多くのプログラミング言語ではI/O処理の間、プログラムを停止してI/O処理を待ち、このことを&lt;br&gt;同期I/Oといい、この処理の間、プログラムが停止することをブロッキングという&lt;br&gt;簡単に言うと今行っている処理が終わっていないなら、次の処理に手を付けないということ&lt;/p&gt;
+&lt;h2 id=&quot;非同期I-Oとは&quot;&gt;&lt;a href=&quot;#非同期I-Oとは&quot; class=&quot;headerlink&quot; title=&quot;非同期I/Oとは&quot;&gt;&lt;/a&gt;非同期I/Oとは&lt;/h2&gt;&lt;p&gt;入出力の開始処理をしてもその終了を待たずに、待ち時間中に別の処理を実行すること&lt;br&gt;Node.jsは、マルチプロセスやマルチスレッドではなく、シングルスレッドでブロッキングしないで、効率化を図っている&lt;br&gt;ノンブロッキングI/Oとは少し異なる点があるらしいが、今回は表面だけの理解にしておく&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="node.js" scheme="https://satoshi2222.github.io/myblog.github.io.git/tags/node-js/"/>
+    
+  </entry>
   
   <entry>
     <title>npmとyarn</title>
