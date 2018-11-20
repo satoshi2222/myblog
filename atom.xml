@@ -6,7 +6,7 @@
   <link href="/myblog.github.io/atom.xml" rel="self"/>
   <link href="http://pubsubhubbub.appspot.com" rel="hub"/>
   <link href="https://satoshi2222.github.io/myblog.github.io.git/"/>
-  <updated>2018-11-20T20:11:11.123Z</updated>
+  <updated>2018-11-20T20:16:29.487Z</updated>
   <id>https://satoshi2222.github.io/myblog.github.io.git/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git3</title>
+    <link href="https://satoshi2222.github.io/myblog.github.io.git/git3/"/>
+    <id>https://satoshi2222.github.io/myblog.github.io.git/git3/</id>
+    <published>2018-11-20T20:16:29.000Z</published>
+    <updated>2018-11-20T20:16:29.487Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><br><br></p><h2 id="タイトル"><a href="#タイトル" class="headerlink" title="タイトル"></a>タイトル</h2><h2 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h2><p><a href=""></a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;タイトル&quot;&gt;&lt;a href=&quot;#タイトル&quot; class=&quot;headerlink&quot; title=&quot;タイトル&quot;&gt;&lt;/a&gt;タイトル&lt;/h2&gt;&lt;h2 id=&quot;参考リンク&quot;&gt;&lt;a href=&quot;#参考リンク&quot; class=&quot;he
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>同期I/O 非同期I/O</title>
@@ -43,9 +65,9 @@
     <link href="https://satoshi2222.github.io/myblog.github.io.git/node2/"/>
     <id>https://satoshi2222.github.io/myblog.github.io.git/node2/</id>
     <published>2018-11-18T08:51:22.000Z</published>
-    <updated>2018-11-20T20:07:52.091Z</updated>
+    <updated>2018-11-20T20:15:09.618Z</updated>
     
-    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/node2/npmlog.png" title="Image"><br><br></p><h2 id="npmとは"><a href="#npmとは" class="headerlink" title="npmとは"></a>npmとは</h2><p>npm(Node Packaged Modules)とは、Node.jsのためのパッケージマネージャー<br>どのようなライブラリのパッケージがインストールされているかを記録し、インストールや削除が容易に行える<br>node.jsに標準で搭載されている</p><h3 id="パッケージとは"><a href="#パッケージとは" class="headerlink" title="パッケージとは"></a>パッケージとは</h3><p>様々な他のプログラムから利用できるように，汎用性の高いプログラムをまとめたものをライブラリといい、パッケージというのは，このライブラリをまとめて管理してくれる<br>パッケージの依存関係を管理してくれるので、手間が減る</p><a id="more"></a><h3 id="2種類のインストール"><a href="#2種類のインストール" class="headerlink" title="2種類のインストール"></a>2種類のインストール</h3><p>npmにはグローバルインストールとローカルインストールの２種類の方法がある<br>グローバルインストールは、実行環境自体もインストールし、<br>ローカルインストールは、現在のディレクトリでインストールする</p><h3 id="yarnとは"><a href="#yarnとは" class="headerlink" title="yarnとは"></a>yarnとは</h3><p>yarn(ヤーン)もNode.jsのためのパッケージマネージャー<br>npmの代わりに使えて、package.jsonの互換性がある<br>yarnはnpmと一緒に使えて、移行が楽で戻るのも簡単<br>インストールはキャッシュを利用するので早い</p><h2 id="インストール方法"><a href="#インストール方法" class="headerlink" title="インストール方法"></a>インストール方法</h2><p>npmを使いyarnをグローバルインストール<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g yarn</span><br></pre></td></tr></table></figure></p><p>パッケージ開発の初期化<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn init</span><br></pre></td></tr></table></figure></p><p>モジュールの追加<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add [パッケージ名]</span><br></pre></td></tr></table></figure></p><p>モジュールの削除<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn remove [パッケージ名]</span><br></pre></td></tr></table></figure></p><p>(yarn公式サイト)[<a href="https://yarnpkg.com/ja/]" target="_blank" rel="noopener">https://yarnpkg.com/ja/]</a></p>]]></content>
+    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/node2/npmlog.png" title="Image"><br><br></p><h2 id="npmとは"><a href="#npmとは" class="headerlink" title="npmとは"></a>npmとは</h2><p>npm(Node Packaged Modules)とは、Node.jsのためのパッケージマネージャー<br>どのようなライブラリのパッケージがインストールされているかを記録し、インストールや削除が容易に行える<br>node.jsに標準で搭載されている</p><h3 id="パッケージとは"><a href="#パッケージとは" class="headerlink" title="パッケージとは"></a>パッケージとは</h3><p>様々な他のプログラムから利用できるように，汎用性の高いプログラムをまとめたものをライブラリといい、パッケージというのは，このライブラリをまとめて管理してくれる<br>パッケージの依存関係を管理してくれるので、手間が減る</p><a id="more"></a><h3 id="2種類のインストール"><a href="#2種類のインストール" class="headerlink" title="2種類のインストール"></a>2種類のインストール</h3><p>npmにはグローバルインストールとローカルインストールの２種類の方法がある<br>グローバルインストールは、実行環境自体もインストールし、<br>ローカルインストールは、現在のディレクトリでインストールする</p><h3 id="yarnとは"><a href="#yarnとは" class="headerlink" title="yarnとは"></a>yarnとは</h3><p>yarn(ヤーン)もNode.jsのためのパッケージマネージャー<br>npmの代わりに使えて、package.jsonの互換性がある<br>yarnはnpmと一緒に使えて、移行が楽で戻るのも簡単<br>インストールはキャッシュを利用するので早い</p><h2 id="インストール方法"><a href="#インストール方法" class="headerlink" title="インストール方法"></a>インストール方法</h2><p>npmを使いyarnをグローバルインストール<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g yarn</span><br></pre></td></tr></table></figure></p><p>パッケージ開発の初期化<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn init</span><br></pre></td></tr></table></figure></p><p>モジュールの追加<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add [パッケージ名]</span><br></pre></td></tr></table></figure></p><p>モジュールの削除<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn remove [パッケージ名]</span><br></pre></td></tr></table></figure></p><p><a href="https://yarnpkg.com/ja/" target="_blank" rel="noopener">yarn公式サイト</a></p>]]></content>
     
     <summary type="html">
     
