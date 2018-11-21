@@ -308,6 +308,7 @@ body {
   font-weight: bold;
 }
 #header {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   height: 300px;
   position: relative;
   border-bottom: 1px solid #ddd;
@@ -322,17 +323,17 @@ body {
 }
 #header:before {
   top: 0;
-  background: -webkit-linear-gradient(rgba(67,138,220,0.1), transparent);
-  background: -moz-linear-gradient(rgba(67,138,220,0.1), transparent);
-  background: -ms-linear-gradient(rgba(67,138,220,0.1), transparent);
-  background: linear-gradient(rgba(67,138,220,0.1), transparent);
+  background: -webkit-linear-gradient(rgba(67,138,220,0.2), transparent);
+  background: -moz-linear-gradient(rgba(67,138,220,0.2), transparent);
+  background: -ms-linear-gradient(rgba(67,138,220,0.2), transparent);
+  background: linear-gradient(rgba(67,138,220,0.2), transparent);
 }
 #header:after {
   bottom: 0;
-  background: -webkit-linear-gradient(transparent, rgba(67,138,220,0.1));
-  background: -moz-linear-gradient(transparent, rgba(67,138,220,0.1));
-  background: -ms-linear-gradient(transparent, rgba(67,138,220,0.1));
-  background: linear-gradient(transparent, rgba(67,138,220,0.1));
+  background: -webkit-linear-gradient(transparent, rgba(67,138,220,0.2));
+  background: -moz-linear-gradient(transparent, rgba(67,138,220,0.2));
+  background: -ms-linear-gradient(transparent, rgba(67,138,220,0.2));
+  background: linear-gradient(transparent, rgba(67,138,220,0.2));
 }
 #header-outer {
   height: 100%;
@@ -373,7 +374,7 @@ body {
   text-shadow: 0 1px 4px rgba(255,255,255,0.9);
 }
 #logo {
-  font-size: 40px;
+  font-size: 50px;
   line-height: 40px;
   letter-spacing: 2px;
 }
@@ -447,7 +448,7 @@ body {
 }
 #sub-nav {
   float: right;
-  margin-right: -15px;
+  margin-right: -6px;
 }
 #nav-rss-link:before {
   content: "\f09e";
@@ -1282,7 +1283,7 @@ pre .javascript .function {
     left: 0;
     width: 280px;
     height: 100%;
-    background: #191919;
+    background: #fff;
     border-right: 1px solid #fff;
   }
 }
