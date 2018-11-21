@@ -8,19 +8,19 @@
   <title>GitHubへSSHを使い通信 | WebMemo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="google-site-verification" content="YvmUAfawhSyphEgaYekvEV4ZwArmSTIKYRpO3eTJefQ" />  
-  <meta name="description" content="SSHとはSecure Shellの略でリモートシェルに特化していて、リモートサーバに安全にログインしたり、ファイルをセキュアに送受信することができるSSHは暗号化通信を行う際の認証にパスワード認証を使うことができるが、ユーザー名とパスワードが分かれば誰でもログインできてしまうので、より安全な公開鍵認証という認証方法を使う 公開鍵認証公開鍵と秘密鍵という２つの情報を使う認証方法公開鍵を、ログイン">
+  <meta name="description" content="SSHとはSecure Shellの略でリモートシェルに特化していて、リモートサーバに安全にログインしたり、ファイルをセキュアに送受信することができるSSHは暗号化通信を行う際の認証にパスワード認証を使うことができるが、ユーザー名とパスワードが分かれば誰でもログインできてしまうので、より安全な公開鍵認証という認証方法を使う">
 <meta name="keywords" content="Git,GitHub">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GitHubへSSHを使い通信">
 <meta property="og:url" content="https://satoshi2222.github.io/myblog.github.io.git/git3/index.html">
 <meta property="og:site_name" content="WebMemo">
-<meta property="og:description" content="SSHとはSecure Shellの略でリモートシェルに特化していて、リモートサーバに安全にログインしたり、ファイルをセキュアに送受信することができるSSHは暗号化通信を行う際の認証にパスワード認証を使うことができるが、ユーザー名とパスワードが分かれば誰でもログインできてしまうので、より安全な公開鍵認証という認証方法を使う 公開鍵認証公開鍵と秘密鍵という２つの情報を使う認証方法公開鍵を、ログイン">
+<meta property="og:description" content="SSHとはSecure Shellの略でリモートシェルに特化していて、リモートサーバに安全にログインしたり、ファイルをセキュアに送受信することができるSSHは暗号化通信を行う際の認証にパスワード認証を使うことができるが、ユーザー名とパスワードが分かれば誰でもログインできてしまうので、より安全な公開鍵認証という認証方法を使う">
 <meta property="og:locale" content="ja">
 <meta property="og:image" content="https://satoshi2222.github.io/myblog.github.io/git3/gitlog1.png">
-<meta property="og:updated_time" content="2018-11-21T04:22:43.370Z">
+<meta property="og:updated_time" content="2018-11-21T04:28:38.127Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHubへSSHを使い通信">
-<meta name="twitter:description" content="SSHとはSecure Shellの略でリモートシェルに特化していて、リモートサーバに安全にログインしたり、ファイルをセキュアに送受信することができるSSHは暗号化通信を行う際の認証にパスワード認証を使うことができるが、ユーザー名とパスワードが分かれば誰でもログインできてしまうので、より安全な公開鍵認証という認証方法を使う 公開鍵認証公開鍵と秘密鍵という２つの情報を使う認証方法公開鍵を、ログイン">
+<meta name="twitter:description" content="SSHとはSecure Shellの略でリモートシェルに特化していて、リモートサーバに安全にログインしたり、ファイルをセキュアに送受信することができるSSHは暗号化通信を行う際の認証にパスワード認証を使うことができるが、ユーザー名とパスワードが分かれば誰でもログインできてしまうので、より安全な公開鍵認証という認証方法を使う">
 <meta name="twitter:image" content="https://satoshi2222.github.io/myblog.github.io/git3/gitlog1.png">
   
   
@@ -44,7 +44,7 @@
       </h1>
       
         <h2 id="subtitle-wrap">
-          <a href="/myblog.github.io/" id="subtitle">調べたことをメモしていきます</a>
+          <a href="/myblog.github.io/" id="subtitle">Webについて調べたことをメモしていきます</a>
         </h2>
       
     </div>
@@ -94,6 +94,7 @@
       
         <p><br><br><img src="/myblog.github.io/git3/gitlog1.png" title="Image"><br><br></p>
 <h2 id="SSHとは"><a href="#SSHとは" class="headerlink" title="SSHとは"></a>SSHとは</h2><p>Secure Shellの略でリモートシェルに特化していて、リモートサーバに安全にログイン<br>したり、ファイルをセキュアに送受信することができる<br>SSHは暗号化通信を行う際の認証にパスワード認証を使うことができるが、<br>ユーザー名とパスワードが分かれば誰でもログインできてしまうので、<br>より安全な公開鍵認証という認証方法を使う</p>
+<a id="more"></a>
 <h3 id="公開鍵認証"><a href="#公開鍵認証" class="headerlink" title="公開鍵認証"></a>公開鍵認証</h3><p>公開鍵と秘密鍵という２つの情報を使う認証方法<br>公開鍵を、ログイン先のサーバーに登録し、それに対応した秘密鍵を持っている<br>クライアントだけが接続でき相手は公開鍵を使い情報を暗号化して、自分は秘密鍵を使って<br>情報を複合する</p>
 <h2 id="公開鍵と秘密鍵の作成"><a href="#公開鍵と秘密鍵の作成" class="headerlink" title="公開鍵と秘密鍵の作成"></a>公開鍵と秘密鍵の作成</h2><p>コンソールに次のコマンドを入力<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure></p>
 <p>するとsshディレクトリが作成されて、中に公開鍵(id_rsa.pub)と秘密鍵(id _rsa)が作成される</p>
