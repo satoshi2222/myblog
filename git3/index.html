@@ -5,20 +5,23 @@
   
 
   
-  <title>git3 | WebMemo</title>
+  <title>GitHubへSSHを使い通信 | WebMemo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="google-site-verification" content="YvmUAfawhSyphEgaYekvEV4ZwArmSTIKYRpO3eTJefQ" />  
-  <meta name="description" content="タイトル参考リンク">
+  <meta name="description" content="SSHとはSecure Shellの略でリモートシェルに特化していて、リモートサーバに安全にログインしたり、ファイルをセキュアに送受信することができるSSHは暗号化通信を行う際の認証にパスワード認証を使うことができるが、ユーザー名とパスワードが分かれば誰でもログインできてしまうので、より安全な公開鍵認証という認証方法を使う 公開鍵認証公開鍵と秘密鍵という２つの情報を使う認証方法公開鍵を、ログイン">
+<meta name="keywords" content="Git,GitHub">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git3">
+<meta property="og:title" content="GitHubへSSHを使い通信">
 <meta property="og:url" content="https://satoshi2222.github.io/myblog.github.io.git/git3/index.html">
 <meta property="og:site_name" content="WebMemo">
-<meta property="og:description" content="タイトル参考リンク">
+<meta property="og:description" content="SSHとはSecure Shellの略でリモートシェルに特化していて、リモートサーバに安全にログインしたり、ファイルをセキュアに送受信することができるSSHは暗号化通信を行う際の認証にパスワード認証を使うことができるが、ユーザー名とパスワードが分かれば誰でもログインできてしまうので、より安全な公開鍵認証という認証方法を使う 公開鍵認証公開鍵と秘密鍵という２つの情報を使う認証方法公開鍵を、ログイン">
 <meta property="og:locale" content="ja">
-<meta property="og:updated_time" content="2018-11-20T20:16:29.487Z">
+<meta property="og:image" content="https://satoshi2222.github.io/myblog.github.io/git3/gitlog1.png">
+<meta property="og:updated_time" content="2018-11-21T04:22:43.370Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git3">
-<meta name="twitter:description" content="タイトル参考リンク">
+<meta name="twitter:title" content="GitHubへSSHを使い通信">
+<meta name="twitter:description" content="SSHとはSecure Shellの略でリモートシェルに特化していて、リモートサーバに安全にログインしたり、ファイルをセキュアに送受信することができるSSHは暗号化通信を行う際の認証にパスワード認証を使うことができるが、ユーザー名とパスワードが分かれば誰でもログインできてしまうので、より安全な公開鍵認証という認証方法を使う 公開鍵認証公開鍵と秘密鍵という２つの情報を使う認証方法公開鍵を、ログイン">
+<meta name="twitter:image" content="https://satoshi2222.github.io/myblog.github.io/git3/gitlog1.png">
   
   
     <link rel="icon" href="/favicon.png">
@@ -81,7 +84,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      git3
+      GitHubへSSHを使い通信
     </h1>
   
 
@@ -89,17 +92,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><br><br><br><br></p>
-<h2 id="タイトル"><a href="#タイトル" class="headerlink" title="タイトル"></a>タイトル</h2><h2 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h2><p><a href=""></a></p>
+        <p><br><br><img src="/myblog.github.io/git3/gitlog1.png" title="Image"><br><br></p>
+<h2 id="SSHとは"><a href="#SSHとは" class="headerlink" title="SSHとは"></a>SSHとは</h2><p>Secure Shellの略でリモートシェルに特化していて、リモートサーバに安全にログイン<br>したり、ファイルをセキュアに送受信することができる<br>SSHは暗号化通信を行う際の認証にパスワード認証を使うことができるが、<br>ユーザー名とパスワードが分かれば誰でもログインできてしまうので、<br>より安全な公開鍵認証という認証方法を使う</p>
+<h3 id="公開鍵認証"><a href="#公開鍵認証" class="headerlink" title="公開鍵認証"></a>公開鍵認証</h3><p>公開鍵と秘密鍵という２つの情報を使う認証方法<br>公開鍵を、ログイン先のサーバーに登録し、それに対応した秘密鍵を持っている<br>クライアントだけが接続でき相手は公開鍵を使い情報を暗号化して、自分は秘密鍵を使って<br>情報を複合する</p>
+<h2 id="公開鍵と秘密鍵の作成"><a href="#公開鍵と秘密鍵の作成" class="headerlink" title="公開鍵と秘密鍵の作成"></a>公開鍵と秘密鍵の作成</h2><p>コンソールに次のコマンドを入力<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure></p>
+<p>するとsshディレクトリが作成されて、中に公開鍵(id_rsa.pub)と秘密鍵(id _rsa)が作成される</p>
+<h2 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h2><p><a href=""></a></p>
 
       
     </div>
     
     <footer class="article-footer">
-        
+        <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\git2\" title="Git 用語集" rel="bookmark">Git 用語集</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\git1\" title="GitとGitHub アカウント作成" rel="bookmark">GitとGitHub アカウント作成</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\hexo2\" title="Hexoで記事投稿" rel="bookmark">Hexoで記事投稿</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\hexo3\" title="Hexoでプラグインを追加する" rel="bookmark">Hexoでプラグインを追加する</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\hexo1\" title="Hexoをインストールする" rel="bookmark">Hexoをインストールする</a></h3></div></li></ul>
       <a data-url="https://satoshi2222.github.io/myblog.github.io.git/git3/" data-id="cjoq6opo600049cw2s7pfe224" class="article-share-link">共有</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/Git/">Git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/GitHub/">GitHub</a></li></ul>
+
     </footer>
   </div>
   
@@ -138,7 +147,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">タグクラウド</h3>
     <div class="widget tagcloud">
-      <a href="/myblog.github.io/tags/Git/" style="font-size: 12.5px;">Git</a> <a href="/myblog.github.io/tags/GitHub/" style="font-size: 20px;">GitHub</a> <a href="/myblog.github.io/tags/blog/" style="font-size: 17.5px;">blog</a> <a href="/myblog.github.io/tags/css/" style="font-size: 12.5px;">css</a> <a href="/myblog.github.io/tags/flex/" style="font-size: 10px;">flex</a> <a href="/myblog.github.io/tags/hexo/" style="font-size: 17.5px;">hexo</a> <a href="/myblog.github.io/tags/hexo-blog/" style="font-size: 10px;">hexo blog</a> <a href="/myblog.github.io/tags/linux/" style="font-size: 10px;">linux</a> <a href="/myblog.github.io/tags/node-js/" style="font-size: 15px;">node.js</a> <a href="/myblog.github.io/tags/npm/" style="font-size: 10px;">npm</a> <a href="/myblog.github.io/tags/yarn/" style="font-size: 10px;">yarn</a> <a href="/myblog.github.io/tags/その他/" style="font-size: 10px;">その他</a>
+      <a href="/myblog.github.io/tags/Git/" style="font-size: 15px;">Git</a> <a href="/myblog.github.io/tags/GitHub/" style="font-size: 20px;">GitHub</a> <a href="/myblog.github.io/tags/blog/" style="font-size: 17.5px;">blog</a> <a href="/myblog.github.io/tags/css/" style="font-size: 12.5px;">css</a> <a href="/myblog.github.io/tags/flex/" style="font-size: 10px;">flex</a> <a href="/myblog.github.io/tags/hexo/" style="font-size: 17.5px;">hexo</a> <a href="/myblog.github.io/tags/hexo-blog/" style="font-size: 10px;">hexo blog</a> <a href="/myblog.github.io/tags/linux/" style="font-size: 10px;">linux</a> <a href="/myblog.github.io/tags/node-js/" style="font-size: 15px;">node.js</a> <a href="/myblog.github.io/tags/npm/" style="font-size: 10px;">npm</a> <a href="/myblog.github.io/tags/yarn/" style="font-size: 10px;">yarn</a> <a href="/myblog.github.io/tags/その他/" style="font-size: 10px;">その他</a>
     </div>
   </div>
 
@@ -160,7 +169,7 @@
       <ul>
         
           <li>
-            <a href="/myblog.github.io/git3/">git3</a>
+            <a href="/myblog.github.io/git3/">GitHubへSSHを使い通信</a>
           </li>
         
           <li>
