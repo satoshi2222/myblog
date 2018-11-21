@@ -563,6 +563,10 @@ body {
 a.article-title:hover {
   color: #258fb8;
 }
+h2 {
+  border-bottom: 2px solid #565a5f;
+  padding-bottom: 6px;
+}
 .article-entry {
   color: #555;
   padding: 0 20px;

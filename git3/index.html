@@ -17,7 +17,7 @@
 <meta property="og:description" content="SSHとはSecure Shellの略でリモートシェルに特化していて、リモートサーバに安全にログインしたり、ファイルをセキュアに送受信することができるSSHは暗号化通信を行う際の認証にパスワード認証を使うことができるが、ユーザー名とパスワードが分かれば誰でもログインできてしまうので、より安全な公開鍵認証という認証方法を使うSSHはAndroidやiOSにも実装されているプロトコルのため、ネットワ">
 <meta property="og:locale" content="ja">
 <meta property="og:image" content="https://satoshi2222.github.io/myblog.github.io/git3/gitlog1.png">
-<meta property="og:updated_time" content="2018-11-21T10:48:30.972Z">
+<meta property="og:updated_time" content="2018-11-21T11:26:50.374Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHubへSSHを使って通信">
 <meta name="twitter:description" content="SSHとはSecure Shellの略でリモートシェルに特化していて、リモートサーバに安全にログインしたり、ファイルをセキュアに送受信することができるSSHは暗号化通信を行う際の認証にパスワード認証を使うことができるが、ユーザー名とパスワードが分かれば誰でもログインできてしまうので、より安全な公開鍵認証という認証方法を使うSSHはAndroidやiOSにも実装されているプロトコルのため、ネットワ">
@@ -43,9 +43,9 @@
         <a href="/myblog.github.io/" id="logo">WebMemo</a>
       </h1>
       
-        <h2 id="subtitle-wrap">
+        <h3 id="subtitle-wrap">
           <a href="/myblog.github.io/" id="subtitle">Webについて調べたことをメモ</a>
-        </h2>
+        </h3>
       
     </div>
     <div id="header-inner" class="inner">
@@ -94,7 +94,7 @@
       
         <p><br><br><img src="/myblog.github.io/git3/gitlog1.png" title="Image"><br><br></p>
 <h2 id="SSHとは"><a href="#SSHとは" class="headerlink" title="SSHとは"></a>SSHとは</h2><p>Secure Shellの略でリモートシェルに特化していて、リモートサーバに安全にログインしたり、<br>ファイルをセキュアに送受信することができる<br>SSHは暗号化通信を行う際の認証にパスワード認証を使うことができるが、<br>ユーザー名とパスワードが分かれば誰でもログインできてしまうので、<br>より安全な公開鍵認証という認証方法を使う<br>SSHはAndroidやiOSにも実装されているプロトコルのため、ネットワークにSSHの利用環境が整備されていれば、<br>スマートフォンやタブレットから容易にリモート接続が可能となる<br><a id="more"></a></p>
-<h2 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h2><p><a href="https://www.idcf.jp/words/ssh.html" target="_blank" rel="noopener">SSHとは</a></p>
+<h4 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h4><p><a href="https://www.idcf.jp/words/ssh.html" target="_blank" rel="noopener">SSHとは</a></p>
 <h3 id="公開鍵認証とは"><a href="#公開鍵認証とは" class="headerlink" title="公開鍵認証とは"></a>公開鍵認証とは</h3><p>公開鍵と秘密鍵という２つの情報を使う認証方法<br>公開鍵を、ログイン先のサーバーに登録し、それに対応した秘密鍵を持っている<br>クライアントだけが接続でき相手は公開鍵を使い情報を暗号化して、自分は秘密鍵を使って<br>情報を複合する</p>
 <h2 id="公開鍵と秘密鍵の作成"><a href="#公開鍵と秘密鍵の作成" class="headerlink" title="公開鍵と秘密鍵の作成"></a>公開鍵と秘密鍵の作成</h2><p>コンソールに次のコマンドを入力<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure></p>
 <p>するとsshディレクトリが作成されて、中に公開鍵(id_rsa.pub)と秘密鍵(id _rsa)が作成されてる<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file in which to save the key (/Users/ts/.ssh/id_rsa):</span><br></pre></td></tr></table></figure></p>
@@ -102,7 +102,7 @@
 <p>次にパスワードを尋ねられる<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Enter passphrase (empty for no passphrase):</span><br></pre></td></tr></table></figure></p>
 <p>パスワードを入力してEnterを押す<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Enter same passphrase again:</span><br></pre></td></tr></table></figure></p>
 <p>もう一度パスワードを入力してEnterを押す<br>これで公開鍵と、秘密鍵が完成する</p>
-<h3 id="保存できているか確認する"><a href="#保存できているか確認する" class="headerlink" title="保存できているか確認する"></a>保存できているか確認する</h3><p>下記のコマンドで確認<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls ~/.ssh</span><br></pre></td></tr></table></figure></p>
+<p>保存できているか確認するには、下記のコマンドで確認<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls ~/.ssh</span><br></pre></td></tr></table></figure></p>
 <p>id_rsaという秘密鍵とid_rsa.pubという公開鍵が書かれているファイルを確認できれば、<br>鍵の生成ができている</p>
 <h2 id="公開鍵を登録する"><a href="#公開鍵を登録する" class="headerlink" title="公開鍵を登録する"></a>公開鍵を登録する</h2><p>次のコマンドで公開鍵情報をコンソールに表示<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure></p>
 <p>実行結果をコピーしておく<br>次にGitHubにログインしてSettingsを開き、SSH and GPG keys を選択して、<br>New SSH key(add SHH key) をクリックする<br>Titleには自分が分かりやすい名前<br>Keyには先ほどコピーした情報を貼り付ける<br>Add key をクリックすると完了<br>これでGitHubとSSHを利用した通信が可能になる</p>
@@ -111,8 +111,8 @@
     </div>
     
     <footer class="article-footer">
-        <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\git1\" title="GitとGitHub アカウント作成" rel="bookmark">GitとGitHub アカウント作成</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\git2\" title="Git 用語集" rel="bookmark">Git 用語集</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\hexo1\" title="Hexoをインストールする" rel="bookmark">Hexoをインストールする</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\hexo3\" title="Hexoでプラグインを追加する" rel="bookmark">Hexoでプラグインを追加する</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\hexo2\" title="Hexoで記事投稿" rel="bookmark">Hexoで記事投稿</a></h3></div></li></ul>
-      <a data-url="https://satoshi2222.github.io/myblog.github.io.git/git3/" data-id="cjor066rw000220w2xxavekpc" class="article-share-link">共有</a>
+        <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\git1\" title="GitとGitHub アカウント作成" rel="bookmark">GitとGitHub アカウント作成</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\git2\" title="Git 用語集" rel="bookmark">Git 用語集</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\hexo1\" title="Hexoをインストールする" rel="bookmark">Hexoをインストールする</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\hexo2\" title="Hexoで記事投稿" rel="bookmark">Hexoで記事投稿</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\hexo3\" title="Hexoでプラグインを追加する" rel="bookmark">Hexoでプラグインを追加する</a></h3></div></li></ul>
+      <a data-url="https://satoshi2222.github.io/myblog.github.io.git/git3/" data-id="cjor3h1dh00095ow2lqkzk61k" class="article-share-link">共有</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/Git/">Git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/GitHub/">GitHub</a></li></ul>
