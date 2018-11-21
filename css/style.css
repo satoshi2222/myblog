@@ -322,17 +322,17 @@ body {
 }
 #header:before {
   top: 0;
-  background: -webkit-linear-gradient(rgba(0,0,0,0.2), transparent);
-  background: -moz-linear-gradient(rgba(0,0,0,0.2), transparent);
-  background: -ms-linear-gradient(rgba(0,0,0,0.2), transparent);
-  background: linear-gradient(rgba(0,0,0,0.2), transparent);
+  background: -webkit-linear-gradient(rgba(67,138,220,0.1), transparent);
+  background: -moz-linear-gradient(rgba(67,138,220,0.1), transparent);
+  background: -ms-linear-gradient(rgba(67,138,220,0.1), transparent);
+  background: linear-gradient(rgba(67,138,220,0.1), transparent);
 }
 #header:after {
   bottom: 0;
-  background: -webkit-linear-gradient(transparent, rgba(0,0,0,0.2));
-  background: -moz-linear-gradient(transparent, rgba(0,0,0,0.2));
-  background: -ms-linear-gradient(transparent, rgba(0,0,0,0.2));
-  background: linear-gradient(transparent, rgba(0,0,0,0.2));
+  background: -webkit-linear-gradient(transparent, rgba(67,138,220,0.1));
+  background: -moz-linear-gradient(transparent, rgba(67,138,220,0.1));
+  background: -ms-linear-gradient(transparent, rgba(67,138,220,0.1));
+  background: linear-gradient(transparent, rgba(67,138,220,0.1));
 }
 #header-outer {
   height: 100%;
@@ -362,10 +362,13 @@ body {
   left: 0;
   margin-top: -20px;
 }
+#header-title:hover {
+  opacity: 0.5;
+}
 #logo,
 #subtitle {
   text-decoration: none;
-  color: #3e56dd;
+  color: #438adc;
   font-weight: 300;
   text-shadow: 0 1px 4px rgba(255,255,255,0.9);
 }
@@ -397,6 +400,7 @@ body {
   color: #000;
   opacity: 0.9;
   font-weight: 100;
+  font-size: 20px;
   text-decoration: none;
   text-shadow: 1px 1px rgba(255,255,255,0.5);
   -webkit-transition: opacity 0.2s;
@@ -408,12 +412,13 @@ body {
 }
 .nav-icon:hover,
 .main-nav-link:hover {
-  opacity: 1;
+  color: #438adc;
+  opacity: 0.5;
 }
 .nav-icon {
   font-family: FontAwesome;
   text-align: center;
-  font-size: 14px;
+  font-size: 22px;
   width: 14px;
   height: 14px;
   padding: 20px 15px;
@@ -1290,7 +1295,7 @@ pre .javascript .function {
     font-weight: bold;
   }
   .mobile-nav-link:hover {
-    color: #fff;
+    color: #438adc;
   }
 }
 @media screen and (min-width: 768px) {
