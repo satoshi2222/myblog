@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://satoshi2222.github.io/myblog.github.io.git/csstext/</loc>
+    
+    <lastmod>2018-11-22T13:50:13.009Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://satoshi2222.github.io/myblog.github.io.git/cssflex/</loc>
+    
+    <lastmod>2018-11-22T13:49:43.844Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://satoshi2222.github.io/myblog.github.io.git/web1/</loc>
     
-    <lastmod>2018-11-22T10:27:23.175Z</lastmod>
+    <lastmod>2018-11-22T10:48:50.907Z</lastmod>
     
   </url>
   
@@ -68,20 +82,6 @@
     <loc>https://satoshi2222.github.io/myblog.github.io.git/linux/</loc>
     
     <lastmod>2018-11-04T23:47:40.116Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://satoshi2222.github.io/myblog.github.io.git/cssflex/</loc>
-    
-    <lastmod>2018-09-26T11:39:49.364Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://satoshi2222.github.io/myblog.github.io.git/csstext/</loc>
-    
-    <lastmod>2018-09-26T03:41:39.047Z</lastmod>
     
   </url>
   

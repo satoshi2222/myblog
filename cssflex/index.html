@@ -8,19 +8,19 @@
   <title>cssのflexで中央に寄せつつ、最後の行は左寄せにする | WebMemo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="google-site-verification" content="YvmUAfawhSyphEgaYekvEV4ZwArmSTIKYRpO3eTJefQ" />  
-  <meta name="description" content="justify-contentについてjustify-content: centerを使って中央に寄せると最後の行に余った要素があると中央によってしまいます。かといって初期値のflex-startだと全体が左寄せになってしまう。他の方法でも良いが、flexはとても便利なのでflexboxだけで解決する方法を探していくと、解決法がネットにありました。">
+  <meta name="description" content="justify-contentについてjustify-content: centerを使って中央に寄せると最後の行に余った要素があると中央によってしまうかといって初期値のflex-startだと全体が左寄せになってしまう他の方法でも良いが、flexはとても便利なのでflexboxだけで解決する方法を探していくと、解決法がネットにあった">
 <meta name="keywords" content="css,flex">
 <meta property="og:type" content="article">
 <meta property="og:title" content="cssのflexで中央に寄せつつ、最後の行は左寄せにする">
 <meta property="og:url" content="https://satoshi2222.github.io/myblog.github.io.git/cssflex/index.html">
 <meta property="og:site_name" content="WebMemo">
-<meta property="og:description" content="justify-contentについてjustify-content: centerを使って中央に寄せると最後の行に余った要素があると中央によってしまいます。かといって初期値のflex-startだと全体が左寄せになってしまう。他の方法でも良いが、flexはとても便利なのでflexboxだけで解決する方法を探していくと、解決法がネットにありました。">
+<meta property="og:description" content="justify-contentについてjustify-content: centerを使って中央に寄せると最後の行に余った要素があると中央によってしまうかといって初期値のflex-startだと全体が左寄せになってしまう他の方法でも良いが、flexはとても便利なのでflexboxだけで解決する方法を探していくと、解決法がネットにあった">
 <meta property="og:locale" content="ja">
 <meta property="og:image" content="https://satoshi2222.github.io/myblog.github.io/cssflex/htmlcssjs.png">
-<meta property="og:updated_time" content="2018-09-26T11:39:49.364Z">
+<meta property="og:updated_time" content="2018-11-22T13:49:43.844Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="cssのflexで中央に寄せつつ、最後の行は左寄せにする">
-<meta name="twitter:description" content="justify-contentについてjustify-content: centerを使って中央に寄せると最後の行に余った要素があると中央によってしまいます。かといって初期値のflex-startだと全体が左寄せになってしまう。他の方法でも良いが、flexはとても便利なのでflexboxだけで解決する方法を探していくと、解決法がネットにありました。">
+<meta name="twitter:description" content="justify-contentについてjustify-content: centerを使って中央に寄せると最後の行に余った要素があると中央によってしまうかといって初期値のflex-startだと全体が左寄せになってしまう他の方法でも良いが、flexはとても便利なのでflexboxだけで解決する方法を探していくと、解決法がネットにあった">
 <meta name="twitter:image" content="https://satoshi2222.github.io/myblog.github.io/cssflex/htmlcssjs.png">
   
   
@@ -93,14 +93,14 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><br><br><img src="/myblog.github.io/cssflex/htmlcssjs.png" title="Image"><br><br></p>
-<h2 id="justify-contentについて"><a href="#justify-contentについて" class="headerlink" title="justify-contentについて"></a>justify-contentについて</h2><p>justify-content: centerを使って中央に寄せると最後の行に余った要素があると<br>中央によってしまいます。<br>かといって初期値のflex-startだと全体が左寄せになってしまう。<br>他の方法でも良いが、flexはとても便利なのでflexboxだけで解決する方法を探していくと、<br>解決法がネットにありました。</p>
+<h2 id="justify-contentについて"><a href="#justify-contentについて" class="headerlink" title="justify-contentについて"></a>justify-contentについて</h2><p>justify-content: centerを使って中央に寄せると最後の行に余った要素があると<br>中央によってしまう<br>かといって初期値のflex-startだと全体が左寄せになってしまう<br>他の方法でも良いが、flexはとても便利なのでflexboxだけで解決する方法を探していくと、<br>解決法がネットにあった</p>
 <a id="more"></a>
 <p>参考にさせていただいたサイト<br><a href="https://qiita.com/QUANON/items/e14949abab3711ca8646" target="_blank" rel="noopener">Flexbox で全体を中央に配置しつつ最後の行を左揃えにする</a></p>
-<p>解決方法としてはJavaScript (jQuery) を使い空の子要素で埋め、<br>左まで詰めるという方法です。</p>
+<p>解決方法としてはJavaScript (jQuery) を使い空の子要素で埋め、<br>左まで詰めるという方法</p>
 <h2 id="html"><a href="#html" class="headerlink" title="html"></a>html</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;wrap&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;list&quot;&gt;</span><br><span class="line">        &lt;img src=&quot;&quot; alt=&quot;&quot; width=”300”height=&quot;400&quot;/&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 <h2 id="css"><a href="#css" class="headerlink" title="css"></a>css</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">  .wrap&#123;</span><br><span class="line">  display: flex;</span><br><span class="line">  flex-flow: row wrap;</span><br><span class="line">  justify-content: center;</span><br><span class="line"></span><br><span class="line">.list.is-empty &#123;</span><br><span class="line">  width:300px;</span><br><span class="line">  height: 0;</span><br><span class="line">  padding-top: 0;</span><br><span class="line">  padding-bottom: 0;</span><br><span class="line">  margin-top: 0;</span><br><span class="line">  margin-bottom: 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="js"><a href="#js" class="headerlink" title="js"></a>js</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var $grid = $(&apos;.wrap&apos;),   </span><br><span class="line">    emptyCells = [],</span><br><span class="line">    i;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">for (i = 0; i &lt; $grid.find(&apos;.list&apos;).length; i++) &#123;</span><br><span class="line">    emptyCells.push($(&apos;&lt;div&gt;&apos;, &#123; class: &apos;list is-empty&apos; &#125;));</span><br><span class="line">&#125;</span><br><span class="line">$grid.append(emptyCells);</span><br></pre></td></tr></table></figure>
-<h2 id="最後に"><a href="#最後に" class="headerlink" title="最後に"></a>最後に</h2><p>並べる数が変わっても、これで必要な空の部分を埋めてくれていて、余った長さの分は表示されていない。<br>計算なしできれいに並べることができたが、cssだけでは不可能なのでjsを使わないのであれば,他の方法でやるほうが良い。</p>
+<h2 id="最後に"><a href="#最後に" class="headerlink" title="最後に"></a>最後に</h2><p>並べる数が変わっても、これで必要な空の部分を埋めてくれていて、余った長さの分は表示されていない<br>計算なしできれいに並べることができたが、cssだけでは不可能なのでjsを使わないのであれば,他の方法でやるほうが良い</p>
 
       
     </div>
