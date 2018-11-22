@@ -3,6 +3,25 @@
   
     
     <entry>
+      <title>Webフレームワークとは</title>
+      <link href="/myblog.github.io/web1/"/>
+      <url>/myblog.github.io/web1/</url>
+      
+        <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/web1/web1.jpg" title="Image"><br><br></p><h2 id="フレームワークとは"><a href="#フレームワークとは" class="headerlink" title="フレームワークとは"></a>フレームワークとは</h2><p>プログラミングにおいてのフレームワークは<br>アプリケーション開発で必要な機能をまとめてたり、開発を効率化してくれる機能を提供してくれるもの<br>フレームワークを導入することでルールが与えられるので業務遂行が円滑になり、用意された仕組みを利用できるので、<br>開発にかかる工数を短縮できる<br>簡単に言うとアプリの土台や動作をすべて自分で考えていたら、多くの時間とソースコードを用意しなければならなが、<br>アプリ開発に必要なものを最初から準備してくれているのがフレームワーク</p><a id="more"></a><h2 id="有名なフレームワーク"><a href="#有名なフレームワーク" class="headerlink" title="有名なフレームワーク"></a>有名なフレームワーク</h2><h3 id="PHPのフレームワーク"><a href="#PHPのフレームワーク" class="headerlink" title="PHPのフレームワーク"></a>PHPのフレームワーク</h3><p><a href="https://cakephp.org/jp" target="_blank" rel="noopener">CakePHP</a><br><a href="https://laravel.com/" target="_blank" rel="noopener">laravel</a></p><h3 id="Rudyのフレームワーク"><a href="#Rudyのフレームワーク" class="headerlink" title="Rudyのフレームワーク"></a>Rudyのフレームワーク</h3><p><a href="https://rubyonrails.org/" target="_blank" rel="noopener">Ruby on Rails</a></p><h3 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h3><p><a href="http://spring.io/" target="_blank" rel="noopener">Spring </a></p><h3 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h3><p><a href="https://angularjs.org/" target="_blank" rel="noopener">AngularJS</a><br><a href="https://reactjs.org/" target="_blank" rel="noopener">React</a></p><p>などなど、他にもたくさんある</p><h2 id="プラットフォーム"><a href="#プラットフォーム" class="headerlink" title="プラットフォーム"></a>プラットフォーム</h2><p>対象によって指す対象は変わる<br>OSやハードウェアなどを指すことが多い<br>Javaプラットフォームやnode.jsなど</p><h2 id="ライブラリ"><a href="#ライブラリ" class="headerlink" title="ライブラリ"></a>ライブラリ</h2><p>汎用性の高いプログラムをまとめたもの<br>自分で処理を書かなくてもライブラリで再利用可能<br>例を挙げるとjQueryなど<br>他の人が作ってくれた、関数やクラスを呼び出すということでいいのかな？？</p><h3 id="プラットフォームとライブラリの違い"><a href="#プラットフォームとライブラリの違い" class="headerlink" title="プラットフォームとライブラリの違い"></a>プラットフォームとライブラリの違い</h3><p>ライブラリ単体では処理が行わない、指示が必要<br>プラットフォームはいろいろなルールがあらかじめ決められていて、<br>単にimportやincludeしただけでは使えない場合が多い</p><p>知識が少ないので深く理解できなかったので、表面的なことだけにしておく</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Web </tag>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>GitHubへSSHを使って通信</title>
       <link href="/myblog.github.io/git3/"/>
       <url>/myblog.github.io/git3/</url>
