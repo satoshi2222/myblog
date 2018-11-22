@@ -532,6 +532,8 @@ body {
 }
 .article-date {
   float: left;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 16px;
 }
 .article-category {
   float: left;
@@ -1316,11 +1318,9 @@ pre .javascript .function {
 }
 .widget {
   color: #777;
-  text-shadow: 0 1px #fff;
   background: #ddd;
   -webkit-box-shadow: 0 -1px 4px #ccc inset;
   box-shadow: 0 -1px 4px #ccc inset;
-  border: 1px solid #ccc;
   padding: 15px;
   border-radius: 3px;
 }
@@ -1343,10 +1343,13 @@ pre .javascript .function {
   margin-left: 15px;
   list-style: disc;
 }
+.widget-wrap {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
 .widget {
   line-height: 1.6em;
   word-wrap: break-word;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 .widget ul,
 .widget ol {
@@ -1366,6 +1369,9 @@ pre .javascript .function {
 .widget ul ol,
 .widget ol ol {
   list-style: decimal;
+}
+.widget-title {
+  font-size: 16px;
 }
 .category-list-count,
 .tag-list-count,
