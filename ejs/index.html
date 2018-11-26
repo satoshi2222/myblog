@@ -8,19 +8,19 @@
   <title>EJS書き方 | WebMemo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="google-site-verification" content="YvmUAfawhSyphEgaYekvEV4ZwArmSTIKYRpO3eTJefQ" />  
-  <meta name="description" content="EJSとはJavaScriptのテンプレートエンジンJavaScriptを使ってHTMLを生成できる(GulpやGruntなどのタスクランナーを使う)Node.jsに入っていて、npminstallでインストールできる各Webページで共通部分、headerなどのパーツをモジュールに分けてインクルードできる EJSをインストール1npm install ejs EJS書き方&amp;lt;% %&amp;gt;基">
+  <meta name="description" content="EJSとはJavaScriptのテンプレートエンジンJavaScriptを使ってHTMLを生成できる(GulpやGruntなどのタスクランナーを使う)Node.jsに入っていて、npminstallでインストールできる各Webページで共通部分、headerなどのパーツをモジュールに分けてインクルードできる">
 <meta name="keywords" content="EJS,html,JavaScript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="EJS書き方">
 <meta property="og:url" content="https://satoshi2222.github.io/myblog.github.io/ejs/index.html">
 <meta property="og:site_name" content="WebMemo">
-<meta property="og:description" content="EJSとはJavaScriptのテンプレートエンジンJavaScriptを使ってHTMLを生成できる(GulpやGruntなどのタスクランナーを使う)Node.jsに入っていて、npminstallでインストールできる各Webページで共通部分、headerなどのパーツをモジュールに分けてインクルードできる EJSをインストール1npm install ejs EJS書き方&amp;lt;% %&amp;gt;基">
+<meta property="og:description" content="EJSとはJavaScriptのテンプレートエンジンJavaScriptを使ってHTMLを生成できる(GulpやGruntなどのタスクランナーを使う)Node.jsに入っていて、npminstallでインストールできる各Webページで共通部分、headerなどのパーツをモジュールに分けてインクルードできる">
 <meta property="og:locale" content="ja">
 <meta property="og:image" content="https://satoshi2222.github.io/myblog.github.io/ejs/htmlcssjs.png">
-<meta property="og:updated_time" content="2018-11-26T00:40:40.699Z">
+<meta property="og:updated_time" content="2018-11-26T04:52:02.960Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="EJS書き方">
-<meta name="twitter:description" content="EJSとはJavaScriptのテンプレートエンジンJavaScriptを使ってHTMLを生成できる(GulpやGruntなどのタスクランナーを使う)Node.jsに入っていて、npminstallでインストールできる各Webページで共通部分、headerなどのパーツをモジュールに分けてインクルードできる EJSをインストール1npm install ejs EJS書き方&amp;lt;% %&amp;gt;基">
+<meta name="twitter:description" content="EJSとはJavaScriptのテンプレートエンジンJavaScriptを使ってHTMLを生成できる(GulpやGruntなどのタスクランナーを使う)Node.jsに入っていて、npminstallでインストールできる各Webページで共通部分、headerなどのパーツをモジュールに分けてインクルードできる">
 <meta name="twitter:image" content="https://satoshi2222.github.io/myblog.github.io/ejs/htmlcssjs.png">
   
   
@@ -94,13 +94,15 @@
       
         <p><br><br><img src="/myblog.github.io/ejs/htmlcssjs.png" title="Image"><br><br></p>
 <h2 id="EJSとは"><a href="#EJSとは" class="headerlink" title="EJSとは"></a>EJSとは</h2><p>JavaScriptのテンプレートエンジン<br>JavaScriptを使ってHTMLを生成できる(GulpやGruntなどのタスクランナーを使う)<br>Node.jsに入っていて、npminstallでインストールできる<br>各Webページで共通部分、headerなどのパーツをモジュールに分けてインクルードできる</p>
+<a id="more"></a>
 <h3 id="EJSをインストール"><a href="#EJSをインストール" class="headerlink" title="EJSをインストール"></a>EJSをインストール</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install ejs</span><br></pre></td></tr></table></figure>
 <h3 id="EJS書き方"><a href="#EJS書き方" class="headerlink" title="EJS書き方"></a>EJS書き方</h3><h4 id="lt-gt"><a href="#lt-gt" class="headerlink" title="&lt;% %&gt;"></a>&lt;% %&gt;</h4><p>基本的に&lt;% %&gt;のタグの中に処理を記述して、この中ではJavaSCriptが使える<br>出力をするわけではない</p>
 <h4 id="lt-gt-1"><a href="#lt-gt-1" class="headerlink" title="&lt;%= %&gt;"></a>&lt;%= %&gt;</h4><p>変数などをhtmlで出力</p>
 <h4 id="lt-gt-2"><a href="#lt-gt-2" class="headerlink" title="&lt;%- %&gt;"></a>&lt;%- %&gt;</h4><p>html要素を出力</p>
 <h4 id="include"><a href="#include" class="headerlink" title="include()"></a>include()</h4><p>別のEJSファイルを読み込むことができる<br>第一引数に読み込むEJSファイルへの自ファイルからの相対パス(.ejsは省略)<br>第二引数にEJSに渡すパラメータを記述</p>
 <p>などなど他にもあるので使う時に、検索して調べる</p>
-<h2 id="HTMLメタ言語まとめ"><a href="#HTMLメタ言語まとめ" class="headerlink" title="HTMLメタ言語まとめ"></a>HTMLメタ言語まとめ</h2><p>Ruby製、PHP製、JavaScript製など、いろいろある<br><a href="https://ejs.co/" target="_blank" rel="noopener">EJS</a><br><a href="https://github.com/pugjs" target="_blank" rel="noopener">Pug（Jade）</a><br><a href="https://mozilla.github.io/nunjucks/" target="_blank" rel="noopener">Nunjucks</a><br><a href="http://www.swig.org/" target="_blank" rel="noopener">Swig</a></p>
+<h2 id="メタ言語まとめ"><a href="#メタ言語まとめ" class="headerlink" title="メタ言語まとめ"></a>メタ言語まとめ</h2><p>Ruby製、PHP製、JavaScript製など、いろいろある</p>
+<h3 id="HTMLメタ言語まとめ"><a href="#HTMLメタ言語まとめ" class="headerlink" title="HTMLメタ言語まとめ"></a>HTMLメタ言語まとめ</h3><p><a href="https://ejs.co/" target="_blank" rel="noopener">EJS</a><br><a href="https://github.com/pugjs" target="_blank" rel="noopener">Pug（Jade）</a><br><a href="https://mozilla.github.io/nunjucks/" target="_blank" rel="noopener">Nunjucks</a><br><a href="http://www.swig.org/" target="_blank" rel="noopener">Swig</a></p>
 <h3 id="CSSメタ言語-プリプロセッサ-まとめ"><a href="#CSSメタ言語-プリプロセッサ-まとめ" class="headerlink" title="CSSメタ言語(プリプロセッサ)まとめ"></a>CSSメタ言語(プリプロセッサ)まとめ</h3><p><a href="https://sass-lang.com/" target="_blank" rel="noopener">Sass(SCSS)</a><br><a href="http://lesscss.org/" target="_blank" rel="noopener">Less</a><br><a href="http://stylus-lang.com/" target="_blank" rel="noopener">Stulus</a></p>
 <h3 id="JavaScriptメタ言語-AltJS-まとめ"><a href="#JavaScriptメタ言語-AltJS-まとめ" class="headerlink" title="JavaScriptメタ言語(AltJS)まとめ"></a>JavaScriptメタ言語(AltJS)まとめ</h3><p><a href="https://www.typescriptlang.org/" target="_blank" rel="noopener">TypeScript</a><br><a href="https://coffeescript.org/" target="_blank" rel="noopener">CoffeeScript</a><br><a href="https://www.dartlang.org/" target="_blank" rel="noopener">Dart</a></p>
 <h3 id="タスクランナーまとめ"><a href="#タスクランナーまとめ" class="headerlink" title="タスクランナーまとめ"></a>タスクランナーまとめ</h3><p><a href="https://gulpjs.com/" target="_blank" rel="noopener">Gulp</a><br><a href="https://gruntjs.com/" target="_blank" rel="noopener">Grunt</a><br><a href="https://www.npmjs.com/" target="_blank" rel="noopener">npm</a>package.jsonに記述すれば利用できる<br><a href="https://rollupjs.org/guide/en" target="_blank" rel="noopener">Rollup</a><br>他にもまだまだある<br>多すぎるし、新しいものもまだ増える</p>
