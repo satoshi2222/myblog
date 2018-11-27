@@ -6,7 +6,7 @@
   <link href="/myblog.github.io/atom.xml" rel="self"/>
   <link href="http://pubsubhubbub.appspot.com" rel="hub"/>
   <link href="https://satoshi2222.github.io/myblog.github.io/"/>
-  <updated>2018-11-27T15:00:52.966Z</updated>
+  <updated>2018-11-27T15:42:58.534Z</updated>
   <id>https://satoshi2222.github.io/myblog.github.io/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>静的ウェブサイトホスティングサービス</title>
+    <link href="https://satoshi2222.github.io/myblog.github.io/blog2/"/>
+    <id>https://satoshi2222.github.io/myblog.github.io/blog2/</id>
+    <published>2018-11-27T15:37:33.000Z</published>
+    <updated>2018-11-27T15:42:58.534Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><br><br></p><h2 id="ホスティングサービス"><a href="#ホスティングサービス" class="headerlink" title="ホスティングサービス"></a>ホスティングサービス</h2><a id="more"></a><h2 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h2><p><a href=""></a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;ホスティングサービス&quot;&gt;&lt;a href=&quot;#ホスティングサービス&quot; class=&quot;headerlink&quot; title=&quot;ホスティングサービス&quot;&gt;&lt;/a&gt;ホスティングサービス&lt;/h2&gt;
+    
+    </summary>
+    
+    
+      <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
+    
+      <category term="git" scheme="https://satoshi2222.github.io/myblog.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CMSと静的サイトジェネレーター</title>
     <link href="https://satoshi2222.github.io/myblog.github.io/blog1/"/>
     <id>https://satoshi2222.github.io/myblog.github.io/blog1/</id>
     <published>2018-11-27T11:30:55.000Z</published>
-    <updated>2018-11-27T15:00:52.966Z</updated>
+    <updated>2018-11-27T15:42:10.623Z</updated>
     
     <content type="html"><![CDATA[<p><br><br><br><br></p><h2 id="CMSとは"><a href="#CMSとは" class="headerlink" title="CMSとは"></a>CMSとは</h2><pre><code>CMS(Contents Management System)は管理画面からホームページを更新できる動的なHTMLで、ユーザーからのリクエストでDBからHTMLを生成する有名なのがWordPressでデータベースが必要でセキュリティ面に不安がある</code></pre><h2 id="静的サイトジェネレータとは"><a href="#静的サイトジェネレータとは" class="headerlink" title="静的サイトジェネレータとは"></a>静的サイトジェネレータとは</h2><p>　Static Site GeneratorはJavaScriptのフレームワークをベースにしている<br>  最初からhtmlを生成してからサーバーからhtmlを送るので、CMSのようにデータベースが必要なくて、サーバーがあればいいので、セキュリティ的に強い</p><a id="more"></a><h3 id="静的サイトジェネレーターのメリット"><a href="#静的サイトジェネレーターのメリット" class="headerlink" title="静的サイトジェネレーターのメリット"></a>静的サイトジェネレーターのメリット</h3><ul><li>GitHubPagesなどを使えば無料で作成できる</li><li>アクセス集中などの負荷に強い</li><li>すでに作成されているページを表示するので、表示が速い</li><li>ファイルなどをローカルに保存しているので、セキュリティ対策の必要がない</li></ul><h3 id="静的サイトジェネレーターのデメリット"><a href="#静的サイトジェネレーターのデメリット" class="headerlink" title="静的サイトジェネレーターのデメリット"></a>静的サイトジェネレーターのデメリット</h3><ul><li>Twitterなどのユーザー別のページを用意できない</li><li>ローカル保存のため複数での管理がしにくい</li><li>管理画面などがないため、ある程度の知識が必要</li><li>まだマイナーなものが多いので、情報が少ない</li></ul><h2 id="CMSまとめ"><a href="#CMSまとめ" class="headerlink" title="CMSまとめ"></a>CMSまとめ</h2><p><a href="https://ja.wordpress.org/" target="_blank" rel="noopener">WordPress</a><br><a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a><br><a href="https://www.drupal.org/" target="_blank" rel="noopener">Drupal</a></p><h2 id="静的サイトジェネレーターまとめ"><a href="#静的サイトジェネレーターまとめ" class="headerlink" title="静的サイトジェネレーターまとめ"></a>静的サイトジェネレーターまとめ</h2><p><a href="https://gohugo.io/" target="_blank" rel="noopener">HUGO</a><br><a href="https://jekyllrb-ja.github.io/" target="_blank" rel="noopener">jekyll</a><br><a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a><br><a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener">Gatsby</a><br><a href="https://react-static.js.org/" target="_blank" rel="noopener">React Static</a><br><a href="https://vuejs.org/" target="_blank" rel="noopener">VuePress</a></p><h2 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h2><p><a href="https://www.staticgen.com/" target="_blank" rel="noopener">StaticGen</a>ここにかなりの数の<br>静的サイトジェネレーターが載っている</p>]]></content>
     
@@ -36,9 +59,9 @@
     </summary>
     
     
-      <category term="hexo" scheme="https://satoshi2222.github.io/myblog.github.io/tags/hexo/"/>
-    
       <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
+    
+      <category term="hexo" scheme="https://satoshi2222.github.io/myblog.github.io/tags/hexo/"/>
     
   </entry>
   
@@ -340,9 +363,9 @@
     </summary>
     
     
-      <category term="hexo" scheme="https://satoshi2222.github.io/myblog.github.io/tags/hexo/"/>
-    
       <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
+    
+      <category term="hexo" scheme="https://satoshi2222.github.io/myblog.github.io/tags/hexo/"/>
     
   </entry>
   
@@ -363,11 +386,11 @@
     </summary>
     
     
-      <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io/tags/GitHub/"/>
+      <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
     
       <category term="hexo" scheme="https://satoshi2222.github.io/myblog.github.io/tags/hexo/"/>
     
-      <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
+      <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io/tags/GitHub/"/>
     
   </entry>
   
@@ -388,11 +411,11 @@
     </summary>
     
     
-      <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io/tags/GitHub/"/>
+      <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
     
       <category term="hexo" scheme="https://satoshi2222.github.io/myblog.github.io/tags/hexo/"/>
     
-      <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
+      <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io/tags/GitHub/"/>
     
   </entry>
   
@@ -420,11 +443,11 @@
     </summary>
     
     
-      <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io/tags/GitHub/"/>
+      <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
     
       <category term="hexo" scheme="https://satoshi2222.github.io/myblog.github.io/tags/hexo/"/>
     
-      <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
+      <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io/tags/GitHub/"/>
     
   </entry>
   

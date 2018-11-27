@@ -3,6 +3,25 @@
   
     
     <entry>
+      <title>静的ウェブサイトホスティングサービス</title>
+      <link href="/myblog.github.io/blog2/"/>
+      <url>/myblog.github.io/blog2/</url>
+      
+        <content type="html"><![CDATA[<p><br><br><br><br></p><h2 id="ホスティングサービス"><a href="#ホスティングサービス" class="headerlink" title="ホスティングサービス"></a>ホスティングサービス</h2><a id="more"></a><h2 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h2><p><a href=""></a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> blog </tag>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>CMSと静的サイトジェネレーター</title>
       <link href="/myblog.github.io/blog1/"/>
       <url>/myblog.github.io/blog1/</url>
@@ -13,9 +32,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> blog </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -254,9 +273,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> blog </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -273,11 +292,11 @@
       
         <tags>
             
-            <tag> GitHub </tag>
+            <tag> blog </tag>
             
             <tag> hexo </tag>
             
-            <tag> blog </tag>
+            <tag> GitHub </tag>
             
         </tags>
       
@@ -294,11 +313,11 @@
       
         <tags>
             
-            <tag> GitHub </tag>
+            <tag> blog </tag>
             
             <tag> hexo </tag>
             
-            <tag> blog </tag>
+            <tag> GitHub </tag>
             
         </tags>
       
@@ -315,11 +334,11 @@
       
         <tags>
             
-            <tag> GitHub </tag>
+            <tag> blog </tag>
             
             <tag> hexo </tag>
             
-            <tag> blog </tag>
+            <tag> GitHub </tag>
             
         </tags>
       
