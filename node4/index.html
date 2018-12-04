@@ -5,23 +5,23 @@
   
 
   
-  <title>Node.jsとは | WebMemo</title>
+  <title>node.jsの書き方 | WebMemo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="google-site-verification" content="YvmUAfawhSyphEgaYekvEV4ZwArmSTIKYRpO3eTJefQ" />  
-  <meta name="description" content="Node.jsとは JavaScriptでプログラミングできる、フレームワークやライブラリではなくサーバサイドのプラットフォーム  サーバーサイドとはサーバークライアント型のサービスのサーバ側のソフトウェアのこと">
+  <meta name="description" content="node.jsの書き方‘use strict’;これを定義することにより、StrictModeが有効となるこれにより、より厳格なコードを書くことができてエラー発生を未然に防ぎやすくなる定義されていない変数を禁止するなど、JavaやＣに近くなるJavaScriptエンジンによる最適化処理を困難にする誤りを修正するサポートしないブラウザもあるので注意">
 <meta name="keywords" content="node.js">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Node.jsとは">
-<meta property="og:url" content="https://satoshi2222.github.io/myblog.github.io/node1/index.html">
+<meta property="og:title" content="node.jsの書き方">
+<meta property="og:url" content="https://satoshi2222.github.io/myblog.github.io/node4/index.html">
 <meta property="og:site_name" content="WebMemo">
-<meta property="og:description" content="Node.jsとは JavaScriptでプログラミングできる、フレームワークやライブラリではなくサーバサイドのプラットフォーム  サーバーサイドとはサーバークライアント型のサービスのサーバ側のソフトウェアのこと">
+<meta property="og:description" content="node.jsの書き方‘use strict’;これを定義することにより、StrictModeが有効となるこれにより、より厳格なコードを書くことができてエラー発生を未然に防ぎやすくなる定義されていない変数を禁止するなど、JavaやＣに近くなるJavaScriptエンジンによる最適化処理を困難にする誤りを修正するサポートしないブラウザもあるので注意">
 <meta property="og:locale" content="ja">
-<meta property="og:image" content="https://satoshi2222.github.io/myblog.github.io/node1/nodelogo.png">
-<meta property="og:updated_time" content="2018-11-17T22:16:51.878Z">
+<meta property="og:image" content="https://satoshi2222.github.io/myblog.github.io/node4/nodelogo.png">
+<meta property="og:updated_time" content="2018-12-04T20:40:39.251Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Node.jsとは">
-<meta name="twitter:description" content="Node.jsとは JavaScriptでプログラミングできる、フレームワークやライブラリではなくサーバサイドのプラットフォーム  サーバーサイドとはサーバークライアント型のサービスのサーバ側のソフトウェアのこと">
-<meta name="twitter:image" content="https://satoshi2222.github.io/myblog.github.io/node1/nodelogo.png">
+<meta name="twitter:title" content="node.jsの書き方">
+<meta name="twitter:description" content="node.jsの書き方‘use strict’;これを定義することにより、StrictModeが有効となるこれにより、より厳格なコードを書くことができてエラー発生を未然に防ぎやすくなる定義されていない変数を禁止するなど、JavaやＣに近くなるJavaScriptエンジンによる最適化処理を困難にする誤りを修正するサポートしないブラウザもあるので注意">
+<meta name="twitter:image" content="https://satoshi2222.github.io/myblog.github.io/node4/nodelogo.png">
   
   
     <link rel="icon" href="/favicon.png">
@@ -70,10 +70,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-node1" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-node4" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/myblog.github.io/node1/" class="article-date">
-  <time datetime="2018-11-17T20:23:21.000Z" itemprop="datePublished">2018-11-18</time>
+    <a href="/myblog.github.io/node4/" class="article-date">
+  <time datetime="2018-12-02T18:30:12.000Z" itemprop="datePublished">2018-12-03</time>
 </a>
     
   </div>
@@ -84,7 +84,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Node.jsとは
+      node.jsの書き方
     </h1>
   
 
@@ -92,30 +92,27 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><br><br><img src="/myblog.github.io/node1/nodelogo.png" title="Image"><br><br></p>
-<h2 id="Node-jsとは"><a href="#Node-jsとは" class="headerlink" title="Node.jsとは"></a>Node.jsとは</h2><ul>
-<li>JavaScriptでプログラミングできる、フレームワークやライブラリではなくサーバサイドのプラットフォーム<br>  サーバーサイドとはサーバークライアント型のサービスのサーバ側のソフトウェアのこと</li>
-</ul>
-<a id="more"></a>
-<ul>
-<li><p>JavaScriptはブラウザ上で動きをつけるために開発されたプログラミング言語だが、サーバサイドでもJavaScriptを<br>  実行できるようにしてくれるのがNode.js<br>  PHPやJavaなどと同じような使い方ができるということだが、全く一緒ではない<br>  サーバも構築できるし、アプリケーションプログラムも動かせる</p>
-</li>
-<li><p>イベントループを採用している<br>  シングルスレッドでループ処理を回し、キューに溜まったイベントを処理していく方式<br>  リクエストを１つのスレッドで受け取ることができ,スレッドなどのリソース消費が少ない<br>  ブロッキングが発生すると、イベントループ全体がストップしてしまう問題を解決するのが、ノンブロッキングI/O</p>
-</li>
-<li><p>ノンブロッキングI/O（入出力）を採用している<br>  前の処理結果を待たずに他の処理を進めることができる<br>  単一のスレッドでも並列して処理できるようになっている<br>  LINE、Twitter、instagramのようなリアルタイムな反応が必要なWebの分野で活躍する</p>
-</li>
-</ul>
-<p>色々調べたが、実際に利用しないと何が起こってるのか掴みにくいので、ここでは表面的な内容だけにしておく</p>
-<h3 id="Node-jsのインストール-Windows版"><a href="#Node-jsのインストール-Windows版" class="headerlink" title="Node.jsのインストール(Windows版)"></a>Node.jsのインストール(Windows版)</h3><p><a href="https://nodejs.org/ja/" target="_blank" rel="noopener">Node.js</a>公式サイトにて,<br>ダウンロード Windows (x64)推奨版をクリック<br>後は画面にしたがってインストールしていく<br>カスタムインストール画面も追加したいものがなければ、そのままでいい<br>インストールが完了したら、確認するために新しくインストールされたNode.js command prompt起動して<br>バージョンを表示するコマンド<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure></p>
-<p>上記のコマンドを実行<br>インストールしたバージョンが表示されればインストール成功</p>
-<h2 id="バージョン管理"><a href="#バージョン管理" class="headerlink" title="バージョン管理"></a>バージョン管理</h2><p>バージョン管理をするなら管理するツール(nodebrewやnodistなど)からnode.jsをインストールする<br>node.jsは日々さまざまな改善が行われ、今まで利用していた機能が、次のバージョンで使えなくなるということがある<br>そのようなことを防止するために現在のバージョンを明確にして、状況に応じてバージョンを変更することができる<br>管理ツールを導入する</p>
+        <p><br><br><img src="/myblog.github.io/node4/nodelogo.png" title="Image"><br><br></p>
+<h2 id="node-jsの書き方"><a href="#node-jsの書き方" class="headerlink" title="node.jsの書き方"></a>node.jsの書き方</h2><h3 id="‘use-strict’"><a href="#‘use-strict’" class="headerlink" title="‘use strict’;"></a>‘use strict’;</h3><p>これを定義することにより、StrictModeが有効となる<br>これにより、より厳格なコードを書くことができてエラー発生を未然に防ぎやすくなる<br>定義されていない変数を禁止するなど、JavaやＣに近くなる<br>JavaScriptエンジンによる最適化処理を困難にする誤りを修正する<br>サポートしないブラウザもあるので注意<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&apos;use strict&apos;;</span><br></pre></td></tr></table></figure></p>
+<p>スクリプトの先頭以外に追加してもStrictモードにならない</p>
+<p>参考リンク<br><a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Strict_mode" target="_blank" rel="noopener">Strictモード(MDN)</a></p>
+<h2 id="require"><a href="#require" class="headerlink" title="require()"></a>require()</h2><p>mode.jsはデータベース、ネットワーク接続やファイルの操作が可能でライブラリを読み込むことができる<br>requireは外部ライブラリ、拡張機能を参照できる<br>node.jsはnpm(パッケージマネージャー)があり、これでインストールしたものは、<br>require()で読み込むことが可能<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var 変数名 = require(モジュール名)</span><br></pre></td></tr></table></figure></p>
+<h2 id="exports"><a href="#exports" class="headerlink" title="exports"></a>exports</h2><p>モジュールを作る場合はexportsを使う<br>exports.メソッド名 = 変数などのように記述する<br>例<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var abc = 値</span><br><span class="line">exports.abc =abc</span><br></pre></td></tr></table></figure></p>
+<p>これをrequireで読みだす</p>
+<h3 id="module-exports"><a href="#module-exports" class="headerlink" title="module.exports"></a>module.exports</h3><p>似ている書き方でmodule.exportがある<br>違いがあるらしいので使用する時にまた調べる</p>
+<h2 id="node-jsのコアモジュール-API"><a href="#node-jsのコアモジュール-API" class="headerlink" title="node.jsのコアモジュール(API)"></a>node.jsのコアモジュール(API)</h2><p>コアモジュールとはnode.jsに標準で入っているモジュールのことで、<br>便利なものが多いのでよく使うものをメモしておく<br>基本的にrequireを使って呼び出す</p>
+<h3 id="http"><a href="#http" class="headerlink" title="http"></a>http</h3><p>名前の通りHTTPの関連をまとめたもの<br>httpsもある<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var http = require(&apos;http&apos;);</span><br></pre></td></tr></table></figure></p>
+<h3 id="fs-FileSystem"><a href="#fs-FileSystem" class="headerlink" title="fs(FileSystem)"></a>fs(FileSystem)</h3><p>ファイルを操作するモジュール<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var fs = require(&apos;fs&apos;);</span><br></pre></td></tr></table></figure></p>
+<h3 id="url-UniformResourceLocator"><a href="#url-UniformResourceLocator" class="headerlink" title="url(UniformResourceLocator)"></a>url(UniformResourceLocator)</h3><p>URLの文字列の解析、生成などができる<br>構文を解析することをパース(parse)という<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var url = require(&apos;url&apos;);</span><br></pre></td></tr></table></figure></p>
+<h3 id="util"><a href="#util" class="headerlink" title="util"></a>util</h3><p>util.formatやutil.inspectなど汎用なユーティリティを使える<br>いろいろあるので使う時に調べる<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var util = require(&apos;util&apos;);</span><br></pre></td></tr></table></figure></p>
+<p>参照<br><a href="https://nodejs.org/api/util.html" target="_blank" rel="noopener">Node.js v11.3.0 Documentation</a><br><a href="https://www.ibm.com/support/knowledgecenter/ja/SS9H2Y_7.5.0/com.ibm.dp.doc/util_js.html" target="_blank" rel="noopener">IBM</a></p>
 
       
     </div>
     
     <footer class="article-footer">
-        <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node3\" title="同期I/O 非同期I/O" rel="bookmark">同期I/O 非同期I/O</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node4\" title="node.jsの書き方" rel="bookmark">node.jsの書き方</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node2\" title="npmとyarn" rel="bookmark">npmとyarn</a></h3></div></li></ul>
-      <a data-url="https://satoshi2222.github.io/myblog.github.io/node1/" data-id="cjp9kdonw000t5ow2427j2q0p" class="article-share-link">共有</a>
+        <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node1\" title="Node.jsとは" rel="bookmark">Node.jsとは</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node3\" title="同期I/O 非同期I/O" rel="bookmark">同期I/O 非同期I/O</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node2\" title="npmとyarn" rel="bookmark">npmとyarn</a></h3></div></li></ul>
+      <a data-url="https://satoshi2222.github.io/myblog.github.io/node4/" data-id="cjp9kdoob000w5ow2lzbmegdj" class="article-share-link">共有</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/node-js/">node.js</a></li></ul>
@@ -126,19 +123,10 @@
     
 <nav id="article-nav">
   
-    <a href="/myblog.github.io/node2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">次の記事</strong>
-      <div class="article-nav-title">
-        
-          npmとyarn
-        
-      </div>
-    </a>
   
-  
-    <a href="/myblog.github.io/git2/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/myblog.github.io/web2/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">前の記事</strong>
-      <div class="article-nav-title">Git 用語集</div>
+      <div class="article-nav-title">クラウドについて</div>
     </a>
   
 </nav>

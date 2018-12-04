@@ -6,7 +6,7 @@
   <link href="/myblog.github.io/atom.xml" rel="self"/>
   <link href="http://pubsubhubbub.appspot.com" rel="hub"/>
   <link href="https://satoshi2222.github.io/myblog.github.io/"/>
-  <updated>2018-12-02T06:09:19.924Z</updated>
+  <updated>2018-12-04T20:40:39.251Z</updated>
   <id>https://satoshi2222.github.io/myblog.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>node.jsの書き方</title>
+    <link href="https://satoshi2222.github.io/myblog.github.io/node4/"/>
+    <id>https://satoshi2222.github.io/myblog.github.io/node4/</id>
+    <published>2018-12-02T18:30:12.000Z</published>
+    <updated>2018-12-04T20:40:39.251Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/node4/nodelogo.png" title="Image"><br><br></p><h2 id="node-jsの書き方"><a href="#node-jsの書き方" class="headerlink" title="node.jsの書き方"></a>node.jsの書き方</h2><h3 id="‘use-strict’"><a href="#‘use-strict’" class="headerlink" title="‘use strict’;"></a>‘use strict’;</h3><p>これを定義することにより、StrictModeが有効となる<br>これにより、より厳格なコードを書くことができてエラー発生を未然に防ぎやすくなる<br>定義されていない変数を禁止するなど、JavaやＣに近くなる<br>JavaScriptエンジンによる最適化処理を困難にする誤りを修正する<br>サポートしないブラウザもあるので注意<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&apos;use strict&apos;;</span><br></pre></td></tr></table></figure></p><p>スクリプトの先頭以外に追加してもStrictモードにならない</p><p>参考リンク<br><a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Strict_mode" target="_blank" rel="noopener">Strictモード(MDN)</a></p><h2 id="require"><a href="#require" class="headerlink" title="require()"></a>require()</h2><p>mode.jsはデータベース、ネットワーク接続やファイルの操作が可能でライブラリを読み込むことができる<br>requireは外部ライブラリ、拡張機能を参照できる<br>node.jsはnpm(パッケージマネージャー)があり、これでインストールしたものは、<br>require()で読み込むことが可能<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var 変数名 = require(モジュール名)</span><br></pre></td></tr></table></figure></p><h2 id="exports"><a href="#exports" class="headerlink" title="exports"></a>exports</h2><p>モジュールを作る場合はexportsを使う<br>exports.メソッド名 = 変数などのように記述する<br>例<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var abc = 値</span><br><span class="line">exports.abc =abc</span><br></pre></td></tr></table></figure></p><p>これをrequireで読みだす</p><h3 id="module-exports"><a href="#module-exports" class="headerlink" title="module.exports"></a>module.exports</h3><p>似ている書き方でmodule.exportがある<br>違いがあるらしいので使用する時にまた調べる</p><h2 id="node-jsのコアモジュール-API"><a href="#node-jsのコアモジュール-API" class="headerlink" title="node.jsのコアモジュール(API)"></a>node.jsのコアモジュール(API)</h2><p>コアモジュールとはnode.jsに標準で入っているモジュールのことで、<br>便利なものが多いのでよく使うものをメモしておく<br>基本的にrequireを使って呼び出す</p><h3 id="http"><a href="#http" class="headerlink" title="http"></a>http</h3><p>名前の通りHTTPの関連をまとめたもの<br>httpsもある<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var http = require(&apos;http&apos;);</span><br></pre></td></tr></table></figure></p><h3 id="fs-FileSystem"><a href="#fs-FileSystem" class="headerlink" title="fs(FileSystem)"></a>fs(FileSystem)</h3><p>ファイルを操作するモジュール<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var fs = require(&apos;fs&apos;);</span><br></pre></td></tr></table></figure></p><h3 id="url-UniformResourceLocator"><a href="#url-UniformResourceLocator" class="headerlink" title="url(UniformResourceLocator)"></a>url(UniformResourceLocator)</h3><p>URLの文字列の解析、生成などができる<br>構文を解析することをパース(parse)という<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var url = require(&apos;url&apos;);</span><br></pre></td></tr></table></figure></p><h3 id="util"><a href="#util" class="headerlink" title="util"></a>util</h3><p>util.formatやutil.inspectなど汎用なユーティリティを使える<br>いろいろあるので使う時に調べる<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var util = require(&apos;util&apos;);</span><br></pre></td></tr></table></figure></p><p>参照<br><a href="https://nodejs.org/api/util.html" target="_blank" rel="noopener">Node.js v11.3.0 Documentation</a><br><a href="https://www.ibm.com/support/knowledgecenter/ja/SS9H2Y_7.5.0/com.ibm.dp.doc/util_js.html" target="_blank" rel="noopener">IBM</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/node4/nodelogo.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;node-jsの書き方&quot;&gt;&lt;a href=&quot;#node-jsの書き方&quot; class=&quot;headerlink&quot; title=&quot;node.jsの書き方&quot;&gt;&lt;/a&gt;node.jsの書き方&lt;/h2&gt;&lt;h3 id=&quot;‘use-strict’&quot;&gt;&lt;a href=&quot;#‘use-strict’&quot; class=&quot;headerlink&quot; title=&quot;‘use strict’;&quot;&gt;&lt;/a&gt;‘use strict’;&lt;/h3&gt;&lt;p&gt;これを定義することにより、StrictModeが有効となる&lt;br&gt;これにより、より厳格なコードを書くことができてエラー発生を未然に防ぎやすくなる&lt;br&gt;定義されていない変数を禁止するなど、JavaやＣに近くなる&lt;br&gt;JavaScriptエンジンによる最適化処理を困難にする誤りを修正する&lt;br&gt;サポートしないブラウザもあるので注意&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="node.js" scheme="https://satoshi2222.github.io/myblog.github.io/tags/node-js/"/>
+    
+  </entry>
   
   <entry>
     <title>クラウドについて</title>
@@ -42,9 +63,9 @@
     <link href="https://satoshi2222.github.io/myblog.github.io/blog2/"/>
     <id>https://satoshi2222.github.io/myblog.github.io/blog2/</id>
     <published>2018-11-27T15:37:33.000Z</published>
-    <updated>2018-11-29T11:05:22.081Z</updated>
+    <updated>2018-12-03T07:42:54.604Z</updated>
     
-    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/blog2/web1.jpg" title="Image"><br><br></p><h2 id="ホスティングサービスとは"><a href="#ホスティングサービスとは" class="headerlink" title="ホスティングサービスとは"></a>ホスティングサービスとは</h2><p>簡単に言うと、サーバーを借りること<br>ホスティングサービスとはサーバの利用者自身でサーバの運営・管理をしなくてもいいように、有料または無料でサーバ機のHDDの記憶スペースや情報処理機能などを利用させるサービスのこと。サーバホスティング、または「レンタルサーバ」、「共用サーバ」とも呼ばれる<br>基本的には、ホームページ公開用のWebサーバやメールサーバとしての利用が多いが、データベースやグループウェアなどのWebアプリケーションでの利用も多い<br><a id="more"></a></p><h4 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h4><p><a href="https://ja.wikipedia.org/wiki/%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%B5%E3%83%BC%E3%83%90" target="_blank" rel="noopener">ホスティングサーバ</a></p><h2 id="ホスティングサービスまとめ"><a href="#ホスティングサービスまとめ" class="headerlink" title="ホスティングサービスまとめ"></a>ホスティングサービスまとめ</h2><p><a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a><br><a href="https://docs.gitlab.com/ee/user/project/pages/" target="_blank" rel="noopener">GitLab Pages</a><br><a href="https://www.netlify.com/" target="_blank" rel="noopener">Netlify(ネットリファイ)</a><br><a href="https://aws.amazon.com/jp/s3/" target="_blank" rel="noopener">AWS S3</a><br><a href="https://firebase.google.com/docs/hosting/?hl=ja" target="_blank" rel="noopener">Firebase</a><br>などなどがあり、AWS以外は独自ドメインの設定とSSL対応が無料でできる</p><h3 id="レンタルサーバーまとめ"><a href="#レンタルサーバーまとめ" class="headerlink" title="レンタルサーバーまとめ"></a>レンタルサーバーまとめ</h3><p>ホスティングサービスとほぼ同じ意味で、基本料金が発生する<br><a href="https://www.xserver.ne.jp/" target="_blank" rel="noopener">エックスサーバー</a><br><a href="https://lolipop.jp/" target="_blank" rel="noopener">ロリポップ</a><br><a href="https://www.sakura.ne.jp/" target="_blank" rel="noopener">さくらサーバー</a><br>などなど</p><h2 id="Netlifyについて"><a href="#Netlifyについて" class="headerlink" title="Netlifyについて"></a>Netlifyについて</h2><p>使う可能性があるのでメモしておく<br>GitHubやGitLabのリポジトリと連携して、静的サイトを公開できる<br>独自ドメインやSSLなどが無料で、プッシュがあるとサイトを更新してくれる<br>NetlifyFormでフォーム設置ができる</p>]]></content>
+    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/blog2/web1.jpg" title="Image"><br><br></p><h2 id="ホスティングサービスとは"><a href="#ホスティングサービスとは" class="headerlink" title="ホスティングサービスとは"></a>ホスティングサービスとは</h2><p>簡単に言うと、サーバーを借りること<br>ホスティングサービスとはサーバの利用者自身でサーバの運営・管理をしなくてもいいように、有料または無料でサーバ機のHDDの記憶スペースや情報処理機能などを利用させるサービスのこと。サーバホスティング、または「レンタルサーバ」、「共用サーバ」とも呼ばれる<br>基本的には、ホームページ公開用のWebサーバやメールサーバとしての利用が多いが、データベースやグループウェアなどのWebアプリケーションでの利用も多い<br><a id="more"></a></p><h4 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h4><p><a href="https://ja.wikipedia.org/wiki/%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%B5%E3%83%BC%E3%83%90" target="_blank" rel="noopener">ホスティングサーバ</a></p><h2 id="ホスティングサービスまとめ"><a href="#ホスティングサービスまとめ" class="headerlink" title="ホスティングサービスまとめ"></a>ホスティングサービスまとめ</h2><p><a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a><br><a href="https://docs.gitlab.com/ee/user/project/pages/" target="_blank" rel="noopener">GitLab Pages</a><br><a href="https://www.netlify.com/" target="_blank" rel="noopener">Netlify(ネットリファイ)</a><br><a href="https://bitbucket.org/" target="_blank" rel="noopener">bitbucket</a><br><a href="https://aws.amazon.com/jp/s3/" target="_blank" rel="noopener">AWS S3</a><br><a href="https://firebase.google.com/docs/hosting/?hl=ja" target="_blank" rel="noopener">Firebase</a><br>などなどがあり、AWS以外は独自ドメインの設定とSSL対応が無料でできる</p><h3 id="レンタルサーバーまとめ"><a href="#レンタルサーバーまとめ" class="headerlink" title="レンタルサーバーまとめ"></a>レンタルサーバーまとめ</h3><p>ホスティングサービスとほぼ同じ意味で、基本料金が発生する<br><a href="https://www.xserver.ne.jp/" target="_blank" rel="noopener">エックスサーバー</a><br><a href="https://lolipop.jp/" target="_blank" rel="noopener">ロリポップ</a><br><a href="https://www.sakura.ne.jp/" target="_blank" rel="noopener">さくらサーバー</a><br>などなど</p><h2 id="Netlifyについて"><a href="#Netlifyについて" class="headerlink" title="Netlifyについて"></a>Netlifyについて</h2><p>使う可能性があるのでメモしておく<br>GitHubやGitLabのリポジトリと連携して、静的サイトを公開できる<br>独自ドメインやSSLなどが無料で、プッシュがあるとサイトを更新してくれる<br>NetlifyFormでフォーム設置ができる</p>]]></content>
     
     <summary type="html">
     
@@ -467,27 +488,6 @@
       <category term="hexo" scheme="https://satoshi2222.github.io/myblog.github.io/tags/hexo/"/>
     
       <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io/tags/GitHub/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>はじめに</title>
-    <link href="https://satoshi2222.github.io/myblog.github.io/about/"/>
-    <id>https://satoshi2222.github.io/myblog.github.io/about/</id>
-    <published>2018-09-07T18:03:20.771Z</published>
-    <updated>2018-09-17T23:40:12.151Z</updated>
-    
-    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/about/top.jpg" title="Image"><br><br></p><h2 id="ブログを作る"><a href="#ブログを作る" class="headerlink" title="ブログを作る"></a>ブログを作る</h2><p>色々と知識を増やしたかったので、とりあえずブログを作ってみることに。<br>WordPressなどを使うことも考えたが、練習なので無料で済ましたいと思い<br>調べたところGitHub Pagesを使えば無料でブログを公開できることが分かったので、<br>静的サイトジェネレーターのHexoを使ってサイトを作成することにしてみました。</p><a id="more"></a><h2 id="WebMemoについて"><a href="#WebMemoについて" class="headerlink" title="WebMemoについて"></a>WebMemoについて</h2><p>分からないことを調べながらメモしていくサイトです。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/about/top.jpg&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h2 id=&quot;ブログを作る&quot;&gt;&lt;a href=&quot;#ブログを作る&quot; class=&quot;headerlink&quot; title=&quot;ブログを作る&quot;&gt;&lt;/a&gt;ブログを作る&lt;/h2&gt;&lt;p&gt;色々と知識を増やしたかったので、とりあえずブログを作ってみることに。&lt;br&gt;WordPressなどを使うことも考えたが、練習なので無料で済ましたいと思い&lt;br&gt;調べたところGitHub Pagesを使えば無料でブログを公開できることが分かったので、&lt;br&gt;静的サイトジェネレーターのHexoを使ってサイトを作成することにしてみました。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="その他" scheme="https://satoshi2222.github.io/myblog.github.io/tags/%E3%81%9D%E3%81%AE%E4%BB%96/"/>
     
   </entry>
   
