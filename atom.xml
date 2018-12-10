@@ -6,7 +6,7 @@
   <link href="/myblog.github.io/atom.xml" rel="self"/>
   <link href="http://pubsubhubbub.appspot.com" rel="hub"/>
   <link href="https://satoshi2222.github.io/myblog.github.io/"/>
-  <updated>2018-12-04T20:40:39.251Z</updated>
+  <updated>2018-12-10T10:08:37.928Z</updated>
   <id>https://satoshi2222.github.io/myblog.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>var/let/constの違い</title>
+    <link href="https://satoshi2222.github.io/myblog.github.io/node5/"/>
+    <id>https://satoshi2222.github.io/myblog.github.io/node5/</id>
+    <published>2018-12-06T10:42:04.000Z</published>
+    <updated>2018-12-10T10:08:37.928Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><br><br></p><h2 id="var-let-constについて"><a href="#var-let-constについて" class="headerlink" title="var/let/constについて"></a>var/let/constについて</h2><p>変数宣言のこと<br>varしかなかったが、ES2015でletとconstが追加された<br>varで宣言された場合関数スコープ(functionの中に書かれた変数)となるが、letとconstはブロックスコープとなる<br>varは変数の巻き上げが起こるがletでが少し挙動が異なる？(あまり詳しく調べてない)<br>constとletがあるのでvarは積極的使うことはない<br><a id="more"></a></p><h3 id="ブロックスコープ"><a href="#ブロックスコープ" class="headerlink" title="ブロックスコープ"></a>ブロックスコープ</h3><p>{}で囲まれている部分のこと<br>varの場合だとfunction(){}がスコープとなっていたので<br>ifやforはスコープとならなかった<br>letで宣言された変数はforなどの中で閉じ込め、ループごとに固定される</p><h3 id="letとconst"><a href="#letとconst" class="headerlink" title="letとconst"></a>letとconst</h3><p>基本的にはconstを使う<br>constは再代入不可で、再代入が必要な場合はletを使う</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;var-let-constについて&quot;&gt;&lt;a href=&quot;#var-let-constについて&quot; class=&quot;headerlink&quot; title=&quot;var/let/constについて&quot;&gt;&lt;/a&gt;var/let/constについて&lt;/h2&gt;&lt;p&gt;変数宣言のこと&lt;br&gt;varしかなかったが、ES2015でletとconstが追加された&lt;br&gt;varで宣言された場合関数スコープ(functionの中に書かれた変数)となるが、letとconstはブロックスコープとなる&lt;br&gt;varは変数の巻き上げが起こるがletでが少し挙動が異なる？(あまり詳しく調べてない)&lt;br&gt;constとletがあるのでvarは積極的使うことはない&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="https://satoshi2222.github.io/myblog.github.io/tags/JavaScript/"/>
+    
+      <category term="node.js" scheme="https://satoshi2222.github.io/myblog.github.io/tags/node-js/"/>
+    
+  </entry>
   
   <entry>
     <title>node.jsの書き方</title>
@@ -428,9 +451,9 @@
     
       <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
     
-      <category term="hexo" scheme="https://satoshi2222.github.io/myblog.github.io/tags/hexo/"/>
-    
       <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io/tags/GitHub/"/>
+    
+      <category term="hexo" scheme="https://satoshi2222.github.io/myblog.github.io/tags/hexo/"/>
     
   </entry>
   
@@ -453,41 +476,9 @@
     
       <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
     
-      <category term="hexo" scheme="https://satoshi2222.github.io/myblog.github.io/tags/hexo/"/>
-    
       <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io/tags/GitHub/"/>
     
-  </entry>
-  
-  <entry>
-    <title>Hexoをインストールする</title>
-    <link href="https://satoshi2222.github.io/myblog.github.io/hexo1/"/>
-    <id>https://satoshi2222.github.io/myblog.github.io/hexo1/</id>
-    <published>2018-09-09T20:59:47.000Z</published>
-    <updated>2018-09-18T02:15:51.209Z</updated>
-    
-    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/hexo1/hexo_pic.png" title="Image"><br><br></p><h2 id="Hexoとは"><a href="#Hexoとは" class="headerlink" title="Hexoとは"></a>Hexoとは</h2><ul><li>静的サイトジェネレーターで簡単にシンプルなブログが作れる</li><li>プラグインも豊富で<a href="https://pages.github.com/" target="_blank" rel="noopener">GitHubPages</a>などのサービスを使えば無料でサイトを作成できる</li><li>Markdownの記事書いて、記事の作成もコマンドから行える</li><li>node.js製なのでJavaScriptによる拡張が可能である</li><li>データベース不要で、ページの表示が速い</li><li>脱CMSで、WordPrssのような環境依存がない<br>このように色々あるが、簡単に言うとMarkdownで書かれたファイルなどからHTML/CSS/JSを生成してくれるというもので、似たようなツールとして<a href="https://jekyllrb-ja.github.io/" target="_blank" rel="noopener">Jekyll</a>や<a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>などがある。</li></ul><a id="more"></a><h2 id="Hexoをインストール"><a href="#Hexoをインストール" class="headerlink" title="Hexoをインストール"></a>Hexoをインストール</h2><p>とりあえずgitで公開するので、gitとNode.jsが必要<br>gitでリポジトリ作成済なので<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure></p><p>公式どおりにインストールする</p><h2 id="作業ディレクトリ作成"><a href="#作業ディレクトリ作成" class="headerlink" title="作業ディレクトリ作成"></a>作業ディレクトリ作成</h2><p>initでウェブサイト初期化、サイト用のフォルダを生成。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init ディレクトリ名</span><br></pre></td></tr></table></figure></p><p>cd ディレクトリ名で移動して<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure></p><p>これで、Hexoに必要なパッケージなどがインストールされる</p><h2 id="localで立ち上げて確認する"><a href="#localで立ち上げて確認する" class="headerlink" title="localで立ち上げて確認する"></a>localで立ち上げて確認する</h2><p>hexo serverでコマンド起動(hexo sでもよい)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></p><p>プラウザのアドレスバーに<a href="http://localhost:4000/と入力" target="_blank" rel="noopener">http://localhost:4000/と入力</a><br>これでサイトが確認できる<br>終了するときはCtrl+C</p><h2 id="gitにdeployする-公開できるように設定"><a href="#gitにdeployする-公開できるように設定" class="headerlink" title="gitにdeployする(公開できるように設定)"></a>gitにdeployする(公開できるように設定)</h2><p>_congig.ymlというファイルを編集する<br>拡張子ymlはyamlで構造化データの表現方法<br>各種設定ファイルなどで使う<br>公式サイトにgitを使う場合はhexo-deployer-gitをインストールしてと書いてあるので<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p><p>これでgitに公開する機能がインストールされる</p><p>deployの項目の編集<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git   </span><br><span class="line">  repo: repo: (githubのURLをそのまま貼り付ける)</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p><p>リポジトリ名に.github.ioをつけたほうがいいかもしれない</p><p>次にURLの項目の編集<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># URL</span><br><span class="line">url: https://(ユーザーネーム).github.io/(リポジトリ名)/</span><br><span class="line">root: (リポジトリ名)</span><br></pre></td></tr></table></figure></p><p><em>サブドメインでやる場合はrootをしっかりと設定しないと正しく表示されない</em><br>独自ドメインを使用する場合は<a href="https://help.github.com/articles/using-a-custom-domain-with-github-pages/" target="_blank" rel="noopener">GitHubHelp</a>などを見て設定する</p><h2 id="その他設定"><a href="#その他設定" class="headerlink" title="その他設定"></a>その他設定</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: (ブログ名)</span><br><span class="line">subtitle: (サブタイトル)</span><br><span class="line">description:</span><br><span class="line">keywords:</span><br><span class="line">author: (名前)</span><br><span class="line">language: ja</span><br><span class="line">timezone: Asia/Tokyo</span><br></pre></td></tr></table></figure><h2 id="静的ファイルを生成して展開する"><a href="#静的ファイルを生成して展開する" class="headerlink" title="静的ファイルを生成して展開する"></a>静的ファイルを生成して展開する</h2><p>静的ファイル生成するコマンドはhexo generate<br>生成して展開する場合は<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate --deploy </span><br><span class="line">$ hexo deploy --generate</span><br></pre></td></tr></table></figure></p><p>次のいずれかのコマンドを実行する<br>両者に違いはない<br>上記のコマンドのショートカット<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy -g</span><br></pre></td></tr></table></figure></p><p>これでさっき入力したアドレスにアクセスするとページが表示されるはず<br>(反映に時間がかかる場合がある)<br>deploy時にパスワードを聞かれるので、GitHubで設定したパスワードを入力する<br>更新する時もdeployする</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/hexo1/hexo_pic.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Hexoとは&quot;&gt;&lt;a href=&quot;#Hexoとは&quot; class=&quot;headerlink&quot; title=&quot;Hexoとは&quot;&gt;&lt;/a&gt;Hexoとは&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;静的サイトジェネレーターで簡単にシンプルなブログが作れる&lt;/li&gt;
-&lt;li&gt;プラグインも豊富で&lt;a href=&quot;https://pages.github.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHubPages&lt;/a&gt;などのサービスを使えば無料でサイトを作成できる&lt;/li&gt;
-&lt;li&gt;Markdownの記事書いて、記事の作成もコマンドから行える&lt;/li&gt;
-&lt;li&gt;node.js製なのでJavaScriptによる拡張が可能である&lt;/li&gt;
-&lt;li&gt;データベース不要で、ページの表示が速い&lt;/li&gt;
-&lt;li&gt;脱CMSで、WordPrssのような環境依存がない&lt;br&gt;このように色々あるが、簡単に言うとMarkdownで書かれたファイルなどからHTML/CSS/JSを生成してくれるというもので、似たようなツールとして&lt;a href=&quot;https://jekyllrb-ja.github.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Jekyll&lt;/a&gt;や&lt;a href=&quot;https://gohugo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hugo&lt;/a&gt;などがある。&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
-    
       <category term="hexo" scheme="https://satoshi2222.github.io/myblog.github.io/tags/hexo/"/>
-    
-      <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io/tags/GitHub/"/>
     
   </entry>
   

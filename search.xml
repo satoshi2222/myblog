@@ -3,6 +3,25 @@
   
     
     <entry>
+      <title>var/let/constの違い</title>
+      <link href="/myblog.github.io/node5/"/>
+      <url>/myblog.github.io/node5/</url>
+      
+        <content type="html"><![CDATA[<p><br><br><br><br></p><h2 id="var-let-constについて"><a href="#var-let-constについて" class="headerlink" title="var/let/constについて"></a>var/let/constについて</h2><p>変数宣言のこと<br>varしかなかったが、ES2015でletとconstが追加された<br>varで宣言された場合関数スコープ(functionの中に書かれた変数)となるが、letとconstはブロックスコープとなる<br>varは変数の巻き上げが起こるがletでが少し挙動が異なる？(あまり詳しく調べてない)<br>constとletがあるのでvarは積極的使うことはない<br><a id="more"></a></p><h3 id="ブロックスコープ"><a href="#ブロックスコープ" class="headerlink" title="ブロックスコープ"></a>ブロックスコープ</h3><p>{}で囲まれている部分のこと<br>varの場合だとfunction(){}がスコープとなっていたので<br>ifやforはスコープとならなかった<br>letで宣言された変数はforなどの中で閉じ込め、ループごとに固定される</p><h3 id="letとconst"><a href="#letとconst" class="headerlink" title="letとconst"></a>letとconst</h3><p>基本的にはconstを使う<br>constは再代入不可で、再代入が必要な場合はletを使う</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+            <tag> node.js </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>node.jsの書き方</title>
       <link href="/myblog.github.io/node4/"/>
       <url>/myblog.github.io/node4/</url>
@@ -328,9 +347,9 @@
             
             <tag> blog </tag>
             
-            <tag> hexo </tag>
-            
             <tag> GitHub </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -349,9 +368,9 @@
             
             <tag> blog </tag>
             
-            <tag> hexo </tag>
-            
             <tag> GitHub </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -370,9 +389,9 @@
             
             <tag> blog </tag>
             
-            <tag> hexo </tag>
-            
             <tag> GitHub </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
