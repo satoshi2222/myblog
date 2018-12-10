@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>JavaScriptの関数について | WebMemo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="google-site-verification" content="YvmUAfawhSyphEgaYekvEV4ZwArmSTIKYRpO3eTJefQ" />  
+  <meta name="description" content="JavaScriptの関数についてfunction(ファンクション)のことで、簡単な例ととして書くと123function 関数名()&amp;#123;    処理内容&amp;#125; となるよく使う処理を関数という形で定義して、使いたいとき呼び出せる再利用ができて修正もしやすいメリットがある次のように引数を渡すこともできる1234function　関数名(引数)&amp;#123;    処理内容    ret">
+<meta name="keywords" content="JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScriptの関数について">
+<meta property="og:url" content="https://satoshi2222.github.io/myblog.github.io/javascript1/index.html">
+<meta property="og:site_name" content="WebMemo">
+<meta property="og:description" content="JavaScriptの関数についてfunction(ファンクション)のことで、簡単な例ととして書くと123function 関数名()&amp;#123;    処理内容&amp;#125; となるよく使う処理を関数という形で定義して、使いたいとき呼び出せる再利用ができて修正もしやすいメリットがある次のように引数を渡すこともできる1234function　関数名(引数)&amp;#123;    処理内容    ret">
+<meta property="og:locale" content="ja">
+<meta property="og:image" content="https://satoshi2222.github.io/myblog.github.io/javascript1/htmlcssjs.png">
+<meta property="og:updated_time" content="2018-12-10T20:28:52.401Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JavaScriptの関数について">
+<meta name="twitter:description" content="JavaScriptの関数についてfunction(ファンクション)のことで、簡単な例ととして書くと123function 関数名()&amp;#123;    処理内容&amp;#125; となるよく使う処理を関数という形で定義して、使いたいとき呼び出せる再利用ができて修正もしやすいメリットがある次のように引数を渡すこともできる1234function　関数名(引数)&amp;#123;    処理内容    ret">
+<meta name="twitter:image" content="https://satoshi2222.github.io/myblog.github.io/javascript1/htmlcssjs.png">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/myblog.github.io/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/myblog.github.io/" id="logo">WebMemo</a>
+      </h1>
+      
+        <h3 id="subtitle-wrap">
+          <a href="/myblog.github.io/" id="subtitle">Webについて調べたことをメモ</a>
+        </h3>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/myblog.github.io/">Home</a>
+        
+          <a class="main-nav-link" href="/myblog.github.io/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/myblog.github.io/about">about</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        <a id="nav-search-btn" class="nav-icon" title="検索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://satoshi2222.github.io/myblog.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-javascript1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/myblog.github.io/javascript1/" class="article-date">
+  <time datetime="2018-12-10T10:12:13.000Z" itemprop="datePublished">2018-12-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      JavaScriptの関数について
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><br><br><img src="/myblog.github.io/javascript1/htmlcssjs.png" title="Image"><br><br></p>
+<h2 id="JavaScriptの関数について"><a href="#JavaScriptの関数について" class="headerlink" title="JavaScriptの関数について"></a>JavaScriptの関数について</h2><p>function(ファンクション)のことで、簡単な例ととして書くと<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function 関数名()&#123;</span><br><span class="line">    処理内容</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>となる<br>よく使う処理を関数という形で定義して、使いたいとき呼び出せる<br>再利用ができて修正もしやすいメリットがある<br>次のように引数を渡すこともできる<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function　関数名(引数)&#123;</span><br><span class="line">    処理内容</span><br><span class="line">    return 返り値;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<h3 id="関数リテラル-無名関数"><a href="#関数リテラル-無名関数" class="headerlink" title="関数リテラル(無名関数)"></a>関数リテラル(無名関数)</h3><p>関数名をつけずに、関数を定義する<br>関数を変数に代入して、変数の記述で関数を実行する<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var 変数名 = function(引数1、引数2)&#123;</span><br><span class="line">    returan 引数1 + 引数2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>１度しか使わない場合や、名前を付ける必要のないもの、<br>名前空間を汚さないために使う</p>
+<h3 id="即時関数"><a href="#即時関数" class="headerlink" title="即時関数"></a>即時関数</h3><p>作成して、即実行できる関数<br>無名関数を()で囲み、最後にも、()をつけることで実行できる<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(function () &#123;</span><br><span class="line">    //処理</span><br><span class="line">&#125;());</span><br></pre></td></tr></table></figure></p>
+<p>引数や返り値を持つこともできる<br>使うメリットとしては、スコープ汚染を防ぐためで、閉じたスコープを作成できるので即時関数の中の変数はローカルな変数となる<br>ES6ではletやconstがあるのでそこまで使わないかもしれない</p>
+<h3 id="アロー関数"><a href="#アロー関数" class="headerlink" title="アロー関数"></a>アロー関数</h3><p>ES6で導入された関数で、=&gt;を使って関数リテラルを記述する<br>functionを宣言する必要はなく、省略して書くことができる<br>returnするだけなら、returnとブロック({}のこと)を省略して書ける(一行だけの場合はreturnは自動で行われる)<br>引数が２つ以上なら引数に()がいるが引数が１つなら()を省略できる<br>引数が０なら空の丸括弧()がいる<br>コンストラクタ関数として使うことができない<br>宣言元(アロー関数が宣言された場所)のthisを参照する<br>その他色々とfunctionとの違いがあるが今回は表面だけにしておく</p>
+<h2 id="クロージャ"><a href="#クロージャ" class="headerlink" title="クロージャ"></a>クロージャ</h2><p>クロージャは、独立した (自由な) 変数を参照する関数です。言い換えるとクロージャ内で定義された関数は、自身が作成された環境を ‘覚えています(コピペ)<br>簡単にいうとスコープの外にある変数を参照できるということ<br>テクニックなので、使わなければ出来ないというものではない<br>JavaSCriptは関数を入れ子にできるので、関数の中に他の関数を定義できるのと、JavaScriptの関数は定義時のコンテキスト(文脈)で実行されて、関数は定義時のコンテキストとは異なるコンテキスト上に持ち出されるとクロージャになるらしい<br>ほぼコピペなので、使う時に又詳しく調べることにする<br>参考リンク<br><a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Closures" target="_blank" rel="noopener">クロージャ(MDN)</a><br><a href="analogic.jp/closure/">ANALOGIC</a></p>
+
+      
+    </div>
+    
+    <footer class="article-footer">
+        <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\ejs\" title="EJS書き方" rel="bookmark">EJS書き方</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node5\" title="var/let/constの違い" rel="bookmark">var/let/constの違い</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\web1\" title="Webフレームワークとは" rel="bookmark">Webフレームワークとは</a></h3></div></li></ul>
+      <a data-url="https://satoshi2222.github.io/myblog.github.io/javascript1/" data-id="cjpi88ty6000m24w2gph2lmcx" class="article-share-link">共有</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/JavaScript/">JavaScript</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/myblog.github.io/node5/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前の記事</strong>
+      <div class="article-nav-title">var/let/constの違い</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">タグ</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/EJS/">EJS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/Git/">Git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/GitHub/">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/JavaScript/">JavaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/Web/">Web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/blog/">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/css/">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/flex/">flex</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/git/">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/hexo-blog/">hexo blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/html/">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/linux/">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/node-js/">node.js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/npm/">npm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/web/">web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/yarn/">yarn</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/その他/">その他</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">タグクラウド</h3>
+    <div class="widget tagcloud">
+      <a href="/myblog.github.io/tags/EJS/" style="font-size: 10px;">EJS</a> <a href="/myblog.github.io/tags/Git/" style="font-size: 14px;">Git</a> <a href="/myblog.github.io/tags/GitHub/" style="font-size: 20px;">GitHub</a> <a href="/myblog.github.io/tags/JavaScript/" style="font-size: 16px;">JavaScript</a> <a href="/myblog.github.io/tags/Web/" style="font-size: 10px;">Web</a> <a href="/myblog.github.io/tags/blog/" style="font-size: 20px;">blog</a> <a href="/myblog.github.io/tags/css/" style="font-size: 12px;">css</a> <a href="/myblog.github.io/tags/flex/" style="font-size: 10px;">flex</a> <a href="/myblog.github.io/tags/git/" style="font-size: 10px;">git</a> <a href="/myblog.github.io/tags/hexo/" style="font-size: 18px;">hexo</a> <a href="/myblog.github.io/tags/hexo-blog/" style="font-size: 10px;">hexo blog</a> <a href="/myblog.github.io/tags/html/" style="font-size: 10px;">html</a> <a href="/myblog.github.io/tags/linux/" style="font-size: 10px;">linux</a> <a href="/myblog.github.io/tags/node-js/" style="font-size: 18px;">node.js</a> <a href="/myblog.github.io/tags/npm/" style="font-size: 10px;">npm</a> <a href="/myblog.github.io/tags/web/" style="font-size: 10px;">web</a> <a href="/myblog.github.io/tags/yarn/" style="font-size: 10px;">yarn</a> <a href="/myblog.github.io/tags/その他/" style="font-size: 10px;">その他</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">アーカイブ</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/myblog.github.io/archives/2018/12/">12月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/myblog.github.io/archives/2018/11/">11月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/myblog.github.io/archives/2018/09/">9月 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最近の投稿</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/myblog.github.io/javascript1/">JavaScriptの関数について</a>
+          </li>
+        
+          <li>
+            <a href="/myblog.github.io/node5/">var/let/constの違い</a>
+          </li>
+        
+          <li>
+            <a href="/myblog.github.io/node4/">node.jsの書き方</a>
+          </li>
+        
+          <li>
+            <a href="/myblog.github.io/web2/">クラウドについて</a>
+          </li>
+        
+          <li>
+            <a href="/myblog.github.io/blog2/">静的ウェブサイトホスティングサービス</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 satoshi<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/myblog.github.io/" class="mobile-nav-link">Home</a>
+  
+    <a href="/myblog.github.io/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/myblog.github.io/about" class="mobile-nav-link">about</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/myblog.github.io/fancybox/jquery.fancybox.css">
+  <script src="/myblog.github.io/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/myblog.github.io/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
