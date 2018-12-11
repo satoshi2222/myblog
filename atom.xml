@@ -6,7 +6,7 @@
   <link href="/myblog.github.io/atom.xml" rel="self"/>
   <link href="http://pubsubhubbub.appspot.com" rel="hub"/>
   <link href="https://satoshi2222.github.io/myblog.github.io/"/>
-  <updated>2018-12-11T21:51:38.165Z</updated>
+  <updated>2018-12-11T22:05:37.971Z</updated>
   <id>https://satoshi2222.github.io/myblog.github.io/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="https://satoshi2222.github.io/myblog.github.io/javascript3/"/>
     <id>https://satoshi2222.github.io/myblog.github.io/javascript3/</id>
     <published>2018-12-11T20:49:13.000Z</published>
-    <updated>2018-12-11T21:51:38.165Z</updated>
+    <updated>2018-12-11T22:05:37.971Z</updated>
     
-    <content type="html"><![CDATA[<p><br><br><br><br></p><h2 id="データ型とは"><a href="#データ型とは" class="headerlink" title="データ型とは"></a>データ型とは</h2><p>データの種類で、JavaScriptで扱うデータは、文字列の場合もあれば、数値の場合もあるtrueなども含まれる<br>値はいずれかのデータ型に属することになり、それぞれできることが異なる</p><a id="more"></a><p>データ型はリテラルという表記ができる<br>リテラルとはプログラム上に直接書かれた数値や文字列のこと<br>データ型には以下のように、プリミティブ型とオブジェクト型に分けられる</p><h3 id="プリミティブ型"><a href="#プリミティブ型" class="headerlink" title="プリミティブ型"></a>プリミティブ型</h3><p>プリミティブとはプロパティとメソッドを持たないデータのこと</p><ul><li>Number型(数値)<br>JavaScriptにおいては数値は全て浮動小数点数として扱われる(全て数値型)</li><li>String型(文字)<br>文字列リテラルは””や’’のクォートで囲む</li><li>Boolean型(真偽)<br>trueとfalseの２つのみ</li><li>Undefined型<br>変数の値が未定義を示す値</li><li>Null型<br>参照するものがない状態</li><li>Symbol型(シンボル型)<br>変数 = Symbol()と書いて生成でき、不変なプリミティブ値</li></ul><h3 id="オブジェクト型"><a href="#オブジェクト型" class="headerlink" title="オブジェクト型"></a>オブジェクト型</h3><ul><li>Object</li></ul><h2 id="typeof演算子"><a href="#typeof演算子" class="headerlink" title="typeof演算子"></a>typeof演算子</h2><p>対象の値のデータ型を表す文字列を返す演算子なので、変数の型を知るのに役立つ<br>以下のように返される<br>typeof 1            = number<br>typeof ‘Hello’      = string</p>]]></content>
+    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/javascript3/htmlcssjs.png" title="Image"><br><br></p><h2 id="データ型とは"><a href="#データ型とは" class="headerlink" title="データ型とは"></a>データ型とは</h2><p>データの種類で、JavaScriptで扱うデータは、文字列の場合もあれば、数値の場合もあるtrueなども含まれる<br>値はいずれかのデータ型に属することになり、それぞれできることが異なる</p><a id="more"></a><p>データ型はリテラルという表記ができる<br>リテラルとはプログラム上に直接書かれた数値や文字列のこと<br>データ型には以下のように、プリミティブ型とオブジェクト型に分けられる</p><h3 id="プリミティブ型"><a href="#プリミティブ型" class="headerlink" title="プリミティブ型"></a>プリミティブ型</h3><p>プリミティブとはプロパティとメソッドを持たないデータのこと</p><ul><li>Number型(数値)<br>JavaScriptにおいては数値は全て浮動小数点数として扱われる(全て数値型)</li><li>String型(文字)<br>文字列リテラルは””や’’のクォートで囲む</li><li>Boolean型(真偽)<br>trueとfalseの２つのみ</li><li>Undefined型<br>変数の値が未定義を示す値</li><li>Null型<br>参照するものがない状態</li><li>Symbol型(シンボル型)<br>変数 = Symbol()と書いて生成でき、不変なプリミティブ値</li></ul><h3 id="オブジェクト型"><a href="#オブジェクト型" class="headerlink" title="オブジェクト型"></a>オブジェクト型</h3><ul><li>Object</li></ul><h2 id="typeof演算子"><a href="#typeof演算子" class="headerlink" title="typeof演算子"></a>typeof演算子</h2><p>対象の値のデータ型を表す文字列を返す演算子なので、変数の型を知るのに役立つ</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/javascript3/htmlcssjs.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id=&quot;データ型とは&quot;&gt;&lt;a href=&quot;#データ型とは&quot; class=&quot;headerlink&quot; title=&quot;データ型とは&quot;&gt;&lt;/a&gt;データ型とは&lt;/h2&gt;&lt;p&gt;データの種類で、JavaScriptで扱うデータは、文字列の場合もあれば、数値の場合もあるtrueなども含まれる&lt;br&gt;値はいずれかのデータ型に属することになり、それぞれできることが異なる&lt;/p&gt;
     
     </summary>
