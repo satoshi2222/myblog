@@ -6,7 +6,7 @@
   <link href="/myblog.github.io/atom.xml" rel="self"/>
   <link href="http://pubsubhubbub.appspot.com" rel="hub"/>
   <link href="https://satoshi2222.github.io/myblog.github.io/"/>
-  <updated>2018-12-10T20:28:52.401Z</updated>
+  <updated>2018-12-11T20:39:54.258Z</updated>
   <id>https://satoshi2222.github.io/myblog.github.io/</id>
   
   <author>
@@ -17,18 +17,42 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>JavaScriptでオブジェクトを使用する</title>
+    <link href="https://satoshi2222.github.io/myblog.github.io/javascript2/"/>
+    <id>https://satoshi2222.github.io/myblog.github.io/javascript2/</id>
+    <published>2018-12-11T10:26:04.000Z</published>
+    <updated>2018-12-11T20:39:54.258Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><br><br></p><h2 id="オブジェクトとは"><a href="#オブジェクトとは" class="headerlink" title="オブジェクトとは"></a>オブジェクトとは</h2><p>複数のプロパティを持つデータのまとまりで、各種データまとめて、１つの変数として扱えるデータなので、その点は配列と同じ<br>配列や関数もオブジェクトである<br>オブジェクトのプロパティとは、そのオブジェクトの状態を表すもの<br>でキー(名前)と値から構成される<br>オブジェクトを値として記述する場合は、{}(オブジェクトリテラル)にプロパティ名と値をセットして記述する<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var object = &#123;</span><br><span class="line">    // キー: 値</span><br><span class="line">    &quot;key&quot;: &quot;value&quot;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p><p><a href="ブラケット記法"></a>と.(ドット記法)を使ってプロパティにアクセスする<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">console.log(object.key); </span><br><span class="line">console.log(object[&quot;key&quot;]);</span><br></pre></td></tr></table></figure></p><h2 id="メソッド"><a href="#メソッド" class="headerlink" title="メソッド"></a>メソッド</h2><p>オブジェクトのプロパティに代入された関数<br>動作を指定する際に用いる処理<br>windowオブジェクトならalert()やopen()<br>console.logのlog()もメソッド</p><h2 id="DOM-Document-Object-Model-とは"><a href="#DOM-Document-Object-Model-とは" class="headerlink" title="DOM(Document Object Model)とは"></a>DOM(Document Object Model)とは</h2><p>xmlやhtmlの各要素にアクセスできて、操作できる仕様(API)<br>JavaScriptはHTMLがプラウザに読み込まれると、DOMオブジェクト(タグ、属性、値、文書)として、自動的に認識してくれる</p><h2 id="コンストラクタ関数"><a href="#コンストラクタ関数" class="headerlink" title="コンストラクタ関数"></a>コンストラクタ関数</h2><p>オブジェクトを生成できる<br>生成されたオブジェクトをインスタンスという<br>他言語のクラスに似ているようなもの<br>JavaScriptでオブジェクトを作る方法は、オブジェクト初期化子を使うか、コンストラクタからインスタンスを作成する２つがある<br>コンストラクタでは、thisを使いオブジェクトの定義する<br>同じプロパティを持つ複数のオブジェクトが、それぞれのプロパティの値が異なる場合に役に立つ</p><h3 id="オブジェクト初期化子"><a href="#オブジェクト初期化子" class="headerlink" title="オブジェクト初期化子"></a>オブジェクト初期化子</h3><p>new Object()、Object.create()、リテラル記法({}で囲む)の３つの方法でオブジェクトを初期化して、新たにオブジェクトを生成する方法</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;オブジェクトとは&quot;&gt;&lt;a href=&quot;#オブジェクトとは&quot; class=&quot;headerlink&quot; title=&quot;オブジェクトとは&quot;&gt;&lt;/a&gt;オブジェクトとは&lt;/h2&gt;&lt;p&gt;複数のプロパティを持つデータのまとまりで、各
+      
+    
+    </summary>
+    
+    
+      <category term="Javascript" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JavaScriptの関数について</title>
     <link href="https://satoshi2222.github.io/myblog.github.io/javascript1/"/>
     <id>https://satoshi2222.github.io/myblog.github.io/javascript1/</id>
     <published>2018-12-10T10:12:13.000Z</published>
-    <updated>2018-12-10T20:28:52.401Z</updated>
+    <updated>2018-12-10T20:45:57.571Z</updated>
     
-    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/javascript1/htmlcssjs.png" title="Image"><br><br></p><h2 id="JavaScriptの関数について"><a href="#JavaScriptの関数について" class="headerlink" title="JavaScriptの関数について"></a>JavaScriptの関数について</h2><p>function(ファンクション)のことで、簡単な例ととして書くと<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function 関数名()&#123;</span><br><span class="line">    処理内容</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>となる<br>よく使う処理を関数という形で定義して、使いたいとき呼び出せる<br>再利用ができて修正もしやすいメリットがある<br>次のように引数を渡すこともできる<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function　関数名(引数)&#123;</span><br><span class="line">    処理内容</span><br><span class="line">    return 返り値;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><a id="more"></a><h3 id="関数リテラル-無名関数"><a href="#関数リテラル-無名関数" class="headerlink" title="関数リテラル(無名関数)"></a>関数リテラル(無名関数)</h3><p>関数名をつけずに、関数を定義する<br>関数を変数に代入して、変数の記述で関数を実行する<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var 変数名 = function(引数1、引数2)&#123;</span><br><span class="line">    returan 引数1 + 引数2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>１度しか使わない場合や、名前を付ける必要のないもの、<br>名前空間を汚さないために使う</p><h3 id="即時関数"><a href="#即時関数" class="headerlink" title="即時関数"></a>即時関数</h3><p>作成して、即実行できる関数<br>無名関数を()で囲み、最後にも、()をつけることで実行できる<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(function () &#123;</span><br><span class="line">    //処理</span><br><span class="line">&#125;());</span><br></pre></td></tr></table></figure></p><p>引数や返り値を持つこともできる<br>使うメリットとしては、スコープ汚染を防ぐためで、閉じたスコープを作成できるので即時関数の中の変数はローカルな変数となる<br>ES6ではletやconstがあるのでそこまで使わないかもしれない</p><h3 id="アロー関数"><a href="#アロー関数" class="headerlink" title="アロー関数"></a>アロー関数</h3><p>ES6で導入された関数で、=&gt;を使って関数リテラルを記述する<br>functionを宣言する必要はなく、省略して書くことができる<br>returnするだけなら、returnとブロック({}のこと)を省略して書ける(一行だけの場合はreturnは自動で行われる)<br>引数が２つ以上なら引数に()がいるが引数が１つなら()を省略できる<br>引数が０なら空の丸括弧()がいる<br>コンストラクタ関数として使うことができない<br>宣言元(アロー関数が宣言された場所)のthisを参照する<br>その他色々とfunctionとの違いがあるが今回は表面だけにしておく</p><h2 id="クロージャ"><a href="#クロージャ" class="headerlink" title="クロージャ"></a>クロージャ</h2><p>クロージャは、独立した (自由な) 変数を参照する関数です。言い換えるとクロージャ内で定義された関数は、自身が作成された環境を ‘覚えています(コピペ)<br>簡単にいうとスコープの外にある変数を参照できるということ<br>テクニックなので、使わなければ出来ないというものではない<br>JavaSCriptは関数を入れ子にできるので、関数の中に他の関数を定義できるのと、JavaScriptの関数は定義時のコンテキスト(文脈)で実行されて、関数は定義時のコンテキストとは異なるコンテキスト上に持ち出されるとクロージャになるらしい<br>ほぼコピペなので、使う時に又詳しく調べることにする<br>参考リンク<br><a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Closures" target="_blank" rel="noopener">クロージャ(MDN)</a><br><a href="analogic.jp/closure/">ANALOGIC</a></p>]]></content>
+    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/javascript1/htmlcssjs.png" title="Image"><br><br></p><h2 id="JavaScriptの関数とは"><a href="#JavaScriptの関数とは" class="headerlink" title="JavaScriptの関数とは"></a>JavaScriptの関数とは</h2><p>function(ファンクション)のことで、簡単な例ととして書くと<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function 関数名()&#123;</span><br><span class="line">    処理内容</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>となる<br>よく使う処理を関数という形で定義して、使いたいとき呼び出せる<br>再利用ができて修正もしやすいメリットがある<br>次のように引数を渡すこともできる<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function　関数名(引数)&#123;</span><br><span class="line">    処理内容</span><br><span class="line">    return 返り値;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><a id="more"></a><h3 id="関数リテラル-無名関数"><a href="#関数リテラル-無名関数" class="headerlink" title="関数リテラル(無名関数)"></a>関数リテラル(無名関数)</h3><p>関数名をつけずに、関数を定義する<br>関数を変数に代入して、変数の記述で関数を実行する<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var 変数名 = function(引数1、引数2)&#123;</span><br><span class="line">    returan 引数1 + 引数2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>１度しか使わない場合や、名前を付ける必要のないもの、<br>名前空間を汚さないために使う</p><h3 id="即時関数"><a href="#即時関数" class="headerlink" title="即時関数"></a>即時関数</h3><p>作成して、即実行できる関数<br>無名関数を()で囲み、最後にも、()をつけることで実行できる<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(function () &#123;</span><br><span class="line">    //処理</span><br><span class="line">&#125;());</span><br></pre></td></tr></table></figure></p><p>引数や返り値を持つこともできる<br>使うメリットとしては、スコープ汚染を防ぐためで、閉じたスコープを作成できるので即時関数の中の変数はローカルな変数となる<br>ES6ではletやconstがあるのでそこまで使わないかもしれない</p><h3 id="アロー関数"><a href="#アロー関数" class="headerlink" title="アロー関数"></a>アロー関数</h3><p>ES6で導入された関数で、=&gt;を使って関数リテラルを記述する<br>functionを宣言する必要はなく、省略して書くことができる<br>returnするだけなら、returnとブロック({}のこと)を省略して書ける(一行だけの場合はreturnは自動で行われる)<br>引数が２つ以上なら引数に()がいるが引数が１つなら()を省略できる<br>引数が０なら空の丸括弧()がいる<br>コンストラクタ関数として使うことができない<br>宣言元(アロー関数が宣言された場所)のthisを参照する<br>その他色々とfunctionとの違いがあるが今回は表面だけにしておく</p><h2 id="クロージャ"><a href="#クロージャ" class="headerlink" title="クロージャ"></a>クロージャ</h2><p>クロージャは、独立した (自由な) 変数を参照する関数です。言い換えるとクロージャ内で定義された関数は、自身が作成された環境を ‘覚えています(コピペ)<br>簡単にいうとスコープの外にある変数を参照できるということ<br>テクニックなので、使わなければ出来ないというものではない<br>JavaSCriptは関数を入れ子にできるので、関数の中に他の関数を定義できるのと、JavaScriptの関数は定義時のコンテキスト(文脈)で実行されて、関数は定義時のコンテキストとは異なるコンテキスト上に持ち出されるとクロージャになるらしい<br>ほぼコピペなので、使う時に又詳しく調べることにする<br>参考リンク<br><a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Closures" target="_blank" rel="noopener">クロージャ(MDN)</a><br><a href="analogic.jp/closure/">ANALOGIC</a></p>]]></content>
     
     <summary type="html">
     
       &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/javascript1/htmlcssjs.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h2 id=&quot;JavaScriptの関数について&quot;&gt;&lt;a href=&quot;#JavaScriptの関数について&quot; class=&quot;headerlink&quot; title=&quot;JavaScriptの関数について&quot;&gt;&lt;/a&gt;JavaScriptの関数について&lt;/h2&gt;&lt;p&gt;function(ファンクション)のことで、簡単な例ととして書くと&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;function 関数名()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    処理内容&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&quot;JavaScriptの関数とは&quot;&gt;&lt;a href=&quot;#JavaScriptの関数とは&quot; class=&quot;headerlink&quot; title=&quot;JavaScriptの関数とは&quot;&gt;&lt;/a&gt;JavaScriptの関数とは&lt;/h2&gt;&lt;p&gt;function(ファンクション)のことで、簡単な例ととして書くと&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;function 関数名()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    処理内容&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;となる&lt;br&gt;よく使う処理を関数という形で定義して、使いたいとき呼び出せる&lt;br&gt;再利用ができて修正もしやすいメリットがある&lt;br&gt;次のように引数を渡すこともできる&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;function　関数名(引数)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    処理内容&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    return 返り値;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
     
     </summary>
@@ -451,31 +475,6 @@
       <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
     
       <category term="hexo" scheme="https://satoshi2222.github.io/myblog.github.io/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexoでプラグインを追加する</title>
-    <link href="https://satoshi2222.github.io/myblog.github.io/hexo3/"/>
-    <id>https://satoshi2222.github.io/myblog.github.io/hexo3/</id>
-    <published>2018-09-17T21:17:31.000Z</published>
-    <updated>2018-09-17T23:40:01.249Z</updated>
-    
-    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/hexo3/hexo_pic.png" title="Image"><br><br></p><h2 id="必要なプラグインを追加する"><a href="#必要なプラグインを追加する" class="headerlink" title="必要なプラグインを追加する"></a>必要なプラグインを追加する</h2><p>基本的にプラグインが色々と揃っているので必要に応じてインストールしていく</p><a id="more"></a><h3 id="サイトマップを作成"><a href="#サイトマップを作成" class="headerlink" title="サイトマップを作成"></a>サイトマップを作成</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure><h3 id="robots-txtを設置する"><a href="#robots-txtを設置する" class="headerlink" title="robots.txtを設置する"></a>robots.txtを設置する</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-robotstxt --save</span><br></pre></td></tr></table></figure><h3 id="RSSの設置する"><a href="#RSSの設置する" class="headerlink" title="RSSの設置する"></a>RSSの設置する</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure><h3 id="目次を設置する"><a href="#目次を設置する" class="headerlink" title="目次を設置する"></a>目次を設置する</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-toc --save</span><br></pre></td></tr></table></figure><p>上記をインストールした後に記事に下記を記述するとh1などを読みだしてくれる<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- toc --&gt;</span><br></pre></td></tr></table></figure></p><p>設定の変更は必要に応じてconfig.ymlを編集する</p><h2 id="その他の便利そうなプラグイン"><a href="#その他の便利そうなプラグイン" class="headerlink" title="その他の便利そうなプラグイン"></a>その他の便利そうなプラグイン</h2><ul><li>hexo-toc<br>  目次を生成</li><li>hexo-generator-archive<br>  アーカイブを生成</li><li>hexo-generator-category<br>  カテゴリーを生成</li><li>hexo-generator-tag<br>  タグを生成</li></ul><p>他にもかなりある様子</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/hexo3/hexo_pic.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h2 id=&quot;必要なプラグインを追加する&quot;&gt;&lt;a href=&quot;#必要なプラグインを追加する&quot; class=&quot;headerlink&quot; title=&quot;必要なプラグインを追加する&quot;&gt;&lt;/a&gt;必要なプラグインを追加する&lt;/h2&gt;&lt;p&gt;基本的にプラグインが色々と揃っているので必要に応じてインストールしていく&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
-    
-      <category term="hexo" scheme="https://satoshi2222.github.io/myblog.github.io/tags/hexo/"/>
-    
-      <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io/tags/GitHub/"/>
     
   </entry>
   
