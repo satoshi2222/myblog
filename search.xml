@@ -3,6 +3,27 @@
   
     
     <entry>
+      <title>SPAについて</title>
+      <link href="/myblog.github.io/javascript4/"/>
+      <url>/myblog.github.io/javascript4/</url>
+      
+        <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/javascript4/htmlcssjs.png" title="Image"><br><br></p><h2 id="SPAとは"><a href="#SPAとは" class="headerlink" title="SPAとは"></a>SPAとは</h2><p>SinglePageApplicationの略で単一のページでコンテンツの切り替えを行うWebアプリケーションのこと<br>ユーザーのアクションに対して必要なデータだけサーバーに要求して<br>ページ全体ではなく、一部分だけを差し替えて、コンテンツを表示する<br><a id="more"></a><br>初回のみおページ全体をロードして、次からはサーバーからJSONデータを受け取ってリロードする<br>SPAにおける主要な技術はAjaxでjQueryの登場でより広く使われるようになった<br>jQueryでも可能だが、DOM操作などに限界があり、<br>代わりにAngularJSやReactやVue.jsといったSPA向けのフレームワークを使用する<br>例を挙げると、FacebookやGoogleMapやSlackなど</p><h3 id="Ajaxとは"><a href="#Ajaxとは" class="headerlink" title="Ajaxとは"></a>Ajaxとは</h3><p>Ajax(エイジャックス)はAsynchronous JavaScript XMLの略で、<br>JavaScriptとXMLを使って非同期にサーバーと通信を行うこと<br>ウェブブラウザ内で非同期通信を行いながらインターフェイスの構築を行うプログラミング手法<br>node.jsの登場でサーバ側におけるデータ形式変換の必要なしに、Ajaxを実現できる環境が整い始めている(wikipedeia引用)[<a href="https://ja.wikipedia.org/wiki/Ajax]" target="_blank" rel="noopener">https://ja.wikipedia.org/wiki/Ajax]</a></p><h3 id="JSONとは"><a href="#JSONとは" class="headerlink" title="JSONとは"></a>JSONとは</h3><p>JavaScriptObjectNotationの略で軽量のデータ交換フォーマット<br>人間にとって読み書きが容易で、マシンにとっても簡単にパースや生成を行なえる形式</p><h2 id="PWAとは"><a href="#PWAとは" class="headerlink" title="PWAとは"></a>PWAとは</h2><p>ProgressiveWebAppsの略で、モバイル向けWebサイトをGooglePlayストアなどでみかけるアプリ(ネイティブアプリ)のように使える仕組みのこと<br>レスポンスが向上してユーザーインストールさせることがなく、オフラインでのコンテンツ利用が可能<br>プッシュ通知の受信やストアの審査なくアップデートが可能</p><h3 id="WEBページをPWAにするには"><a href="#WEBページをPWAにするには" class="headerlink" title="WEBページをPWAにするには"></a>WEBページをPWAにするには</h3><p>特定のフレームワークなどは必要なく、Googleが策定した(Progressive Web App Checklist)[<a href="https://developers.google.com/web/progressive-web-apps/checklist]に沿って開発すればいい" target="_blank" rel="noopener">https://developers.google.com/web/progressive-web-apps/checklist]に沿って開発すればいい</a><br>Googleが推奨していて、Googleが開発キットも用意している</p><h2 id="AMPとは"><a href="#AMPとは" class="headerlink" title="AMPとは"></a>AMPとは</h2><p>AMP(アンプ)とはAccelerated Mobile Pagesの略で、<br>GoogleとTwitterが共同で立ち上げたオープンソースプロジェクト<br>モバイル端末でホームページを高速で表示させるための仕組み<br>通常はWebページにアクセスする場合、クリックに応じてサーバからHTMLなどを読み込むが、AMPに対応しているページは、あらかじめGoogleなどのサーバーにキャッシュすることで、読み込み時間を削減している<br>(導入ガイド)[<a href="https://webmaster-ja.googleblog.com/2016/01/accelerated-mobile-pages.html]" target="_blank" rel="noopener">https://webmaster-ja.googleblog.com/2016/01/accelerated-mobile-pages.html]</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+            <tag> web </tag>
+            
+            <tag> node.js </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>JavaScriptのデータ型</title>
       <link href="/myblog.github.io/javascript3/"/>
       <url>/myblog.github.io/javascript3/</url>
@@ -195,9 +216,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> GitHub </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
@@ -269,9 +290,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> GitHub </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
@@ -288,9 +309,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> GitHub </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       

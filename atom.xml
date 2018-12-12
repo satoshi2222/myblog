@@ -6,7 +6,7 @@
   <link href="/myblog.github.io/atom.xml" rel="self"/>
   <link href="http://pubsubhubbub.appspot.com" rel="hub"/>
   <link href="https://satoshi2222.github.io/myblog.github.io/"/>
-  <updated>2018-12-11T22:05:37.971Z</updated>
+  <updated>2018-12-12T11:09:11.645Z</updated>
   <id>https://satoshi2222.github.io/myblog.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SPAについて</title>
+    <link href="https://satoshi2222.github.io/myblog.github.io/javascript4/"/>
+    <id>https://satoshi2222.github.io/myblog.github.io/javascript4/</id>
+    <published>2018-12-11T23:42:28.000Z</published>
+    <updated>2018-12-12T11:09:11.645Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/javascript4/htmlcssjs.png" title="Image"><br><br></p><h2 id="SPAとは"><a href="#SPAとは" class="headerlink" title="SPAとは"></a>SPAとは</h2><p>SinglePageApplicationの略で単一のページでコンテンツの切り替えを行うWebアプリケーションのこと<br>ユーザーのアクションに対して必要なデータだけサーバーに要求して<br>ページ全体ではなく、一部分だけを差し替えて、コンテンツを表示する<br><a id="more"></a><br>初回のみおページ全体をロードして、次からはサーバーからJSONデータを受け取ってリロードする<br>SPAにおける主要な技術はAjaxでjQueryの登場でより広く使われるようになった<br>jQueryでも可能だが、DOM操作などに限界があり、<br>代わりにAngularJSやReactやVue.jsといったSPA向けのフレームワークを使用する<br>例を挙げると、FacebookやGoogleMapやSlackなど</p><h3 id="Ajaxとは"><a href="#Ajaxとは" class="headerlink" title="Ajaxとは"></a>Ajaxとは</h3><p>Ajax(エイジャックス)はAsynchronous JavaScript XMLの略で、<br>JavaScriptとXMLを使って非同期にサーバーと通信を行うこと<br>ウェブブラウザ内で非同期通信を行いながらインターフェイスの構築を行うプログラミング手法<br>node.jsの登場でサーバ側におけるデータ形式変換の必要なしに、Ajaxを実現できる環境が整い始めている(wikipedeia引用)[<a href="https://ja.wikipedia.org/wiki/Ajax]" target="_blank" rel="noopener">https://ja.wikipedia.org/wiki/Ajax]</a></p><h3 id="JSONとは"><a href="#JSONとは" class="headerlink" title="JSONとは"></a>JSONとは</h3><p>JavaScriptObjectNotationの略で軽量のデータ交換フォーマット<br>人間にとって読み書きが容易で、マシンにとっても簡単にパースや生成を行なえる形式</p><h2 id="PWAとは"><a href="#PWAとは" class="headerlink" title="PWAとは"></a>PWAとは</h2><p>ProgressiveWebAppsの略で、モバイル向けWebサイトをGooglePlayストアなどでみかけるアプリ(ネイティブアプリ)のように使える仕組みのこと<br>レスポンスが向上してユーザーインストールさせることがなく、オフラインでのコンテンツ利用が可能<br>プッシュ通知の受信やストアの審査なくアップデートが可能</p><h3 id="WEBページをPWAにするには"><a href="#WEBページをPWAにするには" class="headerlink" title="WEBページをPWAにするには"></a>WEBページをPWAにするには</h3><p>特定のフレームワークなどは必要なく、Googleが策定した(Progressive Web App Checklist)[<a href="https://developers.google.com/web/progressive-web-apps/checklist]に沿って開発すればいい" target="_blank" rel="noopener">https://developers.google.com/web/progressive-web-apps/checklist]に沿って開発すればいい</a><br>Googleが推奨していて、Googleが開発キットも用意している</p><h2 id="AMPとは"><a href="#AMPとは" class="headerlink" title="AMPとは"></a>AMPとは</h2><p>AMP(アンプ)とはAccelerated Mobile Pagesの略で、<br>GoogleとTwitterが共同で立ち上げたオープンソースプロジェクト<br>モバイル端末でホームページを高速で表示させるための仕組み<br>通常はWebページにアクセスする場合、クリックに応じてサーバからHTMLなどを読み込むが、AMPに対応しているページは、あらかじめGoogleなどのサーバーにキャッシュすることで、読み込み時間を削減している<br>(導入ガイド)[<a href="https://webmaster-ja.googleblog.com/2016/01/accelerated-mobile-pages.html]" target="_blank" rel="noopener">https://webmaster-ja.googleblog.com/2016/01/accelerated-mobile-pages.html]</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/javascript4/htmlcssjs.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;SPAとは&quot;&gt;&lt;a href=&quot;#SPAとは&quot; class=&quot;headerlink&quot; title=&quot;SPAとは&quot;&gt;&lt;/a&gt;SPAとは&lt;/h2&gt;&lt;p&gt;SinglePageApplicationの略で単一のページでコンテンツの切り替えを行うWebアプリケーションのこと&lt;br&gt;ユーザーのアクションに対して必要なデータだけサーバーに要求して&lt;br&gt;ページ全体ではなく、一部分だけを差し替えて、コンテンツを表示する&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="https://satoshi2222.github.io/myblog.github.io/tags/JavaScript/"/>
+    
+      <category term="web" scheme="https://satoshi2222.github.io/myblog.github.io/tags/web/"/>
+    
+      <category term="node.js" scheme="https://satoshi2222.github.io/myblog.github.io/tags/node-js/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaScriptのデータ型</title>
@@ -257,9 +282,9 @@
     </summary>
     
     
-      <category term="Git" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Git/"/>
-    
       <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io/tags/GitHub/"/>
+    
+      <category term="Git" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Git/"/>
     
   </entry>
   
@@ -351,9 +376,9 @@
     </summary>
     
     
-      <category term="Git" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Git/"/>
-    
       <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io/tags/GitHub/"/>
+    
+      <category term="Git" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Git/"/>
     
   </entry>
   
@@ -375,9 +400,9 @@
     </summary>
     
     
-      <category term="Git" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Git/"/>
-    
       <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io/tags/GitHub/"/>
+    
+      <category term="Git" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Git/"/>
     
   </entry>
   
@@ -445,29 +470,6 @@
     
     
       <category term="css" scheme="https://satoshi2222.github.io/myblog.github.io/tags/css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>cssのflexで中央に寄せつつ、最後の行は左寄せにする</title>
-    <link href="https://satoshi2222.github.io/myblog.github.io/cssflex/"/>
-    <id>https://satoshi2222.github.io/myblog.github.io/cssflex/</id>
-    <published>2018-09-25T21:22:03.000Z</published>
-    <updated>2018-11-22T13:49:43.844Z</updated>
-    
-    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/cssflex/htmlcssjs.png" title="Image"><br><br></p><h2 id="justify-contentについて"><a href="#justify-contentについて" class="headerlink" title="justify-contentについて"></a>justify-contentについて</h2><p>justify-content: centerを使って中央に寄せると最後の行に余った要素があると<br>中央によってしまう<br>かといって初期値のflex-startだと全体が左寄せになってしまう<br>他の方法でも良いが、flexはとても便利なのでflexboxだけで解決する方法を探していくと、<br>解決法がネットにあった</p><a id="more"></a><p>参考にさせていただいたサイト<br><a href="https://qiita.com/QUANON/items/e14949abab3711ca8646" target="_blank" rel="noopener">Flexbox で全体を中央に配置しつつ最後の行を左揃えにする</a></p><p>解決方法としてはJavaScript (jQuery) を使い空の子要素で埋め、<br>左まで詰めるという方法</p><h2 id="html"><a href="#html" class="headerlink" title="html"></a>html</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;wrap&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;list&quot;&gt;</span><br><span class="line">        &lt;img src=&quot;&quot; alt=&quot;&quot; width=”300”height=&quot;400&quot;/&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure><h2 id="css"><a href="#css" class="headerlink" title="css"></a>css</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">  .wrap&#123;</span><br><span class="line">  display: flex;</span><br><span class="line">  flex-flow: row wrap;</span><br><span class="line">  justify-content: center;</span><br><span class="line"></span><br><span class="line">.list.is-empty &#123;</span><br><span class="line">  width:300px;</span><br><span class="line">  height: 0;</span><br><span class="line">  padding-top: 0;</span><br><span class="line">  padding-bottom: 0;</span><br><span class="line">  margin-top: 0;</span><br><span class="line">  margin-bottom: 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="js"><a href="#js" class="headerlink" title="js"></a>js</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var $grid = $(&apos;.wrap&apos;),   </span><br><span class="line">    emptyCells = [],</span><br><span class="line">    i;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">for (i = 0; i &lt; $grid.find(&apos;.list&apos;).length; i++) &#123;</span><br><span class="line">    emptyCells.push($(&apos;&lt;div&gt;&apos;, &#123; class: &apos;list is-empty&apos; &#125;));</span><br><span class="line">&#125;</span><br><span class="line">$grid.append(emptyCells);</span><br></pre></td></tr></table></figure><h2 id="最後に"><a href="#最後に" class="headerlink" title="最後に"></a>最後に</h2><p>並べる数が変わっても、これで必要な空の部分を埋めてくれていて、余った長さの分は表示されていない<br>計算なしできれいに並べることができたが、cssだけでは不可能なのでjsを使わないのであれば,他の方法でやるほうが良い</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/cssflex/htmlcssjs.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h2 id=&quot;justify-contentについて&quot;&gt;&lt;a href=&quot;#justify-contentについて&quot; class=&quot;headerlink&quot; title=&quot;justify-contentについて&quot;&gt;&lt;/a&gt;justify-contentについて&lt;/h2&gt;&lt;p&gt;justify-content: centerを使って中央に寄せると最後の行に余った要素があると&lt;br&gt;中央によってしまう&lt;br&gt;かといって初期値のflex-startだと全体が左寄せになってしまう&lt;br&gt;他の方法でも良いが、flexはとても便利なのでflexboxだけで解決する方法を探していくと、&lt;br&gt;解決法がネットにあった&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="css" scheme="https://satoshi2222.github.io/myblog.github.io/tags/css/"/>
-    
-      <category term="flex" scheme="https://satoshi2222.github.io/myblog.github.io/tags/flex/"/>
     
   </entry>
   

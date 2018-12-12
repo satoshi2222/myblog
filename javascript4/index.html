@@ -5,23 +5,23 @@
   
 
   
-  <title>同期I/O 非同期I/O | WebMemo</title>
+  <title>SPAについて | WebMemo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="google-site-verification" content="YvmUAfawhSyphEgaYekvEV4ZwArmSTIKYRpO3eTJefQ" />  
-  <meta name="description" content="同期I/OとはI/OとはIはInputでOはOutputの英語の頭文字を取ったもので、入出力処理のことで、情報をInput(入力)して、処理結果をOutput(出力)するという流れ多くのプログラミング言語ではI/O処理の間、プログラムを停止してI/O処理を待ち、このことを同期I/Oといい、この処理の間、プログラムが停止することをブロッキングという簡単に言うと今行っている処理が終わっていないなら、">
-<meta name="keywords" content="node.js">
+  <meta name="description" content="SPAとはSinglePageApplicationの略で単一のページでコンテンツの切り替えを行うWebアプリケーションのことユーザーのアクションに対して必要なデータだけサーバーに要求してページ全体ではなく、一部分だけを差し替えて、コンテンツを表示する">
+<meta name="keywords" content="JavaScript,web,node.js">
 <meta property="og:type" content="article">
-<meta property="og:title" content="同期I&#x2F;O 非同期I&#x2F;O">
-<meta property="og:url" content="https://satoshi2222.github.io/myblog.github.io/node3/index.html">
+<meta property="og:title" content="SPAについて">
+<meta property="og:url" content="https://satoshi2222.github.io/myblog.github.io/javascript4/index.html">
 <meta property="og:site_name" content="WebMemo">
-<meta property="og:description" content="同期I/OとはI/OとはIはInputでOはOutputの英語の頭文字を取ったもので、入出力処理のことで、情報をInput(入力)して、処理結果をOutput(出力)するという流れ多くのプログラミング言語ではI/O処理の間、プログラムを停止してI/O処理を待ち、このことを同期I/Oといい、この処理の間、プログラムが停止することをブロッキングという簡単に言うと今行っている処理が終わっていないなら、">
+<meta property="og:description" content="SPAとはSinglePageApplicationの略で単一のページでコンテンツの切り替えを行うWebアプリケーションのことユーザーのアクションに対して必要なデータだけサーバーに要求してページ全体ではなく、一部分だけを差し替えて、コンテンツを表示する">
 <meta property="og:locale" content="ja">
-<meta property="og:image" content="https://satoshi2222.github.io/myblog.github.io/node3/nodelogo.png">
-<meta property="og:updated_time" content="2018-11-21T11:07:45.302Z">
+<meta property="og:image" content="https://satoshi2222.github.io/myblog.github.io/javascript4/htmlcssjs.png">
+<meta property="og:updated_time" content="2018-12-12T11:09:11.645Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="同期I&#x2F;O 非同期I&#x2F;O">
-<meta name="twitter:description" content="同期I/OとはI/OとはIはInputでOはOutputの英語の頭文字を取ったもので、入出力処理のことで、情報をInput(入力)して、処理結果をOutput(出力)するという流れ多くのプログラミング言語ではI/O処理の間、プログラムを停止してI/O処理を待ち、このことを同期I/Oといい、この処理の間、プログラムが停止することをブロッキングという簡単に言うと今行っている処理が終わっていないなら、">
-<meta name="twitter:image" content="https://satoshi2222.github.io/myblog.github.io/node3/nodelogo.png">
+<meta name="twitter:title" content="SPAについて">
+<meta name="twitter:description" content="SPAとはSinglePageApplicationの略で単一のページでコンテンツの切り替えを行うWebアプリケーションのことユーザーのアクションに対して必要なデータだけサーバーに要求してページ全体ではなく、一部分だけを差し替えて、コンテンツを表示する">
+<meta name="twitter:image" content="https://satoshi2222.github.io/myblog.github.io/javascript4/htmlcssjs.png">
   
   
     <link rel="icon" href="/favicon.png">
@@ -70,10 +70,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-node3" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-javascript4" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/myblog.github.io/node3/" class="article-date">
-  <time datetime="2018-11-19T20:08:31.000Z" itemprop="datePublished">2018-11-20</time>
+    <a href="/myblog.github.io/javascript4/" class="article-date">
+  <time datetime="2018-12-11T23:42:28.000Z" itemprop="datePublished">2018-12-12</time>
 </a>
     
   </div>
@@ -84,7 +84,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      同期I/O 非同期I/O
+      SPAについて
     </h1>
   
 
@@ -92,23 +92,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><br><br><img src="/myblog.github.io/node3/nodelogo.png" title="Image"><br><br></p>
-<h2 id="同期I-Oとは"><a href="#同期I-Oとは" class="headerlink" title="同期I/Oとは"></a>同期I/Oとは</h2><p>I/OとはIはInputでOはOutputの英語の頭文字を取ったもので、入出力処理のことで、<br>情報をInput(入力)して、処理結果をOutput(出力)するという流れ<br>多くのプログラミング言語ではI/O処理の間、プログラムを停止してI/O処理を待ち、このことを<br>同期I/Oといい、この処理の間、プログラムが停止することをブロッキングという<br>簡単に言うと今行っている処理が終わっていないなら、次の処理に手を付けないということ</p>
-<h2 id="非同期I-Oとは"><a href="#非同期I-Oとは" class="headerlink" title="非同期I/Oとは"></a>非同期I/Oとは</h2><p>入出力の開始処理をしてもその終了を待たずに、待ち時間中に別の処理を実行すること<br>Node.jsは、マルチプロセスやマルチスレッドではなく、シングルスレッドでブロッキングしないで、効率化を図っている<br>非同期I/Oは処理が１つ終わってから、次の処理を行うことを保証していないので順不同になる性質がある<br>CPUを効率よく使用することができる<br>ノンブロッキングI/Oとは少し異なる点があるらしいが、今回は表面だけの理解にしておく</p>
-<a id="more"></a>
-<h3 id="マルチスレッド"><a href="#マルチスレッド" class="headerlink" title="マルチスレッド"></a>マルチスレッド</h3><p>一つのコンピュータプログラムを実行する際に、複数の処理の流れを並行して進めること<br>複数の処理の流れを生み出し、異なる処理を並行して進めることができる</p>
-<h3 id="シングルスレッド"><a href="#シングルスレッド" class="headerlink" title="シングルスレッド"></a>シングルスレッド</h3><p>JavaScriptもNode.jsもシングルスレッドであり、デッドロックなどを気にしなくていいが、<br>一度に一つの処理しかできない<br>プログラムの処理の流れが一本のみである状態、並列処理などは行わず、一つの命令を実行していくこと</p>
-<h4 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h4><p><a href="http://e-words.jp/w/%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%89.html" target="_blank" rel="noopener">マルチスレッド</a></p>
+        <p><br><br><img src="/myblog.github.io/javascript4/htmlcssjs.png" title="Image"><br><br></p>
+<h2 id="SPAとは"><a href="#SPAとは" class="headerlink" title="SPAとは"></a>SPAとは</h2><p>SinglePageApplicationの略で単一のページでコンテンツの切り替えを行うWebアプリケーションのこと<br>ユーザーのアクションに対して必要なデータだけサーバーに要求して<br>ページ全体ではなく、一部分だけを差し替えて、コンテンツを表示する<br><a id="more"></a><br>初回のみおページ全体をロードして、次からはサーバーからJSONデータを受け取ってリロードする<br>SPAにおける主要な技術はAjaxでjQueryの登場でより広く使われるようになった<br>jQueryでも可能だが、DOM操作などに限界があり、<br>代わりにAngularJSやReactやVue.jsといったSPA向けのフレームワークを使用する<br>例を挙げると、FacebookやGoogleMapやSlackなど</p>
+<h3 id="Ajaxとは"><a href="#Ajaxとは" class="headerlink" title="Ajaxとは"></a>Ajaxとは</h3><p>Ajax(エイジャックス)はAsynchronous JavaScript XMLの略で、<br>JavaScriptとXMLを使って非同期にサーバーと通信を行うこと<br>ウェブブラウザ内で非同期通信を行いながらインターフェイスの構築を行うプログラミング手法<br>node.jsの登場でサーバ側におけるデータ形式変換の必要なしに、Ajaxを実現できる環境が整い始めている(wikipedeia引用)[<a href="https://ja.wikipedia.org/wiki/Ajax]" target="_blank" rel="noopener">https://ja.wikipedia.org/wiki/Ajax]</a></p>
+<h3 id="JSONとは"><a href="#JSONとは" class="headerlink" title="JSONとは"></a>JSONとは</h3><p>JavaScriptObjectNotationの略で軽量のデータ交換フォーマット<br>人間にとって読み書きが容易で、マシンにとっても簡単にパースや生成を行なえる形式</p>
+<h2 id="PWAとは"><a href="#PWAとは" class="headerlink" title="PWAとは"></a>PWAとは</h2><p>ProgressiveWebAppsの略で、モバイル向けWebサイトをGooglePlayストアなどでみかけるアプリ(ネイティブアプリ)のように使える仕組みのこと<br>レスポンスが向上してユーザーインストールさせることがなく、オフラインでのコンテンツ利用が可能<br>プッシュ通知の受信やストアの審査なくアップデートが可能</p>
+<h3 id="WEBページをPWAにするには"><a href="#WEBページをPWAにするには" class="headerlink" title="WEBページをPWAにするには"></a>WEBページをPWAにするには</h3><p>特定のフレームワークなどは必要なく、Googleが策定した(Progressive Web App Checklist)[<a href="https://developers.google.com/web/progressive-web-apps/checklist]に沿って開発すればいい" target="_blank" rel="noopener">https://developers.google.com/web/progressive-web-apps/checklist]に沿って開発すればいい</a><br>Googleが推奨していて、Googleが開発キットも用意している</p>
+<h2 id="AMPとは"><a href="#AMPとは" class="headerlink" title="AMPとは"></a>AMPとは</h2><p>AMP(アンプ)とはAccelerated Mobile Pagesの略で、<br>GoogleとTwitterが共同で立ち上げたオープンソースプロジェクト<br>モバイル端末でホームページを高速で表示させるための仕組み<br>通常はWebページにアクセスする場合、クリックに応じてサーバからHTMLなどを読み込むが、AMPに対応しているページは、あらかじめGoogleなどのサーバーにキャッシュすることで、読み込み時間を削減している<br>(導入ガイド)[<a href="https://webmaster-ja.googleblog.com/2016/01/accelerated-mobile-pages.html]" target="_blank" rel="noopener">https://webmaster-ja.googleblog.com/2016/01/accelerated-mobile-pages.html]</a></p>
 
       
     </div>
     
     <footer class="article-footer">
-        <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\javascript4\" title="SPAについて" rel="bookmark">SPAについて</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node2\" title="npmとyarn" rel="bookmark">npmとyarn</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node1\" title="Node.jsとは" rel="bookmark">Node.jsとは</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node4\" title="node.jsの書き方" rel="bookmark">node.jsの書き方</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node5\" title="var/let/constの違い" rel="bookmark">var/let/constの違い</a></h3></div></li></ul>
-      <a data-url="https://satoshi2222.github.io/myblog.github.io/node3/" data-id="cjpl2pg080019gcw2oyf5to24" class="article-share-link">共有</a>
+        <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node5\" title="var/let/constの違い" rel="bookmark">var/let/constの違い</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\ejs\" title="EJS書き方" rel="bookmark">EJS書き方</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\javascript1\" title="JavaScriptの関数について" rel="bookmark">JavaScriptの関数について</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\javascript3\" title="JavaScriptのデータ型" rel="bookmark">JavaScriptのデータ型</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\web1\" title="Webフレームワークとは" rel="bookmark">Webフレームワークとは</a></h3></div></li></ul>
+      <a data-url="https://satoshi2222.github.io/myblog.github.io/javascript4/" data-id="cjpl2pfzd000ogcw2ftzoh32x" class="article-share-link">共有</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/node-js/">node.js</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/JavaScript/">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/node-js/">node.js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/web/">web</a></li></ul>
 
     </footer>
   </div>
@@ -116,19 +116,10 @@
     
 <nav id="article-nav">
   
-    <a href="/myblog.github.io/git3/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">次の記事</strong>
-      <div class="article-nav-title">
-        
-          GitHubへSSHを使って通信
-        
-      </div>
-    </a>
   
-  
-    <a href="/myblog.github.io/node2/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/myblog.github.io/javascript3/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">前の記事</strong>
-      <div class="article-nav-title">npmとyarn</div>
+      <div class="article-nav-title">JavaScriptのデータ型</div>
     </a>
   
 </nav>
