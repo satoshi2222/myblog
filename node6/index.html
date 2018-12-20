@@ -5,23 +5,23 @@
   
 
   
-  <title>var/let/constの違い | WebMemo</title>
+  <title>node.jsでwebサーバーを作成 | WebMemo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="google-site-verification" content="YvmUAfawhSyphEgaYekvEV4ZwArmSTIKYRpO3eTJefQ" />  
-  <meta name="description" content="var/let/constについて変数宣言のことvarしかなかったが、ES2015でletとconstが追加されたvarで宣言された場合関数スコープ(functionの中に書かれた変数)となるが、letとconstはブロックスコープとなるvarは変数の巻き上げ(ホイスティング)が起こるがletでが少し挙動が異なる？(あまり詳しく調べてない)constとletがあるのでvarは積極的使うことはない">
-<meta name="keywords" content="JavaScript,node.js">
+  <meta name="description" content="簡単なwebサーバーの作り方12345678910var http = require(&amp;apos;http&amp;apos;);var server = http.createServer();server.on(&amp;apos;request&amp;apos;, doRequest);function doRequest(req, res) &amp;#123;    res.writeHead(200, &amp;#12">
+<meta name="keywords" content="JavaScript,node.js,web">
 <meta property="og:type" content="article">
-<meta property="og:title" content="var&#x2F;let&#x2F;constの違い">
-<meta property="og:url" content="https://satoshi2222.github.io/myblog.github.io/node5/index.html">
+<meta property="og:title" content="node.jsでwebサーバーを作成">
+<meta property="og:url" content="https://satoshi2222.github.io/myblog.github.io/node6/index.html">
 <meta property="og:site_name" content="WebMemo">
-<meta property="og:description" content="var/let/constについて変数宣言のことvarしかなかったが、ES2015でletとconstが追加されたvarで宣言された場合関数スコープ(functionの中に書かれた変数)となるが、letとconstはブロックスコープとなるvarは変数の巻き上げ(ホイスティング)が起こるがletでが少し挙動が異なる？(あまり詳しく調べてない)constとletがあるのでvarは積極的使うことはない">
+<meta property="og:description" content="簡単なwebサーバーの作り方12345678910var http = require(&amp;apos;http&amp;apos;);var server = http.createServer();server.on(&amp;apos;request&amp;apos;, doRequest);function doRequest(req, res) &amp;#123;    res.writeHead(200, &amp;#12">
 <meta property="og:locale" content="ja">
-<meta property="og:image" content="https://satoshi2222.github.io/myblog.github.io/node5/nodelogo.png">
-<meta property="og:updated_time" content="2018-12-10T11:32:58.323Z">
+<meta property="og:image" content="https://satoshi2222.github.io/myblog.github.io/node6/nodelogo.png">
+<meta property="og:updated_time" content="2018-12-20T18:48:17.724Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="var&#x2F;let&#x2F;constの違い">
-<meta name="twitter:description" content="var/let/constについて変数宣言のことvarしかなかったが、ES2015でletとconstが追加されたvarで宣言された場合関数スコープ(functionの中に書かれた変数)となるが、letとconstはブロックスコープとなるvarは変数の巻き上げ(ホイスティング)が起こるがletでが少し挙動が異なる？(あまり詳しく調べてない)constとletがあるのでvarは積極的使うことはない">
-<meta name="twitter:image" content="https://satoshi2222.github.io/myblog.github.io/node5/nodelogo.png">
+<meta name="twitter:title" content="node.jsでwebサーバーを作成">
+<meta name="twitter:description" content="簡単なwebサーバーの作り方12345678910var http = require(&amp;apos;http&amp;apos;);var server = http.createServer();server.on(&amp;apos;request&amp;apos;, doRequest);function doRequest(req, res) &amp;#123;    res.writeHead(200, &amp;#12">
+<meta name="twitter:image" content="https://satoshi2222.github.io/myblog.github.io/node6/nodelogo.png">
   
   
     <link rel="icon" href="/favicon.png">
@@ -70,10 +70,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-node5" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-node6" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/myblog.github.io/node5/" class="article-date">
-  <time datetime="2018-12-06T10:42:04.000Z" itemprop="datePublished">2018-12-06</time>
+    <a href="/myblog.github.io/node6/" class="article-date">
+  <time datetime="2018-12-20T15:00:16.000Z" itemprop="datePublished">2018-12-21</time>
 </a>
     
   </div>
@@ -84,7 +84,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      var/let/constの違い
+      node.jsでwebサーバーを作成
     </h1>
   
 
@@ -92,22 +92,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><br><br><img src="/myblog.github.io/node5/nodelogo.png" title="Image"><br><br></p>
-<h2 id="var-let-constについて"><a href="#var-let-constについて" class="headerlink" title="var/let/constについて"></a>var/let/constについて</h2><p>変数宣言のこと<br>varしかなかったが、ES2015でletとconstが追加された<br>varで宣言された場合関数スコープ(functionの中に書かれた変数)となるが、letとconstはブロックスコープとなる<br>varは変数の巻き上げ(ホイスティング)が起こるがletでが少し挙動が異なる？(あまり詳しく調べてない)<br>constとletがあるのでvarは積極的使うことはない<br><a id="more"></a></p>
-<h3 id="ブロックスコープ"><a href="#ブロックスコープ" class="headerlink" title="ブロックスコープ"></a>ブロックスコープ</h3><p>{}で囲まれている部分のこと<br>varの場合だとfunction(){}がスコープとなっていたので<br>ifやforはスコープとならなかった<br>letで宣言された変数はforなどの中で閉じ込め、ループごとに固定される</p>
-<h3 id="ローカル変数"><a href="#ローカル変数" class="headerlink" title="ローカル変数"></a>ローカル変数</h3><p>宣言した関数内でしか利用できない変数<br>functionのなかで宣言する</p>
-<h3 id="グローバル変数"><a href="#グローバル変数" class="headerlink" title="グローバル変数"></a>グローバル変数</h3><p>プログラム全体、全てのスコープからアクセスできる変数</p>
-<h3 id="letとconst"><a href="#letとconst" class="headerlink" title="letとconst"></a>letとconst</h3><p>基本的にはconstを使う<br>constは再代入不可で、再代入が必要な場合はletを使う</p>
+        <p><br><br><img src="/myblog.github.io/node6/nodelogo.png" title="Image"><br><br></p>
+<h2 id="簡単なwebサーバーの作り方"><a href="#簡単なwebサーバーの作り方" class="headerlink" title="簡単なwebサーバーの作り方"></a>簡単なwebサーバーの作り方</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var http = require(&apos;http&apos;);</span><br><span class="line">var server = http.createServer();</span><br><span class="line">server.on(&apos;request&apos;, doRequest);</span><br><span class="line">function doRequest(req, res) &#123;</span><br><span class="line">    res.writeHead(200, &#123;&apos;Content-Type&apos;: &apos;text/plain&apos;&#125;);</span><br><span class="line">    res.write(&quot;Hello World!&quot;);</span><br><span class="line">    res.end();</span><br><span class="line">&#125;</span><br><span class="line">server.listen(3000, &apos;127.0.0.1&apos;);</span><br><span class="line">console.log(&quot;server runnnig&quot;);</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h3 id="解説"><a href="#解説" class="headerlink" title="解説"></a>解説</h3><p>var http = require(‘http’);//HTTP関連の機能が入っている<br>var server = http.createServer();//httpのサーバー作成する関数<br>server.on(‘request’, doRequest).listen(8080, ‘127.0.0.1’);;//onメソッドは第１引数にイベント名、第２引数に処（関数）<br>requestはクライアントからのリクエストを受け取ったときに発生するイベント<br>プラウザからサーバーにアクセスした時のサーバー側の処理で、requestが発生するとコールバック関数を呼び出す<br>listenメソッドは外部からリクエストを受け付けるポート番号を指定できる<br>第１引数にポート番号、第2引数: IPアドレスを指定<br>writeHeadは第1引数にステータスコード、第2引数にその他のヘッダーのキーと値を送信する<br>writeはレスポンスを送信する<br>endはレスポンスの送信を終了する</p>
 
       
     </div>
     
     <footer class="article-footer">
-        <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\javascript4\" title="SPAについて" rel="bookmark">SPAについて</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node6\" title="node.jsでwebサーバーを作成" rel="bookmark">node.jsでwebサーバーを作成</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\ejs\" title="EJS書き方" rel="bookmark">EJS書き方</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\javascript3\" title="JavaScriptのデータ型" rel="bookmark">JavaScriptのデータ型</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\javascript1\" title="JavaScriptの関数について" rel="bookmark">JavaScriptの関数について</a></h3></div></li></ul>
-      <a data-url="https://satoshi2222.github.io/myblog.github.io/node5/" data-id="cjpwyajyt0021fkw2uygfgb4y" class="article-share-link">共有</a>
+        <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\javascript4\" title="SPAについて" rel="bookmark">SPAについて</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node5\" title="var/let/constの違い" rel="bookmark">var/let/constの違い</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\web1\" title="Webフレームワークとは" rel="bookmark">Webフレームワークとは</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\ejs\" title="EJS書き方" rel="bookmark">EJS書き方</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\javascript1\" title="JavaScriptの関数について" rel="bookmark">JavaScriptの関数について</a></h3></div></li></ul>
+      <a data-url="https://satoshi2222.github.io/myblog.github.io/node6/" data-id="cjpwyajyj001yfkw2wbm3x3e2" class="article-share-link">共有</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/JavaScript/">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/node-js/">node.js</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/JavaScript/">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/node-js/">node.js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/web/">web</a></li></ul>
 
     </footer>
   </div>
@@ -115,19 +113,10 @@
     
 <nav id="article-nav">
   
-    <a href="/myblog.github.io/javascript1/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">次の記事</strong>
-      <div class="article-nav-title">
-        
-          JavaScriptの関数について
-        
-      </div>
-    </a>
   
-  
-    <a href="/myblog.github.io/node4/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/myblog.github.io/javascript4/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">前の記事</strong>
-      <div class="article-nav-title">node.jsの書き方</div>
+      <div class="article-nav-title">SPAについて</div>
     </a>
   
 </nav>

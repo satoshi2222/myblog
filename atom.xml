@@ -6,22 +6,47 @@
   <link href="/myblog.github.io/atom.xml" rel="self"/>
   <link href="http://pubsubhubbub.appspot.com" rel="hub"/>
   <link href="https://satoshi2222.github.io/myblog.github.io/"/>
-  <updated>2018-12-12T11:09:11.645Z</updated>
+  <updated>2018-12-20T18:48:17.724Z</updated>
   <id>https://satoshi2222.github.io/myblog.github.io/</id>
   
   <author>
-    <name>satoshi</name>
+    <name>webmemo</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>node.jsでwebサーバーを作成</title>
+    <link href="https://satoshi2222.github.io/myblog.github.io/node6/"/>
+    <id>https://satoshi2222.github.io/myblog.github.io/node6/</id>
+    <published>2018-12-20T15:00:16.000Z</published>
+    <updated>2018-12-20T18:48:17.724Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/node6/nodelogo.png" title="Image"><br><br></p><h2 id="簡単なwebサーバーの作り方"><a href="#簡単なwebサーバーの作り方" class="headerlink" title="簡単なwebサーバーの作り方"></a>簡単なwebサーバーの作り方</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var http = require(&apos;http&apos;);</span><br><span class="line">var server = http.createServer();</span><br><span class="line">server.on(&apos;request&apos;, doRequest);</span><br><span class="line">function doRequest(req, res) &#123;</span><br><span class="line">    res.writeHead(200, &#123;&apos;Content-Type&apos;: &apos;text/plain&apos;&#125;);</span><br><span class="line">    res.write(&quot;Hello World!&quot;);</span><br><span class="line">    res.end();</span><br><span class="line">&#125;</span><br><span class="line">server.listen(3000, &apos;127.0.0.1&apos;);</span><br><span class="line">console.log(&quot;server runnnig&quot;);</span><br></pre></td></tr></table></figure><a id="more"></a><h3 id="解説"><a href="#解説" class="headerlink" title="解説"></a>解説</h3><p>var http = require(‘http’);//HTTP関連の機能が入っている<br>var server = http.createServer();//httpのサーバー作成する関数<br>server.on(‘request’, doRequest).listen(8080, ‘127.0.0.1’);;//onメソッドは第１引数にイベント名、第２引数に処（関数）<br>requestはクライアントからのリクエストを受け取ったときに発生するイベント<br>プラウザからサーバーにアクセスした時のサーバー側の処理で、requestが発生するとコールバック関数を呼び出す<br>listenメソッドは外部からリクエストを受け付けるポート番号を指定できる<br>第１引数にポート番号、第2引数: IPアドレスを指定<br>writeHeadは第1引数にステータスコード、第2引数にその他のヘッダーのキーと値を送信する<br>writeはレスポンスを送信する<br>endはレスポンスの送信を終了する</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/node6/nodelogo.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;簡単なwebサーバーの作り方&quot;&gt;&lt;a href=&quot;#簡単なwebサーバーの作り方&quot; class=&quot;headerlink&quot; title=&quot;簡単なwebサーバーの作り方&quot;&gt;&lt;/a&gt;簡単なwebサーバーの作り方&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var http = require(&amp;apos;http&amp;apos;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var server = http.createServer();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;server.on(&amp;apos;request&amp;apos;, doRequest);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;function doRequest(req, res) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    res.writeHead(200, &amp;#123;&amp;apos;Content-Type&amp;apos;: &amp;apos;text/plain&amp;apos;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    res.write(&amp;quot;Hello World!&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    res.end();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;server.listen(3000, &amp;apos;127.0.0.1&amp;apos;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(&amp;quot;server runnnig&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="https://satoshi2222.github.io/myblog.github.io/tags/JavaScript/"/>
+    
+      <category term="node.js" scheme="https://satoshi2222.github.io/myblog.github.io/tags/node-js/"/>
+    
+      <category term="web" scheme="https://satoshi2222.github.io/myblog.github.io/tags/web/"/>
+    
+  </entry>
+  
+  <entry>
     <title>SPAについて</title>
     <link href="https://satoshi2222.github.io/myblog.github.io/javascript4/"/>
     <id>https://satoshi2222.github.io/myblog.github.io/javascript4/</id>
     <published>2018-12-11T23:42:28.000Z</published>
-    <updated>2018-12-12T11:09:11.645Z</updated>
+    <updated>2018-12-12T11:14:00.674Z</updated>
     
     <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/javascript4/htmlcssjs.png" title="Image"><br><br></p><h2 id="SPAとは"><a href="#SPAとは" class="headerlink" title="SPAとは"></a>SPAとは</h2><p>SinglePageApplicationの略で単一のページでコンテンツの切り替えを行うWebアプリケーションのこと<br>ユーザーのアクションに対して必要なデータだけサーバーに要求して<br>ページ全体ではなく、一部分だけを差し替えて、コンテンツを表示する<br><a id="more"></a><br>初回のみおページ全体をロードして、次からはサーバーからJSONデータを受け取ってリロードする<br>SPAにおける主要な技術はAjaxでjQueryの登場でより広く使われるようになった<br>jQueryでも可能だが、DOM操作などに限界があり、<br>代わりにAngularJSやReactやVue.jsといったSPA向けのフレームワークを使用する<br>例を挙げると、FacebookやGoogleMapやSlackなど</p><h3 id="Ajaxとは"><a href="#Ajaxとは" class="headerlink" title="Ajaxとは"></a>Ajaxとは</h3><p>Ajax(エイジャックス)はAsynchronous JavaScript XMLの略で、<br>JavaScriptとXMLを使って非同期にサーバーと通信を行うこと<br>ウェブブラウザ内で非同期通信を行いながらインターフェイスの構築を行うプログラミング手法<br>node.jsの登場でサーバ側におけるデータ形式変換の必要なしに、Ajaxを実現できる環境が整い始めている(wikipedeia引用)[<a href="https://ja.wikipedia.org/wiki/Ajax]" target="_blank" rel="noopener">https://ja.wikipedia.org/wiki/Ajax]</a></p><h3 id="JSONとは"><a href="#JSONとは" class="headerlink" title="JSONとは"></a>JSONとは</h3><p>JavaScriptObjectNotationの略で軽量のデータ交換フォーマット<br>人間にとって読み書きが容易で、マシンにとっても簡単にパースや生成を行なえる形式</p><h2 id="PWAとは"><a href="#PWAとは" class="headerlink" title="PWAとは"></a>PWAとは</h2><p>ProgressiveWebAppsの略で、モバイル向けWebサイトをGooglePlayストアなどでみかけるアプリ(ネイティブアプリ)のように使える仕組みのこと<br>レスポンスが向上してユーザーインストールさせることがなく、オフラインでのコンテンツ利用が可能<br>プッシュ通知の受信やストアの審査なくアップデートが可能</p><h3 id="WEBページをPWAにするには"><a href="#WEBページをPWAにするには" class="headerlink" title="WEBページをPWAにするには"></a>WEBページをPWAにするには</h3><p>特定のフレームワークなどは必要なく、Googleが策定した(Progressive Web App Checklist)[<a href="https://developers.google.com/web/progressive-web-apps/checklist]に沿って開発すればいい" target="_blank" rel="noopener">https://developers.google.com/web/progressive-web-apps/checklist]に沿って開発すればいい</a><br>Googleが推奨していて、Googleが開発キットも用意している</p><h2 id="AMPとは"><a href="#AMPとは" class="headerlink" title="AMPとは"></a>AMPとは</h2><p>AMP(アンプ)とはAccelerated Mobile Pagesの略で、<br>GoogleとTwitterが共同で立ち上げたオープンソースプロジェクト<br>モバイル端末でホームページを高速で表示させるための仕組み<br>通常はWebページにアクセスする場合、クリックに応じてサーバからHTMLなどを読み込むが、AMPに対応しているページは、あらかじめGoogleなどのサーバーにキャッシュすることで、読み込み時間を削減している<br>(導入ガイド)[<a href="https://webmaster-ja.googleblog.com/2016/01/accelerated-mobile-pages.html]" target="_blank" rel="noopener">https://webmaster-ja.googleblog.com/2016/01/accelerated-mobile-pages.html]</a></p>]]></content>
     
@@ -35,7 +60,7 @@
     
       <category term="JavaScript" scheme="https://satoshi2222.github.io/myblog.github.io/tags/JavaScript/"/>
     
-      <category term="web" scheme="https://satoshi2222.github.io/myblog.github.io/tags/web/"/>
+      <category term="Web" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Web/"/>
     
       <category term="node.js" scheme="https://satoshi2222.github.io/myblog.github.io/tags/node-js/"/>
     
@@ -282,9 +307,9 @@
     </summary>
     
     
-      <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io/tags/GitHub/"/>
-    
       <category term="Git" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Git/"/>
+    
+      <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io/tags/GitHub/"/>
     
   </entry>
   
@@ -376,9 +401,9 @@
     </summary>
     
     
-      <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io/tags/GitHub/"/>
-    
       <category term="Git" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Git/"/>
+    
+      <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io/tags/GitHub/"/>
     
   </entry>
   
@@ -400,9 +425,9 @@
     </summary>
     
     
-      <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io/tags/GitHub/"/>
-    
       <category term="Git" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Git/"/>
+    
+      <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io/tags/GitHub/"/>
     
   </entry>
   
@@ -449,27 +474,6 @@
     
     
       <category term="hexo blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/hexo-blog/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>cssでテキストを非表示にする</title>
-    <link href="https://satoshi2222.github.io/myblog.github.io/csstext/"/>
-    <id>https://satoshi2222.github.io/myblog.github.io/csstext/</id>
-    <published>2018-09-26T03:26:59.000Z</published>
-    <updated>2018-11-22T13:50:13.009Z</updated>
-    
-    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/csstext/htmlcssjs.png" title="Image"><br><br></p><h2 id="要素を消さずに非表示にさせたい"><a href="#要素を消さずに非表示にさせたい" class="headerlink" title="要素を消さずに非表示にさせたい"></a>要素を消さずに非表示にさせたい</h2><p>まとめて消してしまうのではなく他のの要素は残しつつ、文字を非表示させる方法を探していたところ、解決方法があった</p><a id="more"></a><p>参考にさせていただいたサイト<br><a href="http://ss-complex.com/css-cleartext/" target="_blank" rel="noopener">CSSで文字テキストを非表示にする（隠す）方法</a></p><h2 id="html"><a href="#html" class="headerlink" title="html"></a>html</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;text&quot;&gt;あいうえお&lt;/div&gt;</span><br></pre></td></tr></table></figure><h2 id="css"><a href="#css" class="headerlink" title="css"></a>css</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">text &#123;</span><br><span class="line">text-indent:100%;</span><br><span class="line">white-space:nowrap;</span><br><span class="line">overflow:hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>これで文字を非表示にすることができる</p><h2 id="最後に"><a href="#最後に" class="headerlink" title="最後に"></a>最後に</h2><p>５年前の情報なので、今は違うやり方がたくさんある可能性がある<br>情報を見つけ次第、追記していく</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/csstext/htmlcssjs.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h2 id=&quot;要素を消さずに非表示にさせたい&quot;&gt;&lt;a href=&quot;#要素を消さずに非表示にさせたい&quot; class=&quot;headerlink&quot; title=&quot;要素を消さずに非表示にさせたい&quot;&gt;&lt;/a&gt;要素を消さずに非表示にさせたい&lt;/h2&gt;&lt;p&gt;まとめて消してしまうのではなく他のの要素は残しつつ、文字を非表示させる方法を探していたところ、解決方法があった&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="css" scheme="https://satoshi2222.github.io/myblog.github.io/tags/css/"/>
     
   </entry>
   

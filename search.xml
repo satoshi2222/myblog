@@ -3,6 +3,27 @@
   
     
     <entry>
+      <title>node.jsでwebサーバーを作成</title>
+      <link href="/myblog.github.io/node6/"/>
+      <url>/myblog.github.io/node6/</url>
+      
+        <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/node6/nodelogo.png" title="Image"><br><br></p><h2 id="簡単なwebサーバーの作り方"><a href="#簡単なwebサーバーの作り方" class="headerlink" title="簡単なwebサーバーの作り方"></a>簡単なwebサーバーの作り方</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var http = require(&apos;http&apos;);</span><br><span class="line">var server = http.createServer();</span><br><span class="line">server.on(&apos;request&apos;, doRequest);</span><br><span class="line">function doRequest(req, res) &#123;</span><br><span class="line">    res.writeHead(200, &#123;&apos;Content-Type&apos;: &apos;text/plain&apos;&#125;);</span><br><span class="line">    res.write(&quot;Hello World!&quot;);</span><br><span class="line">    res.end();</span><br><span class="line">&#125;</span><br><span class="line">server.listen(3000, &apos;127.0.0.1&apos;);</span><br><span class="line">console.log(&quot;server runnnig&quot;);</span><br></pre></td></tr></table></figure><a id="more"></a><h3 id="解説"><a href="#解説" class="headerlink" title="解説"></a>解説</h3><p>var http = require(‘http’);//HTTP関連の機能が入っている<br>var server = http.createServer();//httpのサーバー作成する関数<br>server.on(‘request’, doRequest).listen(8080, ‘127.0.0.1’);;//onメソッドは第１引数にイベント名、第２引数に処（関数）<br>requestはクライアントからのリクエストを受け取ったときに発生するイベント<br>プラウザからサーバーにアクセスした時のサーバー側の処理で、requestが発生するとコールバック関数を呼び出す<br>listenメソッドは外部からリクエストを受け付けるポート番号を指定できる<br>第１引数にポート番号、第2引数: IPアドレスを指定<br>writeHeadは第1引数にステータスコード、第2引数にその他のヘッダーのキーと値を送信する<br>writeはレスポンスを送信する<br>endはレスポンスの送信を終了する</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+            <tag> node.js </tag>
+            
+            <tag> web </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>SPAについて</title>
       <link href="/myblog.github.io/javascript4/"/>
       <url>/myblog.github.io/javascript4/</url>
@@ -15,7 +36,7 @@
             
             <tag> JavaScript </tag>
             
-            <tag> web </tag>
+            <tag> Web </tag>
             
             <tag> node.js </tag>
             
@@ -216,9 +237,9 @@
       
         <tags>
             
-            <tag> GitHub </tag>
-            
             <tag> Git </tag>
+            
+            <tag> GitHub </tag>
             
         </tags>
       
@@ -290,9 +311,9 @@
       
         <tags>
             
-            <tag> GitHub </tag>
-            
             <tag> Git </tag>
+            
+            <tag> GitHub </tag>
             
         </tags>
       
@@ -309,9 +330,9 @@
       
         <tags>
             
-            <tag> GitHub </tag>
-            
             <tag> Git </tag>
+            
+            <tag> GitHub </tag>
             
         </tags>
       
