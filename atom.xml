@@ -6,7 +6,7 @@
   <link href="/myblog.github.io/atom.xml" rel="self"/>
   <link href="http://pubsubhubbub.appspot.com" rel="hub"/>
   <link href="https://satoshi2222.github.io/myblog.github.io/"/>
-  <updated>2019-02-11T20:54:58.803Z</updated>
+  <updated>2019-02-11T21:56:04.044Z</updated>
   <id>https://satoshi2222.github.io/myblog.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GitHubが無料でプライベートリポジトリを作れるように</title>
+    <link href="https://satoshi2222.github.io/myblog.github.io/git4/"/>
+    <id>https://satoshi2222.github.io/myblog.github.io/git4/</id>
+    <published>2019-02-11T21:05:25.000Z</published>
+    <updated>2019-02-11T21:56:04.044Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/git4/gitlog1.png" title="Image"><br><br></p><h2 id="GitHub-プラン内容の変更"><a href="#GitHub-プラン内容の変更" class="headerlink" title="GitHub プラン内容の変更"></a>GitHub プラン内容の変更</h2><p><a href="https://github.blog/jp/2019-01-08-pricing-change-jp/" target="_blank" rel="noopener">GitHubニュース記事</a></p><p>今までは無料ユーザーはコードを公開する必要があった<br>もし非公開にするならば、有料プランを選択しなければならなかったが<br>１月８日のアップデートにより、その制限はなくなった<br>最大3人の共同編集者と無制限にプライベート構成できるようになった</p><a id="more"></a><h2 id="GitHubのプランの違い"><a href="#GitHubのプランの違い" class="headerlink" title="GitHubのプランの違い"></a>GitHubのプランの違い</h2><p><a href="https://github.co.jp/pricing.html" target="_blank" rel="noopener">GitHubプラン</a></p><h2 id="ダウングレードの方法"><a href="#ダウングレードの方法" class="headerlink" title="ダウングレードの方法"></a>ダウングレードの方法</h2><ul><li>GitHubのSettingsをクリック</li><li>Billingをクリック</li><li>Downgrade to freeをクリック</li><li>I understand. をクリック</li></ul><p>フリーに移行できない、リポジトリがある場合はエラーがでる</p><h2 id="リポジトリを非公開に変更"><a href="#リポジトリを非公開に変更" class="headerlink" title="リポジトリを非公開に変更"></a>リポジトリを非公開に変更</h2><ul><li>非公開にしたいリポジトリを開く</li><li>Settingをクリック</li><li>Danger Zoneという赤い部分に移動する</li><li>Make privateをクリック</li><li>後は指示通りに入力すれば完了</li></ul><p>リポジトリ名に鍵アイコンがついていれば成功</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/git4/gitlog1.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;GitHub-プラン内容の変更&quot;&gt;&lt;a href=&quot;#GitHub-プラン内容の変更&quot; class=&quot;headerlink&quot; title=&quot;GitHub プラン内容の変更&quot;&gt;&lt;/a&gt;GitHub プラン内容の変更&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.blog/jp/2019-01-08-pricing-change-jp/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHubニュース記事&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今までは無料ユーザーはコードを公開する必要があった&lt;br&gt;もし非公開にするならば、有料プランを選択しなければならなかったが&lt;br&gt;１月８日のアップデートにより、その制限はなくなった&lt;br&gt;最大3人の共同編集者と無制限にプライベート構成できるようになった&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="git" scheme="https://satoshi2222.github.io/myblog.github.io/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>node.jsでwebサーバーを作成</title>
@@ -449,31 +471,6 @@
     
     
       <category term="linux" scheme="https://satoshi2222.github.io/myblog.github.io/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexoでnewpostのテンプレートを変更する</title>
-    <link href="https://satoshi2222.github.io/myblog.github.io/hexo5/"/>
-    <id>https://satoshi2222.github.io/myblog.github.io/hexo5/</id>
-    <published>2018-09-26T20:17:25.000Z</published>
-    <updated>2018-11-21T11:07:30.511Z</updated>
-    
-    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/hexo5/hexo_pic.png" title="Image"><br><br></p><h2 id="Hexoでテンプレートを変更する場合はpost-mdを編集する"><a href="#Hexoでテンプレートを変更する場合はpost-mdを編集する" class="headerlink" title="Hexoでテンプレートを変更する場合はpost.mdを編集する"></a>Hexoでテンプレートを変更する場合はpost.mdを編集する</h2><ul><li>.mdファイルとはマークダウンドキュメントファイルとして使用されるテキストフ​​ァイル</li><li>scaffoldsフォルダにある</li><li>ドラフトを使ってる場合はdraft.mdを編集する</li></ul><a id="more"></a><h3 id="初期状態"><a href="#初期状態" class="headerlink" title="初期状態"></a>初期状態</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure><p>###　カスタマイズ後<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">tags:</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&#123;% asset_img img.jpg Image %&#125;</span><br><span class="line"></span><br><span class="line">## タイトル</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">## 参考リンク</span><br><span class="line">[]()</span><br></pre></td></tr></table></figure></p><p>トップ画像を必ず使うのと参考リンクも多々乗せるので変更。</p><h4 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h4><p><a href="https://azriton.github.io/2016/11/04/Hexo%E3%81%AE%E6%96%B0%E8%A6%8F%E6%8A%95%E7%A8%BF%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%92%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA/" target="_blank" rel="noopener">Hexo の 新規投稿テンプレート を カスタマイズ</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/hexo5/hexo_pic.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Hexoでテンプレートを変更する場合はpost-mdを編集する&quot;&gt;&lt;a href=&quot;#Hexoでテンプレートを変更する場合はpost-mdを編集する&quot; class=&quot;headerlink&quot; title=&quot;Hexoでテンプレートを変更する場合はpost.mdを編集する&quot;&gt;&lt;/a&gt;Hexoでテンプレートを変更する場合はpost.mdを編集する&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;.mdファイルとはマークダウンドキュメントファイルとして使用されるテキストフ​​ァイル&lt;/li&gt;
-&lt;li&gt;scaffoldsフォルダにある&lt;/li&gt;
-&lt;li&gt;ドラフトを使ってる場合はdraft.mdを編集する&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="hexo blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/hexo-blog/"/>
     
   </entry>
   

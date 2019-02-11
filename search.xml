@@ -3,6 +3,23 @@
   
     
     <entry>
+      <title>GitHubが無料でプライベートリポジトリを作れるように</title>
+      <link href="/myblog.github.io/git4/"/>
+      <url>/myblog.github.io/git4/</url>
+      
+        <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/git4/gitlog1.png" title="Image"><br><br></p><h2 id="GitHub-プラン内容の変更"><a href="#GitHub-プラン内容の変更" class="headerlink" title="GitHub プラン内容の変更"></a>GitHub プラン内容の変更</h2><p><a href="https://github.blog/jp/2019-01-08-pricing-change-jp/" target="_blank" rel="noopener">GitHubニュース記事</a></p><p>今までは無料ユーザーはコードを公開する必要があった<br>もし非公開にするならば、有料プランを選択しなければならなかったが<br>１月８日のアップデートにより、その制限はなくなった<br>最大3人の共同編集者と無制限にプライベート構成できるようになった</p><a id="more"></a><h2 id="GitHubのプランの違い"><a href="#GitHubのプランの違い" class="headerlink" title="GitHubのプランの違い"></a>GitHubのプランの違い</h2><p><a href="https://github.co.jp/pricing.html" target="_blank" rel="noopener">GitHubプラン</a></p><h2 id="ダウングレードの方法"><a href="#ダウングレードの方法" class="headerlink" title="ダウングレードの方法"></a>ダウングレードの方法</h2><ul><li>GitHubのSettingsをクリック</li><li>Billingをクリック</li><li>Downgrade to freeをクリック</li><li>I understand. をクリック</li></ul><p>フリーに移行できない、リポジトリがある場合はエラーがでる</p><h2 id="リポジトリを非公開に変更"><a href="#リポジトリを非公開に変更" class="headerlink" title="リポジトリを非公開に変更"></a>リポジトリを非公開に変更</h2><ul><li>非公開にしたいリポジトリを開く</li><li>Settingをクリック</li><li>Danger Zoneという赤い部分に移動する</li><li>Make privateをクリック</li><li>後は指示通りに入力すれば完了</li></ul><p>リポジトリ名に鍵アイコンがついていれば成功</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>node.jsでwebサーバーを作成</title>
       <link href="/myblog.github.io/node6/"/>
       <url>/myblog.github.io/node6/</url>
