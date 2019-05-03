@@ -3,6 +3,25 @@
   
     
     <entry>
+      <title>Google Search Console 使い方</title>
+      <link href="/myblog.github.io/blog3/"/>
+      <url>/myblog.github.io/blog3/</url>
+      
+        <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/blog3/google-new-logo.png" title="Image"><br><br></p><h2 id="Google-Search-Console-とは"><a href="#Google-Search-Console-とは" class="headerlink" title="Google Search Console とは"></a>Google Search Console とは</h2><p><a href="https://search.google.com/search-console/about?hl=ja" target="_blank" rel="noopener">Search Console</a>はGoogleが用意した、無料で使えるツールで、サイトの検索トラフィックや掲載順位を測定できる<br>簡単に言うと、サイトにエラーが出ていないか,サイトの表示回数、検索順位、訪問ユーザーが検索したワードやクリック数など確認できる<br>SEOの対策をする上でGoogleのガイドラインに適しているかどうかも大事なので、Webサイトを運営するなら必要なツール<br><a id="more"></a></p><h2 id="Search-Console-登録"><a href="#Search-Console-登録" class="headerlink" title="Search Console 登録"></a>Search Console 登録</h2><p>登録にはGoogleアカウントが必要なので事前に作る<br><a href="https://search.google.com/search-console/about?hl=ja&amp;utm_source=wmx&amp;utm_medium=wmx-welcome" target="_blank" rel="noopener">Google Search Console</a>にアクセスして、今すぐ開始をクリック<br>用意したアカウントでログイン、プロパティを追加から自分のサイトのURLを貼り付けて追加をクリック<br>別の方法でHTMLタグにチェックをいれて、コードをコピーして自分のサイトのheadタグに埋め込み、アップロードが終われば確認で登録が完了</p><h2 id="用語まとめ"><a href="#用語まとめ" class="headerlink" title="用語まとめ"></a>用語まとめ</h2><h3 id="合計クリック数"><a href="#合計クリック数" class="headerlink" title="合計クリック数"></a>合計クリック数</h3><p>検索結果に出た自分のサイトやページがクリックされた回数</p><h3 id="合計表示回数"><a href="#合計表示回数" class="headerlink" title="合計表示回数"></a>合計表示回数</h3><p>検索結果に表示された回数</p><h3 id="平均CTR"><a href="#平均CTR" class="headerlink" title="平均CTR"></a>平均CTR</h3><p>Click Through Rate(クリックスルーレート)の略でクリック率とも呼ばれる<br>表示回数をクリック数で割った数</p><h3 id="平均掲載順位"><a href="#平均掲載順位" class="headerlink" title="平均掲載順位"></a>平均掲載順位</h3><p>検索キーワードの平均順位をグラフで確認することができる指標<br>ですが、Googleが2019年9月に提供を停止するとのことなので、<br>別の指標を利用する必要がある</p><h2 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h2><p><a href="https://support.google.com/webmasters/answer/9128668?hl=ja&amp;visit_id=636924748232881293-3422315578&amp;rd=1" target="_blank" rel="noopener">Search Console ヘルプ</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> blog </tag>
+            
+            <tag> web </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>GitHubが無料でプライベートリポジトリを作れるように</title>
       <link href="/myblog.github.io/git4/"/>
       <url>/myblog.github.io/git4/</url>
@@ -30,11 +49,11 @@
       
         <tags>
             
+            <tag> web </tag>
+            
             <tag> JavaScript </tag>
             
             <tag> node.js </tag>
-            
-            <tag> web </tag>
             
         </tags>
       

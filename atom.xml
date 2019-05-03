@@ -6,7 +6,7 @@
   <link href="/myblog.github.io/atom.xml" rel="self"/>
   <link href="http://pubsubhubbub.appspot.com" rel="hub"/>
   <link href="https://satoshi2222.github.io/myblog.github.io/"/>
-  <updated>2019-02-11T21:56:04.044Z</updated>
+  <updated>2019-05-03T11:27:37.956Z</updated>
   <id>https://satoshi2222.github.io/myblog.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Google Search Console 使い方</title>
+    <link href="https://satoshi2222.github.io/myblog.github.io/blog3/"/>
+    <id>https://satoshi2222.github.io/myblog.github.io/blog3/</id>
+    <published>2019-04-24T08:23:03.000Z</published>
+    <updated>2019-05-03T11:27:37.956Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/blog3/google-new-logo.png" title="Image"><br><br></p><h2 id="Google-Search-Console-とは"><a href="#Google-Search-Console-とは" class="headerlink" title="Google Search Console とは"></a>Google Search Console とは</h2><p><a href="https://search.google.com/search-console/about?hl=ja" target="_blank" rel="noopener">Search Console</a>はGoogleが用意した、無料で使えるツールで、サイトの検索トラフィックや掲載順位を測定できる<br>簡単に言うと、サイトにエラーが出ていないか,サイトの表示回数、検索順位、訪問ユーザーが検索したワードやクリック数など確認できる<br>SEOの対策をする上でGoogleのガイドラインに適しているかどうかも大事なので、Webサイトを運営するなら必要なツール<br><a id="more"></a></p><h2 id="Search-Console-登録"><a href="#Search-Console-登録" class="headerlink" title="Search Console 登録"></a>Search Console 登録</h2><p>登録にはGoogleアカウントが必要なので事前に作る<br><a href="https://search.google.com/search-console/about?hl=ja&amp;utm_source=wmx&amp;utm_medium=wmx-welcome" target="_blank" rel="noopener">Google Search Console</a>にアクセスして、今すぐ開始をクリック<br>用意したアカウントでログイン、プロパティを追加から自分のサイトのURLを貼り付けて追加をクリック<br>別の方法でHTMLタグにチェックをいれて、コードをコピーして自分のサイトのheadタグに埋め込み、アップロードが終われば確認で登録が完了</p><h2 id="用語まとめ"><a href="#用語まとめ" class="headerlink" title="用語まとめ"></a>用語まとめ</h2><h3 id="合計クリック数"><a href="#合計クリック数" class="headerlink" title="合計クリック数"></a>合計クリック数</h3><p>検索結果に出た自分のサイトやページがクリックされた回数</p><h3 id="合計表示回数"><a href="#合計表示回数" class="headerlink" title="合計表示回数"></a>合計表示回数</h3><p>検索結果に表示された回数</p><h3 id="平均CTR"><a href="#平均CTR" class="headerlink" title="平均CTR"></a>平均CTR</h3><p>Click Through Rate(クリックスルーレート)の略でクリック率とも呼ばれる<br>表示回数をクリック数で割った数</p><h3 id="平均掲載順位"><a href="#平均掲載順位" class="headerlink" title="平均掲載順位"></a>平均掲載順位</h3><p>検索キーワードの平均順位をグラフで確認することができる指標<br>ですが、Googleが2019年9月に提供を停止するとのことなので、<br>別の指標を利用する必要がある</p><h2 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h2><p><a href="https://support.google.com/webmasters/answer/9128668?hl=ja&amp;visit_id=636924748232881293-3422315578&amp;rd=1" target="_blank" rel="noopener">Search Console ヘルプ</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/blog3/google-new-logo.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Google-Search-Console-とは&quot;&gt;&lt;a href=&quot;#Google-Search-Console-とは&quot; class=&quot;headerlink&quot; title=&quot;Google Search Console とは&quot;&gt;&lt;/a&gt;Google Search Console とは&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://search.google.com/search-console/about?hl=ja&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Search Console&lt;/a&gt;はGoogleが用意した、無料で使えるツールで、サイトの検索トラフィックや掲載順位を測定できる&lt;br&gt;簡単に言うと、サイトにエラーが出ていないか,サイトの表示回数、検索順位、訪問ユーザーが検索したワードやクリック数など確認できる&lt;br&gt;SEOの対策をする上でGoogleのガイドラインに適しているかどうかも大事なので、Webサイトを運営するなら必要なツール&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
+    
+      <category term="web" scheme="https://satoshi2222.github.io/myblog.github.io/tags/web/"/>
+    
+  </entry>
   
   <entry>
     <title>GitHubが無料でプライベートリポジトリを作れるように</title>
@@ -55,11 +78,11 @@
     </summary>
     
     
+      <category term="web" scheme="https://satoshi2222.github.io/myblog.github.io/tags/web/"/>
+    
       <category term="JavaScript" scheme="https://satoshi2222.github.io/myblog.github.io/tags/JavaScript/"/>
     
       <category term="node.js" scheme="https://satoshi2222.github.io/myblog.github.io/tags/node-js/"/>
-    
-      <category term="web" scheme="https://satoshi2222.github.io/myblog.github.io/tags/web/"/>
     
   </entry>
   
@@ -450,27 +473,6 @@
       <category term="Git" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Git/"/>
     
       <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io/tags/GitHub/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>基本的なlinuxのコマンド</title>
-    <link href="https://satoshi2222.github.io/myblog.github.io/linux/"/>
-    <id>https://satoshi2222.github.io/myblog.github.io/linux/</id>
-    <published>2018-11-04T22:56:20.000Z</published>
-    <updated>2018-11-04T23:47:40.116Z</updated>
-    
-    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/linux/Linux-logo.jpg" title="Image"><br><br></p><h2 id="よく使うコマンドを書いておく"><a href="#よく使うコマンドを書いておく" class="headerlink" title="よく使うコマンドを書いておく"></a>よく使うコマンドを書いておく</h2><p>馴染みの少ないコマンド操作なので、確認用にメモ</p><a id="more"></a><table><thead><tr><th>コマンド</th><th>結果</th></tr></thead><tbody><tr><td>pwd</td><td>現在のディレクトリの表示</td></tr><tr><td>ls</td><td>ファイル・ディレクトリの一覧の表示</td></tr><tr><td>cd</td><td>現在のディレクトリの変更</td></tr><tr><td>cd..</td><td>ひとつ前のディレクトリに戻る</td></tr><tr><td>cd ~</td><td>ホームディレクトリに移動 ~(チルダ)</td></tr><tr><td>mkdir</td><td>ディレクトリの作成</td></tr><tr><td>rm</td><td>ファイルやディレクトリの削除</td></tr><tr><td>cp</td><td>ファイルやディレクトリのコピー</td></tr><tr><td>mv</td><td>ファイルやディレクトリの移動</td></tr><tr><td>find</td><td>ファイルやディレクトリの検索</td></tr><tr><td>cat</td><td>複数のファイルの中身を結合して、標準出力に出力</td></tr><tr><td>less</td><td>ファイルの中身をページ送りしながら表示</td></tr><tr><td>grep</td><td>ファイルや標準入力の中から特定の単語を検索</td></tr></tbody></table><h2 id="オプション"><a href="#オプション" class="headerlink" title="オプション"></a>オプション</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ls -a</span><br></pre></td></tr></table></figure><p>のように付け加えることでよりコマンドの付随機能を呼び出せる<br>種類はコマンドによって色々ある</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/linux/Linux-logo.jpg&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h2 id=&quot;よく使うコマンドを書いておく&quot;&gt;&lt;a href=&quot;#よく使うコマンドを書いておく&quot; class=&quot;headerlink&quot; title=&quot;よく使うコマンドを書いておく&quot;&gt;&lt;/a&gt;よく使うコマンドを書いておく&lt;/h2&gt;&lt;p&gt;馴染みの少ないコマンド操作なので、確認用にメモ&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="linux" scheme="https://satoshi2222.github.io/myblog.github.io/tags/linux/"/>
     
   </entry>
   
