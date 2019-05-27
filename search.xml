@@ -3,6 +3,25 @@
   
     
     <entry>
+      <title>Google Analytics 使いかた</title>
+      <link href="/myblog.github.io/blog4/"/>
+      <url>/myblog.github.io/blog4/</url>
+      
+        <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/blog4/google-new-logo.png" title="Image"><br><br></p><h2 id="Google-Analytics-とは"><a href="#Google-Analytics-とは" class="headerlink" title="Google Analytics とは"></a>Google Analytics とは</h2><p><a href="https://developers.google.com/analytics/?hl=ja" target="_blank" rel="noopener">Google Analytics</a>(アナリティクス)はGoogleが用意した、無料で使えるツールで、アクセスの解析ができます<br>簡単に言うと、訪問者数、滞在時間、どこから来たか、広告クリック数と収益、使用デバイスなどのデータを入手できる<br>データ計測のためにJavaScriptのコードを組み込む<br>スマホユーザーが多いかどうかや、訪問前のサイトを知ることで行動パターンを把握することができる</p><h2 id="Google-Analytics-登録"><a href="#Google-Analytics-登録" class="headerlink" title="Google Analytics 登録"></a>Google Analytics 登録</h2><p>登録にはGoogleアカウントが必要なので事前に作る<br><a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">Google Analytics</a><br>にアクセスして、無料で利用するをクリックする<br>用意したアカウントでログインする<br>初めての場合はお申込みボタンを押す<br>新しいアカウントの入力画面で必要な情報を入力<br>メニューの管理からトラッキング情報のウェブサイトのトラッキングという項目でトラッキングコードをコピーして<br>自分のサイトのHTMLファイルの＜/head＞ 終了タグの前に貼り付ける<br>これで登録と設置完了</p><h2 id="用語まとめ"><a href="#用語まとめ" class="headerlink" title="用語まとめ"></a>用語まとめ</h2><h3 id="セッション"><a href="#セッション" class="headerlink" title="セッション"></a>セッション</h3><p>ユーザーの訪問回数</p><h3 id="ユーザー"><a href="#ユーザー" class="headerlink" title="ユーザー"></a>ユーザー</h3><p>訪問者数(cookie情報をもとに判別)</p><h3 id="ページビュー数-PV数"><a href="#ページビュー数-PV数" class="headerlink" title="ページビュー数(PV数)"></a>ページビュー数(PV数)</h3><p>閲覧されたページの合計数</p><h3 id="直帰率"><a href="#直帰率" class="headerlink" title="直帰率"></a>直帰率</h3><p>１ページだけ訪れて離脱した場合カウントされる</p><h3 id="トラフィック"><a href="#トラフィック" class="headerlink" title="トラフィック"></a>トラフィック</h3><p>ユーザーがどこから来たのかを表示する</p><h2 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h2><p><a href="https://developers.google.com/analytics/?hl=ja" target="_blank" rel="noopener">Googleアナリティクス</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> blog </tag>
+            
+            <tag> web </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Google Search Console 使い方</title>
       <link href="/myblog.github.io/blog3/"/>
       <url>/myblog.github.io/blog3/</url>
@@ -72,9 +91,9 @@
             
             <tag> JavaScript </tag>
             
-            <tag> Web </tag>
-            
             <tag> node.js </tag>
+            
+            <tag> Web </tag>
             
         </tags>
       

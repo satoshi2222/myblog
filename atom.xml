@@ -6,7 +6,7 @@
   <link href="/myblog.github.io/atom.xml" rel="self"/>
   <link href="http://pubsubhubbub.appspot.com" rel="hub"/>
   <link href="https://satoshi2222.github.io/myblog.github.io/"/>
-  <updated>2019-05-03T11:27:37.956Z</updated>
+  <updated>2019-05-27T10:23:11.321Z</updated>
   <id>https://satoshi2222.github.io/myblog.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Google Analytics 使いかた</title>
+    <link href="https://satoshi2222.github.io/myblog.github.io/blog4/"/>
+    <id>https://satoshi2222.github.io/myblog.github.io/blog4/</id>
+    <published>2019-05-03T14:41:34.000Z</published>
+    <updated>2019-05-27T10:23:11.321Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/blog4/google-new-logo.png" title="Image"><br><br></p><h2 id="Google-Analytics-とは"><a href="#Google-Analytics-とは" class="headerlink" title="Google Analytics とは"></a>Google Analytics とは</h2><p><a href="https://developers.google.com/analytics/?hl=ja" target="_blank" rel="noopener">Google Analytics</a>(アナリティクス)はGoogleが用意した、無料で使えるツールで、アクセスの解析ができます<br>簡単に言うと、訪問者数、滞在時間、どこから来たか、広告クリック数と収益、使用デバイスなどのデータを入手できる<br>データ計測のためにJavaScriptのコードを組み込む<br>スマホユーザーが多いかどうかや、訪問前のサイトを知ることで行動パターンを把握することができる</p><h2 id="Google-Analytics-登録"><a href="#Google-Analytics-登録" class="headerlink" title="Google Analytics 登録"></a>Google Analytics 登録</h2><p>登録にはGoogleアカウントが必要なので事前に作る<br><a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">Google Analytics</a><br>にアクセスして、無料で利用するをクリックする<br>用意したアカウントでログインする<br>初めての場合はお申込みボタンを押す<br>新しいアカウントの入力画面で必要な情報を入力<br>メニューの管理からトラッキング情報のウェブサイトのトラッキングという項目でトラッキングコードをコピーして<br>自分のサイトのHTMLファイルの＜/head＞ 終了タグの前に貼り付ける<br>これで登録と設置完了</p><h2 id="用語まとめ"><a href="#用語まとめ" class="headerlink" title="用語まとめ"></a>用語まとめ</h2><h3 id="セッション"><a href="#セッション" class="headerlink" title="セッション"></a>セッション</h3><p>ユーザーの訪問回数</p><h3 id="ユーザー"><a href="#ユーザー" class="headerlink" title="ユーザー"></a>ユーザー</h3><p>訪問者数(cookie情報をもとに判別)</p><h3 id="ページビュー数-PV数"><a href="#ページビュー数-PV数" class="headerlink" title="ページビュー数(PV数)"></a>ページビュー数(PV数)</h3><p>閲覧されたページの合計数</p><h3 id="直帰率"><a href="#直帰率" class="headerlink" title="直帰率"></a>直帰率</h3><p>１ページだけ訪れて離脱した場合カウントされる</p><h3 id="トラフィック"><a href="#トラフィック" class="headerlink" title="トラフィック"></a>トラフィック</h3><p>ユーザーがどこから来たのかを表示する</p><h2 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h2><p><a href="https://developers.google.com/analytics/?hl=ja" target="_blank" rel="noopener">Googleアナリティクス</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/blog4/google-new-logo.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Google-Analytics-とは&quot;&gt;&lt;a href=&quot;#Google-A
+      
+    
+    </summary>
+    
+    
+      <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
+    
+      <category term="web" scheme="https://satoshi2222.github.io/myblog.github.io/tags/web/"/>
+    
+  </entry>
   
   <entry>
     <title>Google Search Console 使い方</title>
@@ -105,9 +131,9 @@
     
       <category term="JavaScript" scheme="https://satoshi2222.github.io/myblog.github.io/tags/JavaScript/"/>
     
-      <category term="Web" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Web/"/>
-    
       <category term="node.js" scheme="https://satoshi2222.github.io/myblog.github.io/tags/node-js/"/>
+    
+      <category term="Web" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Web/"/>
     
   </entry>
   
@@ -442,30 +468,6 @@
     
       &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/git2/gitlog1.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id=&quot;GitHub用語集&quot;&gt;&lt;a href=&quot;#GitHub用語集&quot; class=&quot;headerlink&quot; title=&quot;GitHub用語集&quot;&gt;&lt;/a&gt;GitHub用語集&lt;/h2&gt;&lt;p&gt;Gitでよく出てくる用語をメモしておく&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Git" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Git/"/>
-    
-      <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io/tags/GitHub/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GitとGitHub アカウント作成</title>
-    <link href="https://satoshi2222.github.io/myblog.github.io/git1/"/>
-    <id>https://satoshi2222.github.io/myblog.github.io/git1/</id>
-    <published>2018-11-17T11:00:21.000Z</published>
-    <updated>2018-11-17T14:45:31.315Z</updated>
-    
-    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/git1/gitlog1.png" title="Image"><br><br></p><h2 id="Gitとは"><a href="#Gitとは" class="headerlink" title="Gitとは"></a>Gitとは</h2><p>バージョン管理を行うソフトウェアのことで、バージョンとは、一度変更があるたびに更新される版名のこと<br>分散バージョン管理システムと呼ばれ,ローカル環境にリポジトリ(データの置き場)の複製が作成され、ローカル環境にもコードの変更履歴を保存することができる</p><h2 id="GitHubとは"><a href="#GitHubとは" class="headerlink" title="GitHubとは"></a>GitHubとは</h2><p>Gitの仕組みを利用して、ソースコードを共有することができるWebサービスで、基本的にすべて公開され,<br>だれでも自由にソースコードのコピーを作って、それを修正することができる</p><a id="more"></a><h2 id="GitHubのアカウント作成"><a href="#GitHubのアカウント作成" class="headerlink" title="GitHubのアカウント作成"></a>GitHubのアカウント作成</h2><p><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>にアクセス<br>以下の３つの項目に情報を入力してSign up for GitHubをクリック</p><ul><li>Username {ハンドルネーム}</li><li>Email {メールアドレス}</li><li>Password {パスワード}</li></ul><p>Welcome to GitHubと書かれたページが表示されたらデフォルトのままContinueをクリックする</p><p>最後にアンケート画面が出てくるので、答えない場合はskip this step をクリックして飛ばしても大丈夫</p><p>登録に成功すると、登録したメールアドレスにメールが届くので、メールのVerify email addressをクリックすると登録完了</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/git1/gitlog1.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Gitとは&quot;&gt;&lt;a href=&quot;#Gitとは&quot; class=&quot;headerlink&quot; title=&quot;Gitとは&quot;&gt;&lt;/a&gt;Gitとは&lt;/h2&gt;&lt;p&gt;バージョン管理を行うソフトウェアのことで、バージョンとは、一度変更があるたびに更新される版名のこと&lt;br&gt;分散バージョン管理システムと呼ばれ,ローカル環境にリポジトリ(データの置き場)の複製が作成され、ローカル環境にもコードの変更履歴を保存することができる&lt;/p&gt;
-&lt;h2 id=&quot;GitHubとは&quot;&gt;&lt;a href=&quot;#GitHubとは&quot; class=&quot;headerlink&quot; title=&quot;GitHubとは&quot;&gt;&lt;/a&gt;GitHubとは&lt;/h2&gt;&lt;p&gt;Gitの仕組みを利用して、ソースコードを共有することができるWebサービスで、基本的にすべて公開され,&lt;br&gt;だれでも自由にソースコードのコピーを作って、それを修正することができる&lt;/p&gt;
     
     </summary>
     
