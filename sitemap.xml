@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://satoshi2222.github.io/myblog.github.io/blog4/</loc>
+    <loc>https://satoshi2222.github.io/myblog.github.io/gatsby1/</loc>
     
-    <lastmod>2019-05-27T10:23:11.321Z</lastmod>
+    <lastmod>2019-05-28T19:06:52.831Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://satoshi2222.github.io/myblog.github.io/blog1/</loc>
+    
+    <lastmod>2019-05-28T18:36:31.369Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://satoshi2222.github.io/myblog.github.io/blog3/</loc>
     
-    <lastmod>2019-05-03T11:27:37.956Z</lastmod>
+    <lastmod>2019-05-27T10:42:04.089Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://satoshi2222.github.io/myblog.github.io/blog4/</loc>
+    
+    <lastmod>2019-05-27T10:41:59.325Z</lastmod>
     
   </url>
   
@@ -82,13 +96,6 @@
     <loc>https://satoshi2222.github.io/myblog.github.io/web2/</loc>
     
     <lastmod>2018-12-02T06:09:19.924Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://satoshi2222.github.io/myblog.github.io/blog1/</loc>
-    
-    <lastmod>2018-11-27T17:10:59.355Z</lastmod>
     
   </url>
   

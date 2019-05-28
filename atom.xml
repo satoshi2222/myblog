@@ -6,7 +6,7 @@
   <link href="/myblog.github.io/atom.xml" rel="self"/>
   <link href="http://pubsubhubbub.appspot.com" rel="hub"/>
   <link href="https://satoshi2222.github.io/myblog.github.io/"/>
-  <updated>2019-05-27T10:23:11.321Z</updated>
+  <updated>2019-05-28T19:06:52.831Z</updated>
   <id>https://satoshi2222.github.io/myblog.github.io/</id>
   
   <author>
@@ -17,13 +17,45 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>GatsbyJSをインストール</title>
+    <link href="https://satoshi2222.github.io/myblog.github.io/gatsby1/"/>
+    <id>https://satoshi2222.github.io/myblog.github.io/gatsby1/</id>
+    <published>2019-05-28T18:03:42.000Z</published>
+    <updated>2019-05-28T19:06:52.831Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><br><br></p><h2 id="GatsbyJSとは"><a href="#GatsbyJSとは" class="headerlink" title="GatsbyJSとは"></a>GatsbyJSとは</h2><ul><li>静的サイトジェネレーターで簡単にシンプルなブログが作れる</li><li>JavascriptフレームワークのReactJSを使っている</li><li>Markdownの記事書いて、記事の作成もコマンドから行える</li><li>node.js環境で動く</li><li>SPA(Single Page Application)が作れる</li><li>データベース不要で、ページの表示が速い</li><li>GraphQLを使っている</li><li>(starter)スターターが容易されていて、予め必要物がそろっているので色々なスターターを使えば自分好みにカスタマイズできる<br>このように色々あるが、Hexoと同じような技術</li></ul><a id="more"></a><h3 id="スタータとプラグインのリンク"><a href="#スタータとプラグインのリンク" class="headerlink" title="スタータとプラグインのリンク"></a>スタータとプラグインのリンク</h3><p><a href="https://www.gatsbyjs.org/starters/?v=2" target="_blank" rel="noopener">starter</a><br><a href="https://www.gatsbyjs.org/docs/plugins/" target="_blank" rel="noopener">plugin</a></p><h2 id="Gatsbyをインストールする"><a href="#Gatsbyをインストールする" class="headerlink" title="Gatsbyをインストールする"></a>Gatsbyをインストールする</h2><p>Node.jsが必要なのでインストールしておく<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --global gatsby-cli</span><br></pre></td></tr></table></figure></p><p>公式どおりにインストールする</p><p>以下のコマンドでバージョンを確認</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gatsby --version</span><br></pre></td></tr></table></figure><p>表示されれば無事インストールされる</p><h2 id="プロジェクトを作成"><a href="#プロジェクトを作成" class="headerlink" title="プロジェクトを作成"></a>プロジェクトを作成</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gatsby new blog</span><br></pre></td></tr></table></figure><p>これでblogというフォルダに色々キットが保存される<br>cd ディレクトリ名で移動して<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gatsby develop</span><br></pre></td></tr></table></figure></p><p>を入力すると<br><a href="http://localhost:8080/" target="_blank" rel="noopener">http://localhost:8080/</a><br>にGatsbyが立ち上がる</p><p>node.jsが最新版でなかったためか、エラーが出たので注意する</p><h2 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h2><p><a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener">GatsbyJS公式</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;GatsbyJSとは&quot;&gt;&lt;a href=&quot;#GatsbyJSとは&quot; class=&quot;headerlink&quot; title=&quot;GatsbyJSとは&quot;&gt;&lt;/a&gt;GatsbyJSとは&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;静的サイトジェネレーターで簡単にシンプルなブログが作れる&lt;/li&gt;
+&lt;li&gt;JavascriptフレームワークのReactJSを使っている&lt;/li&gt;
+&lt;li&gt;Markdownの記事書いて、記事の作成もコマンドから行える&lt;/li&gt;
+&lt;li&gt;node.js環境で動く&lt;/li&gt;
+&lt;li&gt;SPA(Single Page Application)が作れる&lt;/li&gt;
+&lt;li&gt;データベース不要で、ページの表示が速い&lt;/li&gt;
+&lt;li&gt;GraphQLを使っている&lt;/li&gt;
+&lt;li&gt;(starter)スターターが容易されていて、予め必要物がそろっているので色々なスターターを使えば自分好みにカスタマイズできる&lt;br&gt;このように色々あるが、Hexoと同じような技術&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
+    
+      <category term="gatsby" scheme="https://satoshi2222.github.io/myblog.github.io/tags/gatsby/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Google Analytics 使いかた</title>
     <link href="https://satoshi2222.github.io/myblog.github.io/blog4/"/>
     <id>https://satoshi2222.github.io/myblog.github.io/blog4/</id>
     <published>2019-05-03T14:41:34.000Z</published>
-    <updated>2019-05-27T10:23:11.321Z</updated>
+    <updated>2019-05-27T10:41:59.325Z</updated>
     
-    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/blog4/google-new-logo.png" title="Image"><br><br></p><h2 id="Google-Analytics-とは"><a href="#Google-Analytics-とは" class="headerlink" title="Google Analytics とは"></a>Google Analytics とは</h2><p><a href="https://developers.google.com/analytics/?hl=ja" target="_blank" rel="noopener">Google Analytics</a>(アナリティクス)はGoogleが用意した、無料で使えるツールで、アクセスの解析ができます<br>簡単に言うと、訪問者数、滞在時間、どこから来たか、広告クリック数と収益、使用デバイスなどのデータを入手できる<br>データ計測のためにJavaScriptのコードを組み込む<br>スマホユーザーが多いかどうかや、訪問前のサイトを知ることで行動パターンを把握することができる</p><h2 id="Google-Analytics-登録"><a href="#Google-Analytics-登録" class="headerlink" title="Google Analytics 登録"></a>Google Analytics 登録</h2><p>登録にはGoogleアカウントが必要なので事前に作る<br><a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">Google Analytics</a><br>にアクセスして、無料で利用するをクリックする<br>用意したアカウントでログインする<br>初めての場合はお申込みボタンを押す<br>新しいアカウントの入力画面で必要な情報を入力<br>メニューの管理からトラッキング情報のウェブサイトのトラッキングという項目でトラッキングコードをコピーして<br>自分のサイトのHTMLファイルの＜/head＞ 終了タグの前に貼り付ける<br>これで登録と設置完了</p><h2 id="用語まとめ"><a href="#用語まとめ" class="headerlink" title="用語まとめ"></a>用語まとめ</h2><h3 id="セッション"><a href="#セッション" class="headerlink" title="セッション"></a>セッション</h3><p>ユーザーの訪問回数</p><h3 id="ユーザー"><a href="#ユーザー" class="headerlink" title="ユーザー"></a>ユーザー</h3><p>訪問者数(cookie情報をもとに判別)</p><h3 id="ページビュー数-PV数"><a href="#ページビュー数-PV数" class="headerlink" title="ページビュー数(PV数)"></a>ページビュー数(PV数)</h3><p>閲覧されたページの合計数</p><h3 id="直帰率"><a href="#直帰率" class="headerlink" title="直帰率"></a>直帰率</h3><p>１ページだけ訪れて離脱した場合カウントされる</p><h3 id="トラフィック"><a href="#トラフィック" class="headerlink" title="トラフィック"></a>トラフィック</h3><p>ユーザーがどこから来たのかを表示する</p><h2 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h2><p><a href="https://developers.google.com/analytics/?hl=ja" target="_blank" rel="noopener">Googleアナリティクス</a></p>]]></content>
+    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/blog4/google-new-logo.png" title="Image"><br><br></p><h2 id="Google-Analytics-とは"><a href="#Google-Analytics-とは" class="headerlink" title="Google Analytics とは"></a>Google Analytics とは</h2><p><a href="https://developers.google.com/analytics/?hl=ja" target="_blank" rel="noopener">Google Analytics</a>(アナリティクス)はGoogleが用意した、無料で使えるツールで、アクセスの解析ができます<br>簡単に言うと、訪問者数、滞在時間、どこから来たか、広告クリック数と収益、使用デバイスなどのデータを入手できる<br>データ計測のためにJavaScriptのコードを組み込む<br>スマホユーザーが多いかどうかや、訪問前のサイトを知ることで行動パターンを把握することができる</p><h2 id="Google-Analytics-登録"><a href="#Google-Analytics-登録" class="headerlink" title="Google Analytics 登録"></a>Google Analytics 登録</h2><p>登録にはGoogleアカウントが必要なので事前に作る<br><a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">Google Analytics</a>にアクセスして、無料で利用するをクリックする<br>用意したアカウントでログインする<br>初めての場合はお申込みボタンを押す<br>新しいアカウントの入力画面で必要な情報を入力<br>メニューの管理からトラッキング情報のウェブサイトのトラッキングという項目でトラッキングコードをコピーして<br>自分のサイトのHTMLファイルの＜/head＞ 終了タグの前に貼り付ける<br>これで登録と設置完了</p><h2 id="用語まとめ"><a href="#用語まとめ" class="headerlink" title="用語まとめ"></a>用語まとめ</h2><h3 id="セッション"><a href="#セッション" class="headerlink" title="セッション"></a>セッション</h3><p>ユーザーの訪問回数</p><h3 id="ユーザー"><a href="#ユーザー" class="headerlink" title="ユーザー"></a>ユーザー</h3><p>訪問者数(cookie情報をもとに判別)</p><h3 id="ページビュー数-PV数"><a href="#ページビュー数-PV数" class="headerlink" title="ページビュー数(PV数)"></a>ページビュー数(PV数)</h3><p>閲覧されたページの合計数</p><h3 id="直帰率"><a href="#直帰率" class="headerlink" title="直帰率"></a>直帰率</h3><p>１ページだけ訪れて離脱した場合カウントされる</p><h3 id="トラフィック"><a href="#トラフィック" class="headerlink" title="トラフィック"></a>トラフィック</h3><p>ユーザーがどこから来たのかを表示する</p><h2 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h2><p><a href="https://developers.google.com/analytics/?hl=ja" target="_blank" rel="noopener">Googleアナリティクス</a></p>]]></content>
     
     <summary type="html">
     
@@ -36,9 +68,9 @@
     </summary>
     
     
-      <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
-    
       <category term="web" scheme="https://satoshi2222.github.io/myblog.github.io/tags/web/"/>
+    
+      <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
     
   </entry>
   
@@ -47,7 +79,7 @@
     <link href="https://satoshi2222.github.io/myblog.github.io/blog3/"/>
     <id>https://satoshi2222.github.io/myblog.github.io/blog3/</id>
     <published>2019-04-24T08:23:03.000Z</published>
-    <updated>2019-05-03T11:27:37.956Z</updated>
+    <updated>2019-05-27T10:42:04.089Z</updated>
     
     <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/blog3/google-new-logo.png" title="Image"><br><br></p><h2 id="Google-Search-Console-とは"><a href="#Google-Search-Console-とは" class="headerlink" title="Google Search Console とは"></a>Google Search Console とは</h2><p><a href="https://search.google.com/search-console/about?hl=ja" target="_blank" rel="noopener">Search Console</a>はGoogleが用意した、無料で使えるツールで、サイトの検索トラフィックや掲載順位を測定できる<br>簡単に言うと、サイトにエラーが出ていないか,サイトの表示回数、検索順位、訪問ユーザーが検索したワードやクリック数など確認できる<br>SEOの対策をする上でGoogleのガイドラインに適しているかどうかも大事なので、Webサイトを運営するなら必要なツール<br><a id="more"></a></p><h2 id="Search-Console-登録"><a href="#Search-Console-登録" class="headerlink" title="Search Console 登録"></a>Search Console 登録</h2><p>登録にはGoogleアカウントが必要なので事前に作る<br><a href="https://search.google.com/search-console/about?hl=ja&amp;utm_source=wmx&amp;utm_medium=wmx-welcome" target="_blank" rel="noopener">Google Search Console</a>にアクセスして、今すぐ開始をクリック<br>用意したアカウントでログイン、プロパティを追加から自分のサイトのURLを貼り付けて追加をクリック<br>別の方法でHTMLタグにチェックをいれて、コードをコピーして自分のサイトのheadタグに埋め込み、アップロードが終われば確認で登録が完了</p><h2 id="用語まとめ"><a href="#用語まとめ" class="headerlink" title="用語まとめ"></a>用語まとめ</h2><h3 id="合計クリック数"><a href="#合計クリック数" class="headerlink" title="合計クリック数"></a>合計クリック数</h3><p>検索結果に出た自分のサイトやページがクリックされた回数</p><h3 id="合計表示回数"><a href="#合計表示回数" class="headerlink" title="合計表示回数"></a>合計表示回数</h3><p>検索結果に表示された回数</p><h3 id="平均CTR"><a href="#平均CTR" class="headerlink" title="平均CTR"></a>平均CTR</h3><p>Click Through Rate(クリックスルーレート)の略でクリック率とも呼ばれる<br>表示回数をクリック数で割った数</p><h3 id="平均掲載順位"><a href="#平均掲載順位" class="headerlink" title="平均掲載順位"></a>平均掲載順位</h3><p>検索キーワードの平均順位をグラフで確認することができる指標<br>ですが、Googleが2019年9月に提供を停止するとのことなので、<br>別の指標を利用する必要がある</p><h2 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h2><p><a href="https://support.google.com/webmasters/answer/9128668?hl=ja&amp;visit_id=636924748232881293-3422315578&amp;rd=1" target="_blank" rel="noopener">Search Console ヘルプ</a></p>]]></content>
     
@@ -59,9 +91,9 @@
     </summary>
     
     
-      <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
-    
       <category term="web" scheme="https://satoshi2222.github.io/myblog.github.io/tags/web/"/>
+    
+      <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
     
   </entry>
   
@@ -131,9 +163,9 @@
     
       <category term="JavaScript" scheme="https://satoshi2222.github.io/myblog.github.io/tags/JavaScript/"/>
     
-      <category term="node.js" scheme="https://satoshi2222.github.io/myblog.github.io/tags/node-js/"/>
-    
       <category term="Web" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Web/"/>
+    
+      <category term="node.js" scheme="https://satoshi2222.github.io/myblog.github.io/tags/node-js/"/>
     
   </entry>
   
@@ -294,7 +326,7 @@
     <link href="https://satoshi2222.github.io/myblog.github.io/blog1/"/>
     <id>https://satoshi2222.github.io/myblog.github.io/blog1/</id>
     <published>2018-11-27T11:30:55.000Z</published>
-    <updated>2018-11-27T17:10:59.355Z</updated>
+    <updated>2019-05-28T18:36:31.369Z</updated>
     
     <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/blog1/web1.jpg" title="Image"><br><br></p><h2 id="CMSとは"><a href="#CMSとは" class="headerlink" title="CMSとは"></a>CMSとは</h2><p>CMS(Contents Management System)は管理画面からホームページを更新できる<br>動的なHTMLで、ユーザーからのリクエストでDBからHTMLを生成する<br>有名なのがWordPressでデータベースが必要でセキュリティ面に不安がある</p><h2 id="静的サイトジェネレータとは"><a href="#静的サイトジェネレータとは" class="headerlink" title="静的サイトジェネレータとは"></a>静的サイトジェネレータとは</h2><p>Static Site GeneratorはJavaScriptのフレームワークをベースにしている<br>最初からhtmlを生成してからサーバーからhtmlを送るので、CMSのようにデータベースが必要なくて、サーバーがあればいいので、セキュリティ的に強い</p><a id="more"></a><h3 id="静的サイトジェネレーターのメリット"><a href="#静的サイトジェネレーターのメリット" class="headerlink" title="静的サイトジェネレーターのメリット"></a>静的サイトジェネレーターのメリット</h3><ul><li>GitHubPagesなどを使えば無料で作成できる</li><li>アクセス集中などの負荷に強い</li><li>すでに作成されているページを表示するので、表示が速い</li><li>ファイルなどをローカルに保存しているので、セキュリティ対策の必要がない</li></ul><h3 id="静的サイトジェネレーターのデメリット"><a href="#静的サイトジェネレーターのデメリット" class="headerlink" title="静的サイトジェネレーターのデメリット"></a>静的サイトジェネレーターのデメリット</h3><ul><li>Twitterなどのユーザー別のページを用意できない</li><li>ローカル保存のため複数での管理がしにくい</li><li>管理画面などがないため、ある程度の知識が必要</li><li>まだマイナーなものが多いので、情報が少ない</li></ul><h2 id="CMSまとめ"><a href="#CMSまとめ" class="headerlink" title="CMSまとめ"></a>CMSまとめ</h2><p><a href="https://ja.wordpress.org/" target="_blank" rel="noopener">WordPress</a><br><a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a><br><a href="https://www.drupal.org/" target="_blank" rel="noopener">Drupal</a></p><h2 id="静的サイトジェネレーターまとめ"><a href="#静的サイトジェネレーターまとめ" class="headerlink" title="静的サイトジェネレーターまとめ"></a>静的サイトジェネレーターまとめ</h2><p><a href="https://gohugo.io/" target="_blank" rel="noopener">HUGO</a><br><a href="https://jekyllrb-ja.github.io/" target="_blank" rel="noopener">jekyll</a><br><a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a><br><a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener">Gatsby</a><br><a href="https://react-static.js.org/" target="_blank" rel="noopener">React Static</a><br><a href="https://vuejs.org/" target="_blank" rel="noopener">VuePress</a></p><h2 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h2><p><a href="https://www.staticgen.com/" target="_blank" rel="noopener">StaticGen</a>ここにかなりの数の<br>静的サイトジェネレーターが載っている</p>]]></content>
     
@@ -452,29 +484,6 @@
     
     
       <category term="node.js" scheme="https://satoshi2222.github.io/myblog.github.io/tags/node-js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git 用語集</title>
-    <link href="https://satoshi2222.github.io/myblog.github.io/git2/"/>
-    <id>https://satoshi2222.github.io/myblog.github.io/git2/</id>
-    <published>2018-11-17T14:37:16.000Z</published>
-    <updated>2018-11-17T14:39:55.356Z</updated>
-    
-    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/git2/gitlog1.png" title="Image"><br><br></p><h2 id="GitHub用語集"><a href="#GitHub用語集" class="headerlink" title="GitHub用語集"></a>GitHub用語集</h2><p>Gitでよく出てくる用語をメモしておく</p><a id="more"></a><h3 id="リポジトリ-Repository"><a href="#リポジトリ-Repository" class="headerlink" title="リポジトリ(Repository)"></a>リポジトリ(Repository)</h3><p>ソフトウェア開発において、ソースコードや開発に関わるデータをまとめて管理するためのデータの置き場のこと</p><h3 id="フォーク-Fork"><a href="#フォーク-Fork" class="headerlink" title="フォーク(Fork)"></a>フォーク(Fork)</h3><p>他人のリポジトリ(リモートリポジトリ)をコピーして、自分のリポジトリを作成すること</p><h3 id="コミット-Commit"><a href="#コミット-Commit" class="headerlink" title="コミット(Commit)"></a>コミット(Commit)</h3><p>リポジトリになにかしらの変更を入れること</p><h3 id="イシュー-Issue"><a href="#イシュー-Issue" class="headerlink" title="イシュー(Issue)"></a>イシュー(Issue)</h3><p>不具合や要求、その他の設計に関わることなどをイシューとしてまとめて、多くの人で議論するための機能</p><h3 id="ギスト-Gist"><a href="#ギスト-Gist" class="headerlink" title="ギスト(Gist)"></a>ギスト(Gist)</h3><p>メモやコードの断片を気軽に投稿して公開することができる機能</p><h3 id="ブランチ-branch"><a href="#ブランチ-branch" class="headerlink" title="ブランチ(branch)"></a>ブランチ(branch)</h3><p>ある時点のソースコードを分岐させて開発をしたもの<br>複数のメンバーが、同時に機能追加などを行ったりするため並行して行われる複数の機能追加やバージョン管理を支援する機能<br>masterブランチはデフォルトのブランチ</p><h3 id="ステージング-staging-とインデックス-index"><a href="#ステージング-staging-とインデックス-index" class="headerlink" title="ステージング(staging)とインデックス(index)"></a>ステージング(staging)とインデックス(index)</h3><p>いったん変更情報の登録すること<br>変更を保持している領域をインデックスという<br>ワークツリーにあるファイルをローカルリポジトリにコミットするためには、インデックスという場所に、コミット予定のファイルを記録する必要がある</p><h3 id="ワークツリー-working-tree"><a href="#ワークツリー-working-tree" class="headerlink" title="ワークツリー(working tree)"></a>ワークツリー(working tree)</h3><p>まだインデックスにステージングされていないファイル変更のこと<br>ローカル環境内のディレクトリのこと</p><h3 id="マージ-merge"><a href="#マージ-merge" class="headerlink" title="マージ(merge)"></a>マージ(merge)</h3><p>ブランチの間で変更情報を取り込むこと<br>リモートの更新情報をローカルに反映させる</p><h3 id="コンフリクト-Conflict"><a href="#コンフリクト-Conflict" class="headerlink" title="コンフリクト(Conflict)"></a>コンフリクト(Conflict)</h3><p>あるファイルの同じ行に対して、複数の人が別々の変更してしまいマージできないこと</p><h3 id="プルリクエスト-git-pull"><a href="#プルリクエスト-git-pull" class="headerlink" title="プルリクエスト(git pull)"></a>プルリクエスト(git pull)</h3><p>自分のフォークしたリポジトリから、変更差分をあなたのGitHubのリポジトリにpullしてください、という依頼のこと</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/git2/gitlog1.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h2 id=&quot;GitHub用語集&quot;&gt;&lt;a href=&quot;#GitHub用語集&quot; class=&quot;headerlink&quot; title=&quot;GitHub用語集&quot;&gt;&lt;/a&gt;GitHub用語集&lt;/h2&gt;&lt;p&gt;Gitでよく出てくる用語をメモしておく&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Git" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Git/"/>
-    
-      <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io/tags/GitHub/"/>
     
   </entry>
   
