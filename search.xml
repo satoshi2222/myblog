@@ -3,6 +3,25 @@
   
     
     <entry>
+      <title>GatsbyJS</title>
+      <link href="/myblog.github.io/gatsby2/"/>
+      <url>/myblog.github.io/gatsby2/</url>
+      
+        <content type="html"><![CDATA[<p><br><br><br><br></p><h2 id="タイトル"><a href="#タイトル" class="headerlink" title="タイトル"></a>タイトル</h2><a id="more"></a><h2 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h2><p><a href=""></a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> blog </tag>
+            
+            <tag> gatsby </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>GatsbyJSをインストール</title>
       <link href="/myblog.github.io/gatsby1/"/>
       <url>/myblog.github.io/gatsby1/</url>
@@ -22,7 +41,7 @@
     </entry>
     
     <entry>
-      <title>Google Analytics 使いかた</title>
+      <title>Google Analytics 使い方</title>
       <link href="/myblog.github.io/blog4/"/>
       <url>/myblog.github.io/blog4/</url>
       
@@ -32,9 +51,9 @@
       
         <tags>
             
-            <tag> web </tag>
-            
             <tag> blog </tag>
+            
+            <tag> web </tag>
             
         </tags>
       
@@ -51,9 +70,9 @@
       
         <tags>
             
-            <tag> web </tag>
-            
             <tag> blog </tag>
+            
+            <tag> web </tag>
             
         </tags>
       
@@ -110,9 +129,9 @@
             
             <tag> JavaScript </tag>
             
-            <tag> Web </tag>
-            
             <tag> node.js </tag>
+            
+            <tag> Web </tag>
             
         </tags>
       

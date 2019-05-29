@@ -6,7 +6,7 @@
   <link href="/myblog.github.io/atom.xml" rel="self"/>
   <link href="http://pubsubhubbub.appspot.com" rel="hub"/>
   <link href="https://satoshi2222.github.io/myblog.github.io/"/>
-  <updated>2019-05-28T19:13:36.909Z</updated>
+  <updated>2019-05-29T10:12:45.159Z</updated>
   <id>https://satoshi2222.github.io/myblog.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GatsbyJS</title>
+    <link href="https://satoshi2222.github.io/myblog.github.io/gatsby2/"/>
+    <id>https://satoshi2222.github.io/myblog.github.io/gatsby2/</id>
+    <published>2019-05-29T07:15:11.000Z</published>
+    <updated>2019-05-29T10:12:45.159Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><br><br></p><h2 id="タイトル"><a href="#タイトル" class="headerlink" title="タイトル"></a>タイトル</h2><a id="more"></a><h2 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h2><p><a href=""></a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;タイトル&quot;&gt;&lt;a href=&quot;#タイトル&quot; class=&quot;headerlink&quot; title=&quot;タイトル&quot;&gt;&lt;/a&gt;タイトル&lt;/h2&gt;
+    
+    </summary>
+    
+    
+      <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
+    
+      <category term="gatsby" scheme="https://satoshi2222.github.io/myblog.github.io/tags/gatsby/"/>
+    
+  </entry>
   
   <entry>
     <title>GatsbyJSをインストール</title>
@@ -49,11 +72,11 @@
   </entry>
   
   <entry>
-    <title>Google Analytics 使いかた</title>
+    <title>Google Analytics 使い方</title>
     <link href="https://satoshi2222.github.io/myblog.github.io/blog4/"/>
     <id>https://satoshi2222.github.io/myblog.github.io/blog4/</id>
     <published>2019-05-03T14:41:34.000Z</published>
-    <updated>2019-05-27T10:41:59.325Z</updated>
+    <updated>2019-05-28T19:15:46.885Z</updated>
     
     <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/blog4/google-new-logo.png" title="Image"><br><br></p><h2 id="Google-Analytics-とは"><a href="#Google-Analytics-とは" class="headerlink" title="Google Analytics とは"></a>Google Analytics とは</h2><p><a href="https://developers.google.com/analytics/?hl=ja" target="_blank" rel="noopener">Google Analytics</a>(アナリティクス)はGoogleが用意した、無料で使えるツールで、アクセスの解析ができます<br>簡単に言うと、訪問者数、滞在時間、どこから来たか、広告クリック数と収益、使用デバイスなどのデータを入手できる<br>データ計測のためにJavaScriptのコードを組み込む<br>スマホユーザーが多いかどうかや、訪問前のサイトを知ることで行動パターンを把握することができる</p><h2 id="Google-Analytics-登録"><a href="#Google-Analytics-登録" class="headerlink" title="Google Analytics 登録"></a>Google Analytics 登録</h2><p>登録にはGoogleアカウントが必要なので事前に作る<br><a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">Google Analytics</a>にアクセスして、無料で利用するをクリックする<br>用意したアカウントでログインする<br>初めての場合はお申込みボタンを押す<br>新しいアカウントの入力画面で必要な情報を入力<br>メニューの管理からトラッキング情報のウェブサイトのトラッキングという項目でトラッキングコードをコピーして<br>自分のサイトのHTMLファイルの＜/head＞ 終了タグの前に貼り付ける<br>これで登録と設置完了</p><h2 id="用語まとめ"><a href="#用語まとめ" class="headerlink" title="用語まとめ"></a>用語まとめ</h2><h3 id="セッション"><a href="#セッション" class="headerlink" title="セッション"></a>セッション</h3><p>ユーザーの訪問回数</p><h3 id="ユーザー"><a href="#ユーザー" class="headerlink" title="ユーザー"></a>ユーザー</h3><p>訪問者数(cookie情報をもとに判別)</p><h3 id="ページビュー数-PV数"><a href="#ページビュー数-PV数" class="headerlink" title="ページビュー数(PV数)"></a>ページビュー数(PV数)</h3><p>閲覧されたページの合計数</p><h3 id="直帰率"><a href="#直帰率" class="headerlink" title="直帰率"></a>直帰率</h3><p>１ページだけ訪れて離脱した場合カウントされる</p><h3 id="トラフィック"><a href="#トラフィック" class="headerlink" title="トラフィック"></a>トラフィック</h3><p>ユーザーがどこから来たのかを表示する</p><h2 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h2><p><a href="https://developers.google.com/analytics/?hl=ja" target="_blank" rel="noopener">Googleアナリティクス</a></p>]]></content>
     
@@ -68,9 +91,9 @@
     </summary>
     
     
-      <category term="web" scheme="https://satoshi2222.github.io/myblog.github.io/tags/web/"/>
-    
       <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
+    
+      <category term="web" scheme="https://satoshi2222.github.io/myblog.github.io/tags/web/"/>
     
   </entry>
   
@@ -91,9 +114,9 @@
     </summary>
     
     
-      <category term="web" scheme="https://satoshi2222.github.io/myblog.github.io/tags/web/"/>
-    
       <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
+    
+      <category term="web" scheme="https://satoshi2222.github.io/myblog.github.io/tags/web/"/>
     
   </entry>
   
@@ -163,9 +186,9 @@
     
       <category term="JavaScript" scheme="https://satoshi2222.github.io/myblog.github.io/tags/JavaScript/"/>
     
-      <category term="Web" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Web/"/>
-    
       <category term="node.js" scheme="https://satoshi2222.github.io/myblog.github.io/tags/node-js/"/>
+    
+      <category term="Web" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Web/"/>
     
   </entry>
   
@@ -461,29 +484,6 @@
       <category term="npm" scheme="https://satoshi2222.github.io/myblog.github.io/tags/npm/"/>
     
       <category term="yarn" scheme="https://satoshi2222.github.io/myblog.github.io/tags/yarn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Node.jsとは</title>
-    <link href="https://satoshi2222.github.io/myblog.github.io/node1/"/>
-    <id>https://satoshi2222.github.io/myblog.github.io/node1/</id>
-    <published>2018-11-17T20:23:21.000Z</published>
-    <updated>2018-11-17T22:16:51.878Z</updated>
-    
-    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/node1/nodelogo.png" title="Image"><br><br></p><h2 id="Node-jsとは"><a href="#Node-jsとは" class="headerlink" title="Node.jsとは"></a>Node.jsとは</h2><ul><li>JavaScriptでプログラミングできる、フレームワークやライブラリではなくサーバサイドのプラットフォーム<br>  サーバーサイドとはサーバークライアント型のサービスのサーバ側のソフトウェアのこと</li></ul><a id="more"></a><ul><li><p>JavaScriptはブラウザ上で動きをつけるために開発されたプログラミング言語だが、サーバサイドでもJavaScriptを<br>  実行できるようにしてくれるのがNode.js<br>  PHPやJavaなどと同じような使い方ができるということだが、全く一緒ではない<br>  サーバも構築できるし、アプリケーションプログラムも動かせる</p></li><li><p>イベントループを採用している<br>  シングルスレッドでループ処理を回し、キューに溜まったイベントを処理していく方式<br>  リクエストを１つのスレッドで受け取ることができ,スレッドなどのリソース消費が少ない<br>  ブロッキングが発生すると、イベントループ全体がストップしてしまう問題を解決するのが、ノンブロッキングI/O</p></li><li><p>ノンブロッキングI/O（入出力）を採用している<br>  前の処理結果を待たずに他の処理を進めることができる<br>  単一のスレッドでも並列して処理できるようになっている<br>  LINE、Twitter、instagramのようなリアルタイムな反応が必要なWebの分野で活躍する</p></li></ul><p>色々調べたが、実際に利用しないと何が起こってるのか掴みにくいので、ここでは表面的な内容だけにしておく</p><h3 id="Node-jsのインストール-Windows版"><a href="#Node-jsのインストール-Windows版" class="headerlink" title="Node.jsのインストール(Windows版)"></a>Node.jsのインストール(Windows版)</h3><p><a href="https://nodejs.org/ja/" target="_blank" rel="noopener">Node.js</a>公式サイトにて,<br>ダウンロード Windows (x64)推奨版をクリック<br>後は画面にしたがってインストールしていく<br>カスタムインストール画面も追加したいものがなければ、そのままでいい<br>インストールが完了したら、確認するために新しくインストールされたNode.js command prompt起動して<br>バージョンを表示するコマンド<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure></p><p>上記のコマンドを実行<br>インストールしたバージョンが表示されればインストール成功</p><h2 id="バージョン管理"><a href="#バージョン管理" class="headerlink" title="バージョン管理"></a>バージョン管理</h2><p>バージョン管理をするなら管理するツール(nodebrewやnodistなど)からnode.jsをインストールする<br>node.jsは日々さまざまな改善が行われ、今まで利用していた機能が、次のバージョンで使えなくなるということがある<br>そのようなことを防止するために現在のバージョンを明確にして、状況に応じてバージョンを変更することができる<br>管理ツールを導入する</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/node1/nodelogo.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Node-jsとは&quot;&gt;&lt;a href=&quot;#Node-jsとは&quot; class=&quot;headerlink&quot; title=&quot;Node.jsとは&quot;&gt;&lt;/a&gt;Node.jsとは&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;JavaScriptでプログラミングできる、フレームワークやライブラリではなくサーバサイドのプラットフォーム&lt;br&gt;  サーバーサイドとはサーバークライアント型のサービスのサーバ側のソフトウェアのこと&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="node.js" scheme="https://satoshi2222.github.io/myblog.github.io/tags/node-js/"/>
     
   </entry>
   
