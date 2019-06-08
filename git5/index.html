@@ -5,7 +5,7 @@
   
 
   
-  <title>git push | WebMemo</title>
+  <title>git initとgit push | WebMemo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="google-site-verification" content="YvmUAfawhSyphEgaYekvEV4ZwArmSTIKYRpO3eTJefQ" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -20,15 +20,15 @@
   <meta name="description" content="git pushgit push とはローカルで開発したものをリモートリポジトリに変更を反映するためのコマンドGitHubでリポジトリを作成後手順通りpushしようとしたら、エラーや反映されてていないということが起こったのでメモしておく">
 <meta name="keywords" content="git">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git push">
+<meta property="og:title" content="git initとgit push">
 <meta property="og:url" content="https://satoshi2222.github.io/myblog.github.io/git5/index.html">
 <meta property="og:site_name" content="WebMemo">
 <meta property="og:description" content="git pushgit push とはローカルで開発したものをリモートリポジトリに変更を反映するためのコマンドGitHubでリポジトリを作成後手順通りpushしようとしたら、エラーや反映されてていないということが起こったのでメモしておく">
 <meta property="og:locale" content="ja">
 <meta property="og:image" content="https://satoshi2222.github.io/myblog.github.io/git5/gitlog1.png">
-<meta property="og:updated_time" content="2019-06-08T12:33:32.407Z">
+<meta property="og:updated_time" content="2019-06-08T13:02:54.271Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git push">
+<meta name="twitter:title" content="git initとgit push">
 <meta name="twitter:description" content="git pushgit push とはローカルで開発したものをリモートリポジトリに変更を反映するためのコマンドGitHubでリポジトリを作成後手順通りpushしようとしたら、エラーや反映されてていないということが起こったのでメモしておく">
 <meta name="twitter:image" content="https://satoshi2222.github.io/myblog.github.io/git5/gitlog1.png">
   
@@ -93,7 +93,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      git push
+      git initとgit push
     </h1>
   
 
@@ -116,6 +116,15 @@
 <p>これでリモートに保存された<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure></p>
 <p>で打ち込んだリポジトリが登録されているか確認できる</p>
 <h3 id="git-push-origin-masterコマンドで-ローカルのmasterブランチをリモートリポジトリへ反映させる"><a href="#git-push-origin-masterコマンドで-ローカルのmasterブランチをリモートリポジトリへ反映させる" class="headerlink" title="git push origin masterコマンドで ローカルのmasterブランチをリモートリポジトリへ反映させる"></a>git push origin masterコマンドで ローカルのmasterブランチをリモートリポジトリへ反映させる</h3><p>(正式にはgit push origin master:master)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure></p>
+<p>これでリモートリポジトリに反映される</p>
+<h2 id="git-push時にエラー"><a href="#git-push時にエラー" class="headerlink" title="git push時にエラー"></a>git push時にエラー</h2><p>remote: Permission to ユーザー名1/リポジトリ名 denied to ユーザー名2<br>fatal: unable to access …… : The requested URL returned error: 403<br>という文が出た<br>どうやら複数のGitアカウントを使っている場合にユーザが混合してしまっているため、pushできないということ<br>とりあえずGUIでアカウント情報を修正してみる</p>
+<ol>
+<li>[コントロール］→ [パネル\ユーザー］→ [アカウント\資格情報マネージャー]へ移動</li>
+<li>資格情報マネージャー”をクリック</li>
+<li>一覧からgit:<a href="https://github.comをクリック" target="_blank" rel="noopener">https://github.comをクリック</a></li>
+<li>削除をクリックして情報を削除する</li>
+<li>もう一度Gitにコマンドで接続すると認証画面が出るので、使用するアカウント情報を入力すればpushできるようになる</li>
+</ol>
 
       
     </div>
@@ -200,7 +209,7 @@
           </li>
         
           <li>
-            <a href="/myblog.github.io/git5/">git push</a>
+            <a href="/myblog.github.io/git5/">git initとgit push</a>
           </li>
         
           <li>
