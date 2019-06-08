@@ -3,6 +3,42 @@
   
     
     <entry>
+      <title>Hugoをインストール</title>
+      <link href="/myblog.github.io/hugo1/"/>
+      <url>/myblog.github.io/hugo1/</url>
+      
+        <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/hugo1/hugo-logo.png" title="Image"><br><br></p><h2 id="Hugoとは"><a href="#Hugoとは" class="headerlink" title="Hugoとは"></a>Hugoとは</h2><ul><li>静的サイトジェネレーターで簡単にシンプルなブログが作れる</li><li>GatsbyやHexoとは違いnode.js製ではない</li><li>Go言語で作られている</li><li>テーマが他の静的サイトジェネレーターより豊富</li><li>データベース不要で、ページの表示が速い</li></ul><a id="more"></a><h2 id="Hugoのダウンロード"><a href="#Hugoのダウンロード" class="headerlink" title="Hugoのダウンロード"></a>Hugoのダウンロード</h2><p><a href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener">Hugo GitHub</a>でZipファイルをダウンロードする<br>windowsの場合はWindows-64bit.zipか32bitの場合はそちらををクリック</p><h3 id="Hugoというフォルダを作成する"><a href="#Hugoというフォルダを作成する" class="headerlink" title="Hugoというフォルダを作成する"></a>Hugoというフォルダを作成する</h3><p>今回はC:\Hugo</p><h3 id="C-Hugoに-binフォルダを作る"><a href="#C-Hugoに-binフォルダを作る" class="headerlink" title="C:\Hugoに\binフォルダを作る"></a>C:\Hugoに\binフォルダを作る</h3><p>binフォルダに解凍した、hugo.exeをいれる</p><h3 id="C-Hugo-binにパスを通しHugoをどこからでも使えるようにする"><a href="#C-Hugo-binにパスを通しHugoをどこからでも使えるようにする" class="headerlink" title="C:\Hugo\binにパスを通しHugoをどこからでも使えるようにする"></a>C:\Hugo\binにパスを通しHugoをどこからでも使えるようにする</h3><p>今回はコマンドラインからではなく、GUIでパスを通す</p><ol><li>C:\Hugo\binをコピーする</li><li>［コントロールパネル］→［システムとセキュリティ］→［システム］→［システムの詳細設定］→[環境変数(N)]</li><li>Pathとか書かれた欄を選択し、編集をクリック</li><li>新規をクリックして、先ほどコピーしたC:\Hugo\binを貼り付ける<br>これでパスが通る<br>補足:何故かこの設定で通らず、not findと出たが、環境変数でこのパスの順番を一番上にしたらできるようになった</li></ol><h2 id="Hugo公式のクイックスタート通りに進めていく"><a href="#Hugo公式のクイックスタート通りに進めていく" class="headerlink" title="Hugo公式のクイックスタート通りに進めていく"></a>Hugo公式のクイックスタート通りに進めていく</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hugo version</span><br></pre></td></tr></table></figure><p>でインストールされているか確認</p><p>C:\Hugo\の場所で<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hugo new site quickstart</span><br></pre></td></tr></table></figure></p><p>でサイトを作成する</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd quickstart</span><br></pre></td></tr></table></figure><p>で移動する</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke</span><br><span class="line">echo theme = &quot;ananke&quot; &gt;&gt; config.toml</span><br></pre></td></tr></table></figure><p>これでanankeというテーマを追加する<br>echoでconfig.tomlにテーマannankeを追記する</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hugo new posts/my-first-post.md</span><br></pre></td></tr></table></figure><p>で記事を追加する</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hugo server -D</span><br></pre></td></tr></table></figure><p>でローカルサーバーを立ち上げるとサイトができている<br>プラウザで<a href="http://localhost:1313/" target="_blank" rel="noopener">http://localhost:1313/</a>にアクセスすると見れる</p><h2 id="公式サイト通りやってみたがエラーが出た"><a href="#公式サイト通りやってみたがエラーが出た" class="headerlink" title="公式サイト通りやってみたがエラーが出た"></a>公式サイト通りやってみたがエラーが出た</h2><p><a href="http://localhost:1313/" target="_blank" rel="noopener">http://localhost:1313/</a>アクセスしたが画像が表示されなかった<br>テーマを変えると設定が色々と変わり、Dirが違ったりする<br>テーマのREADMEに、themeフォルダにあるexampleSiteフォルダのconfig.tomlや他のファイルをquickstarフォルダのconfig.tomlに上書きしてと書いてあるのでコピーする<br>その後,config.tomlの5行目、themesDir = “../..”の記述を消して<a href="http://localhost:1313/" target="_blank" rel="noopener">http://localhost:1313/</a>を開くと<br>画像が表示された</p><h2 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h2><p><a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo公式サイト</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> blog </tag>
+            
+            <tag> Hugo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>git push</title>
+      <link href="/myblog.github.io/git5/"/>
+      <url>/myblog.github.io/git5/</url>
+      
+        <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/git5/gitlog1.png" title="Image"><br><br></p><h2 id="git-push"><a href="#git-push" class="headerlink" title="git push"></a>git push</h2><p>git push とはローカルで開発したものをリモートリポジトリに変更を反映するためのコマンド<br>GitHubでリポジトリを作成後手順通りpushしようとしたら、エラーや反映されてていないということが起こったのでメモしておく</p><a id="more"></a><h2 id="ローカルリポジトリを作成する"><a href="#ローカルリポジトリを作成する" class="headerlink" title="ローカルリポジトリを作成する"></a>ローカルリポジトリを作成する</h2><p>コマンドラインでローカルの作業フォルダに移動</p><h3 id="git-initコマンドでローカルリポジトリを作成"><a href="#git-initコマンドでローカルリポジトリを作成" class="headerlink" title="git initコマンドでローカルリポジトリを作成"></a>git initコマンドでローカルリポジトリを作成</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure><p>.gitというサブディレクトリが作成される</p><h3 id="git-addコマンドでファイルをインデックスに追加-Gitの管理にいれる"><a href="#git-addコマンドでファイルをインデックスに追加-Gitの管理にいれる" class="headerlink" title="git addコマンドでファイルをインデックスに追加(Gitの管理にいれる)"></a>git addコマンドでファイルをインデックスに追加(Gitの管理にいれる)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add -A</span><br></pre></td></tr></table></figure><h3 id="Gitのリポジトリでファイルを変更した場合、git-commitコマンドで変更を登録する"><a href="#Gitのリポジトリでファイルを変更した場合、git-commitコマンドで変更を登録する" class="headerlink" title="Gitのリポジトリでファイルを変更した場合、git commitコマンドで変更を登録する"></a>Gitのリポジトリでファイルを変更した場合、git commitコマンドで変更を登録する</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit</span><br></pre></td></tr></table></figure><p>変更したファイルだけコミットする場合は<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit ファイル名</span><br></pre></td></tr></table></figure></p><p>変更した全てコミットする場合は<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit .</span><br></pre></td></tr></table></figure></p><p>-aをつければなにもかもコミットコマンドは</p><h3 id="git-remoteコマンドでリモートリポジトリの情報をローカルに保存する"><a href="#git-remoteコマンドでリモートリポジトリの情報をローカルに保存する" class="headerlink" title="git remoteコマンドでリモートリポジトリの情報をローカルに保存する"></a>git remoteコマンドでリモートリポジトリの情報をローカルに保存する</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/ユーザー名/リポジトリ名.git</span><br></pre></td></tr></table></figure><p>これでリモートに保存された<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure></p><p>で打ち込んだリポジトリが登録されているか確認できる</p><h3 id="git-push-origin-masterコマンドで-ローカルのmasterブランチをリモートリポジトリへ反映させる"><a href="#git-push-origin-masterコマンドで-ローカルのmasterブランチをリモートリポジトリへ反映させる" class="headerlink" title="git push origin masterコマンドで ローカルのmasterブランチをリモートリポジトリへ反映させる"></a>git push origin masterコマンドで ローカルのmasterブランチをリモートリポジトリへ反映させる</h3><p>(正式にはgit push origin master:master)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>NetlifyとGatsbyJSを連携させる</title>
       <link href="/myblog.github.io/gatsby2/"/>
       <url>/myblog.github.io/gatsby2/</url>
@@ -131,9 +167,9 @@
             
             <tag> JavaScript </tag>
             
-            <tag> node.js </tag>
-            
             <tag> Web </tag>
+            
+            <tag> node.js </tag>
             
         </tags>
       

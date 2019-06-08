@@ -5,7 +5,7 @@
   
 
   
-  <title>タグ: npm | WebMemo</title>
+  <title>git push | WebMemo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="google-site-verification" content="YvmUAfawhSyphEgaYekvEV4ZwArmSTIKYRpO3eTJefQ" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -17,17 +17,20 @@
 
   gtag('config', 'UA-138773037-1');
 </script>  
-  <meta name="description" content="hexo git github node npm　とは">
-<meta name="keywords" content="hexo git github node npm">
-<meta property="og:type" content="website">
-<meta property="og:title" content="WebMemo">
-<meta property="og:url" content="https://satoshi2222.github.io/myblog.github.io/tags/npm/index.html">
+  <meta name="description" content="git pushgit push とはローカルで開発したものをリモートリポジトリに変更を反映するためのコマンドGitHubでリポジトリを作成後手順通りpushしようとしたら、エラーや反映されてていないということが起こったのでメモしておく">
+<meta name="keywords" content="git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git push">
+<meta property="og:url" content="https://satoshi2222.github.io/myblog.github.io/git5/index.html">
 <meta property="og:site_name" content="WebMemo">
-<meta property="og:description" content="hexo git github node npm　とは">
+<meta property="og:description" content="git pushgit push とはローカルで開発したものをリモートリポジトリに変更を反映するためのコマンドGitHubでリポジトリを作成後手順通りpushしようとしたら、エラーや反映されてていないということが起こったのでメモしておく">
 <meta property="og:locale" content="ja">
+<meta property="og:image" content="https://satoshi2222.github.io/myblog.github.io/git5/gitlog1.png">
+<meta property="og:updated_time" content="2019-06-08T12:33:32.407Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="WebMemo">
-<meta name="twitter:description" content="hexo git github node npm　とは">
+<meta name="twitter:title" content="git push">
+<meta name="twitter:description" content="git pushgit push とはローカルで開発したものをリモートリポジトリに変更を反映するためのコマンドGitHubでリポジトリを作成後手順通りpushしようとしたら、エラーや反映されてていないということが起こったのでメモしておく">
+<meta name="twitter:image" content="https://satoshi2222.github.io/myblog.github.io/git5/gitlog1.png">
   
   
     <link rel="icon" href="/favicon.png">
@@ -76,40 +79,79 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/myblog.github.io/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/myblog.github.io/node2/" class="archive-article-date">
-  <time datetime="2018-11-18T08:51:22.000Z" itemprop="datePublished">11月 18</time>
+        <section id="main"><article id="post-git5" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/myblog.github.io/git5/" class="article-date">
+  <time datetime="2019-06-06T09:31:06.000Z" itemprop="datePublished">2019-06-06</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/myblog.github.io/node2/">npmとyarn</a>
+    <h1 class="article-title" itemprop="name">
+      git push
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><br><br><img src="/myblog.github.io/git5/gitlog1.png" title="Image"><br><br></p>
+<h2 id="git-push"><a href="#git-push" class="headerlink" title="git push"></a>git push</h2><p>git push とはローカルで開発したものをリモートリポジトリに変更を反映するためのコマンド<br>GitHubでリポジトリを作成後手順通りpushしようとしたら、エラーや反映されてていないということが起こったのでメモしておく</p>
+<a id="more"></a>
+<h2 id="ローカルリポジトリを作成する"><a href="#ローカルリポジトリを作成する" class="headerlink" title="ローカルリポジトリを作成する"></a>ローカルリポジトリを作成する</h2><p>コマンドラインでローカルの作業フォルダに移動</p>
+<h3 id="git-initコマンドでローカルリポジトリを作成"><a href="#git-initコマンドでローカルリポジトリを作成" class="headerlink" title="git initコマンドでローカルリポジトリを作成"></a>git initコマンドでローカルリポジトリを作成</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+<p>.gitというサブディレクトリが作成される</p>
+<h3 id="git-addコマンドでファイルをインデックスに追加-Gitの管理にいれる"><a href="#git-addコマンドでファイルをインデックスに追加-Gitの管理にいれる" class="headerlink" title="git addコマンドでファイルをインデックスに追加(Gitの管理にいれる)"></a>git addコマンドでファイルをインデックスに追加(Gitの管理にいれる)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add -A</span><br></pre></td></tr></table></figure>
+<h3 id="Gitのリポジトリでファイルを変更した場合、git-commitコマンドで変更を登録する"><a href="#Gitのリポジトリでファイルを変更した場合、git-commitコマンドで変更を登録する" class="headerlink" title="Gitのリポジトリでファイルを変更した場合、git commitコマンドで変更を登録する"></a>Gitのリポジトリでファイルを変更した場合、git commitコマンドで変更を登録する</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit</span><br></pre></td></tr></table></figure>
+<p>変更したファイルだけコミットする場合は<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit ファイル名</span><br></pre></td></tr></table></figure></p>
+<p>変更した全てコミットする場合は<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit .</span><br></pre></td></tr></table></figure></p>
+<p>-aをつければなにもかもコミットコマンドは</p>
+<h3 id="git-remoteコマンドでリモートリポジトリの情報をローカルに保存する"><a href="#git-remoteコマンドでリモートリポジトリの情報をローカルに保存する" class="headerlink" title="git remoteコマンドでリモートリポジトリの情報をローカルに保存する"></a>git remoteコマンドでリモートリポジトリの情報をローカルに保存する</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/ユーザー名/リポジトリ名.git</span><br></pre></td></tr></table></figure>
+<p>これでリモートに保存された<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure></p>
+<p>で打ち込んだリポジトリが登録されているか確認できる</p>
+<h3 id="git-push-origin-masterコマンドで-ローカルのmasterブランチをリモートリポジトリへ反映させる"><a href="#git-push-origin-masterコマンドで-ローカルのmasterブランチをリモートリポジトリへ反映させる" class="headerlink" title="git push origin masterコマンドで ローカルのmasterブランチをリモートリポジトリへ反映させる"></a>git push origin masterコマンドで ローカルのmasterブランチをリモートリポジトリへ反映させる</h3><p>(正式にはgit push origin master:master)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure></p>
 
+      
+    </div>
+    
+    <footer class="article-footer">
+        <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\blog2\" title="静的ウェブサイトホスティングサービス" rel="bookmark">静的ウェブサイトホスティングサービス</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\git4\" title="GitHubが無料でプライベートリポジトリを作れるように" rel="bookmark">GitHubが無料でプライベートリポジトリを作れるように</a></h3></div></li></ul>
+      <a data-url="https://satoshi2222.github.io/myblog.github.io/git5/" data-id="cjwnhoj2q000mgww26aqcgpzl" class="article-share-link">共有</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/git/">git</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/myblog.github.io/hugo1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">次の記事</strong>
+      <div class="article-nav-title">
+        
+          Hugoをインストール
+        
+      </div>
+    </a>
+  
+  
+    <a href="/myblog.github.io/gatsby2/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前の記事</strong>
+      <div class="article-nav-title">NetlifyとGatsbyJSを連携させる</div>
+    </a>
+  
+</nav>
+
+  
+</article>
 
 </section>
         

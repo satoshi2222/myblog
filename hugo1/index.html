@@ -5,7 +5,7 @@
   
 
   
-  <title>基本的なlinuxのコマンド | WebMemo</title>
+  <title>Hugoをインストール | WebMemo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="google-site-verification" content="YvmUAfawhSyphEgaYekvEV4ZwArmSTIKYRpO3eTJefQ" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -17,20 +17,20 @@
 
   gtag('config', 'UA-138773037-1');
 </script>  
-  <meta name="description" content="よく使うコマンドを書いておく馴染みの少ないコマンド操作なので、確認用にメモ">
-<meta name="keywords" content="linux">
+  <meta name="description" content="Hugoとは 静的サイトジェネレーターで簡単にシンプルなブログが作れる GatsbyやHexoとは違いnode.js製ではない Go言語で作られている テーマが他の静的サイトジェネレーターより豊富 データベース不要で、ページの表示が速い">
+<meta name="keywords" content="blog,Hugo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="基本的なlinuxのコマンド">
-<meta property="og:url" content="https://satoshi2222.github.io/myblog.github.io/linux/index.html">
+<meta property="og:title" content="Hugoをインストール">
+<meta property="og:url" content="https://satoshi2222.github.io/myblog.github.io/hugo1/index.html">
 <meta property="og:site_name" content="WebMemo">
-<meta property="og:description" content="よく使うコマンドを書いておく馴染みの少ないコマンド操作なので、確認用にメモ">
+<meta property="og:description" content="Hugoとは 静的サイトジェネレーターで簡単にシンプルなブログが作れる GatsbyやHexoとは違いnode.js製ではない Go言語で作られている テーマが他の静的サイトジェネレーターより豊富 データベース不要で、ページの表示が速い">
 <meta property="og:locale" content="ja">
-<meta property="og:image" content="https://satoshi2222.github.io/myblog.github.io/linux/Linux-logo.jpg">
-<meta property="og:updated_time" content="2018-11-04T23:47:40.116Z">
+<meta property="og:image" content="https://satoshi2222.github.io/myblog.github.io/hugo1/hugo-logo.png">
+<meta property="og:updated_time" content="2019-06-08T12:21:42.469Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="基本的なlinuxのコマンド">
-<meta name="twitter:description" content="よく使うコマンドを書いておく馴染みの少ないコマンド操作なので、確認用にメモ">
-<meta name="twitter:image" content="https://satoshi2222.github.io/myblog.github.io/linux/Linux-logo.jpg">
+<meta name="twitter:title" content="Hugoをインストール">
+<meta name="twitter:description" content="Hugoとは 静的サイトジェネレーターで簡単にシンプルなブログが作れる GatsbyやHexoとは違いnode.js製ではない Go言語で作られている テーマが他の静的サイトジェネレーターより豊富 データベース不要で、ページの表示が速い">
+<meta name="twitter:image" content="https://satoshi2222.github.io/myblog.github.io/hugo1/hugo-logo.png">
   
   
     <link rel="icon" href="/favicon.png">
@@ -79,10 +79,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-linux" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-hugo1" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/myblog.github.io/linux/" class="article-date">
-  <time datetime="2018-11-04T22:56:20.000Z" itemprop="datePublished">2018-11-05</time>
+    <a href="/myblog.github.io/hugo1/" class="article-date">
+  <time datetime="2019-06-06T12:39:21.000Z" itemprop="datePublished">2019-06-06</time>
 </a>
     
   </div>
@@ -93,7 +93,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      基本的なlinuxのコマンド
+      Hugoをインストール
     </h1>
   
 
@@ -101,83 +101,49 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><br><br><img src="/myblog.github.io/linux/Linux-logo.jpg" title="Image"><br><br></p>
-<h2 id="よく使うコマンドを書いておく"><a href="#よく使うコマンドを書いておく" class="headerlink" title="よく使うコマンドを書いておく"></a>よく使うコマンドを書いておく</h2><p>馴染みの少ないコマンド操作なので、確認用にメモ</p>
+        <p><br><br><img src="/myblog.github.io/hugo1/hugo-logo.png" title="Image"><br><br></p>
+<h2 id="Hugoとは"><a href="#Hugoとは" class="headerlink" title="Hugoとは"></a>Hugoとは</h2><ul>
+<li>静的サイトジェネレーターで簡単にシンプルなブログが作れる</li>
+<li>GatsbyやHexoとは違いnode.js製ではない</li>
+<li>Go言語で作られている</li>
+<li>テーマが他の静的サイトジェネレーターより豊富</li>
+<li>データベース不要で、ページの表示が速い</li>
+</ul>
 <a id="more"></a>
-<table>
-<thead>
-<tr>
-<th>コマンド</th>
-<th>結果</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>pwd</td>
-<td>現在のディレクトリの表示</td>
-</tr>
-<tr>
-<td>ls</td>
-<td>ファイル・ディレクトリの一覧の表示</td>
-</tr>
-<tr>
-<td>cd</td>
-<td>現在のディレクトリの変更</td>
-</tr>
-<tr>
-<td>cd..</td>
-<td>ひとつ前のディレクトリに戻る</td>
-</tr>
-<tr>
-<td>cd ~</td>
-<td>ホームディレクトリに移動 ~(チルダ)</td>
-</tr>
-<tr>
-<td>mkdir</td>
-<td>ディレクトリの作成</td>
-</tr>
-<tr>
-<td>rm</td>
-<td>ファイルやディレクトリの削除</td>
-</tr>
-<tr>
-<td>cp</td>
-<td>ファイルやディレクトリのコピー</td>
-</tr>
-<tr>
-<td>mv</td>
-<td>ファイルやディレクトリの移動</td>
-</tr>
-<tr>
-<td>find</td>
-<td>ファイルやディレクトリの検索</td>
-</tr>
-<tr>
-<td>cat</td>
-<td>複数のファイルの中身を結合して、標準出力に出力</td>
-</tr>
-<tr>
-<td>less</td>
-<td>ファイルの中身をページ送りしながら表示</td>
-</tr>
-<tr>
-<td>grep</td>
-<td>ファイルや標準入力の中から特定の単語を検索</td>
-</tr>
-</tbody>
-</table>
-<h2 id="オプション"><a href="#オプション" class="headerlink" title="オプション"></a>オプション</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ls -a</span><br></pre></td></tr></table></figure>
-<p>のように付け加えることでよりコマンドの付随機能を呼び出せる<br>種類はコマンドによって色々ある</p>
+<h2 id="Hugoのダウンロード"><a href="#Hugoのダウンロード" class="headerlink" title="Hugoのダウンロード"></a>Hugoのダウンロード</h2><p><a href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener">Hugo GitHub</a>でZipファイルをダウンロードする<br>windowsの場合はWindows-64bit.zipか32bitの場合はそちらををクリック</p>
+<h3 id="Hugoというフォルダを作成する"><a href="#Hugoというフォルダを作成する" class="headerlink" title="Hugoというフォルダを作成する"></a>Hugoというフォルダを作成する</h3><p>今回はC:\Hugo</p>
+<h3 id="C-Hugoに-binフォルダを作る"><a href="#C-Hugoに-binフォルダを作る" class="headerlink" title="C:\Hugoに\binフォルダを作る"></a>C:\Hugoに\binフォルダを作る</h3><p>binフォルダに解凍した、hugo.exeをいれる</p>
+<h3 id="C-Hugo-binにパスを通しHugoをどこからでも使えるようにする"><a href="#C-Hugo-binにパスを通しHugoをどこからでも使えるようにする" class="headerlink" title="C:\Hugo\binにパスを通しHugoをどこからでも使えるようにする"></a>C:\Hugo\binにパスを通しHugoをどこからでも使えるようにする</h3><p>今回はコマンドラインからではなく、GUIでパスを通す</p>
+<ol>
+<li>C:\Hugo\binをコピーする</li>
+<li>［コントロールパネル］→［システムとセキュリティ］→［システム］→［システムの詳細設定］→[環境変数(N)]</li>
+<li>Pathとか書かれた欄を選択し、編集をクリック</li>
+<li>新規をクリックして、先ほどコピーしたC:\Hugo\binを貼り付ける<br>これでパスが通る<br>補足:何故かこの設定で通らず、not findと出たが、環境変数でこのパスの順番を一番上にしたらできるようになった</li>
+</ol>
+<h2 id="Hugo公式のクイックスタート通りに進めていく"><a href="#Hugo公式のクイックスタート通りに進めていく" class="headerlink" title="Hugo公式のクイックスタート通りに進めていく"></a>Hugo公式のクイックスタート通りに進めていく</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hugo version</span><br></pre></td></tr></table></figure>
+<p>でインストールされているか確認</p>
+<p>C:\Hugo\の場所で<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hugo new site quickstart</span><br></pre></td></tr></table></figure></p>
+<p>でサイトを作成する</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd quickstart</span><br></pre></td></tr></table></figure>
+<p>で移動する</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke</span><br><span class="line">echo theme = &quot;ananke&quot; &gt;&gt; config.toml</span><br></pre></td></tr></table></figure>
+<p>これでanankeというテーマを追加する<br>echoでconfig.tomlにテーマannankeを追記する</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hugo new posts/my-first-post.md</span><br></pre></td></tr></table></figure>
+<p>で記事を追加する</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hugo server -D</span><br></pre></td></tr></table></figure>
+<p>でローカルサーバーを立ち上げるとサイトができている<br>プラウザで<a href="http://localhost:1313/" target="_blank" rel="noopener">http://localhost:1313/</a>にアクセスすると見れる</p>
+<h2 id="公式サイト通りやってみたがエラーが出た"><a href="#公式サイト通りやってみたがエラーが出た" class="headerlink" title="公式サイト通りやってみたがエラーが出た"></a>公式サイト通りやってみたがエラーが出た</h2><p><a href="http://localhost:1313/" target="_blank" rel="noopener">http://localhost:1313/</a>アクセスしたが画像が表示されなかった<br>テーマを変えると設定が色々と変わり、Dirが違ったりする<br>テーマのREADMEに、themeフォルダにあるexampleSiteフォルダのconfig.tomlや他のファイルをquickstarフォルダのconfig.tomlに上書きしてと書いてあるのでコピーする<br>その後,config.tomlの5行目、themesDir = “../..”の記述を消して<a href="http://localhost:1313/" target="_blank" rel="noopener">http://localhost:1313/</a>を開くと<br>画像が表示された</p>
+<h2 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h2><p><a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo公式サイト</a></p>
 
       
     </div>
     
     <footer class="article-footer">
-        
-      <a data-url="https://satoshi2222.github.io/myblog.github.io/linux/" data-id="cjwnhoj3g001dgww2iorsifi8" class="article-share-link">共有</a>
+        <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\blog1\" title="CMSと静的サイトジェネレーター" rel="bookmark">CMSと静的サイトジェネレーター</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\blog4\" title="Google Analytics 使い方" rel="bookmark">Google Analytics 使い方</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\blog2\" title="静的ウェブサイトホスティングサービス" rel="bookmark">静的ウェブサイトホスティングサービス</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\blog3\" title="Google Search Console 使い方" rel="bookmark">Google Search Console 使い方</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\gatsby1\" title="GatsbyJSをインストール" rel="bookmark">GatsbyJSをインストール</a></h3></div></li></ul>
+      <a data-url="https://satoshi2222.github.io/myblog.github.io/hugo1/" data-id="cjwnhoj33000zgww2x8l615nv" class="article-share-link">共有</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/linux/">linux</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/Hugo/">Hugo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/blog/">blog</a></li></ul>
 
     </footer>
   </div>
@@ -185,19 +151,10 @@
     
 <nav id="article-nav">
   
-    <a href="/myblog.github.io/git1/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">次の記事</strong>
-      <div class="article-nav-title">
-        
-          GitとGitHub アカウント作成
-        
-      </div>
-    </a>
   
-  
-    <a href="/myblog.github.io/hexo5/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/myblog.github.io/git5/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">前の記事</strong>
-      <div class="article-nav-title">Hexoでnewpostのテンプレートを変更する</div>
+      <div class="article-nav-title">git push</div>
     </a>
   
 </nav>

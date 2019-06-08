@@ -78,6 +78,100 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-node3" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/myblog.github.io/node3/" class="article-date">
+  <time datetime="2018-11-19T20:08:31.000Z" itemprop="datePublished">2018-11-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/myblog.github.io/node3/">同期I/O 非同期I/O</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><br><br><img src="/myblog.github.io/node3/nodelogo.png" title="Image"><br><br></p>
+<h2 id="同期I-Oとは"><a href="#同期I-Oとは" class="headerlink" title="同期I/Oとは"></a>同期I/Oとは</h2><p>I/OとはIはInputでOはOutputの英語の頭文字を取ったもので、入出力処理のことで、<br>情報をInput(入力)して、処理結果をOutput(出力)するという流れ<br>多くのプログラミング言語ではI/O処理の間、プログラムを停止してI/O処理を待ち、このことを<br>同期I/Oといい、この処理の間、プログラムが停止することをブロッキングという<br>簡単に言うと今行っている処理が終わっていないなら、次の処理に手を付けないということ</p>
+<h2 id="非同期I-Oとは"><a href="#非同期I-Oとは" class="headerlink" title="非同期I/Oとは"></a>非同期I/Oとは</h2><p>入出力の開始処理をしてもその終了を待たずに、待ち時間中に別の処理を実行すること<br>Node.jsは、マルチプロセスやマルチスレッドではなく、シングルスレッドでブロッキングしないで、効率化を図っている<br>非同期I/Oは処理が１つ終わってから、次の処理を行うことを保証していないので順不同になる性質がある<br>CPUを効率よく使用することができる<br>ノンブロッキングI/Oとは少し異なる点があるらしいが、今回は表面だけの理解にしておく</p>
+        
+          <p class="article-more-link">
+            <a href="/myblog.github.io/node3/">続きを読む</a>
+          </p>
+        
+      
+    </div>
+    
+    <footer class="article-footer">
+        <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\javascript4\" title="SPAについて" rel="bookmark">SPAについて</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node1\" title="Node.jsとは" rel="bookmark">Node.jsとは</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node4\" title="node.jsの書き方" rel="bookmark">node.jsの書き方</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node2\" title="npmとyarn" rel="bookmark">npmとyarn</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node5\" title="var/let/constの違い" rel="bookmark">var/let/constの違い</a></h3></div></li></ul>
+      <a data-url="https://satoshi2222.github.io/myblog.github.io/node3/" data-id="cjwnhoj3q001kgww2oac88djj" class="article-share-link">共有</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/node-js/">node.js</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-node2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/myblog.github.io/node2/" class="article-date">
+  <time datetime="2018-11-18T08:51:22.000Z" itemprop="datePublished">2018-11-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/myblog.github.io/node2/">npmとyarn</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><br><br><img src="/myblog.github.io/node2/npmlog.png" title="Image"><br><br></p>
+<h2 id="npmとは"><a href="#npmとは" class="headerlink" title="npmとは"></a>npmとは</h2><p>npm(Node Packaged Modules)とは、Node.jsのためのパッケージマネージャー<br>どのようなライブラリのパッケージがインストールされているかを記録し、インストールや削除が容易に行える<br>node.jsに標準で搭載されている</p>
+<h3 id="パッケージとは"><a href="#パッケージとは" class="headerlink" title="パッケージとは"></a>パッケージとは</h3><p>様々な他のプログラムから利用できるように，汎用性の高いプログラムをまとめたものをライブラリといい、パッケージというのは，このライブラリをまとめて管理してくれる<br>パッケージの依存関係を管理してくれるので、手間が減る</p>
+        
+          <p class="article-more-link">
+            <a href="/myblog.github.io/node2/">続きを読む</a>
+          </p>
+        
+      
+    </div>
+    
+    <footer class="article-footer">
+        <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\javascript4\" title="SPAについて" rel="bookmark">SPAについて</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node1\" title="Node.jsとは" rel="bookmark">Node.jsとは</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node3\" title="同期I/O 非同期I/O" rel="bookmark">同期I/O 非同期I/O</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node4\" title="node.jsの書き方" rel="bookmark">node.jsの書き方</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node5\" title="var/let/constの違い" rel="bookmark">var/let/constの違い</a></h3></div></li></ul>
+      <a data-url="https://satoshi2222.github.io/myblog.github.io/node2/" data-id="cjwnhoj3u001ngww2syo0cnfd" class="article-share-link">共有</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/node-js/">node.js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/npm/">npm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/yarn/">yarn</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-node1" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/myblog.github.io/node1/" class="article-date">
@@ -113,8 +207,8 @@
     </div>
     
     <footer class="article-footer">
-        <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node2\" title="npmとyarn" rel="bookmark">npmとyarn</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\javascript4\" title="SPAについて" rel="bookmark">SPAについて</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node4\" title="node.jsの書き方" rel="bookmark">node.jsの書き方</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node6\" title="node.jsでwebサーバーを作成" rel="bookmark">node.jsでwebサーバーを作成</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node5\" title="var/let/constの違い" rel="bookmark">var/let/constの違い</a></h3></div></li></ul>
-      <a data-url="https://satoshi2222.github.io/myblog.github.io/node1/" data-id="cjw9jo3wn002t0kw2p3loo3jk" class="article-share-link">共有</a>
+        <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\javascript4\" title="SPAについて" rel="bookmark">SPAについて</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node3\" title="同期I/O 非同期I/O" rel="bookmark">同期I/O 非同期I/O</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node4\" title="node.jsの書き方" rel="bookmark">node.jsの書き方</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node2\" title="npmとyarn" rel="bookmark">npmとyarn</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\node5\" title="var/let/constの違い" rel="bookmark">var/let/constの違い</a></h3></div></li></ul>
+      <a data-url="https://satoshi2222.github.io/myblog.github.io/node1/" data-id="cjwnhoj3o001igww2a923d1a6" class="article-share-link">共有</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/node-js/">node.js</a></li></ul>
@@ -160,7 +254,7 @@
     
     <footer class="article-footer">
         <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\git1\" title="GitとGitHub アカウント作成" rel="bookmark">GitとGitHub アカウント作成</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\git3\" title="GitHubへSSHを使って通信" rel="bookmark">GitHubへSSHを使って通信</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\hexo1\" title="Hexoをインストールする" rel="bookmark">Hexoをインストールする</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\hexo2\" title="Hexoで記事投稿" rel="bookmark">Hexoで記事投稿</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\hexo3\" title="Hexoでプラグインを追加する" rel="bookmark">Hexoでプラグインを追加する</a></h3></div></li></ul>
-      <a data-url="https://satoshi2222.github.io/myblog.github.io/git2/" data-id="cjw9jo3ug000h0kw20ubm1bx2" class="article-share-link">共有</a>
+      <a data-url="https://satoshi2222.github.io/myblog.github.io/git2/" data-id="cjwnhoj2o000kgww2yv0g8abl" class="article-share-link">共有</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/Git/">Git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/GitHub/">GitHub</a></li></ul>
@@ -207,7 +301,7 @@
     
     <footer class="article-footer">
         <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\git2\" title="Git 用語集" rel="bookmark">Git 用語集</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\git3\" title="GitHubへSSHを使って通信" rel="bookmark">GitHubへSSHを使って通信</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\hexo1\" title="Hexoをインストールする" rel="bookmark">Hexoをインストールする</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\hexo2\" title="Hexoで記事投稿" rel="bookmark">Hexoで記事投稿</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\hexo3\" title="Hexoでプラグインを追加する" rel="bookmark">Hexoでプラグインを追加する</a></h3></div></li></ul>
-      <a data-url="https://satoshi2222.github.io/myblog.github.io/git1/" data-id="cjw9jo3ub000d0kw27998lnwt" class="article-share-link">共有</a>
+      <a data-url="https://satoshi2222.github.io/myblog.github.io/git1/" data-id="cjwnhoj2c000cgww2ij5e8qo4" class="article-share-link">共有</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/Git/">Git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/GitHub/">GitHub</a></li></ul>
@@ -253,7 +347,7 @@
     
     <footer class="article-footer">
         
-      <a data-url="https://satoshi2222.github.io/myblog.github.io/linux/" data-id="cjw9jo3vb00170kw2r3oir3bf" class="article-share-link">共有</a>
+      <a data-url="https://satoshi2222.github.io/myblog.github.io/linux/" data-id="cjwnhoj3g001dgww2iorsifi8" class="article-share-link">共有</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/linux/">linux</a></li></ul>
@@ -303,7 +397,7 @@
     
     <footer class="article-footer">
         
-      <a data-url="https://satoshi2222.github.io/myblog.github.io/hexo5/" data-id="cjw9jo3uv000t0kw2figiatvd" class="article-share-link">共有</a>
+      <a data-url="https://satoshi2222.github.io/myblog.github.io/hexo5/" data-id="cjwnhoj31000wgww2i4c6inu3" class="article-share-link">共有</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/hexo-blog/">hexo blog</a></li></ul>
@@ -349,7 +443,7 @@
     
     <footer class="article-footer">
         <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\cssflex\" title="cssのflexで中央に寄せつつ、最後の行は左寄せにする" rel="bookmark">cssのflexで中央に寄せつつ、最後の行は左寄せにする</a></h3></div></li></ul>
-      <a data-url="https://satoshi2222.github.io/myblog.github.io/csstext/" data-id="cjw9jo3u8000c0kw28y17r5jc" class="article-share-link">共有</a>
+      <a data-url="https://satoshi2222.github.io/myblog.github.io/csstext/" data-id="cjwnhoj2a000bgww2goicxica" class="article-share-link">共有</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/css/">css</a></li></ul>
@@ -395,7 +489,7 @@
     
     <footer class="article-footer">
         <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\csstext\" title="cssでテキストを非表示にする" rel="bookmark">cssでテキストを非表示にする</a></h3></div></li></ul>
-      <a data-url="https://satoshi2222.github.io/myblog.github.io/cssflex/" data-id="cjw9jo3u300090kw2t7tykbln" class="article-share-link">共有</a>
+      <a data-url="https://satoshi2222.github.io/myblog.github.io/cssflex/" data-id="cjwnhoj280009gww2jzxliv4n" class="article-share-link">共有</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/flex/">flex</a></li></ul>
@@ -443,102 +537,10 @@
     
     <footer class="article-footer">
         <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\blog1\" title="CMSと静的サイトジェネレーター" rel="bookmark">CMSと静的サイトジェネレーター</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\hexo1\" title="Hexoをインストールする" rel="bookmark">Hexoをインストールする</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\hexo2\" title="Hexoで記事投稿" rel="bookmark">Hexoで記事投稿</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\hexo3\" title="Hexoでプラグインを追加する" rel="bookmark">Hexoでプラグインを追加する</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\blog4\" title="Google Analytics 使い方" rel="bookmark">Google Analytics 使い方</a></h3></div></li></ul>
-      <a data-url="https://satoshi2222.github.io/myblog.github.io/hexo4/" data-id="cjw9jo3ux000u0kw2mxkpsrqd" class="article-share-link">共有</a>
+      <a data-url="https://satoshi2222.github.io/myblog.github.io/hexo4/" data-id="cjwnhoj350011gww2r0lt0ial" class="article-share-link">共有</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/blog/">blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/hexo/">hexo</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hexo3" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/myblog.github.io/hexo3/" class="article-date">
-  <time datetime="2018-09-17T21:17:31.000Z" itemprop="datePublished">2018-09-18</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/myblog.github.io/hexo3/">Hexoでプラグインを追加する</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><br><br><img src="/myblog.github.io/hexo3/hexo_pic.png" title="Image"><br><br></p>
-<h2 id="必要なプラグインを追加する"><a href="#必要なプラグインを追加する" class="headerlink" title="必要なプラグインを追加する"></a>必要なプラグインを追加する</h2><p>基本的にプラグインが色々と揃っているので必要に応じてインストールしていく</p>
-        
-          <p class="article-more-link">
-            <a href="/myblog.github.io/hexo3/">続きを読む</a>
-          </p>
-        
-      
-    </div>
-    
-    <footer class="article-footer">
-        <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\hexo2\" title="Hexoで記事投稿" rel="bookmark">Hexoで記事投稿</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\hexo1\" title="Hexoをインストールする" rel="bookmark">Hexoをインストールする</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\hexo4\" title="Hexoで記事を書く" rel="bookmark">Hexoで記事を書く</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\blog1\" title="CMSと静的サイトジェネレーター" rel="bookmark">CMSと静的サイトジェネレーター</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\gatsby2\" title="NetlifyとGatsbyJSを連携させる" rel="bookmark">NetlifyとGatsbyJSを連携させる</a></h3></div></li></ul>
-      <a data-url="https://satoshi2222.github.io/myblog.github.io/hexo3/" data-id="cjw9jo3ur000p0kw20k3ym1k1" class="article-share-link">共有</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/GitHub/">GitHub</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/blog/">blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/hexo/">hexo</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hexo2" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/myblog.github.io/hexo2/" class="article-date">
-  <time datetime="2018-09-16T20:40:08.000Z" itemprop="datePublished">2018-09-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/myblog.github.io/hexo2/">Hexoで記事投稿</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><br><br><img src="/myblog.github.io/hexo2/hexo_pic.png" title="Image"><br><br></p>
-<h2 id="Hexoの設定-記事投稿"><a href="#Hexoの設定-記事投稿" class="headerlink" title="Hexoの設定,記事投稿"></a>Hexoの設定,記事投稿</h2><p>テーマの変更や記事投稿はコマンド一つで簡単にできる</p>
-        
-          <p class="article-more-link">
-            <a href="/myblog.github.io/hexo2/">続きを読む</a>
-          </p>
-        
-      
-    </div>
-    
-    <footer class="article-footer">
-        <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\hexo3\" title="Hexoでプラグインを追加する" rel="bookmark">Hexoでプラグインを追加する</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\hexo1\" title="Hexoをインストールする" rel="bookmark">Hexoをインストールする</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\hexo4\" title="Hexoで記事を書く" rel="bookmark">Hexoで記事を書く</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\blog1\" title="CMSと静的サイトジェネレーター" rel="bookmark">CMSと静的サイトジェネレーター</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\myblog.github.io\gatsby2\" title="NetlifyとGatsbyJSを連携させる" rel="bookmark">NetlifyとGatsbyJSを連携させる</a></h3></div></li></ul>
-      <a data-url="https://satoshi2222.github.io/myblog.github.io/hexo2/" data-id="cjw9jo3um000l0kw2e1sd4rwa" class="article-share-link">共有</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/GitHub/">GitHub</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/blog/">blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog.github.io/tags/hexo/">hexo</a></li></ul>
 
     </footer>
   </div>
@@ -565,7 +567,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">タグ</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/EJS/">EJS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/Git/">Git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/GitHub/">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/JavaScript/">JavaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/Javascript/">Javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/Netlify/">Netlify</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/Web/">Web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/blog/">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/css/">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/flex/">flex</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/gatsby/">gatsby</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/git/">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/hexo-blog/">hexo blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/html/">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/linux/">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/node-js/">node.js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/npm/">npm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/web/">web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/yarn/">yarn</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/その他/">その他</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/EJS/">EJS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/Git/">Git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/GitHub/">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/Hugo/">Hugo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/JavaScript/">JavaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/Javascript/">Javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/Netlify/">Netlify</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/Web/">Web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/blog/">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/css/">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/flex/">flex</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/gatsby/">gatsby</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/git/">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/hexo-blog/">hexo blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/html/">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/linux/">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/node-js/">node.js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/npm/">npm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/web/">web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/yarn/">yarn</a></li><li class="tag-list-item"><a class="tag-list-link" href="/myblog.github.io/tags/その他/">その他</a></li></ul>
     </div>
   </div>
 
@@ -575,7 +577,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">タグクラウド</h3>
     <div class="widget tagcloud">
-      <a href="/myblog.github.io/tags/EJS/" style="font-size: 10px;">EJS</a> <a href="/myblog.github.io/tags/Git/" style="font-size: 12.86px;">Git</a> <a href="/myblog.github.io/tags/GitHub/" style="font-size: 17.14px;">GitHub</a> <a href="/myblog.github.io/tags/JavaScript/" style="font-size: 18.57px;">JavaScript</a> <a href="/myblog.github.io/tags/Javascript/" style="font-size: 10px;">Javascript</a> <a href="/myblog.github.io/tags/Netlify/" style="font-size: 10px;">Netlify</a> <a href="/myblog.github.io/tags/Web/" style="font-size: 11.43px;">Web</a> <a href="/myblog.github.io/tags/blog/" style="font-size: 20px;">blog</a> <a href="/myblog.github.io/tags/css/" style="font-size: 11.43px;">css</a> <a href="/myblog.github.io/tags/flex/" style="font-size: 10px;">flex</a> <a href="/myblog.github.io/tags/gatsby/" style="font-size: 11.43px;">gatsby</a> <a href="/myblog.github.io/tags/git/" style="font-size: 11.43px;">git</a> <a href="/myblog.github.io/tags/hexo/" style="font-size: 15.71px;">hexo</a> <a href="/myblog.github.io/tags/hexo-blog/" style="font-size: 10px;">hexo blog</a> <a href="/myblog.github.io/tags/html/" style="font-size: 10px;">html</a> <a href="/myblog.github.io/tags/linux/" style="font-size: 10px;">linux</a> <a href="/myblog.github.io/tags/node-js/" style="font-size: 18.57px;">node.js</a> <a href="/myblog.github.io/tags/npm/" style="font-size: 10px;">npm</a> <a href="/myblog.github.io/tags/web/" style="font-size: 14.29px;">web</a> <a href="/myblog.github.io/tags/yarn/" style="font-size: 10px;">yarn</a> <a href="/myblog.github.io/tags/その他/" style="font-size: 10px;">その他</a>
+      <a href="/myblog.github.io/tags/EJS/" style="font-size: 10px;">EJS</a> <a href="/myblog.github.io/tags/Git/" style="font-size: 12.86px;">Git</a> <a href="/myblog.github.io/tags/GitHub/" style="font-size: 17.14px;">GitHub</a> <a href="/myblog.github.io/tags/Hugo/" style="font-size: 10px;">Hugo</a> <a href="/myblog.github.io/tags/JavaScript/" style="font-size: 18.57px;">JavaScript</a> <a href="/myblog.github.io/tags/Javascript/" style="font-size: 10px;">Javascript</a> <a href="/myblog.github.io/tags/Netlify/" style="font-size: 10px;">Netlify</a> <a href="/myblog.github.io/tags/Web/" style="font-size: 11.43px;">Web</a> <a href="/myblog.github.io/tags/blog/" style="font-size: 20px;">blog</a> <a href="/myblog.github.io/tags/css/" style="font-size: 11.43px;">css</a> <a href="/myblog.github.io/tags/flex/" style="font-size: 10px;">flex</a> <a href="/myblog.github.io/tags/gatsby/" style="font-size: 11.43px;">gatsby</a> <a href="/myblog.github.io/tags/git/" style="font-size: 12.86px;">git</a> <a href="/myblog.github.io/tags/hexo/" style="font-size: 15.71px;">hexo</a> <a href="/myblog.github.io/tags/hexo-blog/" style="font-size: 10px;">hexo blog</a> <a href="/myblog.github.io/tags/html/" style="font-size: 10px;">html</a> <a href="/myblog.github.io/tags/linux/" style="font-size: 10px;">linux</a> <a href="/myblog.github.io/tags/node-js/" style="font-size: 18.57px;">node.js</a> <a href="/myblog.github.io/tags/npm/" style="font-size: 10px;">npm</a> <a href="/myblog.github.io/tags/web/" style="font-size: 14.29px;">web</a> <a href="/myblog.github.io/tags/yarn/" style="font-size: 10px;">yarn</a> <a href="/myblog.github.io/tags/その他/" style="font-size: 10px;">その他</a>
     </div>
   </div>
 
@@ -584,7 +586,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">アーカイブ</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/myblog.github.io/archives/2019/05/">5月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/myblog.github.io/archives/2019/04/">4月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/myblog.github.io/archives/2019/02/">2月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/myblog.github.io/archives/2018/12/">12月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/myblog.github.io/archives/2018/11/">11月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/myblog.github.io/archives/2018/09/">9月 2018</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/myblog.github.io/archives/2019/06/">6月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/myblog.github.io/archives/2019/05/">5月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/myblog.github.io/archives/2019/04/">4月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/myblog.github.io/archives/2019/02/">2月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/myblog.github.io/archives/2018/12/">12月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/myblog.github.io/archives/2018/11/">11月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/myblog.github.io/archives/2018/09/">9月 2018</a></li></ul>
     </div>
   </div>
 
@@ -597,6 +599,14 @@
       <ul>
         
           <li>
+            <a href="/myblog.github.io/hugo1/">Hugoをインストール</a>
+          </li>
+        
+          <li>
+            <a href="/myblog.github.io/git5/">git push</a>
+          </li>
+        
+          <li>
             <a href="/myblog.github.io/gatsby2/">NetlifyとGatsbyJSを連携させる</a>
           </li>
         
@@ -606,14 +616,6 @@
         
           <li>
             <a href="/myblog.github.io/blog4/">Google Analytics 使い方</a>
-          </li>
-        
-          <li>
-            <a href="/myblog.github.io/blog3/">Google Search Console 使い方</a>
-          </li>
-        
-          <li>
-            <a href="/myblog.github.io/git4/">GitHubが無料でプライベートリポジトリを作れるように</a>
           </li>
         
       </ul>

@@ -6,7 +6,7 @@
   <link href="/myblog.github.io/atom.xml" rel="self"/>
   <link href="http://pubsubhubbub.appspot.com" rel="hub"/>
   <link href="https://satoshi2222.github.io/myblog.github.io/"/>
-  <updated>2019-06-05T15:30:29.845Z</updated>
+  <updated>2019-06-08T12:21:42.469Z</updated>
   <id>https://satoshi2222.github.io/myblog.github.io/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hugoをインストール</title>
+    <link href="https://satoshi2222.github.io/myblog.github.io/hugo1/"/>
+    <id>https://satoshi2222.github.io/myblog.github.io/hugo1/</id>
+    <published>2019-06-06T12:39:21.000Z</published>
+    <updated>2019-06-08T12:21:42.469Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/hugo1/hugo-logo.png" title="Image"><br><br></p><h2 id="Hugoとは"><a href="#Hugoとは" class="headerlink" title="Hugoとは"></a>Hugoとは</h2><ul><li>静的サイトジェネレーターで簡単にシンプルなブログが作れる</li><li>GatsbyやHexoとは違いnode.js製ではない</li><li>Go言語で作られている</li><li>テーマが他の静的サイトジェネレーターより豊富</li><li>データベース不要で、ページの表示が速い</li></ul><a id="more"></a><h2 id="Hugoのダウンロード"><a href="#Hugoのダウンロード" class="headerlink" title="Hugoのダウンロード"></a>Hugoのダウンロード</h2><p><a href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener">Hugo GitHub</a>でZipファイルをダウンロードする<br>windowsの場合はWindows-64bit.zipか32bitの場合はそちらををクリック</p><h3 id="Hugoというフォルダを作成する"><a href="#Hugoというフォルダを作成する" class="headerlink" title="Hugoというフォルダを作成する"></a>Hugoというフォルダを作成する</h3><p>今回はC:\Hugo</p><h3 id="C-Hugoに-binフォルダを作る"><a href="#C-Hugoに-binフォルダを作る" class="headerlink" title="C:\Hugoに\binフォルダを作る"></a>C:\Hugoに\binフォルダを作る</h3><p>binフォルダに解凍した、hugo.exeをいれる</p><h3 id="C-Hugo-binにパスを通しHugoをどこからでも使えるようにする"><a href="#C-Hugo-binにパスを通しHugoをどこからでも使えるようにする" class="headerlink" title="C:\Hugo\binにパスを通しHugoをどこからでも使えるようにする"></a>C:\Hugo\binにパスを通しHugoをどこからでも使えるようにする</h3><p>今回はコマンドラインからではなく、GUIでパスを通す</p><ol><li>C:\Hugo\binをコピーする</li><li>［コントロールパネル］→［システムとセキュリティ］→［システム］→［システムの詳細設定］→[環境変数(N)]</li><li>Pathとか書かれた欄を選択し、編集をクリック</li><li>新規をクリックして、先ほどコピーしたC:\Hugo\binを貼り付ける<br>これでパスが通る<br>補足:何故かこの設定で通らず、not findと出たが、環境変数でこのパスの順番を一番上にしたらできるようになった</li></ol><h2 id="Hugo公式のクイックスタート通りに進めていく"><a href="#Hugo公式のクイックスタート通りに進めていく" class="headerlink" title="Hugo公式のクイックスタート通りに進めていく"></a>Hugo公式のクイックスタート通りに進めていく</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hugo version</span><br></pre></td></tr></table></figure><p>でインストールされているか確認</p><p>C:\Hugo\の場所で<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hugo new site quickstart</span><br></pre></td></tr></table></figure></p><p>でサイトを作成する</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd quickstart</span><br></pre></td></tr></table></figure><p>で移動する</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke</span><br><span class="line">echo theme = &quot;ananke&quot; &gt;&gt; config.toml</span><br></pre></td></tr></table></figure><p>これでanankeというテーマを追加する<br>echoでconfig.tomlにテーマannankeを追記する</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hugo new posts/my-first-post.md</span><br></pre></td></tr></table></figure><p>で記事を追加する</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hugo server -D</span><br></pre></td></tr></table></figure><p>でローカルサーバーを立ち上げるとサイトができている<br>プラウザで<a href="http://localhost:1313/" target="_blank" rel="noopener">http://localhost:1313/</a>にアクセスすると見れる</p><h2 id="公式サイト通りやってみたがエラーが出た"><a href="#公式サイト通りやってみたがエラーが出た" class="headerlink" title="公式サイト通りやってみたがエラーが出た"></a>公式サイト通りやってみたがエラーが出た</h2><p><a href="http://localhost:1313/" target="_blank" rel="noopener">http://localhost:1313/</a>アクセスしたが画像が表示されなかった<br>テーマを変えると設定が色々と変わり、Dirが違ったりする<br>テーマのREADMEに、themeフォルダにあるexampleSiteフォルダのconfig.tomlや他のファイルをquickstarフォルダのconfig.tomlに上書きしてと書いてあるのでコピーする<br>その後,config.tomlの5行目、themesDir = “../..”の記述を消して<a href="http://localhost:1313/" target="_blank" rel="noopener">http://localhost:1313/</a>を開くと<br>画像が表示された</p><h2 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h2><p><a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo公式サイト</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/hugo1/hugo-logo.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Hugoとは&quot;&gt;&lt;a href=&quot;#Hugoとは&quot; class=&quot;headerlink&quot; title=&quot;Hugoとは&quot;&gt;&lt;/a&gt;Hugoとは&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;静的サイトジェネレーターで簡単にシンプルなブログが作れる&lt;/li&gt;
+&lt;li&gt;GatsbyやHexoとは違いnode.js製ではない&lt;/li&gt;
+&lt;li&gt;Go言語で作られている&lt;/li&gt;
+&lt;li&gt;テーマが他の静的サイトジェネレーターより豊富&lt;/li&gt;
+&lt;li&gt;データベース不要で、ページの表示が速い&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
+    
+      <category term="Hugo" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Hugo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git push</title>
+    <link href="https://satoshi2222.github.io/myblog.github.io/git5/"/>
+    <id>https://satoshi2222.github.io/myblog.github.io/git5/</id>
+    <published>2019-06-06T09:31:06.000Z</published>
+    <updated>2019-06-08T12:33:32.407Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/git5/gitlog1.png" title="Image"><br><br></p><h2 id="git-push"><a href="#git-push" class="headerlink" title="git push"></a>git push</h2><p>git push とはローカルで開発したものをリモートリポジトリに変更を反映するためのコマンド<br>GitHubでリポジトリを作成後手順通りpushしようとしたら、エラーや反映されてていないということが起こったのでメモしておく</p><a id="more"></a><h2 id="ローカルリポジトリを作成する"><a href="#ローカルリポジトリを作成する" class="headerlink" title="ローカルリポジトリを作成する"></a>ローカルリポジトリを作成する</h2><p>コマンドラインでローカルの作業フォルダに移動</p><h3 id="git-initコマンドでローカルリポジトリを作成"><a href="#git-initコマンドでローカルリポジトリを作成" class="headerlink" title="git initコマンドでローカルリポジトリを作成"></a>git initコマンドでローカルリポジトリを作成</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure><p>.gitというサブディレクトリが作成される</p><h3 id="git-addコマンドでファイルをインデックスに追加-Gitの管理にいれる"><a href="#git-addコマンドでファイルをインデックスに追加-Gitの管理にいれる" class="headerlink" title="git addコマンドでファイルをインデックスに追加(Gitの管理にいれる)"></a>git addコマンドでファイルをインデックスに追加(Gitの管理にいれる)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add -A</span><br></pre></td></tr></table></figure><h3 id="Gitのリポジトリでファイルを変更した場合、git-commitコマンドで変更を登録する"><a href="#Gitのリポジトリでファイルを変更した場合、git-commitコマンドで変更を登録する" class="headerlink" title="Gitのリポジトリでファイルを変更した場合、git commitコマンドで変更を登録する"></a>Gitのリポジトリでファイルを変更した場合、git commitコマンドで変更を登録する</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit</span><br></pre></td></tr></table></figure><p>変更したファイルだけコミットする場合は<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit ファイル名</span><br></pre></td></tr></table></figure></p><p>変更した全てコミットする場合は<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit .</span><br></pre></td></tr></table></figure></p><p>-aをつければなにもかもコミットコマンドは</p><h3 id="git-remoteコマンドでリモートリポジトリの情報をローカルに保存する"><a href="#git-remoteコマンドでリモートリポジトリの情報をローカルに保存する" class="headerlink" title="git remoteコマンドでリモートリポジトリの情報をローカルに保存する"></a>git remoteコマンドでリモートリポジトリの情報をローカルに保存する</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/ユーザー名/リポジトリ名.git</span><br></pre></td></tr></table></figure><p>これでリモートに保存された<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure></p><p>で打ち込んだリポジトリが登録されているか確認できる</p><h3 id="git-push-origin-masterコマンドで-ローカルのmasterブランチをリモートリポジトリへ反映させる"><a href="#git-push-origin-masterコマンドで-ローカルのmasterブランチをリモートリポジトリへ反映させる" class="headerlink" title="git push origin masterコマンドで ローカルのmasterブランチをリモートリポジトリへ反映させる"></a>git push origin masterコマンドで ローカルのmasterブランチをリモートリポジトリへ反映させる</h3><p>(正式にはgit push origin master:master)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/git5/gitlog1.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;git-push&quot;&gt;&lt;a href=&quot;#git-push&quot; class=&quot;headerlink&quot; title=&quot;git push&quot;&gt;&lt;/a&gt;git push&lt;/h2&gt;&lt;p&gt;git push とはローカルで開発したものをリモートリポジトリに変更を反映するためのコマンド&lt;br&gt;GitHubでリポジトリを作成後手順通りpushしようとしたら、エラーや反映されてていないということが起こったのでメモしておく&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="git" scheme="https://satoshi2222.github.io/myblog.github.io/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>NetlifyとGatsbyJSを連携させる</title>
@@ -188,9 +238,9 @@
     
       <category term="JavaScript" scheme="https://satoshi2222.github.io/myblog.github.io/tags/JavaScript/"/>
     
-      <category term="node.js" scheme="https://satoshi2222.github.io/myblog.github.io/tags/node-js/"/>
-    
       <category term="Web" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Web/"/>
+    
+      <category term="node.js" scheme="https://satoshi2222.github.io/myblog.github.io/tags/node-js/"/>
     
   </entry>
   
@@ -438,54 +488,6 @@
       <category term="Git" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Git/"/>
     
       <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io/tags/GitHub/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>同期I/O 非同期I/O</title>
-    <link href="https://satoshi2222.github.io/myblog.github.io/node3/"/>
-    <id>https://satoshi2222.github.io/myblog.github.io/node3/</id>
-    <published>2018-11-19T20:08:31.000Z</published>
-    <updated>2018-11-21T11:07:45.302Z</updated>
-    
-    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/node3/nodelogo.png" title="Image"><br><br></p><h2 id="同期I-Oとは"><a href="#同期I-Oとは" class="headerlink" title="同期I/Oとは"></a>同期I/Oとは</h2><p>I/OとはIはInputでOはOutputの英語の頭文字を取ったもので、入出力処理のことで、<br>情報をInput(入力)して、処理結果をOutput(出力)するという流れ<br>多くのプログラミング言語ではI/O処理の間、プログラムを停止してI/O処理を待ち、このことを<br>同期I/Oといい、この処理の間、プログラムが停止することをブロッキングという<br>簡単に言うと今行っている処理が終わっていないなら、次の処理に手を付けないということ</p><h2 id="非同期I-Oとは"><a href="#非同期I-Oとは" class="headerlink" title="非同期I/Oとは"></a>非同期I/Oとは</h2><p>入出力の開始処理をしてもその終了を待たずに、待ち時間中に別の処理を実行すること<br>Node.jsは、マルチプロセスやマルチスレッドではなく、シングルスレッドでブロッキングしないで、効率化を図っている<br>非同期I/Oは処理が１つ終わってから、次の処理を行うことを保証していないので順不同になる性質がある<br>CPUを効率よく使用することができる<br>ノンブロッキングI/Oとは少し異なる点があるらしいが、今回は表面だけの理解にしておく</p><a id="more"></a><h3 id="マルチスレッド"><a href="#マルチスレッド" class="headerlink" title="マルチスレッド"></a>マルチスレッド</h3><p>一つのコンピュータプログラムを実行する際に、複数の処理の流れを並行して進めること<br>複数の処理の流れを生み出し、異なる処理を並行して進めることができる</p><h3 id="シングルスレッド"><a href="#シングルスレッド" class="headerlink" title="シングルスレッド"></a>シングルスレッド</h3><p>JavaScriptもNode.jsもシングルスレッドであり、デッドロックなどを気にしなくていいが、<br>一度に一つの処理しかできない<br>プログラムの処理の流れが一本のみである状態、並列処理などは行わず、一つの命令を実行していくこと</p><h4 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h4><p><a href="http://e-words.jp/w/%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%89.html" target="_blank" rel="noopener">マルチスレッド</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/node3/nodelogo.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h2 id=&quot;同期I-Oとは&quot;&gt;&lt;a href=&quot;#同期I-Oとは&quot; class=&quot;headerlink&quot; title=&quot;同期I/Oとは&quot;&gt;&lt;/a&gt;同期I/Oとは&lt;/h2&gt;&lt;p&gt;I/OとはIはInputでOはOutputの英語の頭文字を取ったもので、入出力処理のことで、&lt;br&gt;情報をInput(入力)して、処理結果をOutput(出力)するという流れ&lt;br&gt;多くのプログラミング言語ではI/O処理の間、プログラムを停止してI/O処理を待ち、このことを&lt;br&gt;同期I/Oといい、この処理の間、プログラムが停止することをブロッキングという&lt;br&gt;簡単に言うと今行っている処理が終わっていないなら、次の処理に手を付けないということ&lt;/p&gt;
-&lt;h2 id=&quot;非同期I-Oとは&quot;&gt;&lt;a href=&quot;#非同期I-Oとは&quot; class=&quot;headerlink&quot; title=&quot;非同期I/Oとは&quot;&gt;&lt;/a&gt;非同期I/Oとは&lt;/h2&gt;&lt;p&gt;入出力の開始処理をしてもその終了を待たずに、待ち時間中に別の処理を実行すること&lt;br&gt;Node.jsは、マルチプロセスやマルチスレッドではなく、シングルスレッドでブロッキングしないで、効率化を図っている&lt;br&gt;非同期I/Oは処理が１つ終わってから、次の処理を行うことを保証していないので順不同になる性質がある&lt;br&gt;CPUを効率よく使用することができる&lt;br&gt;ノンブロッキングI/Oとは少し異なる点があるらしいが、今回は表面だけの理解にしておく&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="node.js" scheme="https://satoshi2222.github.io/myblog.github.io/tags/node-js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>npmとyarn</title>
-    <link href="https://satoshi2222.github.io/myblog.github.io/node2/"/>
-    <id>https://satoshi2222.github.io/myblog.github.io/node2/</id>
-    <published>2018-11-18T08:51:22.000Z</published>
-    <updated>2018-11-20T20:15:09.618Z</updated>
-    
-    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/node2/npmlog.png" title="Image"><br><br></p><h2 id="npmとは"><a href="#npmとは" class="headerlink" title="npmとは"></a>npmとは</h2><p>npm(Node Packaged Modules)とは、Node.jsのためのパッケージマネージャー<br>どのようなライブラリのパッケージがインストールされているかを記録し、インストールや削除が容易に行える<br>node.jsに標準で搭載されている</p><h3 id="パッケージとは"><a href="#パッケージとは" class="headerlink" title="パッケージとは"></a>パッケージとは</h3><p>様々な他のプログラムから利用できるように，汎用性の高いプログラムをまとめたものをライブラリといい、パッケージというのは，このライブラリをまとめて管理してくれる<br>パッケージの依存関係を管理してくれるので、手間が減る</p><a id="more"></a><h3 id="2種類のインストール"><a href="#2種類のインストール" class="headerlink" title="2種類のインストール"></a>2種類のインストール</h3><p>npmにはグローバルインストールとローカルインストールの２種類の方法がある<br>グローバルインストールは、実行環境自体もインストールし、<br>ローカルインストールは、現在のディレクトリでインストールする</p><h3 id="yarnとは"><a href="#yarnとは" class="headerlink" title="yarnとは"></a>yarnとは</h3><p>yarn(ヤーン)もNode.jsのためのパッケージマネージャー<br>npmの代わりに使えて、package.jsonの互換性がある<br>yarnはnpmと一緒に使えて、移行が楽で戻るのも簡単<br>インストールはキャッシュを利用するので早い</p><h2 id="インストール方法"><a href="#インストール方法" class="headerlink" title="インストール方法"></a>インストール方法</h2><p>npmを使いyarnをグローバルインストール<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g yarn</span><br></pre></td></tr></table></figure></p><p>パッケージ開発の初期化<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn init</span><br></pre></td></tr></table></figure></p><p>モジュールの追加<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add [パッケージ名]</span><br></pre></td></tr></table></figure></p><p>モジュールの削除<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn remove [パッケージ名]</span><br></pre></td></tr></table></figure></p><p><a href="https://yarnpkg.com/ja/" target="_blank" rel="noopener">yarn公式サイト</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/node2/npmlog.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h2 id=&quot;npmとは&quot;&gt;&lt;a href=&quot;#npmとは&quot; class=&quot;headerlink&quot; title=&quot;npmとは&quot;&gt;&lt;/a&gt;npmとは&lt;/h2&gt;&lt;p&gt;npm(Node Packaged Modules)とは、Node.jsのためのパッケージマネージャー&lt;br&gt;どのようなライブラリのパッケージがインストールされているかを記録し、インストールや削除が容易に行える&lt;br&gt;node.jsに標準で搭載されている&lt;/p&gt;
-&lt;h3 id=&quot;パッケージとは&quot;&gt;&lt;a href=&quot;#パッケージとは&quot; class=&quot;headerlink&quot; title=&quot;パッケージとは&quot;&gt;&lt;/a&gt;パッケージとは&lt;/h3&gt;&lt;p&gt;様々な他のプログラムから利用できるように，汎用性の高いプログラムをまとめたものをライブラリといい、パッケージというのは，このライブラリをまとめて管理してくれる&lt;br&gt;パッケージの依存関係を管理してくれるので、手間が減る&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="node.js" scheme="https://satoshi2222.github.io/myblog.github.io/tags/node-js/"/>
-    
-      <category term="npm" scheme="https://satoshi2222.github.io/myblog.github.io/tags/npm/"/>
-    
-      <category term="yarn" scheme="https://satoshi2222.github.io/myblog.github.io/tags/yarn/"/>
     
   </entry>
   
