@@ -6,7 +6,7 @@
   <link href="/myblog.github.io/atom.xml" rel="self"/>
   <link href="http://pubsubhubbub.appspot.com" rel="hub"/>
   <link href="https://satoshi2222.github.io/myblog.github.io/"/>
-  <updated>2019-06-08T12:21:42.469Z</updated>
+  <updated>2019-06-17T21:04:14.272Z</updated>
   <id>https://satoshi2222.github.io/myblog.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Reactとは</title>
+    <link href="https://satoshi2222.github.io/myblog.github.io/react1/"/>
+    <id>https://satoshi2222.github.io/myblog.github.io/react1/</id>
+    <published>2019-06-13T09:31:36.000Z</published>
+    <updated>2019-06-17T21:04:14.272Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/react1/react.jpeg" title="Image"><br><br></p><h2 id="Reactとは"><a href="#Reactとは" class="headerlink" title="Reactとは"></a>Reactとは</h2><ul><li>UIを構築するためのjsライブラリ</li><li>コンパイルする必要がある(react-toolsなどを使う)</li><li>JSXという記法でHTMLを書ける(JSXなしでもReactは利用できる)</li><li>DOMを直接操作するのではなく、VirtualDOMに対して操作する</li><li>仮想DOMなので必要な部分だけが更新される</li><li>React単体ではcssの機能はなく、CSS-Modulesなどを使う</li><li>コンポーネント単位で部品を作っていく</li></ul><a id="more"></a><h3 id="コンポーネントとは"><a href="#コンポーネントとは" class="headerlink" title="コンポーネントとは"></a>コンポーネントとは</h3><p>他のプログラムから呼び出されたり連結されたりして使用されるプログラム部品<br>モジュール(module)と明確な違いはなくほとんど同じ概念</p><h2 id="JSXについて"><a href="#JSXについて" class="headerlink" title="JSXについて"></a>JSXについて</h2><ul><li><p>classではなく、className</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div className=&quot;jsx&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure></li><li><p>HTMLタグに変数、数字を代入するときは {}を使う</p></li></ul><h2 id="Functional-Component（Stateless-Functional-Component"><a href="#Functional-Component（Stateless-Functional-Component" class="headerlink" title="Functional Component（Stateless Functional Component)"></a>Functional Component（Stateless Functional Component)</h2><p>JavaScriptの関数を使ってコーポネントを書ける<br>JSXでUIを構築し、関数を戻り値として返す(DOMを関数の戻り値に書く)<br>引数にpropsとして定義すればpropsオブジェクトで利用が可能</p><h3 id="PropsとState"><a href="#PropsとState" class="headerlink" title="PropsとState"></a>PropsとState</h3><p>Props</p><ul><li>propsは外部から注入される変数</li><li>コンポーネント利用時に属性として設定ができる値(後から変更不可)</li><li>親コンポーネントから渡されたプロパティ</li><li>this.propsというオブジェクトで利用できる</li><li>引数にpropsとして定義すればpropsオブジェクトで利用できる</li><li>defaultPropsとしてPropsの初期値が設定できる</li></ul><p>State</p><ul><li>外部から注入できない</li><li>値の変更ができる</li><li>そのコンポーネントが持っている状態</li></ul><h3 id="ファイル読み込み"><a href="#ファイル読み込み" class="headerlink" title="ファイル読み込み"></a>ファイル読み込み</h3><p>ES6のimportを使った読み込み<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import React from &apos;react&apos;;</span><br><span class="line">import ReactDom from &apos;react-dom&apos;;</span><br></pre></td></tr></table></figure></p><p>importはReactを使うために書く決まり<br>render()で生成したいHTML(jsx)<br>render(){ return( の直下は1つのdomしか置けない</p><h3 id="ReactDOM-render-で描画を行う"><a href="#ReactDOM-render-で描画を行う" class="headerlink" title="ReactDOM.render()で描画を行う"></a>ReactDOM.render()で描画を行う</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ReactDOM.render()</span><br></pre></td></tr></table></figure><p>###ファイル分割<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/jsx&quot; src=&quot;src/helloworld.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></p><p>でhtmlから参照することができる</p><h3 id="外部から値を受け取らないコンポーネント"><a href="#外部から値を受け取らないコンポーネント" class="headerlink" title="外部から値を受け取らないコンポーネント"></a>外部から値を受け取らないコンポーネント</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const abc = function() &#123;</span><br><span class="line">  return &lt;div&gt;abc&lt;/div&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="アロー関数で書くと"><a href="#アロー関数で書くと" class="headerlink" title="アロー関数で書くと"></a>アロー関数で書くと</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const abc = () =&gt; &lt;div&gt;abc/div&gt;</span><br></pre></td></tr></table></figure><h3 id="関数の引数でpropsを受け取る"><a href="#関数の引数でpropsを受け取る" class="headerlink" title="関数の引数でpropsを受け取る"></a>関数の引数でpropsを受け取る</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function abc(props) &#123;</span><br><span class="line">  return &lt;div&gt;abc &#123;props.text&#125;&lt;/div&gt;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ReactDOM.render(</span><br><span class="line">  &lt;abc text=&quot;abc&quot; /&gt;,</span><br><span class="line">  document.querySelector(&apos;content&apos;)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/react1/react.jpeg&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Reactとは&quot;&gt;&lt;a href=&quot;#Reactとは&quot; class=&quot;headerlink&quot; title=&quot;Reactとは&quot;&gt;&lt;/a&gt;Reactとは&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;UIを構築するためのjsライブラリ&lt;/li&gt;
+&lt;li&gt;コンパイルする必要がある(react-toolsなどを使う)&lt;/li&gt;
+&lt;li&gt;JSXという記法でHTMLを書ける(JSXなしでもReactは利用できる)&lt;/li&gt;
+&lt;li&gt;DOMを直接操作するのではなく、VirtualDOMに対して操作する&lt;/li&gt;
+&lt;li&gt;仮想DOMなので必要な部分だけが更新される&lt;/li&gt;
+&lt;li&gt;React単体ではcssの機能はなく、CSS-Modulesなどを使う&lt;/li&gt;
+&lt;li&gt;コンポーネント単位で部品を作っていく&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="react" scheme="https://satoshi2222.github.io/myblog.github.io/tags/react/"/>
+    
+  </entry>
   
   <entry>
     <title>Hugoをインストール</title>
@@ -50,9 +79,9 @@
     <link href="https://satoshi2222.github.io/myblog.github.io/git5/"/>
     <id>https://satoshi2222.github.io/myblog.github.io/git5/</id>
     <published>2019-06-06T09:31:06.000Z</published>
-    <updated>2019-06-08T13:02:54.271Z</updated>
+    <updated>2019-06-08T14:48:07.214Z</updated>
     
-    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/git5/gitlog1.png" title="Image"><br><br></p><h2 id="git-push"><a href="#git-push" class="headerlink" title="git push"></a>git push</h2><p>git push とはローカルで開発したものをリモートリポジトリに変更を反映するためのコマンド<br>GitHubでリポジトリを作成後手順通りpushしようとしたら、エラーや反映されてていないということが起こったのでメモしておく</p><a id="more"></a><h2 id="ローカルリポジトリを作成する"><a href="#ローカルリポジトリを作成する" class="headerlink" title="ローカルリポジトリを作成する"></a>ローカルリポジトリを作成する</h2><p>コマンドラインでローカルの作業フォルダに移動</p><h3 id="git-initコマンドでローカルリポジトリを作成"><a href="#git-initコマンドでローカルリポジトリを作成" class="headerlink" title="git initコマンドでローカルリポジトリを作成"></a>git initコマンドでローカルリポジトリを作成</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure><p>.gitというサブディレクトリが作成される</p><h3 id="git-addコマンドでファイルをインデックスに追加-Gitの管理にいれる"><a href="#git-addコマンドでファイルをインデックスに追加-Gitの管理にいれる" class="headerlink" title="git addコマンドでファイルをインデックスに追加(Gitの管理にいれる)"></a>git addコマンドでファイルをインデックスに追加(Gitの管理にいれる)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add -A</span><br></pre></td></tr></table></figure><h3 id="Gitのリポジトリでファイルを変更した場合、git-commitコマンドで変更を登録する"><a href="#Gitのリポジトリでファイルを変更した場合、git-commitコマンドで変更を登録する" class="headerlink" title="Gitのリポジトリでファイルを変更した場合、git commitコマンドで変更を登録する"></a>Gitのリポジトリでファイルを変更した場合、git commitコマンドで変更を登録する</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit</span><br></pre></td></tr></table></figure><p>変更したファイルだけコミットする場合は<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit ファイル名</span><br></pre></td></tr></table></figure></p><p>変更した全てコミットする場合は<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit .</span><br></pre></td></tr></table></figure></p><p>-aをつければなにもかもコミットコマンドは</p><h3 id="git-remoteコマンドでリモートリポジトリの情報をローカルに保存する"><a href="#git-remoteコマンドでリモートリポジトリの情報をローカルに保存する" class="headerlink" title="git remoteコマンドでリモートリポジトリの情報をローカルに保存する"></a>git remoteコマンドでリモートリポジトリの情報をローカルに保存する</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/ユーザー名/リポジトリ名.git</span><br></pre></td></tr></table></figure><p>これでリモートに保存された<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure></p><p>で打ち込んだリポジトリが登録されているか確認できる</p><h3 id="git-push-origin-masterコマンドで-ローカルのmasterブランチをリモートリポジトリへ反映させる"><a href="#git-push-origin-masterコマンドで-ローカルのmasterブランチをリモートリポジトリへ反映させる" class="headerlink" title="git push origin masterコマンドで ローカルのmasterブランチをリモートリポジトリへ反映させる"></a>git push origin masterコマンドで ローカルのmasterブランチをリモートリポジトリへ反映させる</h3><p>(正式にはgit push origin master:master)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure></p><p>これでリモートリポジトリに反映される</p><h2 id="git-push時にエラー"><a href="#git-push時にエラー" class="headerlink" title="git push時にエラー"></a>git push時にエラー</h2><p>remote: Permission to ユーザー名1/リポジトリ名 denied to ユーザー名2<br>fatal: unable to access …… : The requested URL returned error: 403<br>という文が出た<br>どうやら複数のGitアカウントを使っている場合にユーザが混合してしまっているため、pushできないということ<br>とりあえずGUIでアカウント情報を修正してみる</p><ol><li>[コントロール］→ [パネル\ユーザー］→ [アカウント\資格情報マネージャー]へ移動</li><li>資格情報マネージャー”をクリック</li><li>一覧からgit:<a href="https://github.comをクリック" target="_blank" rel="noopener">https://github.comをクリック</a></li><li>削除をクリックして情報を削除する</li><li>もう一度Gitにコマンドで接続すると認証画面が出るので、使用するアカウント情報を入力すればpushできるようになる</li></ol>]]></content>
+    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/git5/gitlog1.png" title="Image"><br><br></p><h2 id="git-push"><a href="#git-push" class="headerlink" title="git push"></a>git push</h2><p>git push とはローカルで開発したものをリモートリポジトリに変更を反映するためのコマンド<br>GitHubでリポジトリを作成後手順通りpushしようとしたら、エラーや反映されてていないということが起こったのでメモしておく</p><a id="more"></a><h2 id="ローカルリポジトリを作成する"><a href="#ローカルリポジトリを作成する" class="headerlink" title="ローカルリポジトリを作成する"></a>ローカルリポジトリを作成する</h2><p>コマンドラインでローカルの作業フォルダに移動</p><h3 id="git-initコマンドでローカルリポジトリを作成"><a href="#git-initコマンドでローカルリポジトリを作成" class="headerlink" title="git initコマンドでローカルリポジトリを作成"></a>git initコマンドでローカルリポジトリを作成</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure><p>.gitというサブディレクトリが作成される</p><h3 id="git-addコマンドでファイルをインデックスに追加-Gitの管理にいれる"><a href="#git-addコマンドでファイルをインデックスに追加-Gitの管理にいれる" class="headerlink" title="git addコマンドでファイルをインデックスに追加(Gitの管理にいれる)"></a>git addコマンドでファイルをインデックスに追加(Gitの管理にいれる)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add -A</span><br></pre></td></tr></table></figure><h3 id="Gitのリポジトリでファイルを変更した場合、git-commitコマンドで変更を登録する"><a href="#Gitのリポジトリでファイルを変更した場合、git-commitコマンドで変更を登録する" class="headerlink" title="Gitのリポジトリでファイルを変更した場合、git commitコマンドで変更を登録する"></a>Gitのリポジトリでファイルを変更した場合、git commitコマンドで変更を登録する</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit</span><br></pre></td></tr></table></figure><p>変更したファイルだけコミットする場合は<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit ファイル名</span><br></pre></td></tr></table></figure></p><p>変更した全てコミットする場合は<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit .</span><br></pre></td></tr></table></figure></p><p>-aをつければなにもかもコミットコマンドは</p><h3 id="git-remoteコマンドでリモートリポジトリの情報をローカルに保存する"><a href="#git-remoteコマンドでリモートリポジトリの情報をローカルに保存する" class="headerlink" title="git remoteコマンドでリモートリポジトリの情報をローカルに保存する"></a>git remoteコマンドでリモートリポジトリの情報をローカルに保存する</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/ユーザー名/リポジトリ名.git</span><br></pre></td></tr></table></figure><p>これでリモートに保存された<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure></p><p>で打ち込んだリポジトリが登録されているか確認できる</p><h3 id="git-push-origin-masterコマンドで-ローカルのmasterブランチをリモートリポジトリへ反映させる"><a href="#git-push-origin-masterコマンドで-ローカルのmasterブランチをリモートリポジトリへ反映させる" class="headerlink" title="git push origin masterコマンドで ローカルのmasterブランチをリモートリポジトリへ反映させる"></a>git push origin masterコマンドで ローカルのmasterブランチをリモートリポジトリへ反映させる</h3><p>(正式にはgit push origin master:master)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure></p><p>これでリモートリポジトリに反映される</p><h2 id="git-push時にエラー"><a href="#git-push時にエラー" class="headerlink" title="git push時にエラー"></a>git push時にエラー</h2><p>remote: Permission to ユーザー名1/リポジトリ名 denied to ユーザー名2<br>fatal: unable to access …… : The requested URL returned error: 403<br>という文が出た<br>どうやら複数のGitアカウントを使っている場合にユーザが混合してしまっているため、pushできないということ<br>とりあえずGUIでアカウント情報を修正してみる</p><ol><li>[コントロール］→ [パネル\ユーザー］→ [アカウント\資格情報マネージャー]へ移動</li><li>資格情報マネージャー”をクリック</li><li>一覧からgit:<a href="https://github.comをクリック" target="_blank" rel="noopener">https://github.comをクリック</a></li><li>削除をクリックして情報を削除する</li><li>もう一度Gitにコマンドで接続すると認証画面が出るので、使用するアカウント情報を入力すればpushできるようになる</li></ol><h3 id="Everything-up-to-dateと出る場合"><a href="#Everything-up-to-dateと出る場合" class="headerlink" title="Everything up-to-dateと出る場合"></a>Everything up-to-dateと出る場合</h3><p>git push origin masterでEverything up-to-dateと出て反映されない場合がある<br>もう一度commitしてからやる必要があるので<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -am &quot;add feature&quot;</span><br></pre></td></tr></table></figure></p><p>の後に<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure></p><p>で無事にpushされた</p>]]></content>
     
     <summary type="html">
     
@@ -128,24 +157,21 @@
     <link href="https://satoshi2222.github.io/myblog.github.io/blog4/"/>
     <id>https://satoshi2222.github.io/myblog.github.io/blog4/</id>
     <published>2019-05-03T14:41:34.000Z</published>
-    <updated>2019-05-28T19:15:46.885Z</updated>
+    <updated>2019-06-17T21:06:46.802Z</updated>
     
-    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/blog4/google-new-logo.png" title="Image"><br><br></p><h2 id="Google-Analytics-とは"><a href="#Google-Analytics-とは" class="headerlink" title="Google Analytics とは"></a>Google Analytics とは</h2><p><a href="https://developers.google.com/analytics/?hl=ja" target="_blank" rel="noopener">Google Analytics</a>(アナリティクス)はGoogleが用意した、無料で使えるツールで、アクセスの解析ができます<br>簡単に言うと、訪問者数、滞在時間、どこから来たか、広告クリック数と収益、使用デバイスなどのデータを入手できる<br>データ計測のためにJavaScriptのコードを組み込む<br>スマホユーザーが多いかどうかや、訪問前のサイトを知ることで行動パターンを把握することができる</p><h2 id="Google-Analytics-登録"><a href="#Google-Analytics-登録" class="headerlink" title="Google Analytics 登録"></a>Google Analytics 登録</h2><p>登録にはGoogleアカウントが必要なので事前に作る<br><a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">Google Analytics</a>にアクセスして、無料で利用するをクリックする<br>用意したアカウントでログインする<br>初めての場合はお申込みボタンを押す<br>新しいアカウントの入力画面で必要な情報を入力<br>メニューの管理からトラッキング情報のウェブサイトのトラッキングという項目でトラッキングコードをコピーして<br>自分のサイトのHTMLファイルの＜/head＞ 終了タグの前に貼り付ける<br>これで登録と設置完了</p><h2 id="用語まとめ"><a href="#用語まとめ" class="headerlink" title="用語まとめ"></a>用語まとめ</h2><h3 id="セッション"><a href="#セッション" class="headerlink" title="セッション"></a>セッション</h3><p>ユーザーの訪問回数</p><h3 id="ユーザー"><a href="#ユーザー" class="headerlink" title="ユーザー"></a>ユーザー</h3><p>訪問者数(cookie情報をもとに判別)</p><h3 id="ページビュー数-PV数"><a href="#ページビュー数-PV数" class="headerlink" title="ページビュー数(PV数)"></a>ページビュー数(PV数)</h3><p>閲覧されたページの合計数</p><h3 id="直帰率"><a href="#直帰率" class="headerlink" title="直帰率"></a>直帰率</h3><p>１ページだけ訪れて離脱した場合カウントされる</p><h3 id="トラフィック"><a href="#トラフィック" class="headerlink" title="トラフィック"></a>トラフィック</h3><p>ユーザーがどこから来たのかを表示する</p><h2 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h2><p><a href="https://developers.google.com/analytics/?hl=ja" target="_blank" rel="noopener">Googleアナリティクス</a></p>]]></content>
+    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/blog4/google-new-logo.png" title="Image"><br><br></p><h2 id="Google-Analytics-とは"><a href="#Google-Analytics-とは" class="headerlink" title="Google Analytics とは"></a>Google Analytics とは</h2><p><a href="https://developers.google.com/analytics/?hl=ja" target="_blank" rel="noopener">Google Analytics</a>(アナリティクス)はGoogleが用意した、無料で使えるツールで、アクセスの解析ができます<br>簡単に言うと、訪問者数、滞在時間、どこから来たか、広告クリック数と収益、使用デバイスなどのデータを入手できる<br>データ計測のためにJavaScriptのコードを組み込む<br>スマホユーザーが多いかどうかや、訪問前のサイトを知ることで行動パターンを把握することができる</p><a id="more"></a><h2 id="Google-Analytics-登録"><a href="#Google-Analytics-登録" class="headerlink" title="Google Analytics 登録"></a>Google Analytics 登録</h2><p>登録にはGoogleアカウントが必要なので事前に作る<br><a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">Google Analytics</a>にアクセスして、無料で利用するをクリックする<br>用意したアカウントでログインする<br>初めての場合はお申込みボタンを押す<br>新しいアカウントの入力画面で必要な情報を入力<br>メニューの管理からトラッキング情報のウェブサイトのトラッキングという項目でトラッキングコードをコピーして<br>自分のサイトのHTMLファイルの＜/head＞ 終了タグの前に貼り付ける<br>これで登録と設置完了</p><h2 id="用語まとめ"><a href="#用語まとめ" class="headerlink" title="用語まとめ"></a>用語まとめ</h2><h3 id="セッション"><a href="#セッション" class="headerlink" title="セッション"></a>セッション</h3><p>ユーザーの訪問回数</p><h3 id="ユーザー"><a href="#ユーザー" class="headerlink" title="ユーザー"></a>ユーザー</h3><p>訪問者数(cookie情報をもとに判別)</p><h3 id="ページビュー数-PV数"><a href="#ページビュー数-PV数" class="headerlink" title="ページビュー数(PV数)"></a>ページビュー数(PV数)</h3><p>閲覧されたページの合計数</p><h3 id="直帰率"><a href="#直帰率" class="headerlink" title="直帰率"></a>直帰率</h3><p>１ページだけ訪れて離脱した場合カウントされる</p><h3 id="トラフィック"><a href="#トラフィック" class="headerlink" title="トラフィック"></a>トラフィック</h3><p>ユーザーがどこから来たのかを表示する</p><h2 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h2><p><a href="https://developers.google.com/analytics/?hl=ja" target="_blank" rel="noopener">Googleアナリティクス</a></p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/blog4/google-new-logo.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Google-Analytics-とは&quot;&gt;&lt;a href=&quot;#Google-A
-      
+      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/blog4/google-new-logo.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Google-Analytics-とは&quot;&gt;&lt;a href=&quot;#Google-Analytics-とは&quot; class=&quot;headerlink&quot; title=&quot;Google Analytics とは&quot;&gt;&lt;/a&gt;Google Analytics とは&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://developers.google.com/analytics/?hl=ja&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Google Analytics&lt;/a&gt;(アナリティクス)はGoogleが用意した、無料で使えるツールで、アクセスの解析ができます&lt;br&gt;簡単に言うと、訪問者数、滞在時間、どこから来たか、広告クリック数と収益、使用デバイスなどのデータを入手できる&lt;br&gt;データ計測のためにJavaScriptのコードを組み込む&lt;br&gt;スマホユーザーが多いかどうかや、訪問前のサイトを知ることで行動パターンを把握することができる&lt;/p&gt;
     
     </summary>
     
     
-      <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
-    
       <category term="web" scheme="https://satoshi2222.github.io/myblog.github.io/tags/web/"/>
+    
+      <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
     
   </entry>
   
@@ -166,9 +192,9 @@
     </summary>
     
     
-      <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
-    
       <category term="web" scheme="https://satoshi2222.github.io/myblog.github.io/tags/web/"/>
+    
+      <category term="blog" scheme="https://satoshi2222.github.io/myblog.github.io/tags/blog/"/>
     
   </entry>
   
@@ -238,9 +264,9 @@
     
       <category term="JavaScript" scheme="https://satoshi2222.github.io/myblog.github.io/tags/JavaScript/"/>
     
-      <category term="Web" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Web/"/>
-    
       <category term="node.js" scheme="https://satoshi2222.github.io/myblog.github.io/tags/node-js/"/>
+    
+      <category term="Web" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Web/"/>
     
   </entry>
   
@@ -465,29 +491,6 @@
       <category term="JavaScript" scheme="https://satoshi2222.github.io/myblog.github.io/tags/JavaScript/"/>
     
       <category term="Web" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Web/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GitHubへSSHを使って通信</title>
-    <link href="https://satoshi2222.github.io/myblog.github.io/git3/"/>
-    <id>https://satoshi2222.github.io/myblog.github.io/git3/</id>
-    <published>2018-11-20T20:16:29.000Z</published>
-    <updated>2018-11-21T11:26:50.374Z</updated>
-    
-    <content type="html"><![CDATA[<p><br><br><img src="/myblog.github.io/git3/gitlog1.png" title="Image"><br><br></p><h2 id="SSHとは"><a href="#SSHとは" class="headerlink" title="SSHとは"></a>SSHとは</h2><p>Secure Shellの略でリモートシェルに特化していて、リモートサーバに安全にログインしたり、<br>ファイルをセキュアに送受信することができる<br>SSHは暗号化通信を行う際の認証にパスワード認証を使うことができるが、<br>ユーザー名とパスワードが分かれば誰でもログインできてしまうので、<br>より安全な公開鍵認証という認証方法を使う<br>SSHはAndroidやiOSにも実装されているプロトコルのため、ネットワークにSSHの利用環境が整備されていれば、<br>スマートフォンやタブレットから容易にリモート接続が可能となる<br><a id="more"></a></p><h4 id="参考リンク"><a href="#参考リンク" class="headerlink" title="参考リンク"></a>参考リンク</h4><p><a href="https://www.idcf.jp/words/ssh.html" target="_blank" rel="noopener">SSHとは</a></p><h3 id="公開鍵認証とは"><a href="#公開鍵認証とは" class="headerlink" title="公開鍵認証とは"></a>公開鍵認証とは</h3><p>公開鍵と秘密鍵という２つの情報を使う認証方法<br>公開鍵を、ログイン先のサーバーに登録し、それに対応した秘密鍵を持っている<br>クライアントだけが接続でき相手は公開鍵を使い情報を暗号化して、自分は秘密鍵を使って<br>情報を複合する</p><h2 id="公開鍵と秘密鍵の作成"><a href="#公開鍵と秘密鍵の作成" class="headerlink" title="公開鍵と秘密鍵の作成"></a>公開鍵と秘密鍵の作成</h2><p>コンソールに次のコマンドを入力<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure></p><p>するとsshディレクトリが作成されて、中に公開鍵(id_rsa.pub)と秘密鍵(id _rsa)が作成されてる<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file in which to save the key (/Users/ts/.ssh/id_rsa):</span><br></pre></td></tr></table></figure></p><p>ファイル名はそのままでEnterキーを押す</p><p>次にパスワードを尋ねられる<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Enter passphrase (empty for no passphrase):</span><br></pre></td></tr></table></figure></p><p>パスワードを入力してEnterを押す<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Enter same passphrase again:</span><br></pre></td></tr></table></figure></p><p>もう一度パスワードを入力してEnterを押す<br>これで公開鍵と、秘密鍵が完成する</p><p>保存できているか確認するには、下記のコマンドで確認<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls ~/.ssh</span><br></pre></td></tr></table></figure></p><p>id_rsaという秘密鍵とid_rsa.pubという公開鍵が書かれているファイルを確認できれば、<br>鍵の生成ができている</p><h2 id="公開鍵を登録する"><a href="#公開鍵を登録する" class="headerlink" title="公開鍵を登録する"></a>公開鍵を登録する</h2><p>次のコマンドで公開鍵情報をコンソールに表示<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure></p><p>実行結果をコピーしておく<br>次にGitHubにログインしてSettingsを開き、SSH and GPG keys を選択して、<br>New SSH key(add SHH key) をクリックする<br>Titleには自分が分かりやすい名前<br>Keyには先ほどコピーした情報を貼り付ける<br>Add key をクリックすると完了<br>これでGitHubとSSHを利用した通信が可能になる</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;/myblog.github.io/git3/gitlog1.png&quot; title=&quot;Image&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h2 id=&quot;SSHとは&quot;&gt;&lt;a href=&quot;#SSHとは&quot; class=&quot;headerlink&quot; title=&quot;SSHとは&quot;&gt;&lt;/a&gt;SSHとは&lt;/h2&gt;&lt;p&gt;Secure Shellの略でリモートシェルに特化していて、リモートサーバに安全にログインしたり、&lt;br&gt;ファイルをセキュアに送受信することができる&lt;br&gt;SSHは暗号化通信を行う際の認証にパスワード認証を使うことができるが、&lt;br&gt;ユーザー名とパスワードが分かれば誰でもログインできてしまうので、&lt;br&gt;より安全な公開鍵認証という認証方法を使う&lt;br&gt;SSHはAndroidやiOSにも実装されているプロトコルのため、ネットワークにSSHの利用環境が整備されていれば、&lt;br&gt;スマートフォンやタブレットから容易にリモート接続が可能となる&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="Git" scheme="https://satoshi2222.github.io/myblog.github.io/tags/Git/"/>
-    
-      <category term="GitHub" scheme="https://satoshi2222.github.io/myblog.github.io/tags/GitHub/"/>
     
   </entry>
   
